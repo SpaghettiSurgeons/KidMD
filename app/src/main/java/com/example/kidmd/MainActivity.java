@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("User02");
 
-        //myRef.setValue("Your name here"); // Adds a value
+        //myRef.setValue("Your name right here"); // Adds a value
         //myRef.removeValue(); // Removes a value
 
 
