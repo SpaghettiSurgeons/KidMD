@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     //The code that is commented out is for email verification, if we want to use it.
                     //if (user.isEmailVerified()) {
                         //Redirect to user profile
-                        startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+                        startActivity(new Intent(MainActivity.this, MainMenu.class));
                         progressBar.setVisibility(View.GONE);
                     //}
                     //else {
