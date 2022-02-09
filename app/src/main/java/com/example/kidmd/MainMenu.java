@@ -12,9 +12,9 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainMenu extends AppCompatActivity{
+public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private AppCompatButton procedures;
+    private AppCompatButton procedurebutton, hospitalbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +27,23 @@ public class MainMenu extends AppCompatActivity{
 
 
         //initialize procedures button
-        procedures = (AppCompatButton) findViewById(R.id.procedurebutton);
+        procedurebutton = (AppCompatButton) findViewById(R.id.procedurebutton);
+        procedurebutton.setOnClickListener(this);
+        hospitalbutton = (AppCompatButton) findViewById(R.id.hospitalbutton);
+        hospitalbutton.setOnClickListener(this);
 
-        procedures.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainMenu.this, ProceduresList.class));
-            }
-        });
 
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.procedurebutton:
+                startActivity(new Intent(MainMenu.this, ProceduresList.class));
+                break;
+            case R.id.hospitalbutton:
+                startActivity(new Intent(this, LocateHospital.class));
+                break;
+        }
+    }
 }
-
