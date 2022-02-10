@@ -30,7 +30,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView register;
+    private TextView register, guest;
     private EditText editTextEmail, editTextPassword;
     private Button signIn;
 
@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         register = (TextView) findViewById(R.id.register);
         register.setOnClickListener(this);
 
+        guest = (TextView) findViewById(R.id.guest);
+        guest.setOnClickListener(this);
+
         signIn = (Button) findViewById(R.id.signIn);
         signIn.setOnClickListener(this);
 
@@ -92,6 +95,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.signIn:
                 userLogin();
+                break;
+            case R.id.guest:
+                startActivity(new Intent(this, MainMenu.class));
                 break;
         }
     }

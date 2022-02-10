@@ -16,6 +16,9 @@
             android:name=".ProceduresList"
             android:exported="false" />
         <activity
+            android:name=".ToolsList"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
