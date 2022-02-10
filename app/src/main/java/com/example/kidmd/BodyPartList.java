@@ -17,33 +17,27 @@ import android.widget.ListView;
 import android.widget.Toast;
 import java.util.ArrayList;
 
-public class ProceduresList extends AppCompatActivity {
+public class BodyPartList extends AppCompatActivity {
 
-    ListView proceduresListView;
-    EditText procedureSearch;
+    ListView bprview;
+    EditText bpSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_procedures_list);
+        setContentView(R.layout.activity_bodypart_list);
 
-        proceduresListView = (ListView) findViewById(R.id.bprview);
-        procedureSearch = findViewById(R.id.bpSearch);
+        bprview = (ListView) findViewById(R.id.bprview);
+        bpSearch = findViewById(R.id.bpSearch);
 
+        //set up array for ListView
         ArrayList<String> arrayList = new ArrayList<>();
 
-        arrayList.add("Appendectomy");
-        arrayList.add("Biliary Atresia");
-        arrayList.add("Cholecystectomy");
-        arrayList.add("Choledochal Cyst");
-        arrayList.add("Decortication");
-        arrayList.add("Esophagomyotomy");
-        arrayList.add("Gastroschisis");
-        arrayList.add("Herniorraphy");
-        arrayList.add("Hyperinsulinism");
-        arrayList.add("Proctolectomy");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
+        arrayList.add("Appendix");
+        arrayList.add("Brain");
+        arrayList.add("Carotid Artery");
+        arrayList.add("Gallbladder");
+        arrayList.add("Kidney");
         arrayList.add("TBD");
         arrayList.add("TBD");
         arrayList.add("TBD");
@@ -57,7 +51,7 @@ public class ProceduresList extends AppCompatActivity {
                 //Get the current item for ListView
                 View view = super.getView(position, convertView, parent);
                 if(position %2 == 1){
-                     //set background colors
+                    //set background colors
                     view.setBackgroundColor(Color.rgb(173,216,230));
                     view.getBackground().setAlpha(220);
                 }
@@ -69,17 +63,17 @@ public class ProceduresList extends AppCompatActivity {
                 return view;
             }
         };
-        proceduresListView.setAdapter(arrayAdapter);
+        bprview.setAdapter(arrayAdapter);
 
         //add listener
-        proceduresListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        bprview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(ProceduresList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
+                Toast.makeText(BodyPartList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
             }
         });
 
-        procedureSearch.addTextChangedListener(new TextWatcher() {
+        bpSearch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
