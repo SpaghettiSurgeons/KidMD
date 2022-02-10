@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private AppCompatButton procedurebutton, hospitalbutton;
+    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         procedurebutton.setOnClickListener(this);
         hospitalbutton = (AppCompatButton) findViewById(R.id.hospitalbutton);
         hospitalbutton.setOnClickListener(this);
+        toolsbutton = (AppCompatButton) findViewById(R.id.toolsbutton);
+        toolsbutton.setOnClickListener(this);
 
 
     }
@@ -43,6 +45,9 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 break;
             case R.id.hospitalbutton:
                 startActivity(new Intent(this, LocateHospital.class));
+                break;
+            case R.id.toolsbutton:
+                startActivity(new Intent(MainMenu.this, ToolsList.class));
                 break;
         }
     }
