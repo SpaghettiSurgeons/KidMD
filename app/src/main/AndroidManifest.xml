@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".Brain"
+            android:exported="true" />
+        <activity
             android:name=".LocateHospital"
             android:exported="false" />
         <activity
