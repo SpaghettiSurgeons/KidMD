@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -21,6 +22,7 @@ public class BodyPartList extends AppCompatActivity {
 
     ListView bprview;
     EditText bpSearch;
+    String clicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +72,10 @@ public class BodyPartList extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(BodyPartList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
+                //open body part activity
+                //may need more efficient way
+                if (arrayList.get(i) == "Brain") startActivity(new Intent(BodyPartList.this, Brain.class));
+
             }
         });
 

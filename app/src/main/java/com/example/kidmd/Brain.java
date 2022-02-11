@@ -28,6 +28,10 @@ public class Brain extends AppCompatActivity {
         brainDesc = findViewById(R.id.brainDescView);
         brainAudio = findViewById(R.id.brainAudio);
 
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+        ((TextView) findViewById(R.id.brainTitleView)).setTypeface(baloo);
+        (brainDesc).setTypeface(baloo);
+
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int i) {

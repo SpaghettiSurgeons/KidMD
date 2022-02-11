@@ -21,8 +21,8 @@
 
     <TextView
         android:id="@+id/brainDescView"
-        android:layout_width="279dp"
-        android:layout_height="151dp"
+        android:layout_width="293dp"
+        android:layout_height="171dp"
         android:gravity="center"
         android:text="@string/a_brain_is_the_control_center_of_our_body_it_controls_body_s_movements_and_activities_and_is_the_center_of_thought_memory_and_feelings"
         android:textSize="20sp"
