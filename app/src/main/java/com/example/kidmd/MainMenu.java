@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton;
+    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +22,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_menu);
 
         //Change text font
-        //Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        //((TextView) findViewById(R.id.menudesc)).setTypeface(baloo);
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+        ((TextView) findViewById(R.id.menudesc)).setTypeface(baloo);
 
 
         //initialize procedures button
@@ -33,6 +33,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         hospitalbutton.setOnClickListener(this);
         toolsbutton = (AppCompatButton) findViewById(R.id.toolsbutton);
         toolsbutton.setOnClickListener(this);
+        bodypartbutton= (AppCompatButton) findViewById(R.id.bodypartbutton);
+        bodypartbutton.setOnClickListener(this);
 
 
     }
@@ -49,6 +51,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
             case R.id.toolsbutton:
                 startActivity(new Intent(MainMenu.this, ToolsList.class));
                 break;
+            case R.id.bodypartbutton:
+                startActivity(new Intent(MainMenu.this, BodyPartList.class));
         }
     }
 }
