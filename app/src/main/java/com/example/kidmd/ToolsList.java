@@ -14,7 +14,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.Toast;
 import java.util.ArrayList;
 
@@ -22,6 +24,7 @@ public class ToolsList extends AppCompatActivity {
 
     ListView toolsListView;
     EditText toolSearch;
+    private ImageButton backArrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,13 @@ public class ToolsList extends AppCompatActivity {
         arrayList.add("Diathermy");
         arrayList.add("Retractors");
         arrayList.add("Sutures");
+        arrayList.add("TBD");
+        arrayList.add("TBD");
+        arrayList.add("TBD");
+        arrayList.add("TBD");
+        arrayList.add("TBD");
+        arrayList.add("TBD");
+        arrayList.add("TBD");
 
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayList){
@@ -67,8 +77,22 @@ public class ToolsList extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //Toast.makeText(ToolsList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
 
-                if (arrayList.get(i) == "Forceps") {
-                    startActivity(new Intent(ToolsList.this, Forceps.class));
+                switch (arrayList.get(i)) {
+                    case "Forceps":
+                        startActivity(new Intent(ToolsList.this, Forceps.class));
+                        break;
+                    case "Retractors":
+                        startActivity(new Intent(ToolsList.this, Retractors.class));
+                        break;
+                    case "Suction Tube":
+                        startActivity(new Intent(ToolsList.this, SuctionTube.class));
+                        break;
+                    case "Diathermy":
+                        startActivity(new Intent(ToolsList.this, Diathermy.class));
+                        break;
+                    case "Sutures":
+                        startActivity(new Intent(ToolsList.this, Sutures.class));
+                        break;
                 }
             }
         });
@@ -87,6 +111,15 @@ public class ToolsList extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable editable) {
 
+            }
+        });
+
+        //---back arrow button---
+        backArrow = (ImageButton) findViewById(R.id.backArrow);
+        backArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ToolsList.this, MainMenu.class));
             }
         });
 

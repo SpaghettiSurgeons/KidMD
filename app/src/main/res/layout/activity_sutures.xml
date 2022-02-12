@@ -5,27 +5,27 @@
     android:id="@+id/audioButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Forceps">
+    tools:context=".Sutures">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="268dp"
-        android:layout_height="232dp"
+        android:layout_width="219dp"
+        android:layout_height="216dp"
+        android:contentDescription="@string/sutures"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"
-        app:srcCompat="@drawable/forceps_transparent"
-        android:contentDescription="@string/forceps" />
+        app:layout_constraintVertical_bias="0.354"
+        app:srcCompat="@drawable/sutures_transp" />
 
     <TextView
-        android:id="@+id/forcepsDescView"
+        android:id="@+id/suturesDescView"
         android:layout_width="293dp"
         android:layout_height="171dp"
         android:gravity="center"
-        android:text="@string/forceps_description"
+        android:text="@string/sutures_description"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,20 +34,20 @@
         app:layout_constraintVertical_bias="0.19" />
 
     <TextView
-        android:id="@+id/forcepsTitleView"
+        android:id="@+id/suturesTitleView"
         android:layout_width="136dp"
         android:layout_height="68dp"
         android:gravity="center"
-        android:text="@string/forceps"
+        android:text="@string/sutures"
         android:textColor="#219BA3"
-        android:textSize="34sp"
+        android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/forcepsAudio"
+        android:id="@+id/suturesAudio"
         android:layout_width="51dp"
         android:layout_height="51dp"
         android:background="@android:color/transparent"

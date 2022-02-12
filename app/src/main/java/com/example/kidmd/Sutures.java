@@ -14,24 +14,24 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import java.util.Locale;
 
-public class Forceps extends AppCompatActivity {
+public class Sutures extends AppCompatActivity {
 
-    TextView forcepsDesc;
-    ImageButton forcepsAudio;
+    TextView suturesDesc;
+    ImageButton suturesAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forceps);
+        setContentView(R.layout.activity_sutures);
 
-        forcepsDesc = findViewById(R.id.forcepsDescView);
-        forcepsAudio = findViewById(R.id.forcepsAudio);
+        suturesDesc = findViewById(R.id.suturesDescView);
+        suturesAudio = findViewById(R.id.suturesAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.forcepsTitleView)).setTypeface(baloo);
-        (forcepsDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.suturesTitleView)).setTypeface(baloo);
+        (suturesDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -42,10 +42,10 @@ public class Forceps extends AppCompatActivity {
                 }
             }
         });
-        forcepsAudio.setOnClickListener(new View.OnClickListener(){
+        suturesAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(forcepsDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(suturesDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
@@ -54,7 +54,7 @@ public class Forceps extends AppCompatActivity {
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Forceps.this, ToolsList.class));
+                startActivity(new Intent(Sutures.this, ToolsList.class));
             }
         });
 

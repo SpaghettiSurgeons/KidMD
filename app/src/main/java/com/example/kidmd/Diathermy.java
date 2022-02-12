@@ -14,24 +14,24 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import java.util.Locale;
 
-public class Forceps extends AppCompatActivity {
+public class Diathermy extends AppCompatActivity {
 
-    TextView forcepsDesc;
-    ImageButton forcepsAudio;
+    TextView diathermyDesc;
+    ImageButton diathermyAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forceps);
+        setContentView(R.layout.activity_diathermy);
 
-        forcepsDesc = findViewById(R.id.forcepsDescView);
-        forcepsAudio = findViewById(R.id.forcepsAudio);
+        diathermyDesc = findViewById(R.id.diathermyDescView);
+        diathermyAudio = findViewById(R.id.diathermyAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.forcepsTitleView)).setTypeface(baloo);
-        (forcepsDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.diathermyTitleView)).setTypeface(baloo);
+        (diathermyDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -42,10 +42,10 @@ public class Forceps extends AppCompatActivity {
                 }
             }
         });
-        forcepsAudio.setOnClickListener(new View.OnClickListener(){
+        diathermyAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(forcepsDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(diathermyDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
@@ -54,7 +54,7 @@ public class Forceps extends AppCompatActivity {
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Forceps.this, ToolsList.class));
+                startActivity(new Intent(Diathermy.this, ToolsList.class));
             }
         });
 
