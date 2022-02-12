@@ -4,15 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 import java.util.ArrayList;
@@ -21,6 +25,7 @@ public class ProceduresList extends AppCompatActivity {
 
     ListView proceduresListView;
     EditText procedureSearch;
+    private ImageButton backArrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,18 +55,17 @@ public class ProceduresList extends AppCompatActivity {
         arrayList.add("TBD");
         arrayList.add("TBD");
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayList){
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList) {
             @NonNull
             @Override
             public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
                 //Get the current item for ListView
                 View view = super.getView(position, convertView, parent);
-                if(position %2 == 1){
-                     //set background colors
-                    view.setBackgroundColor(Color.rgb(173,216,230));
+                if (position % 2 == 1) {
+                    //set background colors
+                    view.setBackgroundColor(Color.rgb(173, 216, 230));
                     view.getBackground().setAlpha(220);
-                }
-                else{
+                } else {
                     view.setBackgroundColor(Color.rgb(33, 155, 163));
                     view.getBackground().setAlpha(100);
 
@@ -96,6 +100,17 @@ public class ProceduresList extends AppCompatActivity {
             }
         });
 
+        //---back arrow button---
+        backArrow = (ImageButton) findViewById(R.id.backArrow);
+        backArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProceduresList.this, MainMenu.class));
+            }
+        });
 
     }
+
+
 }
+

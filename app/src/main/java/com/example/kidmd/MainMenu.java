@@ -25,6 +25,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
         ((TextView) findViewById(R.id.menudesc)).setTypeface(baloo);
 
+        //Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+
 
         //initialize procedures button
         procedurebutton = (AppCompatButton) findViewById(R.id.procedurebutton);
