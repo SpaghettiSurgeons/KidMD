@@ -28,6 +28,9 @@
             android:name=".ToolsList"
             android:exported="false" />
         <activity
+            android:name=".Forceps"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
