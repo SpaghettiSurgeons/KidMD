@@ -151,4 +151,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menudesc" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Logout"
+        android:textColor="#219BA3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hospitalbutton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

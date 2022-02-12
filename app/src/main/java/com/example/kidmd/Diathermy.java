@@ -20,6 +20,7 @@ public class Diathermy extends AppCompatActivity {
     ImageButton diathermyAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
+    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,15 @@ public class Diathermy extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Diathermy.this, ToolsList.class));
+            }
+        });
+
+        //---home button---
+        home = (ImageButton) findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Diathermy.this, MainMenu.class));
             }
         });
 

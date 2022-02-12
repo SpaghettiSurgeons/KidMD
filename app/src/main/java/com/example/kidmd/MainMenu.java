@@ -11,10 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton;
+    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton;
+
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,13 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         toolsbutton.setOnClickListener(this);
         bodypartbutton= (AppCompatButton) findViewById(R.id.bodypartbutton);
         bodypartbutton.setOnClickListener(this);
+        logoutbutton= (AppCompatButton) findViewById(R.id.logout);
+        logoutbutton.setOnClickListener(this);
+
+        //Only show logout button if user is logged in
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+            logoutbutton.setVisibility(View.GONE);
+        }
 
 
     }
@@ -55,6 +65,11 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 break;
             case R.id.bodypartbutton:
                 startActivity(new Intent(MainMenu.this, BodyPartList.class));
+                break;
+            case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(MainMenu.this, MainActivity.class));
+                break;
         }
     }
 }

@@ -20,6 +20,7 @@ public class Sutures extends AppCompatActivity {
     ImageButton suturesAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
+    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,15 @@ public class Sutures extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Sutures.this, ToolsList.class));
+            }
+        });
+
+        //---home button---
+        home = (ImageButton) findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Sutures.this, MainMenu.class));
             }
         });
 
