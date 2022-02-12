@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".Liver"
+            android:exported="false" />
+        <activity
+            android:name=".Kidney"
+            android:exported="false" />
+        <activity
             android:name=".Sutures"
             android:exported="false" />
         <activity

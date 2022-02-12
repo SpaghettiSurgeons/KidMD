@@ -37,9 +37,9 @@ public class BodyPartList extends AppCompatActivity {
 
         arrayList.add("Appendix");
         arrayList.add("Brain");
-        arrayList.add("Carotid Artery");
         arrayList.add("Gallbladder");
         arrayList.add("Kidney");
+        arrayList.add("Liver");
         arrayList.add("TBD");
         arrayList.add("TBD");
         arrayList.add("TBD");
@@ -71,12 +71,25 @@ public class BodyPartList extends AppCompatActivity {
         bprview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(BodyPartList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(BodyPartList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
                 //open body part activity
-                //may need more efficient way
-                if (arrayList.get(i) == "Appendix") startActivity(new Intent(BodyPartList.this, Appendix.class));
-                else if (arrayList.get(i) == "Brain") startActivity(new Intent(BodyPartList.this, Brain.class));
-                else if (arrayList.get(i) == "Gallbladder") startActivity(new Intent(BodyPartList.this, Gallbladder.class));
+                switch (arrayList.get(i)) {
+                    case "Appendix":
+                        startActivity(new Intent(BodyPartList.this, Appendix.class));
+                        break;
+                    case "Brain":
+                        startActivity(new Intent(BodyPartList.this, Brain.class));
+                        break;
+                    case "Gallbladder":
+                        startActivity(new Intent(BodyPartList.this, Gallbladder.class));
+                        break;
+                    case "Kidney":
+                        startActivity(new Intent(BodyPartList.this, Kidney.class));
+                        break;
+                    case "Liver":
+                        startActivity(new Intent(BodyPartList.this, Liver.class));
+                        break;
+                }
 
             }
         });

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Liver">
+
+    <ImageButton
+        android:id="@+id/liverAudio"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
+
+    <TextView
+        android:id="@+id/liverDescView"
+        android:layout_width="355dp"
+        android:layout_height="233dp"
+        android:gravity="center"
+        android:text="@string/the_liver_is_an_organ_that_filters_the_blood_that_comes_from_the_digestive_track_it_breaks_down_the_toxins_from_chemicals_and_drugs_it_also_makes_important_proteins_the_body_needs"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/liverTitleView"
+        android:layout_width="177dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="Liver"
+        android:textColor="#219BA3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="266dp"
+        android:layout_height="251dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        app:srcCompat="@drawable/liver" />
+</androidx.constraintlayout.widget.ConstraintLayout>
