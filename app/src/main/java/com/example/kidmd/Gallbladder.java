@@ -1,6 +1,5 @@
 package com.example.kidmd;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -13,23 +12,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class Brain extends AppCompatActivity{
+public class Gallbladder extends AppCompatActivity{
 
-    TextView brainDesc;
-    ImageButton brainAudio;
+    TextView gbDesc;
+    ImageButton gbAudio;
     TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_brain);
+        setContentView(R.layout.activity_gallbladder);
 
-        brainDesc = findViewById(R.id.brainDescView);
-        brainAudio = findViewById(R.id.brainAudio);
+        gbDesc = findViewById(R.id.gbDescView);
+        gbAudio = findViewById(R.id.gbAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.brainTitleView)).setTypeface(baloo);
-        (brainDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.gbTitleView)).setTypeface(baloo);
+        (gbDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -39,14 +38,14 @@ public class Brain extends AppCompatActivity{
                     textToSpeech.setLanguage(Locale.ENGLISH);
                 }
                 else {
-                    Toast.makeText(Brain.this, "Audio Error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Gallbladder.this, "Audio Error", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-        brainAudio.setOnClickListener(new View.OnClickListener(){
+        gbAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(brainDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
+                textToSpeech.speak(gbDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
             }
         });
     }

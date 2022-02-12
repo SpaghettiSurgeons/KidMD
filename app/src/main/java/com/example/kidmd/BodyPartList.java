@@ -74,7 +74,9 @@ public class BodyPartList extends AppCompatActivity {
                 Toast.makeText(BodyPartList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
                 //open body part activity
                 //may need more efficient way
-                if (arrayList.get(i) == "Brain") startActivity(new Intent(BodyPartList.this, Brain.class));
+                if (arrayList.get(i) == "Appendix") startActivity(new Intent(BodyPartList.this, Appendix.class));
+                else if (arrayList.get(i) == "Brain") startActivity(new Intent(BodyPartList.this, Brain.class));
+                else if (arrayList.get(i) == "Gallbladder") startActivity(new Intent(BodyPartList.this, Gallbladder.class));
 
             }
         });

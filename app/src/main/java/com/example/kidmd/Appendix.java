@@ -1,52 +1,46 @@
 package com.example.kidmd;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.ImageButton;
 import android.speech.tts.TextToSpeech;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class Brain extends AppCompatActivity{
+public class Appendix extends AppCompatActivity {
 
-    TextView brainDesc;
-    ImageButton brainAudio;
+    TextView appendixDesc;
+    ImageButton appendixAudio;
     TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_brain);
+        setContentView(R.layout.activity_appendix);
 
-        brainDesc = findViewById(R.id.brainDescView);
-        brainAudio = findViewById(R.id.brainAudio);
+        appendixDesc = findViewById(R.id.appendixDescView);
+        appendixAudio = findViewById(R.id.appendixAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.brainTitleView)).setTypeface(baloo);
-        (brainDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.appendixTitleView)).setTypeface(baloo);
+        (appendixDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int i) {
                 if (i!= TextToSpeech.ERROR){
                     //set language to US
-                    textToSpeech.setLanguage(Locale.ENGLISH);
-                }
-                else {
-                    Toast.makeText(Brain.this, "Audio Error", Toast.LENGTH_SHORT).show();
+                    textToSpeech.setLanguage(Locale.US);
                 }
             }
         });
-        brainAudio.setOnClickListener(new View.OnClickListener(){
+        appendixAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(brainDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
+                textToSpeech.speak(appendixDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
     }
