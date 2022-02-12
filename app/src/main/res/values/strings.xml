@@ -4,4 +4,14 @@
     <string name="brain">Brain</string>
     <string name="the_appendix_is_a_thin_tube_attached_near_the_meeting_point_of_the_small_and_large_intestine_it_s_function_is_still_under_study_but_it_is_not_necessary_to_health">The appendix is a thin tube attached near the meeting point of the small and large intestine. It\'s function is still under study but it is not necessary to health.</string>
     <string name="the_gallbladder_is_a_sac_that_takes_bile_made_in_the_liver_and_stores_it_the_bile_is_released_to_the_small_intestines_to_help_digest_food">The gallbladder is a sac that takes bile made in the liver and stores it. The bile is released to the small intestines to help digest food.</string>
+    <string name="forceps_description">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they don\'t hurt you.</string>
+    <string name="forceps">Forceps</string>
+    <string name="retractors_description">While forceps are used to pull back tissue, retractors are used to hold tissue in place, making it easier for surgeons to see and access the places they need to work on.</string>
+    <string name="retractors">Retractors</string>
+    <string name="suctionTube_description">Suction tubes are used by surgeons to remove harmful stuff from your body during surgery, or to remove stuff that makes it hard for surgeons to see to do their work.</string>
+    <string name="suctionTube">Suction Tube</string>
+    <string name="diathermy_description">Diathermy is an electrosurgical tool, meaning it needs electricity to do its job. It can be used to cut into parts of your body that are making you sick, or to stop blood vessels from bleeding.</string>
+    <string name="diathermy">Diathermy</string>
+    <string name="sutures_description">Sutures are like thread. In the same way thread holds your clothes together, sutures hold your skin together after doctors have fixed what\'s making you sick. Some even dissolve on their own, without having to be removed.</string>
+    <string name="sutures">Sutures</string>
 </resources>

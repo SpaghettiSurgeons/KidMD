@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -139,13 +141,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                     //The code that is commented out is for email verification, if we want to use it.
                     //if (user.isEmailVerified()) {
-                        //Redirect to user profile
-                        startActivity(new Intent(MainActivity.this, MainMenu.class));
-                        progressBar.setVisibility(View.GONE);
+                    //Redirect to user profile
+                    startActivity(new Intent(MainActivity.this, MainMenu.class));
+                    progressBar.setVisibility(View.GONE);
                     //}
                     //else {
-                        //user.sendEmailVerification();
-                        //Toast.makeText(MainActivity.this, "Please check your email to verify your account!", Toast.LENGTH_LONG).show();
+                    //user.sendEmailVerification();
+                    //Toast.makeText(MainActivity.this, "Please check your email to verify your account!", Toast.LENGTH_LONG).show();
                     //}
 
                 }

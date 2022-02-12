@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".Sutures"
+            android:exported="false" />
+        <activity
+            android:name=".Diathermy"
+            android:exported="false" />
+        <activity
+            android:name=".SuctionTube"
+            android:exported="false" />
+        <activity
+            android:name=".Retractors"
+            android:exported="false" />
+        <activity
             android:name=".Gallbladder"
             android:exported="false" />
         <activity
@@ -26,6 +38,9 @@
             android:exported="false" />
         <activity
             android:name=".ToolsList"
+            android:exported="false" />
+        <activity
+            android:name=".Forceps"
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"
