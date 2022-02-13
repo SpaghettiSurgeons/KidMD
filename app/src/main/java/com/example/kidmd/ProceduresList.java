@@ -32,13 +32,14 @@ public class ProceduresList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_procedures_list);
 
-        proceduresListView = (ListView) findViewById(R.id.bprview);
-        procedureSearch = findViewById(R.id.bpSearch);
+        proceduresListView = (ListView) findViewById(R.id.prview);
+        procedureSearch = findViewById(R.id.prSearch);
+
+
 
         ArrayList<String> arrayList = new ArrayList<>();
 
         arrayList.add("Appendectomy");
-        arrayList.add("Biliary Atresia");
         arrayList.add("Cholecystectomy");
         arrayList.add("Choledochal Cyst");
         arrayList.add("Decortication");
@@ -80,6 +81,11 @@ public class ProceduresList extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(ProceduresList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
+
+                //open Appendectomy page
+                if (arrayList.get(i) == "Appendectomy") startActivity(new Intent(ProceduresList.this, prAppendectomy.class));
+                if (arrayList.get(i) == "Cholecystectomy") startActivity(new Intent(ProceduresList.this, prCholecystectomy.class));
+
             }
         });
 

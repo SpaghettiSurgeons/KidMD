@@ -31,6 +31,30 @@
             android:name=".Gallbladder"
             android:exported="false" />
         <activity
+            android:name=".prCholecystectomy"
+            android:exported="false" />
+        <activity
+            android:name=".prAppendectomy"
+            android:exported="false" />
+        <activity
+            android:name=".prCholecystectomy"
+            android:exported="false" />
+        <activity
+            android:name=".prAppendectomy"
+            android:exported="false" />
+        <activity
+            android:name=".prCholecystectomy"
+            android:exported="false" />
+        <activity
+            android:name=".prAppendectomy"
+            android:exported="false" />
+        <activity
+            android:name=".prCholecystectomy"
+            android:exported="false" />
+        <activity
+            android:name=".prAppendectomy"
+            android:exported="false" />
+        <activity
             android:name=".Brain"
             android:exported="false" />
         <activity

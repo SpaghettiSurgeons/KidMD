@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/bpSearch"
+        android:id="@+id/prSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/proceduresHeading"
@@ -33,10 +33,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/bprview"
+        android:id="@+id/prview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bpSearch"
+        android:layout_below="@+id/prSearch"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
@@ -47,7 +47,7 @@
         android:layout_marginBottom="44dp"
         android:divider="@android:color/white"
         android:dividerHeight="2dp"
-        android:textColor="#ffffff" />
+         />
 
     <ImageButton
         android:id="@+id/backArrow"
