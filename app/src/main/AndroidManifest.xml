@@ -79,7 +79,7 @@
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterUser"
+            android:name=".SignUp"
             android:exported="false" />
         <activity
             android:name=".MainMenu"

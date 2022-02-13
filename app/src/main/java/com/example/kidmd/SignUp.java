@@ -19,7 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class RegisterUser extends AppCompatActivity implements View.OnClickListener {
+public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     private FirebaseAuth mAuth;
 
@@ -30,17 +30,14 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_user);
+        setContentView(R.layout.activity_sign_up);
 
         mAuth = FirebaseAuth.getInstance();
-
-        banner = (TextView) findViewById(R.id.banner);
-        banner.setOnClickListener(this);
 
         registerUser = (Button) findViewById(R.id.registerUser);
         registerUser.setOnClickListener(this);
 
-        editTextFullName = (EditText) findViewById(R.id.fullName);
+        editTextFullName = (EditText) findViewById(R.id.name);
         editTextAge = (EditText) findViewById(R.id.age);
         editTextEmail = (EditText) findViewById(R.id.email);
         editTextPassword = (EditText) findViewById(R.id.password);
@@ -116,19 +113,19 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
-                                        Toast.makeText(RegisterUser.this, "User successfully registered!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(SignUp.this, "User successfully registered!", Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
                                     }
                                     //Redirect to Login Layout
                                     else {
-                                        Toast.makeText(RegisterUser.this, "Failed to register!", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(SignUp.this, "Failed to register!", Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
                                     }
                                 }
                             });
                         }
                         else {
-                            Toast.makeText(RegisterUser.this, "Failed to register!", Toast.LENGTH_LONG).show();
+                            Toast.makeText(SignUp.this, "Failed to register!", Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.GONE);
                         }
                     }

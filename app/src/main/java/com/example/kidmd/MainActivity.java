@@ -4,9 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -26,9 +24,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.sql.Ref;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -93,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.register:
-                startActivity(new Intent(this, RegisterUser.class));
+                startActivity(new Intent(this, SignUp.class));
                 break;
             case R.id.signIn:
                 userLogin();
