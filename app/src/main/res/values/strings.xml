@@ -1,5 +1,18 @@
 <resources>
-    <string name="app_name">KidMD</string>
+    <string name="app_name" translatable="false">KidMD</string>
+    <string name="kidmd_logo" translatable="false">KidMD Logo</string>
+
+    <string name="create_account">Create account</string>
+    <string name="login">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+
     <string name="a_brain_is_the_control_center_of_our_body_it_controls_body_s_movements_and_activities_and_is_the_center_of_thought_memory_and_feelings">A brain is the control center of the body. It controls the body’s movements and activities. It is also the center of thought, memory, and feelings.</string>
     <string name="brain">Brain</string>
     <string name="the_appendix_is_a_thin_tube_attached_near_the_meeting_point_of_the_small_and_large_intestine_it_s_function_is_still_under_study_but_it_is_not_necessary_to_health">The appendix is a thin tube attached near the meeting point of the small and large intestine. It\'s function is still under study but it is not necessary to health.</string>
@@ -16,5 +29,5 @@
     <string name="sutures">Sutures</string>
     <string name="they_kidneys_are_a_pair_of_organs_that_remove_waste_from_the_body_by_filtering_the_blood_the_waste_gets_turned_into_urine_and_sent_down_to_the_bladder">The kidneys are a pair of organs that remove waste from the body by filtering the blood. The waste gets turned into urine and sent down to the bladder.</string>
     <string name="the_liver_is_an_organ_that_filters_the_blood_that_comes_from_the_digestive_track_it_breaks_down_the_toxins_from_chemicals_and_drugs_it_also_makes_important_proteins_the_body_needs">The liver is an organ that filters the blood that comes from the digestive track. It breaks down the toxins from chemicals and drugs. It also makes important proteins the body needs.</string>
-    <string name="kidmd_logo">KidMD Logo</string>
+
 </resources>
