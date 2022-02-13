@@ -27,9 +27,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView register, guest;
-    private EditText editTextEmail, editTextPassword;
-    private Button signIn;
+    private Button signUp, signIn;
 
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
@@ -45,8 +43,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //myRef.setValue("Your name here"); // Adds a value
         //myRef.removeValue(); // Removes a value
-
-
 
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
@@ -64,20 +60,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.w("Cancelled", "Failed to read value.", error.toException());
             }
 
-
         });
 
-        register = (TextView) findViewById(R.id.register);
-        register.setOnClickListener(this);
-
-        guest = (TextView) findViewById(R.id.guest);
-        guest.setOnClickListener(this);
+        signUp = (Button) findViewById(R.id.signUp);
+        signUp.setOnClickListener(this);
 
         signIn = (Button) findViewById(R.id.signIn);
         signIn.setOnClickListener(this);
-
-        editTextEmail = (EditText) findViewById(R.id.email);
-        editTextPassword = (EditText) findViewById(R.id.password);
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
 
@@ -87,71 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.register:
+            case R.id.signUp:
                 startActivity(new Intent(this, SignUp.class));
                 break;
             case R.id.signIn:
-                userLogin();
-                break;
-            case R.id.guest:
-                startActivity(new Intent(this, MainMenu.class));
+                startActivity(new Intent(this, SignIn.class));
                 break;
         }
-    }
-
-    private void userLogin() {
-        String email = editTextEmail.getText().toString().trim();
-        String password = editTextPassword.getText().toString().trim();
-
-        if (email.isEmpty()) {
-            editTextEmail.setError("Email address is required!");
-            editTextEmail.requestFocus();
-            return;
-        }
-
-        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            editTextEmail.setError("Email address is invalid. Please enter a valid email address!");
-            editTextEmail.requestFocus();
-            return;
-        }
-
-        if (password.isEmpty()) {
-            editTextPassword.setError("You must enter a password!");
-            editTextPassword.requestFocus();
-            return;
-        }
-
-        if (password.length() < 6) {
-            editTextPassword.setError("Password must be at least 6 characters long!");
-            editTextPassword.requestFocus();
-            return;
-        }
-
-        progressBar.setVisibility(View.VISIBLE);
-
-        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                    //The code that is commented out is for email verification, if we want to use it.
-                    //if (user.isEmailVerified()) {
-                    //Redirect to user profile
-                    startActivity(new Intent(MainActivity.this, MainMenu.class));
-                    progressBar.setVisibility(View.GONE);
-                    //}
-                    //else {
-                    //user.sendEmailVerification();
-                    //Toast.makeText(MainActivity.this, "Please check your email to verify your account!", Toast.LENGTH_LONG).show();
-                    //}
-
-                }
-                else {
-                    Toast.makeText(MainActivity.this, "Failed to login!", Toast.LENGTH_LONG).show();
-                    progressBar.setVisibility(View.GONE);
-                }
-            }
-        });
-
     }
 }

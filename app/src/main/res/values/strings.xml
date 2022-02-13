@@ -29,5 +29,6 @@
     <string name="sutures">Sutures</string>
     <string name="they_kidneys_are_a_pair_of_organs_that_remove_waste_from_the_body_by_filtering_the_blood_the_waste_gets_turned_into_urine_and_sent_down_to_the_bladder">The kidneys are a pair of organs that remove waste from the body by filtering the blood. The waste gets turned into urine and sent down to the bladder.</string>
     <string name="the_liver_is_an_organ_that_filters_the_blood_that_comes_from_the_digestive_track_it_breaks_down_the_toxins_from_chemicals_and_drugs_it_also_makes_important_proteins_the_body_needs">The liver is an organ that filters the blood that comes from the digestive track. It breaks down the toxins from chemicals and drugs. It also makes important proteins the body needs.</string>
+    <string name="guest">Continue as guest</string>
 
 </resources>
