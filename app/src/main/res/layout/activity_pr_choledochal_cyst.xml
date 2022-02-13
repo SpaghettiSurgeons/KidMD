@@ -4,6 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".prCholedochalCyst">
+    tools:context=".prAppendectomy">
+
+    <TextView
+        android:id="@+id/choledochalCyst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choledochal Cyst"
+        android:textColor="#219BA3"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <TextView
+        android:id="@+id/prCholCystTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="WHY DO YOU NEED IT?"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/prCholCystDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/prCholCystDesc"
+        android:layout_width="361dp"
+        android:layout_height="296dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Choledochal Cyst is a problem that occurs in the tubes connecting from the liver to the gallbladder. This tube helps transport bile, which is a liquid that helps break down fats, from the liver to the gallbladder and to the small intestine. Sometimes this tube can get bigger than normal and cause liver problems. The cyst can mess up or block the flow of bile from the liver to the small intestine and cause inflammation and infection in the tubes. If surgery is not done to remove the cyst, the liver can get damaged and not work well. "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967" />
+
+    <ImageView
+        tools:layout_editor_absoluteY="62dp"
+        android:id="@+id/cholCystPic1"
+        android:layout_width="322dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cholcystpic1"
+
+
+
+
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

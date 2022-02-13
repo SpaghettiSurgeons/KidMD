@@ -85,6 +85,7 @@ public class ProceduresList extends AppCompatActivity {
                 //open Appendectomy page
                 if (arrayList.get(i) == "Appendectomy") startActivity(new Intent(ProceduresList.this, prAppendectomy.class));
                 if (arrayList.get(i) == "Cholecystectomy") startActivity(new Intent(ProceduresList.this, prCholecystectomy.class));
+                if (arrayList.get(i) == "Choledochal Cyst") startActivity(new Intent(ProceduresList.this, prCholedochalCyst.class));
 
             }
         });
