@@ -7,35 +7,34 @@
     tools:context=".SignUp">
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/signUpCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
-        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
         android:text="@string/cancel"
-        android:textSize="20sp"
+        android:textAllCaps="false"
         android:textColor="#66c9eb"
-        />
+        android:textSize="20sp" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/signInLogo"
+        android:id="@+id/signUpLogo"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/logo"
         android:contentDescription="@string/kidmd_logo"
-        />
+        app:srcCompat="@drawable/logo" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/name"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/signInLogo"
+        android:layout_below="@+id/signUpLogo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:ems="10"
