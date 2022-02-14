@@ -10,15 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             android:name=".SignIn"
-=======
+            android:exported="false" />
+        <activity
             android:name=".prDecortication"
->>>>>>> Stashed changes
-=======
-            android:name=".prDecortication"
->>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".prCholedochalCyst"
@@ -43,24 +38,6 @@
             android:exported="false" />
         <activity
             android:name=".Gallbladder"
-            android:exported="false" />
-        <activity
-            android:name=".prCholecystectomy"
-            android:exported="false" />
-        <activity
-            android:name=".prAppendectomy"
-            android:exported="false" />
-        <activity
-            android:name=".prCholecystectomy"
-            android:exported="false" />
-        <activity
-            android:name=".prAppendectomy"
-            android:exported="false" />
-        <activity
-            android:name=".prCholecystectomy"
-            android:exported="false" />
-        <activity
-            android:name=".prAppendectomy"
             android:exported="false" />
         <activity
             android:name=".prCholecystectomy"
