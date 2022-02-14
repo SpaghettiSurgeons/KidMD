@@ -24,8 +24,10 @@ import java.util.ArrayList;
 public class ProceduresList extends AppCompatActivity {
 
     ListView proceduresListView;
+
     EditText procedureSearch;
     private ImageButton backArrow;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class ProceduresList extends AppCompatActivity {
         setContentView(R.layout.activity_procedures_list);
 
         proceduresListView = (ListView) findViewById(R.id.prview);
+
         procedureSearch = findViewById(R.id.prSearch);
 
 
@@ -80,15 +83,19 @@ public class ProceduresList extends AppCompatActivity {
         proceduresListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                //toast to display what item user clicked on
                 Toast.makeText(ProceduresList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
 
                 //open Appendectomy page
                 if (arrayList.get(i) == "Appendectomy") startActivity(new Intent(ProceduresList.this, prAppendectomy.class));
                 if (arrayList.get(i) == "Cholecystectomy") startActivity(new Intent(ProceduresList.this, prCholecystectomy.class));
                 if (arrayList.get(i) == "Choledochal Cyst") startActivity(new Intent(ProceduresList.this, prCholedochalCyst.class));
+                if (arrayList.get(i) == "Decortication") startActivity(new Intent(ProceduresList.this, prDecortication.class));
 
             }
         });
+
 
         procedureSearch.addTextChangedListener(new TextWatcher() {
             @Override

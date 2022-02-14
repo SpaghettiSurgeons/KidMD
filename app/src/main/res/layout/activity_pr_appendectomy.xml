@@ -48,8 +48,7 @@
 
 \nSometimes it can become blocked from mucus being trapped inside. This is dangerous because it can allow bad bacteria to grow and cause infection and inflammation. If not taken out it, can burst and the infection can spread to the belly.\n
 
-\nTo prevent this from happening, a surgery needs to be done to remove the appendix.
-"
+\nTo prevent this from happening, a surgery needs to be done to remove the appendix."
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

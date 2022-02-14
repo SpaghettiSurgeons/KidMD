@@ -10,7 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
             android:name=".SignIn"
+=======
+            android:name=".prDecortication"
+>>>>>>> Stashed changes
+=======
+            android:name=".prDecortication"
+>>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".prCholedochalCyst"
