@@ -27,22 +27,15 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-<<<<<<< Updated upstream
+
     private Button signUp, signIn;
-=======
 
     private TextView register, guest;
     private EditText editTextEmail, editTextPassword;
 
-
-    private Button signIn;
->>>>>>> Stashed changes
 
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
-
-    private TextView register, guest;
-    private EditText editTextEmail, editTextPassword;
 
 
 
