@@ -26,7 +26,7 @@ public class ProceduresList extends AppCompatActivity {
     ListView proceduresListView;
 
     EditText procedureSearch;
-    private ImageButton backArrow;
+    private ImageButton backButton;
 
 
     @Override
@@ -115,8 +115,8 @@ public class ProceduresList extends AppCompatActivity {
         });
 
         //---back arrow button---
-        backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
+        backButton = (ImageButton) findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ProceduresList.this, MainMenu.class));

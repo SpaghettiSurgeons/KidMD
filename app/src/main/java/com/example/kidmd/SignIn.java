@@ -106,7 +106,6 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
                     //if (user.isEmailVerified()) {
                     //Redirect to user profile
                     startActivity(new Intent(SignIn.this, MainMenu.class));
-                    progressBar.setVisibility(View.GONE);
                     //}
                     //else {
                     //user.sendEmailVerification();
@@ -116,8 +115,8 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
                 }
                 else {
                     Toast.makeText(SignIn.this, "Failed to login!", Toast.LENGTH_LONG).show();
-                    progressBar.setVisibility(View.GONE);
                 }
+                progressBar.setVisibility(View.GONE);
             }
         });
 

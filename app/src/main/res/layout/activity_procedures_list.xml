@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProceduresList">
-
+    <include layout="@layout/toolbar"/>
 
     <TextView
         android:id="@+id/proceduresHeading"
@@ -50,7 +50,7 @@
          />
 
     <ImageButton
-        android:id="@+id/backArrow"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_alignParentStart="true"
