@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".bpClavicle"
+            android:exported="false" />
+        <activity
+            android:name=".bpDistalRadius"
+            android:exported="false" />
+        <activity
+            android:name=".bpSpleen"
+            android:exported="false" />
+        <activity
+            android:name=".bpLungs"
+            android:exported="false" />
+        <activity
+            android:name=".bpTonsils"
+            android:exported="false" />
+        <activity
             android:name=".SignIn"
             android:exported="false" />
         <activity
@@ -19,10 +34,10 @@
             android:name=".prCholedochalCyst"
             android:exported="false" />
         <activity
-            android:name=".Liver"
+            android:name=".bpLiver"
             android:exported="false" />
         <activity
-            android:name=".Kidney"
+            android:name=".bpKidney"
             android:exported="false" />
         <activity
             android:name=".Sutures"
@@ -37,7 +52,7 @@
             android:name=".Retractors"
             android:exported="false" />
         <activity
-            android:name=".Gallbladder"
+            android:name=".bpGallbladder"
             android:exported="false" />
         <activity
             android:name=".prCholecystectomy"
@@ -46,10 +61,10 @@
             android:name=".prAppendectomy"
             android:exported="false" />
         <activity
-            android:name=".Brain"
+            android:name=".bpBrain"
             android:exported="false" />
         <activity
-            android:name=".Appendix"
+            android:name=".bpAppendeix"
             android:exported="false" />
         <activity
             android:name=".LocateHospital"

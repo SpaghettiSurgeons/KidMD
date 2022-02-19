@@ -12,23 +12,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class Gallbladder extends AppCompatActivity{
+public class bpBrain extends AppCompatActivity{
 
-    TextView gbDesc;
-    ImageButton gbAudio;
+    TextView brainDesc;
+    ImageButton brainAudio;
     TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallbladder);
+        setContentView(R.layout.activity_bp_brain);
 
-        gbDesc = findViewById(R.id.gbDescView);
-        gbAudio = findViewById(R.id.gbAudio);
+        brainDesc = findViewById(R.id.brainDescView);
+        brainAudio = findViewById(R.id.brainAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.gbTitleView)).setTypeface(baloo);
-        (gbDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.brainTitleView)).setTypeface(baloo);
+        (brainDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -38,14 +38,14 @@ public class Gallbladder extends AppCompatActivity{
                     textToSpeech.setLanguage(Locale.ENGLISH);
                 }
                 else {
-                    Toast.makeText(Gallbladder.this, "Audio Error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(bpBrain.this, "Audio Error", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-        gbAudio.setOnClickListener(new View.OnClickListener(){
+        brainAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(gbDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
+                textToSpeech.speak(brainDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
             }
         });
     }

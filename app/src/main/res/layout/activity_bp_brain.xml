@@ -2,60 +2,61 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audioButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Gallbladder">
-
-    <ImageButton
-        android:id="@+id/gbAudio"
-        android:layout_width="51dp"
-        android:layout_height="51dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59000003"
-        app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
-
-    <TextView
-        android:id="@+id/gbDescView"
-        android:layout_width="320dp"
-        android:layout_height="198dp"
-        android:gravity="center"
-        android:text="@string/the_gallbladder_is_a_sac_that_takes_bile_made_in_the_liver_and_stores_it_the_bile_is_released_to_the_small_intestines_to_help_digest_food"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.24000001" />
-
-    <TextView
-        android:id="@+id/gbTitleView"
-        android:layout_width="252dp"
-        android:layout_height="81dp"
-        android:gravity="center"
-        android:text="Gallbladder"
-        android:textColor="#219BA3"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".bpBrain">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="256dp"
-        android:layout_height="237dp"
+        android:id="@+id/imageView"
+        android:layout_width="268dp"
+        android:layout_height="232dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.37"
-        app:srcCompat="@drawable/gallbladder" />
+        app:srcCompat="@drawable/cartoon_brain_transparent_background_7" />
+
+    <TextView
+        android:id="@+id/brainDescView"
+        android:layout_width="293dp"
+        android:layout_height="171dp"
+        android:gravity="center"
+        android:text="@string/a_brain_is_the_control_center_of_our_body_it_controls_body_s_movements_and_activities_and_is_the_center_of_thought_memory_and_feelings"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/brainTitleView"
+        android:layout_width="136dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:text="@string/brain"
+        android:textColor="#219BA3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/brainAudio"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

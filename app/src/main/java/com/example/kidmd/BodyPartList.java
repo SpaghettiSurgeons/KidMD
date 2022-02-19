@@ -15,7 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class BodyPartList extends AppCompatActivity {
@@ -37,14 +37,14 @@ public class BodyPartList extends AppCompatActivity {
 
         arrayList.add("Appendix");
         arrayList.add("Brain");
+        arrayList.add("Clavicle");
+        arrayList.add("Distal Radius");
         arrayList.add("Gallbladder");
         arrayList.add("Kidney");
         arrayList.add("Liver");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
+        arrayList.add("Lungs");
+        arrayList.add("Spleen");
+        arrayList.add("Tonsils");
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayList){
             @NonNull
@@ -75,19 +75,34 @@ public class BodyPartList extends AppCompatActivity {
                 //open body part activity
                 switch (arrayList.get(i)) {
                     case "Appendix":
-                        startActivity(new Intent(BodyPartList.this, Appendix.class));
+                        startActivity(new Intent(BodyPartList.this, bpAppendeix.class));
                         break;
                     case "Brain":
-                        startActivity(new Intent(BodyPartList.this, Brain.class));
+                        startActivity(new Intent(BodyPartList.this, bpBrain.class));
+                        break;
+                    case "Clavicle":
+                        startActivity(new Intent(BodyPartList.this, bpClavicle.class));
                         break;
                     case "Gallbladder":
-                        startActivity(new Intent(BodyPartList.this, Gallbladder.class));
+                        startActivity(new Intent(BodyPartList.this, bpGallbladder.class));
                         break;
                     case "Kidney":
-                        startActivity(new Intent(BodyPartList.this, Kidney.class));
+                        startActivity(new Intent(BodyPartList.this, bpKidney.class));
                         break;
                     case "Liver":
-                        startActivity(new Intent(BodyPartList.this, Liver.class));
+                        startActivity(new Intent(BodyPartList.this, bpLiver.class));
+                        break;
+                    case "Tonsils":
+                        startActivity(new Intent(BodyPartList.this, bpTonsils.class));
+                        break;
+                    case "Lungs":
+                        startActivity(new Intent(BodyPartList.this, bpLungs.class));
+                        break;
+                    case "Spleen":
+                        startActivity(new Intent(BodyPartList.this, bpSpleen.class));
+                        break;
+                    case "Distal Radius":
+                        startActivity(new Intent(BodyPartList.this, bpDistalRadius.class));
                         break;
                 }
 

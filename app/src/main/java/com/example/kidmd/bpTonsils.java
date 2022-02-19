@@ -6,41 +6,47 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.ImageButton;
 import android.speech.tts.TextToSpeech;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class Appendix extends AppCompatActivity {
+public class bpTonsils extends AppCompatActivity{
 
-    TextView appendixDesc;
-    ImageButton appendixAudio;
+    TextView tonsilDesc;
+    ImageButton tonsilAudio;
     TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_appendix);
+        setContentView(R.layout.activity_bp_tonsils);
 
-        appendixDesc = findViewById(R.id.appendixDescView);
-        appendixAudio = findViewById(R.id.appendixAudio);
+        tonsilDesc = findViewById(R.id.tonsilDescView);
+        tonsilAudio = findViewById(R.id.tonsilAudio);
 
+        //Set font to Baloo
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.appendixTitleView)).setTypeface(baloo);
-        (appendixDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.tonsilTitleView)).setTypeface(baloo);
+        (tonsilDesc).setTypeface(baloo);
 
+        //Set up Text to Speech
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int i) {
                 if (i!= TextToSpeech.ERROR){
                     //set language to US
-                    textToSpeech.setLanguage(Locale.US);
+                    textToSpeech.setLanguage(Locale.ENGLISH);
                 }
             }
         });
-        appendixAudio.setOnClickListener(new View.OnClickListener(){
+
+        //TTS button listener
+        tonsilAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(appendixDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(tonsilDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
             }
         });
     }

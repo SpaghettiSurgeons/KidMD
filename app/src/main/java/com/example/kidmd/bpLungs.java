@@ -1,6 +1,5 @@
 package com.example.kidmd;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -13,23 +12,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class Brain extends AppCompatActivity{
+public class bpLungs extends AppCompatActivity{
 
-    TextView brainDesc;
-    ImageButton brainAudio;
+    TextView lungDesc;
+    ImageButton lungAudio;
     TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_brain);
+        setContentView(R.layout.activity_bp_lungs);
 
-        brainDesc = findViewById(R.id.brainDescView);
-        brainAudio = findViewById(R.id.brainAudio);
+        lungDesc = findViewById(R.id.lungDescView);
+        lungAudio = findViewById(R.id.lungAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.brainTitleView)).setTypeface(baloo);
-        (brainDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.lungTitleView)).setTypeface(baloo);
+        (lungDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -38,15 +37,12 @@ public class Brain extends AppCompatActivity{
                     //set language to US
                     textToSpeech.setLanguage(Locale.ENGLISH);
                 }
-                else {
-                    Toast.makeText(Brain.this, "Audio Error", Toast.LENGTH_SHORT).show();
-                }
             }
         });
-        brainAudio.setOnClickListener(new View.OnClickListener(){
+        lungAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(brainDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
+                textToSpeech.speak(lungDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
             }
         });
     }

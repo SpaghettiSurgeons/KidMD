@@ -6,10 +6,22 @@
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/rounded_corner.xml" value="0.3828125" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_clavicle.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_distal_radius.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_lungs.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_spleen.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_tonsils.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_brain.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_forceps.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_kidney.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_liver.xml" value="0.25729166666666664" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_main.xml" value="0.28306159420289856" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_menu.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_pr_cholecystectomy.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_procedures_list.xml" value="0.25729166666666664" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_profile.xml" value="0.28306159420289856" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_register_user.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/toolbar.xml" value="0.25729166666666664" />
         <entry key="..\:/Users/ryani/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_main.xml" value="0.13269927536231885" />
         <entry key="..\:/Users/ryani/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_profile.xml" value="0.3229166666666667" />
         <entry key="..\:/Users/ryani/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_register_user.xml" value="0.24547101449275363" />
