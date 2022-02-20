@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".HospitalInteract"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalMenu"
+            android:exported="false" />
+        <activity
             android:name=".bpClavicle"
             android:exported="false" />
         <activity

@@ -58,7 +58,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 startActivity(new Intent(MainMenu.this, ProceduresList.class));
                 break;
             case R.id.hospitalbutton:
-                startActivity(new Intent(this, LocateHospital.class));
+                startActivity(new Intent(this, HospitalMenu.class));
                 break;
             case R.id.toolsbutton:
                 startActivity(new Intent(MainMenu.this, ToolsList.class));
