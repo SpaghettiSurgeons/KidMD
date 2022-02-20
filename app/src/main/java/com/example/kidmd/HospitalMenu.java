@@ -29,7 +29,7 @@ public class HospitalMenu extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.locateButton:
-                startActivity(new Intent(HospitalMenu.this, LocateHospital.class));
+                startActivity(new Intent(HospitalMenu.this, MapsActivity.class));
                 break;
             case R.id.interactButton:
                 startActivity(new Intent(HospitalMenu.this, HospitalInteract.class));
