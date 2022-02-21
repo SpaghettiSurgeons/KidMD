@@ -10,4 +10,7 @@
     <string name="email">Correo electrónico</string>
     <string name="password">Contraseña</string>
     <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+
+    <string name="string_button">Back Button</string>
+    <string name="search_button">Botón de búsqueda</string>
 </resources>

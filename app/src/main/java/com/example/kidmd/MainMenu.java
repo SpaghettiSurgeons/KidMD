@@ -9,6 +9,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageButton;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -16,6 +19,8 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
     private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton;
+    private AppCompatTextView title;
+    private AppCompatImageView profile;
 
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -43,9 +48,18 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         logoutbutton= (AppCompatButton) findViewById(R.id.logout);
         logoutbutton.setOnClickListener(this);
 
-        //Only show logout button if user is logged in
+        // Visibility for toolbar
+        title = (AppCompatTextView) findViewById(R.id.appTitle_toolbar);
+        title.setVisibility(View.VISIBLE);
+
+        profile = (AppCompatImageView) findViewById(R.id.profile_button);
+        profile.setOnClickListener(this);
+
+
+        //Only show logout button and profile if user is logged in
         if (FirebaseAuth.getInstance().getCurrentUser() == null) {
             logoutbutton.setVisibility(View.GONE);
+            profile.setVisibility(View.VISIBLE);
         }
 
 
