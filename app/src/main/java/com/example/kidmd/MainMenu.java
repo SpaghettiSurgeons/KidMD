@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton;
+    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profilebutton;
 
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -42,6 +42,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         bodypartbutton.setOnClickListener(this);
         logoutbutton= (AppCompatButton) findViewById(R.id.logout);
         logoutbutton.setOnClickListener(this);
+        profilebutton= (AppCompatButton) findViewById(R.id.profilebutton);
+        profilebutton.setOnClickListener(this);
 
         //Only show logout button if user is logged in
         if (FirebaseAuth.getInstance().getCurrentUser() == null) {
@@ -69,6 +71,9 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(MainMenu.this, MainActivity.class));
+                break;
+            case R.id.profilebutton:
+                startActivity(new Intent(MainMenu.this, ProfileActivity.class));
                 break;
         }
     }
