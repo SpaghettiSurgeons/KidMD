@@ -16,6 +16,21 @@
     <string name="string_button">Back Button</string>
     <string name="search_button">Search Button</string>
 
+    <string name="anatomy">Anatomy</string>
+    <string name="anatomy_button">Anatomy button</string>
+    <string name="procedures">Procedures</string>
+    <string name="procedures_button">Procedures button</string>
+    <string name="Tools">Tools</string>
+    <string name="tools_button">Tools button</string>
+    <string name="profile">Profile</string>
+    <string name="profile_button">Profile button</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_button">Notifications button</string>
+    <string name="additional_resources">Additional Resources</string>
+    <string name="additional_resources_button">Additional Resources button</string>
+    <string name="hospital">Hospital</string>
+    <string name="hospital_button">Hospital button</string>
+
     <string name="a_brain_is_the_control_center_of_our_body_it_controls_body_s_movements_and_activities_and_is_the_center_of_thought_memory_and_feelings">A brain is the control center of the body. It controls the body’s movements and activities. It is also the center of thought, memory, and feelings.</string>
     <string name="brain">Brain</string>
     <string name="the_appendix_is_a_thin_tube_attached_near_the_meeting_point_of_the_small_and_large_intestine_it_s_function_is_still_under_study_but_it_is_not_necessary_to_health">The appendix is a thin tube attached near the meeting point of the small and large intestine. It\'s function is still under study but it is not necessary to health.</string>

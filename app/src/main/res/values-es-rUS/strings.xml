@@ -13,4 +13,19 @@
 
     <string name="string_button">Back Button</string>
     <string name="search_button">Botón de búsqueda</string>
+
+    <string name="anatomy">Anatomia</string>
+    <string name="anatomy_button">Boton de anatomia</string>
+    <string name="procedures">Procedimientos</string>
+    <string name="procedures_button">Buton de procedimientos</string>
+    <string name="Tools">Herramientas</string>
+    <string name="tools_button">Boton de herramientas</string>
+    <string name="profile">Perfil</string>
+    <string name="profile_button">Boton de perfil</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="notifications_button">Boton de notificaciones</string>
+    <string name="additional_resources">Recursos adicionales</string>
+    <string name="additional_resources_button">Boton de recursos adicionales</string>
+    <string name="hospital">Hospital</string>
+    <string name="hospital_button">Buton de hospital</string>
 </resources>
