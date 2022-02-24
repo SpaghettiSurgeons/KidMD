@@ -5,11 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 
@@ -18,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton;
+    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profileSearchButton;
     private AppCompatTextView title;
     private AppCompatImageView profile;
 
@@ -47,6 +45,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         bodypartbutton.setOnClickListener(this);
         logoutbutton= (AppCompatButton) findViewById(R.id.logout);
         logoutbutton.setOnClickListener(this);
+        profileSearchButton = (AppCompatButton) findViewById(R.id.profilesearchbutton);
+        profileSearchButton.setOnClickListener(this);
 
         // Visibility for toolbar
         title = (AppCompatTextView) findViewById(R.id.appTitle_toolbar);
@@ -83,6 +83,9 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(MainMenu.this, MainActivity.class));
+                break;
+            case R.id.profilesearchbutton:
+                startActivity(new Intent(MainMenu.this, ProfileSearch.class));
                 break;
         }
     }
