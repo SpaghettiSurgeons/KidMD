@@ -6,7 +6,7 @@
     <string name="cancel">Cancelar</string>
 
     <string name="name">Nombre</string>
-    <string name="age">Ańos</string>
+    <string name="age">Años</string>
     <string name="email">Correo electrónico</string>
     <string name="password">Contraseña</string>
     <string name="forgot_password">¿Olvidaste tu contraseña?</string>
@@ -15,17 +15,65 @@
     <string name="search_button">Botón de búsqueda</string>
 
     <string name="anatomy">Anatomia</string>
-    <string name="anatomy_button">Boton de anatomia</string>
+    <string name="anatomy_button">Botón de anatomia</string>
     <string name="procedures">Procedimientos</string>
-    <string name="procedures_button">Buton de procedimientos</string>
+    <string name="procedures_button">Botón de procedimientos</string>
     <string name="Tools">Herramientas</string>
-    <string name="tools_button">Boton de herramientas</string>
+    <string name="tools_button">Botón de herramientas</string>
     <string name="profile">Perfil</string>
-    <string name="profile_button">Boton de perfil</string>
+    <string name="profile_button">Botón de perfil</string>
     <string name="notifications">Notificaciones</string>
-    <string name="notifications_button">Boton de notificaciones</string>
+    <string name="notifications_button">Botón de notificaciones</string>
     <string name="additional_resources">Recursos adicionales</string>
-    <string name="additional_resources_button">Boton de recursos adicionales</string>
+    <string name="additional_resources_button">Botón de recursos adicionales</string>
     <string name="hospital">Hospital</string>
-    <string name="hospital_button">Buton de hospital</string>
+    <string name="hospital_button">Botón de hospital</string>
+
+    <!--Body Parts-->
+    <string name="appendix">Apéndice</string>
+    <string name="appendix_description">El apéndice es un tubo delgado que se encuentra cercada del punto donde se unen el intestino delgado y el grueso. Su función aún está siendo estudiada pero no es nesesaria para la salud.</string>
+    <string name="brain">Cerebro</string>
+    <string name="brain_description">El cerebro es el centro de control del cuerpo humano. Controla las actividades y los movimientos del cuerpo. También es el centro del pensamiento, la memoria, y los sentimientos.</string>
+    <string name="clavicle">Clavícula</string>
+    <string name="clavicle_description">La clavícula es un hueso que conecta el esternón con el hombro. Es uno de los huesos más comunes de romperse.</string>
+    <string name="distalRadius">Radio Distal</string>
+    <string name="distalRadius_description">El radio distal es la parte final de los huesos del brazo que se conectan a la muñeca. Las fracturas en esta areá son muy comunes.</string>
+    <string name="gallbladder">Vesícula Biliar</string>
+    <string name="gallbladder_description">La vesícula biliar es un saco que conserva la bilis producida en el higado. El bilis se libera al intestino delgado para ayudar con la digestión.</string>
+    <string name="kidneys">Riñones</string>
+    <string name="kidneys_description">Los riñones son un par de organos que eliminan los desechos del cuerpo al filtrar la sangre. Los desechos se convierten en orina y se envían a la vejiga.</string>
+    <string name="liver">Hígado</string>
+    <string name="liver_description">El hígado es un órgano que filtra la sangre que viene del tracto digestivo. Descompone las toxinas de los productos químicos y las drogas. También produce proteinas importantes que el cuerpo nesesita..</string>
+    <string name="lungs">Pulmones</string>
+    <string name="lungs_description">Los pulmones son dos órganos en el pecho que te ayudan a respirar. Toman el oxígeno y lo esparcen por la sangre.</string>
+    <string name="spleen">Bazo</string>
+    <string name="spleen_description">El bazo es un órgano cerca del estomago. Recicla glóbulos viejos, conserva los glóbulos blancos, y filtra la sangre.</string>
+    <string name="tonsils">Anginas</string>
+    <string name="tonsils_description">Las anginas son las dos bolas de tejido en la parte posterior de la garganta. Pueden evitar que las bacterias y los virus entren al cuerpo y crean glóbulos blancos para combatirlos.</string>
+
+
+    <!--Surgical Tools-->
+    <string name="diathermy">Diathermy</string>
+    <string name="diathermy_description">Diathermy is an electrosurgical tool, meaning it needs electricity to do its job. It can be used to cut into parts of your body that are making you sick, or to stop blood vessels from bleeding.</string>
+    <string name="forceps">Forceps</string>
+    <string name="forceps_description">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they don\'t hurt you.</string>
+    <string name="retractors">Retractors</string>
+    <string name="retractors_description">While forceps are used to pull back tissue, retractors are used to hold tissue in place, making it easier for surgeons to see and access the places they need to work on.</string>
+    <string name="suctionTube">Suction Tube</string>
+    <string name="suctionTube_description">Suction tubes are used by surgeons to remove harmful stuff from your body during surgery, or to remove stuff that makes it hard for surgeons to see to do their work.</string>
+    <string name="sutures">Sutures</string>
+    <string name="sutures_description">Sutures are like thread. In the same way thread holds your clothes together, sutures hold your skin together after doctors have fixed what\'s making you sick. Some even dissolve on their own, without having to be removed.</string>
+
+
+    <!--Surgical Procedures-->
+    <string name="why_needed">WHY DO YOU NEED IT?</string>
+    <string name="appendectomy">Appendectomy</string>
+    <string name="appendectomy_description">The appendix is a small pouch on the lower right side of your abdomen that is attached to your large intestine.\n \nSometimes it can become blocked from mucus being trapped inside. This is dangerous because it can allow bad bacteria to grow and cause infection and inflammation. If not taken out it, can burst and the infection can spread to the belly.\n \nTo prevent this from happening, a surgery needs to be done to remove the appendix.</string>
+    <string name="cholecystectomy">Cholecystectomy</string>
+    <string name="cholecystectomy_description">Sometimes the gallbladder can form small harmful stones, known as gallstones, inside the bladder. This is dangerous because gallstones can block digestive fluids from exiting the bladder. This can cause a lot of pain and infection if left untreated. \n\nTo cure this, a surgery is needed to remove the gallbladder.</string>
+    <string name="choledochalCyst">Choledochal Cyst</string>
+    <string name="choledochalCyst_description">Choledochal cyst is a problem that occurs in the tubes connecting from the liver to the gallbladder. This tube helps transport bile, which is a liquid that helps break down fats, from the liver to the gallbladder and to the small intestine. Sometimes this tube can get bigger than normal and cause liver problems. The cyst can mess up or block the flow of bile from the liver to the small intestine and cause inflammation and infection in the tubes. If surgery is not done to remove the cyst, the liver can get damaged and not work well.</string>
+    <string name="decortication">Decortication</string>
+    <string name="decortation_description">Sometimes a fibrous tissue, also known as pleura, can form on the lung, chest wall or the diaphragm which is not normal. Usually there is a small space between the lungs and the chest containing a thin layer of fluid. It is important for this area to remain moist and free so that the lung can expand and deflate normally when you breathe. If this area gets blocked with tissue, then it becomes hard for the lung to expand and deflate normally which can create breathing problems. With the help of surgery, this harmful tissue can be removed and the lungs can be saved.</string>
+
 </resources>

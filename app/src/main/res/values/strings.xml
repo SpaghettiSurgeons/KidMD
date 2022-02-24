@@ -30,28 +30,55 @@
     <string name="additional_resources_button">Additional Resources button</string>
     <string name="hospital">Hospital</string>
     <string name="hospital_button">Hospital button</string>
-
-    <string name="a_brain_is_the_control_center_of_our_body_it_controls_body_s_movements_and_activities_and_is_the_center_of_thought_memory_and_feelings">A brain is the control center of the body. It controls the body’s movements and activities. It is also the center of thought, memory, and feelings.</string>
-    <string name="brain">Brain</string>
-    <string name="the_appendix_is_a_thin_tube_attached_near_the_meeting_point_of_the_small_and_large_intestine_it_s_function_is_still_under_study_but_it_is_not_necessary_to_health">The appendix is a thin tube attached near the meeting point of the small and large intestine. It\'s function is still under study but it is not necessary to health.</string>
-    <string name="the_gallbladder_is_a_sac_that_takes_bile_made_in_the_liver_and_stores_it_the_bile_is_released_to_the_small_intestines_to_help_digest_food">The gallbladder is a sac that takes bile made in the liver and stores it. The bile is released to the small intestines to help digest food.</string>
-    <string name="forceps_description">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they don\'t hurt you.</string>
-    <string name="forceps">Forceps</string>
-    <string name="retractors_description">While forceps are used to pull back tissue, retractors are used to hold tissue in place, making it easier for surgeons to see and access the places they need to work on.</string>
-    <string name="retractors">Retractors</string>
-    <string name="suctionTube_description">Suction tubes are used by surgeons to remove harmful stuff from your body during surgery, or to remove stuff that makes it hard for surgeons to see to do their work.</string>
-    <string name="suctionTube">Suction Tube</string>
-    <string name="diathermy_description">Diathermy is an electrosurgical tool, meaning it needs electricity to do its job. It can be used to cut into parts of your body that are making you sick, or to stop blood vessels from bleeding.</string>
-    <string name="diathermy">Diathermy</string>
-    <string name="sutures_description">Sutures are like thread. In the same way thread holds your clothes together, sutures hold your skin together after doctors have fixed what\'s making you sick. Some even dissolve on their own, without having to be removed.</string>
-    <string name="sutures">Sutures</string>
-    <string name="they_kidneys_are_a_pair_of_organs_that_remove_waste_from_the_body_by_filtering_the_blood_the_waste_gets_turned_into_urine_and_sent_down_to_the_bladder">The kidneys are a pair of organs that remove waste from the body by filtering the blood. The waste gets turned into urine and sent down to the bladder.</string>
-    <string name="the_liver_is_an_organ_that_filters_the_blood_that_comes_from_the_digestive_track_it_breaks_down_the_toxins_from_chemicals_and_drugs_it_also_makes_important_proteins_the_body_needs">The liver is an organ that filters the blood that comes from the digestive track. It breaks down the toxins from chemicals and drugs. It also makes important proteins the body needs.</string>
     <string name="guest">Continue as guest</string>
-    <string name="tonsils_are_the_two_balls_of_tissue_at_the_back_of_the_throat_they_can_stop_bacteria_and_viruses_from_entering_the_body_and_create_white_blood_cells_to_fight_them">Tonsils are the two balls of tissue at the back of the throat. They can stop bacteria and viruses from entering the body and create white blood cells to fight them.</string>
-    <string name="lungs_are_two_organs_in_the_chest_that_help_you_breathe_they_take_in_the_oxygen_sent_to_them_and_spread_it_throughout_the_blood">Lungs are two organs in the chest that help you breathe. They take in the oxygen sent to them and spread it throughout the blood.</string>
-    <string name="the_spleen_is_an_organ_near_the_stomach_it_recycles_old_blood_cells_stores_white_blood_cells_and_filters_the_blood">The spleen is an organ near the stomach. It recycles old blood cells, stores white blood cells, and filters the blood.</string>
-    <string name="the_clavicle_also_called_the_collarbone_is_a_bone_that_connects_the_sternum_to_the_shoulder_it_is_one_of_the_most_common_bones_to_break">The clavicle, also called the collarbone, is a bone that connects the sternum to the shoulder. It is one of the most common bones to break.</string>
     <string name="title_activity_maps">MapsActivity</string>
+
+    <!--Body Parts-->
+    <string name="appendix">Appendix</string>
+    <string name="appendix_description">The appendix is a thin tube attached near the meeting point of the small and large intestine. Its function is still under study but it is not necessary to health.</string>
+    <string name="brain">Brain</string>
+    <string name="brain_description">A brain is the control center of the body. It controls the body’s movements and activities. It is also the center of thought, memory, and feelings.</string>
+    <string name="clavicle">Clavicle</string>
+    <string name="clavicle_description">The clavicle, also called the collarbone, is a bone that connects the sternum to the shoulder. It is one of the most common bones to break.</string>
+    <string name="distalRadius">Distal Radius</string>
+    <string name="distalRadius_description">The distal radius is the end part of the arm bones that are connected to the wrist. Fractures to this area are very common.</string>
+    <string name="gallbladder">Gallbladder</string>
+    <string name="gallbladder_description">The gallbladder is a sac that takes bile made in the liver and stores it. The bile is released to the small intestines to help digest food.</string>
+    <string name="kidneys">Kidneys</string>
+    <string name="kidneys_description">The kidneys are a pair of organs that remove waste from the body by filtering the blood. The waste gets turned into urine and sent down to the bladder.</string>
+    <string name="liver">Liver</string>
+    <string name="liver_description">The liver is an organ that filters the blood that comes from the digestive track. It breaks down the toxins from chemicals and drugs. It also makes important proteins the body needs.</string>
+    <string name="lungs">Lungs</string>
+    <string name="lungs_description">The lungs are two organs in the chest that help you breathe. They take in the oxygen sent to them and spread it throughout the blood.</string>
+    <string name="spleen">Spleen</string>
+    <string name="spleen_description">The spleen is an organ near the stomach. It recycles old blood cells, stores white blood cells, and filters the blood.</string>
+    <string name="tonsils">Tonsils</string>
+    <string name="tonsils_description">Tonsils are the two balls of tissue at the back of the throat. They can stop bacteria and viruses from entering the body and create white blood cells to fight them.</string>
+
+
+    <!--Surgical Tools-->
+    <string name="diathermy">Diathermy</string>
+    <string name="diathermy_description">Diathermy is an electrosurgical tool, meaning it needs electricity to do its job. It can be used to cut into parts of your body that are making you sick, or to stop blood vessels from bleeding.</string>
+    <string name="forceps">Forceps</string>
+    <string name="forceps_description">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they don\'t hurt you.</string>
+    <string name="retractors">Retractors</string>
+    <string name="retractors_description">While forceps are used to pull back tissue, retractors are used to hold tissue in place, making it easier for surgeons to see and access the places they need to work on.</string>
+    <string name="suctionTube">Suction Tube</string>
+    <string name="suctionTube_description">Suction tubes are used by surgeons to remove harmful stuff from your body during surgery, or to remove stuff that makes it hard for surgeons to see to do their work.</string>
+    <string name="sutures">Sutures</string>
+    <string name="sutures_description">Sutures are like thread. In the same way thread holds your clothes together, sutures hold your skin together after doctors have fixed what\'s making you sick. Some even dissolve on their own, without having to be removed.</string>
+
+
+    <!--Surgical Procedures-->
+    <string name="why_needed">WHY DO YOU NEED IT?</string>
+    <string name="appendectomy">Appendectomy</string>
+    <string name="appendectomy_description">The appendix is a small pouch on the lower right side of your abdomen that is attached to your large intestine.\n \nSometimes it can become blocked from mucus being trapped inside. This is dangerous because it can allow bad bacteria to grow and cause infection and inflammation. If not taken out it, can burst and the infection can spread to the belly.\n \nTo prevent this from happening, a surgery needs to be done to remove the appendix.</string>
+    <string name="cholecystectomy">Cholecystectomy</string>
+    <string name="cholecystectomy_description">Sometimes the gallbladder can form small harmful stones, known as gallstones, inside the bladder. This is dangerous because gallstones can block digestive fluids from exiting the bladder. This can cause a lot of pain and infection if left untreated. \n\nTo cure this, a surgery is needed to remove the gallbladder.</string>
+    <string name="choledochalCyst">Choledochal Cyst</string>
+    <string name="choledochalCyst_description">Choledochal cyst is a problem that occurs in the tubes connecting from the liver to the gallbladder. This tube helps transport bile, which is a liquid that helps break down fats, from the liver to the gallbladder and to the small intestine. Sometimes this tube can get bigger than normal and cause liver problems. The cyst can mess up or block the flow of bile from the liver to the small intestine and cause inflammation and infection in the tubes. If surgery is not done to remove the cyst, the liver can get damaged and not work well.</string>
+    <string name="decortication">Decortication</string>
+    <string name="decortation_description">Sometimes a fibrous tissue, also known as pleura, can form on the lung, chest wall or the diaphragm which is not normal. Usually there is a small space between the lungs and the chest containing a thin layer of fluid. It is important for this area to remain moist and free so that the lung can expand and deflate normally when you breathe. If this area gets blocked with tissue, then it becomes hard for the lung to expand and deflate normally which can create breathing problems. With the help of surgery, this harmful tissue can be removed and the lungs can be saved.</string>
+
 
 </resources>
