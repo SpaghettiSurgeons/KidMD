@@ -23,24 +23,24 @@
     <TextView
         android:id="@+id/diathermyDescView"
         android:layout_width="293dp"
-        android:layout_height="171dp"
+        android:layout_height="180dp"
         android:gravity="center"
         android:text="@string/diathermy_description"
-        android:textSize="15sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.30" />
 
     <TextView
         android:id="@+id/diathermyTitleView"
-        android:layout_width="136dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:gravity="center"
         android:text="@string/diathermy"
         android:textColor="#219BA3"
-        android:textSize="26sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -10,7 +10,7 @@
         android:id="@+id/Cholecystectomy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cholecystectomy"
+        android:text="@string/cholecystectomy"
         android:textColor="#219BA3"
         android:textSize="37sp"
         android:textStyle="bold"
@@ -26,7 +26,7 @@
         android:id="@+id/prCholTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WHY DO YOU NEED IT?"
+        android:text="@string/why_needed"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@id/prCholDesc"
@@ -44,9 +44,7 @@
         android:layout_height="283dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Sometimes the gallbladder can form small harmful stones, known as gallstones, inside the bladder. This is dangerous because gallstones can block digestive fluids from exiting the bladder. This can cause a lot of pain and infection if left untreated.
-\n\nTo cure this, a surgery is needed to remove the gallbladder.
-"
+        android:text="@string/cholecystectomy_description"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

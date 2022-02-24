@@ -6,7 +6,7 @@
     <string name="cancel">Cancelar</string>
 
     <string name="name">Nombre</string>
-    <string name="age">Ańos</string>
+    <string name="age">Años</string>
     <string name="email">Correo electrónico</string>
     <string name="password">Contraseña</string>
     <string name="forgot_password">¿Olvidaste tu contraseña?</string>
@@ -15,17 +15,25 @@
     <string name="search_button">Botón de búsqueda</string>
 
     <string name="anatomy">Anatomia</string>
-    <string name="anatomy_button">Boton de anatomia</string>
+    <string name="anatomy_button">Botón de anatomia</string>
     <string name="procedures">Procedimientos</string>
-    <string name="procedures_button">Buton de procedimientos</string>
+    <string name="procedures_button">Botón de procedimientos</string>
     <string name="Tools">Herramientas</string>
-    <string name="tools_button">Boton de herramientas</string>
+    <string name="tools_button">Botón de herramientas</string>
     <string name="profile">Perfil</string>
-    <string name="profile_button">Boton de perfil</string>
+    <string name="profile_button">Botón de perfil</string>
     <string name="notifications">Notificaciones</string>
-    <string name="notifications_button">Boton de notificaciones</string>
+    <string name="notifications_button">Botón de notificaciones</string>
     <string name="additional_resources">Recursos adicionales</string>
-    <string name="additional_resources_button">Boton de recursos adicionales</string>
+    <string name="additional_resources_button">Botón de recursos adicionales</string>
     <string name="hospital">Hospital</string>
-    <string name="hospital_button">Buton de hospital</string>
+    <string name="hospital_button">Botón de hospital</string>
+
+    <!--Body Parts-->
+    <string name="appendix">Appendix</string>
+    <string name="appendix_description">The appendix is a thin tube attached near the meeting point of the small and large intestine. Its function is still under study but it is not necessary to health.</string>
+    <string name="brain">Cerebro</string>
+    <string name="brain_description">El cerebro es el centro de control del cuerpo humano. Controla las actividades y los movimientos del cuerpo. También es el centro del pensamiento, la memoria, y los sentimientos.</string>
+
+
 </resources>

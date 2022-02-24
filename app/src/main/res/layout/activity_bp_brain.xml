@@ -24,7 +24,7 @@
         android:layout_width="293dp"
         android:layout_height="171dp"
         android:gravity="center"
-        android:text="@string/a_brain_is_the_control_center_of_our_body_it_controls_body_s_movements_and_activities_and_is_the_center_of_thought_memory_and_feelings"
+        android:text="@string/brain_description"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

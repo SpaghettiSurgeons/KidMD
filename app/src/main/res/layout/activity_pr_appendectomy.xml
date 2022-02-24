@@ -10,25 +10,27 @@
         android:id="@+id/Appendectomy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Appendectomy"
+        android:text="@string/appendectomy"
         android:textColor="#219BA3"
         android:textSize="37sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033" />
+        app:layout_constraintVertical_bias="0.040" />
 
     <TextView
         android:id="@+id/prAppendixTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WHY DO YOU NEED IT?"
+        android:text="@string/why_needed"
         android:textColor="#000000"
         android:textSize="24sp"
+
         app:layout_constraintBottom_toTopOf="@id/prAppendixDesc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
@@ -44,11 +46,7 @@
         android:layout_height="296dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="The appendix is a small pouch on the lower right side of your abdomen that is attached to your large intestine.\n
-
-\nSometimes it can become blocked from mucus being trapped inside. This is dangerous because it can allow bad bacteria to grow and cause infection and inflammation. If not taken out it, can burst and the infection can spread to the belly.\n
-
-\nTo prevent this from happening, a surgery needs to be done to remove the appendix."
+        android:text="@string/appendectomy_description"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
