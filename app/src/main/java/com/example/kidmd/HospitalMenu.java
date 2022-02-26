@@ -1,5 +1,6 @@
 package com.example.kidmd;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
@@ -15,6 +16,9 @@ public class HospitalMenu extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_menu);
+
+        //lock orientation to portrait
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         locateButton = (AppCompatButton) findViewById(R.id.locateButton);
         locateButton.setOnClickListener(this);

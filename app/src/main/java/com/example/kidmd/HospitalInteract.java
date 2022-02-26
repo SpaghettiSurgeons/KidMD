@@ -47,7 +47,6 @@ public class HospitalInteract extends AppCompatActivity {
     public void seeBed(){
         dialogueBuilder = new AlertDialog.Builder(this);
         final View bedPopUpView = getLayoutInflater().inflate(R.layout.activity_hr_bed, null);
-
         dialogueBuilder.setView(bedPopUpView);
         dialog = dialogueBuilder.create();
         dialog.show();
