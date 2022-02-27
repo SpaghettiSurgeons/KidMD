@@ -30,7 +30,8 @@
         <entry key="app/src/main/res/layout/activity_pr_biliary_atresia.xml" value="0.2076923076923077" />
         <entry key="app/src/main/res/layout/activity_pr_cholecystectomy.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_pr_cholecystectomy2.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_pr_choledochal_cyst.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pr_choledochal_cyst.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_pr_choledochal_cyst2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_pr_decortication.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_procedures_list.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1802536231884058" />

@@ -4,6 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".prCholedochalCyst2">
+    tools:context=".prAppendectomy">
+
+    <TextView
+        android:id="@+id/choledochalCyst"
+        android:layout_width="320dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        android:text="Choledochal Cyst Removal"
+        android:gravity="center"
+        android:textColor="#219BA3"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prCholCystTitle"
+        android:layout_width="265dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="WHAT WILL HAPPEN DURING SURGERY?"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cholCystPic2" />
+
+    <TextView
+        android:id="@+id/prCholCystDesc"
+        android:layout_width="317dp"
+        android:layout_height="318dp"
+        android:layout_marginTop="20dp"
+        android:text="You will go to sleep. The doctor will make small cuts near your belly button. They may put a camera inside to see your organs inside. \n\nThe doctor puts some gas in your belly so they can see your organs better. Then they will use some special tools to remove the cyst from the tube. The doctor will re-build the tube by using a small section of the intestine.\n\nNow everything will be good and the doctor will close your belly and you will wake up.
+"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prCholCystTitle" />
+
+    <ImageView
+        android:id="@+id/cholCystPic2"
+        android:layout_width="303dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choledochalCyst"
+        app:srcCompat="@drawable/cholcystpic2" />
+
+    <ImageButton
+        android:id="@+id/cholCystPage2Next"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prCholCystDesc"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/grayed_right_arrow" />
+
+    <ImageButton
+        android:id="@+id/cholCystPage2Back"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prCholCystDesc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/green_left_arrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
