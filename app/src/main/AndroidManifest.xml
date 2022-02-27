@@ -14,9 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".hrBPM"
+            android:exported="false" />
+        <activity
             android:name=".ProfileSearch"
             android:exported="false"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -86,6 +89,9 @@
         <activity
             android:name=".bpBrain"
             android:exported="false" />
+        <activity
+            android:name=".hrBed"
+            android:theme="@style/dialog_theme" />
         <activity
             android:name=".bpAppendeix"
             android:exported="false" />
