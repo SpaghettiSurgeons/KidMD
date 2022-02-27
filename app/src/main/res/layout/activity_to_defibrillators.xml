@@ -5,28 +5,28 @@
     android:id="@+id/audioButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Retractors">
+    tools:context=".toDefibrillators">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="219dp"
-        android:layout_height="216dp"
-        android:contentDescription="@string/retractors"
+        android:layout_width="268dp"
+        android:layout_height="232dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354"
-        app:srcCompat="@drawable/retractors" />
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/defibrillators"
+        android:contentDescription="@string/defibrillators" />
 
     <TextView
-        android:id="@+id/retractorsDescView"
+        android:id="@+id/defibrillatorsDescView"
         android:layout_width="293dp"
         android:layout_height="171dp"
         android:gravity="center"
-        android:text="@string/retractors_description"
-        android:textSize="20sp"
+        android:text="@string/defibrillators_description"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,20 +34,20 @@
         app:layout_constraintVertical_bias="0.30" />
 
     <TextView
-        android:id="@+id/retractorsTitleView"
-        android:layout_width="wrap_content"
+        android:id="@+id/defibrillatorsTitleView"
+        android:layout_width="136dp"
         android:layout_height="68dp"
         android:gravity="center"
-        android:text="@string/retractors"
+        android:text="@string/defibrillators"
         android:textColor="#219BA3"
-        android:textSize="34sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/retractorsAudio"
+        android:id="@+id/defibrillatorsAudio"
         android:layout_width="51dp"
         android:layout_height="51dp"
         android:background="@android:color/transparent"

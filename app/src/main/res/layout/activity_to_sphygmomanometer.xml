@@ -5,7 +5,7 @@
     android:id="@+id/audioButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Forceps">
+    tools:context=".toSphygmomanometer">
 
     <ImageView
         android:id="@+id/imageView"
@@ -17,16 +17,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.37"
-        app:srcCompat="@drawable/forceps_transparent"
-        android:contentDescription="@string/forceps" />
+        app:srcCompat="@drawable/sphygmomanometer"
+        android:contentDescription="@string/sphygmomanometer" />
 
     <TextView
-        android:id="@+id/forcepsDescView"
+        android:id="@+id/sphygmomanometerDescView"
         android:layout_width="293dp"
         android:layout_height="171dp"
         android:gravity="center"
-        android:text="@string/forceps_description"
-        android:textSize="20sp"
+        android:text="@string/sphygmomanometer_description"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,20 +34,20 @@
         app:layout_constraintVertical_bias="0.30" />
 
     <TextView
-        android:id="@+id/forcepsTitleView"
+        android:id="@+id/sphygmomanometerTitleView"
         android:layout_width="136dp"
         android:layout_height="68dp"
         android:gravity="center"
-        android:text="@string/forceps"
+        android:text="@string/sphygmomanometer"
         android:textColor="#219BA3"
-        android:textSize="34sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/forcepsAudio"
+        android:id="@+id/sphygmomanometerAudio"
         android:layout_width="51dp"
         android:layout_height="51dp"
         android:background="@android:color/transparent"

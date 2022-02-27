@@ -16,8 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.ScrollView;
-import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class ToolsList extends AppCompatActivity {
@@ -41,13 +40,11 @@ public class ToolsList extends AppCompatActivity {
         arrayList.add("Diathermy");
         arrayList.add("Retractors");
         arrayList.add("Sutures");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
+        arrayList.add("Defibrillators");
+        arrayList.add("Anesthesia");
+        arrayList.add("Stethoscope");
+        arrayList.add("Sphygmomanometer");
+        arrayList.add("Pen Torch");
 
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayList){
@@ -79,19 +76,34 @@ public class ToolsList extends AppCompatActivity {
 
                 switch (arrayList.get(i)) {
                     case "Forceps":
-                        startActivity(new Intent(ToolsList.this, Forceps.class));
+                        startActivity(new Intent(ToolsList.this, toForceps.class));
                         break;
                     case "Retractors":
-                        startActivity(new Intent(ToolsList.this, Retractors.class));
+                        startActivity(new Intent(ToolsList.this, toRetractors.class));
                         break;
                     case "Suction Tube":
-                        startActivity(new Intent(ToolsList.this, SuctionTube.class));
+                        startActivity(new Intent(ToolsList.this, toSuctionTube.class));
                         break;
                     case "Diathermy":
-                        startActivity(new Intent(ToolsList.this, Diathermy.class));
+                        startActivity(new Intent(ToolsList.this, toDiathermy.class));
                         break;
                     case "Sutures":
-                        startActivity(new Intent(ToolsList.this, Sutures.class));
+                        startActivity(new Intent(ToolsList.this, toSutures.class));
+                        break;
+                    case "Defibrillators":
+                        startActivity(new Intent(ToolsList.this, toDefibrillators.class));
+                        break;
+                    case "Anesthesia":
+                        startActivity(new Intent(ToolsList.this, toAnesthesia.class));
+                        break;
+                    case "Stethoscope":
+                        startActivity(new Intent(ToolsList.this, toStethoscope.class));
+                        break;
+                    case "Sphygmomanometer":
+                        startActivity(new Intent(ToolsList.this, toSphygmomanometer.class));
+                        break;
+                    case "Pen Torch":
+                        startActivity(new Intent(ToolsList.this, toPenTorch.class));
                         break;
                 }
             }

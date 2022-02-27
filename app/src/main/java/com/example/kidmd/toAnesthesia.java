@@ -5,19 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.speech.tts.TextToSpeech;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import java.util.Locale;
 
-public class Sutures extends AppCompatActivity {
+public class toAnesthesia extends AppCompatActivity {
 
-    TextView suturesDesc;
-    ImageButton suturesAudio;
+    TextView anesthesiaDesc;
+    ImageButton anesthesiaAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
@@ -25,14 +23,14 @@ public class Sutures extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sutures);
+        setContentView(R.layout.activity_to_anesthesia);
 
-        suturesDesc = findViewById(R.id.suturesDescView);
-        suturesAudio = findViewById(R.id.suturesAudio);
+        anesthesiaDesc = findViewById(R.id.anesthesiaDescView);
+        anesthesiaAudio = findViewById(R.id.anesthesiaAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.suturesTitleView)).setTypeface(baloo);
-        (suturesDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.anesthesiaTitleView)).setTypeface(baloo);
+        (anesthesiaDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -43,10 +41,10 @@ public class Sutures extends AppCompatActivity {
                 }
             }
         });
-        suturesAudio.setOnClickListener(new View.OnClickListener(){
+        anesthesiaAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(suturesDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(anesthesiaDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
@@ -55,7 +53,7 @@ public class Sutures extends AppCompatActivity {
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Sutures.this, ToolsList.class));
+                startActivity(new Intent(toAnesthesia.this, ToolsList.class));
             }
         });
 
@@ -64,7 +62,7 @@ public class Sutures extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Sutures.this, MainMenu.class));
+                startActivity(new Intent(toAnesthesia.this, MainMenu.class));
             }
         });
 

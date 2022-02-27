@@ -5,19 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.speech.tts.TextToSpeech;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import java.util.Locale;
 
-public class SuctionTube extends AppCompatActivity {
+public class toSphygmomanometer extends AppCompatActivity {
 
-    TextView suctionTubeDesc;
-    ImageButton suctionTubeAudio;
+    TextView sphygmomanometerDesc;
+    ImageButton sphygmomanometerAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
@@ -25,14 +23,14 @@ public class SuctionTube extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suction_tube);
+        setContentView(R.layout.activity_to_sphygmomanometer);
 
-        suctionTubeDesc = findViewById(R.id.suctionTubeDescView);
-        suctionTubeAudio = findViewById(R.id.suctionTubeAudio);
+        sphygmomanometerDesc = findViewById(R.id.sphygmomanometerDescView);
+        sphygmomanometerAudio = findViewById(R.id.sphygmomanometerAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.suctionTubeTitleView)).setTypeface(baloo);
-        (suctionTubeDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.sphygmomanometerTitleView)).setTypeface(baloo);
+        (sphygmomanometerDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -43,10 +41,10 @@ public class SuctionTube extends AppCompatActivity {
                 }
             }
         });
-        suctionTubeAudio.setOnClickListener(new View.OnClickListener(){
+        sphygmomanometerAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(suctionTubeDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(sphygmomanometerDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
@@ -55,7 +53,7 @@ public class SuctionTube extends AppCompatActivity {
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SuctionTube.this, ToolsList.class));
+                startActivity(new Intent(toSphygmomanometer.this, ToolsList.class));
             }
         });
 
@@ -64,7 +62,7 @@ public class SuctionTube extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SuctionTube.this, MainMenu.class));
+                startActivity(new Intent(toSphygmomanometer.this, MainMenu.class));
             }
         });
 
