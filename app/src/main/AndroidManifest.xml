@@ -33,6 +33,15 @@
             android:label="@string/title_activity_to_defibrillators"
             android:theme="@style/Theme.KidMD.NoActionBar" />
         <activity
+            android:name=".prCholedochalCyst2"
+            android:exported="false" />
+        <activity
+            android:name=".prCholecystectomy2"
+            android:exported="false" />
+        <activity
+            android:name=".prAppendectomy2"
+            android:exported="false" />
+        <activity
             android:name=".hrBPM"
             android:exported="false" />
         <activity

@@ -22,68 +22,72 @@
 
     <TextView
         android:id="@+id/prCholCystTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/why_needed"
+        android:layout_width="265dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="WHAT WILL HAPPEN DURING SURGERY?"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@id/cholCystPic1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"  />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cholCystPic2" />
 
     <TextView
         android:id="@+id/prCholCystDesc"
         android:layout_width="317dp"
-        android:layout_height="277dp"
+        android:layout_height="318dp"
         android:layout_marginTop="20dp"
-        android:text="Choledochal cyst is a problem that occurs in the tubes connecting from the liver to the gallbladder. Sometimes this tube can get bigger than normal and cause liver problems. This is bad because it can mess up or block the flow of important fluids from the liver to the small intestine. This can cause the tube to swell and get infected.\n\nIf surgery is not done to remove the cyst, the liver can get damaged and not work well."
+        android:text="You will go to sleep. The doctor will make small cuts near your belly button. They may put a camera inside to see your organs inside. \n\nThe doctor puts some gas in your belly so they can see your organs better. Then they will use some special tools to remove the cyst from the tube. The doctor will re-build the tube by using a small section of the intestine.\n\nNow everything will be good and the doctor will close your belly and you will wake up.
+"
         android:textColor="#000000"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/prCholCystTitle" />
 
     <ImageView
-        android:id="@+id/cholCystPic1"
+        android:id="@+id/cholCystPic2"
         android:layout_width="303dp"
         android:layout_height="219dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/choledochalCyst"
-        app:srcCompat="@drawable/cholcystpic1" />
+        app:srcCompat="@drawable/cholcystpic2" />
 
     <ImageButton
-        android:id="@+id/cholCystPage1Next"
+        android:id="@+id/cholCystPage2Next"
         android:layout_width="50dp"
         android:layout_height="59dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@id/prCholCystDesc"
+        app:layout_constraintHorizontal_bias="0.994"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/prCholCystDesc"
-
-        app:srcCompat="@drawable/green_right_arrow"
-        tools:layout_editor_absoluteY="289dp" />
+        app:srcCompat="@drawable/grayed_right_arrow" />
 
     <ImageButton
-        android:id="@+id/cholCystPage1Back"
+        android:id="@+id/cholCystPage2Back"
         android:layout_width="50dp"
         android:layout_height="59dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prCholCystDesc"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/prCholCystDesc"
-        app:srcCompat="@drawable/grayed_left_arrow"
-        tools:layout_editor_absoluteY="289dp" />
+        app:srcCompat="@drawable/green_left_arrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
