@@ -21,22 +21,23 @@
 
     <TextView
         android:id="@+id/prCholTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="339dp"
+        android:layout_height="73dp"
         android:layout_marginTop="20dp"
-        android:text="@string/why_needed"
+        android:gravity="center"
+        android:text="WHAT WILL HAPPEN DURING SURGERY?"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@id/cholpic1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cholpic2" />
 
     <TextView
         android:id="@+id/prCholDesc"
-        android:layout_width="307dp"
-        android:layout_height="282dp"
+        android:layout_width="309dp"
+        android:layout_height="259dp"
         android:layout_marginTop="20dp"
-        android:text="Sometimes the gallbladder can form small harmful stones, known as gallstones, inside the bladder.\n\nThis is dangerous because gallstones can block digestive fluids from exiting the bladder. This can cause a lot of pain and infection if left untreated.\n\nTo cure this, a surgery is needed to remove the gallbladder."
+        android:text="You will go to sleep. The doctor will make some small cuts on your stomach. The doctor may put a small camera inside your belly and look for your gallbladder.\n\nUsing some special tool, the doctor will remove the gallbladder. Once the doctor is done, you will wake up from your sleep. "
         android:textColor="#000000"
         android:textSize="19sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -44,17 +45,17 @@
         app:layout_constraintTop_toBottomOf="@id/prCholTitle" />
 
     <ImageView
-        android:id="@+id/cholpic1"
-        android:layout_width="299dp"
-        android:layout_height="224dp"
+        android:id="@+id/cholpic2"
+        android:layout_width="313dp"
+        android:layout_height="225dp"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Cholecystectomy"
-        app:srcCompat="@drawable/cholpic1" />
+        app:srcCompat="@drawable/cholpic2" />
 
     <ImageButton
-        android:id="@+id/cholPage1Next"
+        android:id="@+id/cholPage2Next"
         android:layout_width="50dp"
         android:layout_height="59dp"
         android:layout_alignParentStart="true"
@@ -65,11 +66,11 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@id/prCholDesc"
 
-        app:srcCompat="@drawable/green_right_arrow"
+        app:srcCompat="@drawable/grayed_right_arrow"
         tools:layout_editor_absoluteY="289dp" />
 
     <ImageButton
-        android:id="@+id/cholPage1Back"
+        android:id="@+id/cholPage2Back"
         android:layout_width="50dp"
         android:layout_height="59dp"
         android:layout_alignParentStart="true"
@@ -79,7 +80,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@id/prCholDesc"
-        app:srcCompat="@drawable/grayed_left_arrow"
+        app:srcCompat="@drawable/green_left_arrow"
         tools:layout_editor_absoluteY="289dp" />
 
 
