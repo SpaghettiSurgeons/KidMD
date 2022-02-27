@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".prAppendectomy2"
+            android:exported="false" />
+        <activity
             android:name=".hrBPM"
             android:exported="false" />
         <activity
