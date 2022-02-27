@@ -5,19 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.speech.tts.TextToSpeech;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import java.util.Locale;
 
-public class Retractors extends AppCompatActivity {
+public class toSutures extends AppCompatActivity {
 
-    TextView retractorsDesc;
-    ImageButton retractorsAudio;
+    TextView suturesDesc;
+    ImageButton suturesAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
@@ -25,14 +23,14 @@ public class Retractors extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_retractors);
+        setContentView(R.layout.activity_to_sutures);
 
-        retractorsDesc = findViewById(R.id.retractorsDescView);
-        retractorsAudio = findViewById(R.id.retractorsAudio);
+        suturesDesc = findViewById(R.id.suturesDescView);
+        suturesAudio = findViewById(R.id.suturesAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.retractorsTitleView)).setTypeface(baloo);
-        (retractorsDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.suturesTitleView)).setTypeface(baloo);
+        (suturesDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -43,10 +41,10 @@ public class Retractors extends AppCompatActivity {
                 }
             }
         });
-        retractorsAudio.setOnClickListener(new View.OnClickListener(){
+        suturesAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(retractorsDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(suturesDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
@@ -55,7 +53,7 @@ public class Retractors extends AppCompatActivity {
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Retractors.this, ToolsList.class));
+                startActivity(new Intent(toSutures.this, ToolsList.class));
             }
         });
 
@@ -64,7 +62,7 @@ public class Retractors extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Retractors.this, MainMenu.class));
+                startActivity(new Intent(toSutures.this, MainMenu.class));
             }
         });
 

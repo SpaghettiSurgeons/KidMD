@@ -5,19 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.speech.tts.TextToSpeech;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import java.util.Locale;
 
-public class Forceps extends AppCompatActivity {
+public class toStethoscope extends AppCompatActivity {
 
-    TextView forcepsDesc;
-    ImageButton forcepsAudio;
+    TextView stethoscopeDesc;
+    ImageButton stethoscopeAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
@@ -25,14 +23,14 @@ public class Forceps extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forceps);
+        setContentView(R.layout.activity_to_stethoscope);
 
-        forcepsDesc = findViewById(R.id.forcepsDescView);
-        forcepsAudio = findViewById(R.id.forcepsAudio);
+        stethoscopeDesc = findViewById(R.id.stethoscopeDescView);
+        stethoscopeAudio = findViewById(R.id.stethoscopeAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.forcepsTitleView)).setTypeface(baloo);
-        (forcepsDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.stethoscopeTitleView)).setTypeface(baloo);
+        (stethoscopeDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -43,10 +41,10 @@ public class Forceps extends AppCompatActivity {
                 }
             }
         });
-        forcepsAudio.setOnClickListener(new View.OnClickListener(){
+        stethoscopeAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(forcepsDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(stethoscopeDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
@@ -55,7 +53,7 @@ public class Forceps extends AppCompatActivity {
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Forceps.this, ToolsList.class));
+                startActivity(new Intent(toStethoscope.this, ToolsList.class));
             }
         });
 
@@ -64,7 +62,7 @@ public class Forceps extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Forceps.this, MainMenu.class));
+                startActivity(new Intent(toStethoscope.this, MainMenu.class));
             }
         });
 

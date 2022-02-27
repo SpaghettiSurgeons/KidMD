@@ -5,28 +5,28 @@
     android:id="@+id/audioButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Diathermy">
+    tools:context=".toAnesthesia">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="219dp"
-        android:layout_height="216dp"
-        android:contentDescription="@string/diathermy"
+        android:layout_width="268dp"
+        android:layout_height="232dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354"
-        app:srcCompat="@drawable/diathermy_transp" />
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/anesthesia"
+        android:contentDescription="@string/anesthesia" />
 
     <TextView
-        android:id="@+id/diathermyDescView"
+        android:id="@+id/anesthesiaDescView"
         android:layout_width="293dp"
-        android:layout_height="180dp"
+        android:layout_height="171dp"
         android:gravity="center"
-        android:text="@string/diathermy_description"
-        android:textSize="20sp"
+        android:text="@string/anesthesia_description"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,20 +34,20 @@
         app:layout_constraintVertical_bias="0.30" />
 
     <TextView
-        android:id="@+id/diathermyTitleView"
-        android:layout_width="wrap_content"
+        android:id="@+id/anesthesiaTitleView"
+        android:layout_width="136dp"
         android:layout_height="68dp"
         android:gravity="center"
-        android:text="@string/diathermy"
+        android:text="@string/anesthesia"
         android:textColor="#219BA3"
-        android:textSize="34sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/diathermyAudio"
+        android:id="@+id/anesthesiaAudio"
         android:layout_width="51dp"
         android:layout_height="51dp"
         android:background="@android:color/transparent"

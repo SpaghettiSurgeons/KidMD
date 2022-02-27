@@ -14,6 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".toPenTorch"
+            android:exported="false"
+            android:label="@string/title_activity_to_pen_torch"
+            android:theme="@style/Theme.KidMD.NoActionBar" />
+        <activity
+            android:name=".toSphygmomanometer"
+            android:exported="false" />
+        <activity
+            android:name=".toStethoscope"
+            android:exported="false" />
+        <activity
+            android:name=".toAnesthesia"
+            android:exported="false" />
+        <activity
+            android:name=".toDefibrillators"
+            android:exported="false"
+            android:label="@string/title_activity_to_defibrillators"
+            android:theme="@style/Theme.KidMD.NoActionBar" />
+        <activity
             android:name=".hrBPM"
             android:exported="false" />
         <activity
@@ -66,16 +85,16 @@
             android:name=".bpKidney"
             android:exported="false" />
         <activity
-            android:name=".Sutures"
+            android:name=".toSutures"
             android:exported="false" />
         <activity
-            android:name=".Diathermy"
+            android:name=".toDiathermy"
             android:exported="false" />
         <activity
-            android:name=".SuctionTube"
+            android:name=".toSuctionTube"
             android:exported="false" />
         <activity
-            android:name=".Retractors"
+            android:name=".toRetractors"
             android:exported="false" />
         <activity
             android:name=".bpGallbladder"
@@ -102,7 +121,7 @@
             android:name=".ToolsList"
             android:exported="false" />
         <activity
-            android:name=".Forceps"
+            android:name=".toForceps"
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"

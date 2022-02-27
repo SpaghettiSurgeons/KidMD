@@ -5,19 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.speech.tts.TextToSpeech;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
 
 import java.util.Locale;
 
-public class Diathermy extends AppCompatActivity {
+public class toRetractors extends AppCompatActivity {
 
-    TextView diathermyDesc;
-    ImageButton diathermyAudio;
+    TextView retractorsDesc;
+    ImageButton retractorsAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
@@ -25,14 +23,14 @@ public class Diathermy extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diathermy);
+        setContentView(R.layout.activity_to_retractors);
 
-        diathermyDesc = findViewById(R.id.diathermyDescView);
-        diathermyAudio = findViewById(R.id.diathermyAudio);
+        retractorsDesc = findViewById(R.id.retractorsDescView);
+        retractorsAudio = findViewById(R.id.retractorsAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.diathermyTitleView)).setTypeface(baloo);
-        (diathermyDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.retractorsTitleView)).setTypeface(baloo);
+        (retractorsDesc).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -43,10 +41,10 @@ public class Diathermy extends AppCompatActivity {
                 }
             }
         });
-        diathermyAudio.setOnClickListener(new View.OnClickListener(){
+        retractorsAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(diathermyDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(retractorsDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
@@ -55,7 +53,7 @@ public class Diathermy extends AppCompatActivity {
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Diathermy.this, ToolsList.class));
+                startActivity(new Intent(toRetractors.this, ToolsList.class));
             }
         });
 
@@ -64,7 +62,7 @@ public class Diathermy extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Diathermy.this, MainMenu.class));
+                startActivity(new Intent(toRetractors.this, MainMenu.class));
             }
         });
 

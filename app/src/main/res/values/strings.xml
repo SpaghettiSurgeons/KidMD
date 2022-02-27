@@ -67,7 +67,16 @@
     <string name="suctionTube_description">Suction tubes are used by surgeons to remove harmful stuff from your body during surgery, or to remove stuff that makes it hard for surgeons to see to do their work.</string>
     <string name="sutures">Sutures</string>
     <string name="sutures_description">Sutures are like thread. In the same way thread holds your clothes together, sutures hold your skin together after doctors have fixed what\'s making you sick. Some even dissolve on their own, without having to be removed.</string>
-
+    <string name="defibrillators">Defibrillators</string>
+    <string name="defibrillators_description">Defibrillators are tools you have probably seen used on TV, and they were probably used incorrectly in those portrayals. They are electric paddles used to restore the normal rhythm of your heart, not to restart the heart after cardiac arrest, as is often shown.</string>
+    <string name="anesthesia">Anesthesia</string>
+    <string name="anesthesia_description">Anesthesia machines use a measured, steady supply of medical gases to ensure your surgery is completely painless. These advanced machines track all of your vital signs so that you get the correct amount of gas.</string>
+    <string name="stethoscope">Stethoscope</string>
+    <string name="stethoscope_description">Stethoscopes are probably the most famous medical device, seen in many cartoons and movies. These devices allow doctors to listen to your heart, lungs, and even sounds in your stomach!</string>
+    <string name="sphygmomanometer">Sphygmomanometer</string>
+    <string name="sphygmomanometer_description">If attempting to pronounce this word intimidates you, don\'t worry, you\'re not alone. This device checks your blood pressure using an inflated cuff and mercury. The result will be 2 numbers like: xx/yy. The left number describes your heart\'s contraction pressure; the right, its relaxation pressure.</string>
+    <string name="penTorch">Pen Torch</string>
+    <string name="penTorch_description">Pen Torches, as their name implies, look like pens, but are equipped with a powerful flashlight. Your doctor uses these devices to check the pupillary response from your eyes, and also to check your nose and mouth, to make sure you are healthy.</string>
 
     <!--Surgical Procedures-->
     <string name="why_needed">WHY DO YOU NEED IT?</string>
@@ -81,6 +90,16 @@
     <string name="decortation_description">Sometimes a fibrous tissue, also known as pleura, can form on the lung, chest wall or the diaphragm which is not normal. Usually there is a small space between the lungs and the chest containing a thin layer of fluid. It is important for this area to remain moist and free so that the lung can expand and deflate normally when you breathe. If this area gets blocked with tissue, then it becomes hard for the lung to expand and deflate normally which can create breathing problems. With the help of surgery, this harmful tissue can be removed and the lungs can be saved.</string>
     <string name="standard_hospital_beds_are_very_comfortable_you_can_change_the_height_of_the_head_and_footrest_some_also_have_special_features_like_controlling_the_tv">Standard hospital beds are very comfortable. You can change the height of the head and footrest. Some also have special features like controlling the TV!</string>
     <string name="here_is_a_blood_pressure_device_and_monitor_your_doctor_may_use_it_to_take_your_blood_pressure_this_helps_to_see_how_healthy_your_heart_is">A blood pressure monitor is used to see how much pressure is in your arteries. This helps the doctor to see how healthy your heart is.</string>
+    <string name="title_activity_to_defibrillators">toDefibrillators</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_to_pen_torch">toPenTorch</string>
 
 
 </resources>
