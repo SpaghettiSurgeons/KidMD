@@ -3,6 +3,8 @@ package com.example.kidmd;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -18,6 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 
@@ -28,7 +31,6 @@ public class ProceduresList extends AppCompatActivity {
     EditText procedureSearch;
     private ImageButton backButton;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +39,6 @@ public class ProceduresList extends AppCompatActivity {
         proceduresListView = (ListView) findViewById(R.id.prview);
 
         procedureSearch = findViewById(R.id.prSearch);
-
-
 
         ArrayList<String> arrayList = new ArrayList<>();
 

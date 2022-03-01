@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#66c9eb">
@@ -38,6 +39,16 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="Surgeries"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/anatomyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/anatomy"
             android:textColor="#ffffff"
             android:textSize="25sp"
             android:visibility="gone" />

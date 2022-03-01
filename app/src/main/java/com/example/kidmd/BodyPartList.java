@@ -3,6 +3,8 @@ package com.example.kidmd;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -15,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -25,6 +28,9 @@ public class BodyPartList extends AppCompatActivity {
     EditText bpSearch;
     String clicked;
 
+    AppCompatTextView anatomyTitle;
+    AppCompatImageView anatomyBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +38,12 @@ public class BodyPartList extends AppCompatActivity {
 
         bprview = (ListView) findViewById(R.id.bprview);
         bpSearch = findViewById(R.id.bpSearch);
+
+        // Visibility for toolbar
+        anatomyTitle = (AppCompatTextView) findViewById(R.id.anatomyTitle);
+        anatomyTitle.setVisibility(View.VISIBLE);
+        anatomyBack = (AppCompatImageView) findViewById(R.id.backArrow);
+        anatomyBack.setVisibility(View.VISIBLE);
 
         //set up array for ListView
         ArrayList<String> arrayList = new ArrayList<>();
@@ -107,6 +119,14 @@ public class BodyPartList extends AppCompatActivity {
                         break;
                 }
 
+            }
+        });
+
+        // Back Arrow
+        anatomyBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BodyPartList.this, MainMenu.class));
             }
         });
 
