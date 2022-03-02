@@ -27,9 +27,10 @@ public class BodyPartList extends AppCompatActivity {
     ListView bprview;
     EditText bpSearch;
     String clicked;
+    Integer search_visible;
 
     AppCompatTextView anatomyTitle;
-    AppCompatImageView anatomyBack;
+    AppCompatImageView anatomyBack, anatomySearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,9 @@ public class BodyPartList extends AppCompatActivity {
         anatomyTitle.setVisibility(View.VISIBLE);
         anatomyBack = (AppCompatImageView) findViewById(R.id.backArrow);
         anatomyBack.setVisibility(View.VISIBLE);
+        anatomySearch = (AppCompatImageView) findViewById(R.id.search_button);
+        anatomySearch.setVisibility(View.VISIBLE);
+        search_visible = 0;
 
         //set up array for ListView
         ArrayList<String> arrayList = new ArrayList<>();
@@ -129,6 +133,25 @@ public class BodyPartList extends AppCompatActivity {
                 startActivity(new Intent(BodyPartList.this, MainMenu.class));
             }
         });
+        // Search Button
+        anatomySearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(search_visible);
+                switch (search_visible) {
+                    case 0:
+                        bpSearch.setVisibility(View.VISIBLE);
+                        break;
+                    case 1:
+                        bpSearch.setVisibility(View.GONE);
+                        break;
+                }
+                if (search_visible == 0) {search_visible = 1;}
+                else {search_visible = 0;}
+                System.out.println(search_visible);
+            }
+        });
+
 
         bpSearch.addTextChangedListener(new TextWatcher() {
             @Override
