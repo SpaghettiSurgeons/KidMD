@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pr_background"
+
     tools:context=".prAppendectomy">
 
     <TextView
@@ -46,13 +48,13 @@
 
     <ImageView
         android:id="@+id/appendixImage1"
-        android:layout_width="277dp"
-        android:layout_height="186dp"
+        android:layout_width="259dp"
+        android:layout_height="165dp"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Appendectomy"
-        app:srcCompat="@drawable/appendixpic1" />
+        app:srcCompat="@drawable/appendixpic3" />
 
     <ImageButton
         android:id="@+id/appPage1Next"

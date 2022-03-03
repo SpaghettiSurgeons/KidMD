@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pr_background"
     tools:context=".prAppendectomy">
 
     <TextView
         android:id="@+id/choledochalCyst"
         android:layout_width="320dp"
         android:layout_height="85dp"
-        android:layout_marginTop="40dp"
-        android:text="Choledochal Cyst Removal"
+        android:layout_marginTop="16dp"
         android:gravity="center"
+        android:text="Choledochal Cyst Removal"
         android:textColor="#219BA3"
         android:textSize="37sp"
         android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +26,7 @@
         android:id="@+id/prCholCystTitle"
         android:layout_width="265dp"
         android:layout_height="68dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:gravity="center"
         android:text="WHAT WILL HAPPEN DURING SURGERY?"
         android:textColor="#000000"
@@ -39,7 +41,7 @@
         android:id="@+id/prCholCystDesc"
         android:layout_width="317dp"
         android:layout_height="318dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="You will go to sleep. The doctor will make small cuts near your belly button. They may put a camera inside to see your organs inside. \n\nThe doctor puts some gas in your belly so they can see your organs better. Then they will use some special tools to remove the cyst from the tube. The doctor will re-build the tube by using a small section of the intestine.\n\nNow everything will be good and the doctor will close your belly and you will wake up.
 "
         android:textColor="#000000"
@@ -54,13 +56,13 @@
         android:id="@+id/cholCystPic2"
         android:layout_width="303dp"
         android:layout_height="219dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/choledochalCyst"
-        app:srcCompat="@drawable/cholcystpic2" />
+        app:srcCompat="@drawable/cholcystpic3" />
 
     <ImageButton
         android:id="@+id/cholCystPage2Next"
