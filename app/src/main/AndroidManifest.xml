@@ -26,6 +26,12 @@
             android:exported="false"
             android:theme="@style/dialog_theme" />
         <activity
+            android:name=".prEsophagomyotomy"
+            android:exported="false" />
+        <activity
+            android:name=".prDecortication2"
+            android:exported="false" />
+        <activity
             android:name=".toPenTorch"
             android:exported="false"
             android:label="@string/title_activity_to_pen_torch"

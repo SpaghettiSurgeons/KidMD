@@ -22,22 +22,23 @@
 
     <TextView
         android:id="@+id/prDecorTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="290dp"
+        android:layout_height="88dp"
         android:layout_marginTop="10dp"
-        android:text="@string/why_needed"
+        android:gravity="center"
+        android:text="WHAT WILL HAPPEN DURING SURGERY?"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@id/decorpic1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/decorpic2" />
 
     <TextView
         android:id="@+id/prDecorDesc"
         android:layout_width="348dp"
         android:layout_height="283dp"
         android:layout_marginTop="20dp"
-        android:text="@string/decortation_description"
+        android:text="You will go to sleep. The doctor will put a breathing tube inside your throat and connect it to a machine which will help you breathe. Then they will make a few small cuts on your chest. The doctor will look inside your chest and take the air out of your lungs. The doctor will move the lungs to the side and find the affected area. Then they will put a small camera to see the affected area better. Next the doctor will peel off the bad tissue and put air back into your lungs. The doctor will close your chest with stitches and you will wake up. "
         android:textColor="#000000"
         android:textSize="17sp"
         app:layout_constraintTop_toBottomOf="@id/prDecorTitle"
@@ -45,43 +46,41 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <ImageView
-        android:id="@+id/decorpic1"
+        android:id="@+id/decorpic2"
         android:layout_width="305dp"
         android:layout_height="207dp"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Decortication"
-        app:srcCompat="@drawable/decorpic2" />
+        app:srcCompat="@drawable/decopic3" />
 
     <ImageButton
-        android:id="@+id/decPage1Next"
+        android:id="@+id/decorPage2Next"
         android:layout_width="50dp"
         android:layout_height="59dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@id/prDecorDesc"
+        app:layout_constraintHorizontal_bias="0.994"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/prDecorDesc"
-
-        app:srcCompat="@drawable/green_right_arrow"
-        tools:layout_editor_absoluteY="289dp" />
+        app:srcCompat="@drawable/grayed_right_arrow" />
 
     <ImageButton
-        android:id="@+id/decPage1Back"
+        android:id="@+id/decorPage2Back"
         android:layout_width="50dp"
         android:layout_height="59dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prDecorDesc"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/prDecorDesc"
-        app:srcCompat="@drawable/grayed_left_arrow"
-        tools:layout_editor_absoluteY="289dp" />
-
+        app:srcCompat="@drawable/green_left_arrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
