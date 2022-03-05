@@ -14,6 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".hrSUD"
+            android:theme="@style/dialog_theme"
+            android:exported="false" />
+        <activity
+            android:name=".hrECG"
+            android:theme="@style/dialog_theme"
+            android:exported="false" />
+        <activity
+            android:name=".hrCurtain"
+            android:exported="false"
+            android:theme="@style/dialog_theme" />
+        <activity
             android:name=".toPenTorch"
             android:exported="false"
             android:label="@string/title_activity_to_pen_torch"
@@ -43,7 +55,7 @@
             android:exported="false" />
         <activity
             android:name=".hrBPM"
-            android:exported="false" />
+            android:theme="@style/dialog_theme" />
         <activity
             android:name=".ProfileSearch"
             android:exported="false"

@@ -25,7 +25,7 @@ public class HospitalInteract extends AppCompatActivity {
     private AlertDialog dialog;
     private TextView bedDesc;
     private Button test;
-    private ImageButton bedButton, bpmButton;
+    private ImageButton bedButton, bpmButton, curtainButton, sudButton, ecgButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,12 @@ public class HospitalInteract extends AppCompatActivity {
         bedButton.setOnClickListener(this::onClick);
         bpmButton = (ImageButton) findViewById(R.id.bpmButton);
         bpmButton.setOnClickListener(this::onClick);
+        curtainButton = (ImageButton) findViewById(R.id.curtainButton);
+        curtainButton.setOnClickListener(this::onClick);
+        sudButton = (ImageButton) findViewById(R.id.sudButton);
+        sudButton.setOnClickListener(this::onClick);
+        ecgButton = (ImageButton) findViewById(R.id.ecgButton);
+        ecgButton.setOnClickListener(this::onClick);
 
     }
 
@@ -44,10 +50,20 @@ public class HospitalInteract extends AppCompatActivity {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bedButton:
-                seeBed();
+                startActivity(new Intent(HospitalInteract.this, hrBed.class));
                 break;
             case R.id.bpmButton:
-                seeBPM();
+                startActivity(new Intent(HospitalInteract.this, hrBPM.class));
+                break;
+            case R.id.curtainButton:
+                startActivity(new Intent(HospitalInteract.this, hrCurtain.class));
+                break;
+            case R.id.sudButton:
+                startActivity(new Intent(HospitalInteract.this, hrSUD.class));
+                break;
+            case R.id.ecgButton:
+                //seeBPM();
+                startActivity(new Intent(HospitalInteract.this, hrECG.class));
                 break;
         }
     }

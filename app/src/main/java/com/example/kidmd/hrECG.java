@@ -7,13 +7,13 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Window;
 
-public class hrBPM extends Activity {
+public class hrECG extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hr_bpm);
+        setContentView(R.layout.activity_hr_ecg);
     }
 }

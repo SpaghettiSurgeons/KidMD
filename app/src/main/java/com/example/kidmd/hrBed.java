@@ -1,7 +1,9 @@
 package com.example.kidmd;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -19,13 +21,13 @@ public class hrBed extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(android.R.style.Theme_Dialog);
-        /*requestWindowFeature(Window.FEATURE_NO_TITLE);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        /*setTheme(android.R.style.Theme_Dialog);
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         lp.copyFrom(this.getWindow().getAttributes());
         lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
-        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
-         */
+        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;*/
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hr_bed);
 

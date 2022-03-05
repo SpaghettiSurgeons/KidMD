@@ -9,34 +9,33 @@
     android:layout_gravity="center">
 
     <TextView
-        android:id="@+id/bedTitleView"
+        android:id="@+id/ecgTitleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:scaleType="center"
-        android:text="Hospital Bed"
+        android:text="@string/electrocardiogram"
         android:textColor="#219BA3"
         android:textSize="20sp" />
 
-
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="180dp"
+        android:id="@+id/ecgDesc"
+        android:layout_width="213dp"
         android:layout_height="104dp"
-        android:layout_below="@id/bedTitleView"
+        android:layout_below="@id/ecgTitleView"
         android:layout_alignParentStart="true"
-        android:text="@string/standard_hospital_beds_are_very_comfortable_you_can_change_the_height_of_the_head_and_footrest_some_also_have_special_features_like_controlling_the_tv"
+        android:text="@string/you_may_see_a_monitor_displaying_an_electrocardiogram_electrocardiogram_s_record_the_heart_s_electrical_signals_this_allows_the_doctor_to_monitor_the_health_of_your_heart"
         android:textColor="#000000"
         android:textSize="14sp" />
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="184dp"
-        android:layout_height="114dp"
-        android:layout_below="@id/bedTitleView"
+        android:id="@+id/imageView15"
+        android:layout_width="117dp"
+        android:layout_height="109dp"
+        android:layout_below="@id/ecgTitleView"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="-3dp"
-        android:layout_marginEnd="-1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="13dp"
         android:scaleType="fitXY"
-        android:src="@drawable/hospitalbed" />
+        android:src="@drawable/ecg_monitors_clipart_md" />
 </RelativeLayout>
