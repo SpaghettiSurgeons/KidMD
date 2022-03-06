@@ -241,10 +241,13 @@ public class ProfileSearch extends AppCompatActivity {
         addFriend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+                if (FirebaseAuth.getInstance().getCurrentUser() != null && visit_user_id != null) {
                     Intent friendIntent = new Intent(ProfileSearch.this, friendRequest.class);
                     friendIntent.putExtra("visit_user_id", visit_user_id);
                     startActivity(friendIntent);
+                }
+                else if (visit_user_id == null) {
+                    Toast.makeText(ProfileSearch.this, "You must select a profile to friend first!", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Toast.makeText(ProfileSearch.this, "You must be logged in to add a friend!", Toast.LENGTH_SHORT).show();
