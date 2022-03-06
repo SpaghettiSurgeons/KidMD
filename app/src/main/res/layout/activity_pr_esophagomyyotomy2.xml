@@ -4,6 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".prEsophagomyyotomy2">
+    android:background="@drawable/pr_background"
+    tools:context=".prEsophagomyotomy">
+
+    <TextView
+        android:id="@+id/Esophagomyotomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Esophagomyotomy"
+        android:textColor="#219BA3"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prEsophTitle"
+        android:layout_width="302dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="WHAT WILL HAPPEN DURING SURGERY?"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/esophpic2" />
+
+    <TextView
+        android:id="@+id/prEsophDesc"
+        android:layout_width="348dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="32dp"
+        android:text="You will go to sleep. The doctor will make some small cuts near your upper chest and put some special tools inside. The doctor will cut the LES muscle, which is a muscle at the bottom of your esophagus which connects into the stomach. This muscle gets tights and blocks food from entering your stomach. Once this is cut, the doctor will be all done. They will close your cuts with a few stitches and you will wake up. "
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prEsophTitle" />
+
+    <ImageView
+        android:id="@+id/esophpic2"
+        android:layout_width="317dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Esophagomyotomy"
+        app:srcCompat="@drawable/esophpic2" />
+
+    <ImageButton
+        android:id="@+id/esophPage2Next"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prEsophDesc"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/grayed_right_arrow" />
+
+    <ImageButton
+        android:id="@+id/esophPage2Back"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prEsophDesc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/green_left_arrow" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
