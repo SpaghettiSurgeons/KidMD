@@ -1,60 +1,72 @@
 package com.example.kidmd;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.List;
-import java.util.Locale;
+import java.util.ArrayList;
 
 public class ProfileSearch extends AppCompatActivity {
 
-    private Button backToMain;
+    public void checkKeyboard() {
+        // Check if no view has focus:
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
+    }
+
+    private Button addFriend;
 
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userID;
+    private String visit_user_id;
 
     private EditText searchField;
     private ImageButton searchBtn;
 
-    private RecyclerView resultList;
-
-    private TextView emailAddressTitle;
-    private List<User> users;
-    private RecyclerView recyclerView;
     private String currentUserEmail;
+    ListView profilesListView;
+    private User selectedUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_search);
 
-        final TextView greetingTextView = (TextView) findViewById(R.id.greeting);
+        ArrayList<String> arrayList = new ArrayList<>();
+        ArrayList<User> userArrayList = new ArrayList<>();
+
+
+
         final TextView fullNameTextView = (TextView) findViewById(R.id.fullName);
         final TextView emailTextView = (TextView) findViewById(R.id.emailAddress);
         final TextView ageTextView = (TextView) findViewById(R.id.age);
@@ -68,21 +80,15 @@ public class ProfileSearch extends AppCompatActivity {
         emailTitleTextView.setVisibility(View.GONE);
         ageTitleTextView.setVisibility(View.GONE);
 
-        backToMain = (Button) findViewById(R.id.backToMain);
+        addFriend = (Button) findViewById(R.id.addFriend);
         searchField = findViewById(R.id.search_field);
         reference = FirebaseDatabase.getInstance().getReference("Users");
         searchBtn = (ImageButton) findViewById(R.id.search_btn);
 
-        resultList = (RecyclerView) findViewById(R.id.result_list);
-        resultList.setHasFixedSize(true);
-        resultList.setLayoutManager(new LinearLayoutManager(this));
-
-        Intent intent = getIntent();
-        String email = intent.getStringExtra("email");
+        profilesListView = (ListView) findViewById(R.id.profilesTextView);
 
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             user = FirebaseAuth.getInstance().getCurrentUser();
-            //reference = FirebaseDatabase.getInstance().getReference("Users");
             userID = user.getUid();
 
             reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
@@ -104,15 +110,96 @@ public class ProfileSearch extends AppCompatActivity {
             currentUserEmail = "";
         }
 
+        reference.addValueEventListener(new ValueEventListener() {
+
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                //Iterate through user profiles in realtime database
+                for (DataSnapshot ds : snapshot.getChildren()) {
+                    arrayList.add(ds.child("fullName").getValue().toString());
+                    User newUser = new User(ds.child("fullName").getValue().toString(), ds.child("age").getValue().toString(), ds.child("email").getValue().toString());
+                    newUser.setUid(ds.getRef().getKey());
+                    userArrayList.add(newUser);
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList){
+            @NonNull
+            @Override
+            public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                //Get the current item for ListView
+                View view = super.getView(position, convertView, parent);
+                if(position %2 == 1){
+                    //set background colors
+                    view.setBackgroundColor(Color.rgb(173,216,230));
+                    view.getBackground().setAlpha(220);
+                }
+                else{
+                    view.setBackgroundColor(Color.rgb(33, 155, 163));
+                    view.getBackground().setAlpha(100);
+                }
+                return view;
+            }
+        };
+        profilesListView.setAdapter(arrayAdapter);
+
+        //add listener
+        profilesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                checkKeyboard();
+                profilesListView.setVisibility(View.GONE);
+                searchBtn.setEnabled(false);
+                //Populate fields with found data
+                for (User u: userArrayList) {
+                    if (u.fullName.toLowerCase().equals(((String)adapterView.getItemAtPosition(i)).toLowerCase())) {
+                        fullNameTitleTextView.setVisibility(View.VISIBLE);
+                        emailTitleTextView.setVisibility(View.VISIBLE);
+                        ageTitleTextView.setVisibility(View.VISIBLE);
+                        selectedUser = u;
+                        fullNameTextView.setText((String)adapterView.getItemAtPosition(i));
+                        emailTextView.setText(selectedUser.getEmail());
+                        ageTextView.setText(selectedUser.getAge());
+                        visit_user_id = selectedUser.getUid();
+                        break;
+                    }
+                }
+            }
+        });
+
+        searchField.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                profilesListView.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int i, int i1, int i2) {
+                if (!searchBtn.isEnabled()) {
+                    searchBtn.setEnabled(true);
+                }
+                profilesListView.setVisibility(View.VISIBLE);
+                arrayAdapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+            }
+        });
+
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                checkKeyboard();
+                profilesListView.setVisibility(View.GONE);
                 String searchText = searchField.getText().toString().toLowerCase();
 
                 reference.addValueEventListener(new ValueEventListener() {
-
-
 
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -125,6 +212,8 @@ public class ProfileSearch extends AppCompatActivity {
                                 emailTitleTextView.setVisibility(View.VISIBLE);
                                 ageTitleTextView.setVisibility(View.VISIBLE);
                                 //Populate fields with found data
+                                //visit_user_id = ds.child("uid").getValue(String.class);
+                                visit_user_id = ds.getRef().getKey();
                                 fullNameTextView.setText(ds.child("fullName").getValue(String.class));
                                 emailTextView.setText(ds.child("email").getValue(String.class));
                                 ageTextView.setText(ds.child("age").getValue(String.class));
@@ -146,60 +235,37 @@ public class ProfileSearch extends AppCompatActivity {
 
                     }
                 });
-
-
-                firebaseUserSearch();
-
             }
         });
 
-
-        backToMain.setOnClickListener(new View.OnClickListener() {
+        addFriend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ProfileSearch.this, MainMenu.class));
+                if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+                    Intent friendIntent = new Intent(ProfileSearch.this, friendRequest.class);
+                    friendIntent.putExtra("visit_user_id", visit_user_id);
+                    startActivity(friendIntent);
+                }
+                else {
+                    Toast.makeText(ProfileSearch.this, "You must be logged in to add a friend!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
         searchField.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //emailAddressTitle = findViewById(R.id.emailAddressTitle);
-                //emailAddressTitle.setVisibility(View.GONE);
+                fullNameTitleTextView.setVisibility(View.GONE);
+                emailTitleTextView.setVisibility(View.GONE);
+                ageTitleTextView.setVisibility(View.GONE);
+                fullNameTextView.setText("");
+                emailTextView.setText("");
+                ageTextView.setText("");
+                searchField.setText("");
+                profilesListView.setVisibility(View.GONE);
             }
         });
 
     }
-
-    Query query = FirebaseDatabase.getInstance().getReference().child("Users").limitToLast(50);
-
-    FirebaseRecyclerOptions<User> options = new FirebaseRecyclerOptions.Builder<User>().setQuery(query, User.class).build();
-
-    private void firebaseUserSearch() {
-        FirebaseRecyclerAdapter<User, UsersViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<User, UsersViewHolder>(options) {
-            @Override
-            protected void onBindViewHolder(@NonNull UsersViewHolder holder, int position, @NonNull User model) {
-
-            }
-
-            @NonNull
-            @Override
-            public UsersViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                return null;
-            }
-        };
-    }
-
-    public class UsersViewHolder extends RecyclerView.ViewHolder {
-
-        View mView;
-
-        public UsersViewHolder(@NonNull View itemView) {
-            super(itemView);
-
-            mView = itemView;
-        }
-
-    }
-
 }
+
