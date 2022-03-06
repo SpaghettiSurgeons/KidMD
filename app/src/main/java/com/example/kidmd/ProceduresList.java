@@ -27,6 +27,8 @@ import java.util.ArrayList;
 public class ProceduresList extends AppCompatActivity {
 
     ListView proceduresListView;
+    AppCompatImageView procedureBack;
+
 
     EditText procedureSearch;
     private ImageButton backButton;
@@ -35,6 +37,9 @@ public class ProceduresList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_procedures_list);
+
+        procedureBack = (AppCompatImageView) findViewById(R.id.backArrow);
+        procedureBack.setVisibility(View.VISIBLE);
 
         proceduresListView = (ListView) findViewById(R.id.prview);
 
@@ -115,17 +120,15 @@ public class ProceduresList extends AppCompatActivity {
             }
         });
 
-        //---back arrow button---
-        backButton = (ImageButton) findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
+
+        // Back Arrow
+        procedureBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ProceduresList.this, MainMenu.class));
             }
         });
-
     }
-
 
 }
 
