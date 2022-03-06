@@ -74,7 +74,7 @@ public class ToolsList extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //Toast.makeText(ToolsList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
 
-                switch (arrayList.get(i)) {
+                switch ((String)adapterView.getItemAtPosition(i)) {
                     case "Forceps":
                         startActivity(new Intent(ToolsList.this, toForceps.class));
                         break;

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ADD8E6"
+    tools:context=".friendRequest">
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="100dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="150dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/sendReq"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#0ED6B9"
+        android:text="Send Friend Request"
+        android:textColor="#ffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/declineReq"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="275dp"
+        android:backgroundTint="#ff0000"
+        android:text="Decline Friend Request"
+        android:textColor="#ffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".friendRequest"
+            android:exported="false" />
+        <activity
             android:name=".prEsophagomyyotomy2"
             android:exported="false" />
         <activity

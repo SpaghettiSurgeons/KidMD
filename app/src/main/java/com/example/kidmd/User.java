@@ -4,6 +4,16 @@ public class User {
 
     public String fullName, age, email;
 
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+    public String uid;
+
     public User() {}
 
     public User(String fullName, String age, String email) {
