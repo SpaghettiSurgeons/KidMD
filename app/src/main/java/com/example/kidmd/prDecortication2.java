@@ -11,6 +11,9 @@ public class prDecortication2 extends AppCompatActivity {
 
 
     private ImageButton pageBack;
+    private ImageButton xBack;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,15 @@ public class prDecortication2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(prDecortication2.this, prDecortication.class));
+            }
+        });
+
+        //---page X button---
+        xBack = (ImageButton) findViewById(R.id.decorPage2X);
+        xBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(prDecortication2.this, ProceduresList.class));
             }
         });
     }

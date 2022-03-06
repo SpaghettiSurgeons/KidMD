@@ -26,15 +26,15 @@
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_pr_appendectomy2.xml" value="0.24180327868852458" />
+        <entry key="app/src/main/res/layout/activity_pr_appendectomy2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_pr_biliary_atresia.xml" value="0.2076923076923077" />
-        <entry key="app/src/main/res/layout/activity_pr_cholecystectomy.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pr_cholecystectomy.xml" value="0.5223358154296874" />
         <entry key="app/src/main/res/layout/activity_pr_cholecystectomy2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_pr_choledochal_cyst.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_pr_choledochal_cyst2.xml" value="0.3606060606060606" />
         <entry key="app/src/main/res/layout/activity_pr_decortication.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_pr_decortication2.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_pr_esophagomyotomy.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pr_esophagomyotomy.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_pr_esophagomyyotomy2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_procedures_list.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1802536231884058" />

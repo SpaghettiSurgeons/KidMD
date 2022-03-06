@@ -11,6 +11,9 @@ public class prCholedochalCyst extends AppCompatActivity {
 
     private ImageButton pageForward;
 
+    private ImageButton xBack;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,15 @@ public class prCholedochalCyst extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(prCholedochalCyst.this, prCholedochalCyst2.class));
+            }
+        });
+
+        //---page X button---
+        xBack = (ImageButton) findViewById(R.id.cholCystPage1X);
+        xBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(prCholedochalCyst.this, ProceduresList.class));
             }
         });
     }

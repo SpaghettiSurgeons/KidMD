@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 public class prCholedochalCyst2 extends AppCompatActivity {
 
     private ImageButton pageBack;
+    private ImageButton xBack;
+
 
 
     @Override
@@ -23,6 +25,15 @@ public class prCholedochalCyst2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(prCholedochalCyst2.this, prCholedochalCyst.class));
+            }
+        });
+
+        //---page X button---
+        xBack = (ImageButton) findViewById(R.id.cholCystPage2X);
+        xBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(prCholedochalCyst2.this, ProceduresList.class));
             }
         });
     }

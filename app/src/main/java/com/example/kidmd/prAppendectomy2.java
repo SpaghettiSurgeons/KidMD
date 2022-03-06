@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 public class prAppendectomy2 extends AppCompatActivity {
 
     private ImageButton pageBack;
+    private ImageButton xBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,16 @@ public class prAppendectomy2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(prAppendectomy2.this, prAppendectomy.class));
+            }
+        });
+
+
+        //---page X button---
+        xBack = (ImageButton) findViewById(R.id.appPage2X);
+        xBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(prAppendectomy2.this, ProceduresList.class));
             }
         });
     }

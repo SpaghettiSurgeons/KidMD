@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 public class prDecortication extends AppCompatActivity {
 
     private ImageButton pageForward;
+    private ImageButton xBack;
+
 
 
     @Override
@@ -24,6 +26,15 @@ public class prDecortication extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(prDecortication.this, prDecortication2.class));
+            }
+        });
+
+        //---page X button---
+        xBack = (ImageButton) findViewById(R.id.decorPage1X);
+        xBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(prDecortication.this, ProceduresList.class));
             }
         });
 

@@ -12,6 +12,8 @@ import android.widget.TextView;
 public class prAppendectomy extends AppCompatActivity {
 
     private ImageButton pageForward;
+    private ImageButton xBack;
+
 
 
 
@@ -26,6 +28,16 @@ public class prAppendectomy extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(prAppendectomy.this, prAppendectomy2.class));
+            }
+        });
+
+
+        //---page X button---
+        xBack = (ImageButton) findViewById(R.id.appPage1X);
+        xBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(prAppendectomy.this, ProceduresList.class));
             }
         });
     }

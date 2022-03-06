@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 public class prCholecystectomy extends AppCompatActivity {
 
     private ImageButton pageForward;
+    private ImageButton xBack;
+
 
 
     @Override
@@ -23,6 +25,15 @@ public class prCholecystectomy extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(prCholecystectomy.this, prCholecystectomy2.class));
+            }
+        });
+
+        //---page X button---
+        xBack = (ImageButton) findViewById(R.id.cholPage1X);
+        xBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(prCholecystectomy.this, ProceduresList.class));
             }
         });
     }

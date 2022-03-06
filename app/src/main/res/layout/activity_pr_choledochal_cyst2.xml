@@ -92,4 +92,16 @@
         app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/green_left_arrow" />
 
+    <ImageButton
+        android:id="@+id/cholCystPage2X"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="64dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/cholCystPic2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/x_button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
