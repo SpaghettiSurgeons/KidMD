@@ -14,13 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
-            android:name=".hrSUD"
-            android:theme="@style/dialog_theme"
+            android:name=".prEsophagomyyotomy2"
             android:exported="false" />
         <activity
+            android:name=".hrSUD"
+            android:exported="false"
+            android:theme="@style/dialog_theme" />
+        <activity
             android:name=".hrECG"
-            android:theme="@style/dialog_theme"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/dialog_theme" />
         <activity
             android:name=".hrCurtain"
             android:exported="false"

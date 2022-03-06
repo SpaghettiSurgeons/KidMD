@@ -92,6 +92,7 @@ public class ProceduresList extends AppCompatActivity {
                 if (arrayList.get(i) == "Cholecystectomy") startActivity(new Intent(ProceduresList.this, prCholecystectomy.class));
                 if (arrayList.get(i) == "Choledochal Cyst") startActivity(new Intent(ProceduresList.this, prCholedochalCyst.class));
                 if (arrayList.get(i) == "Decortication") startActivity(new Intent(ProceduresList.this, prDecortication.class));
+                if (arrayList.get(i) == "Esophagomyotomy") startActivity(new Intent(ProceduresList.this, prEsophagomyotomy.class));
 
             }
         });
