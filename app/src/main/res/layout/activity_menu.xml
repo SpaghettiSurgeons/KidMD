@@ -1,175 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ADD8E6">
-    <include layout="@layout/toolbar"/>
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:background="#f8f8f8">
 
-    <TextView
-        android:id="@+id/menudesc"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:layout_marginBottom="24dp"
-        android:text="Main Menu"
-        android:textColor="#219BA3"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/procedurebutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/procedurebutton"
-        app:layout_constraintVertical_bias="0.33999997" />
+        android:paddingBottom="10dp">
+        <include layout="@layout/toolbar"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/resourcebutton"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="135dp"
-        android:background="@drawable/rounded_corner"
-        android:text="@string/additional_resources"
-        android:textColor="#219BA3"
-        android:textSize="20sp"
-        android:contentDescription="@string/additional_resources_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/hospitalbutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notificationbutton" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bodypartbutton"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/anatomy"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            android:contentDescription="@string/anatomy_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/toolsbutton"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_corner"
-        android:text="@string/Tools"
-        android:textColor="#219BA3"
-        android:textSize="20sp"
-        android:contentDescription="@string/tools_button"
-        app:layout_constraintBottom_toTopOf="@+id/notificationbutton"
-        app:layout_constraintEnd_toStartOf="@+id/profilesearchbutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bodypartbutton" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/procedurebutton"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/procedures"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            android:contentDescription="@string/procedures_button"
+            app:layout_constraintTop_toBottomOf="@+id/bodypartbutton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/procedurebutton"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_corner"
-        android:text="@string/procedures"
-        android:textColor="#219BA3"
-        android:textSize="20sp"
-        android:contentDescription="@string/procedures_button"
-        app:layout_constraintBottom_toTopOf="@+id/profilesearchbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
-        app:layout_constraintStart_toEndOf="@+id/bodypartbutton"
-        app:layout_constraintTop_toBottomOf="@+id/menudesc" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toolsbutton"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/Tools"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            android:contentDescription="@string/tools_button"
+            app:layout_constraintTop_toBottomOf="@+id/procedurebutton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/profilesearchbutton"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_corner"
-        android:text="@string/profile"
-        android:textColor="#219BA3"
-        android:textSize="20sp"
-        android:contentDescription="@string/profile_button"
-        app:layout_constraintBottom_toTopOf="@+id/settingsbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/toolsbutton"
-        app:layout_constraintTop_toBottomOf="@+id/procedurebutton" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/soundsbutton"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/sounds"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            android:contentDescription="@string/tools_button"
+            app:layout_constraintTop_toBottomOf="@+id/toolsbutton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/settingsbutton"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Settings"
-        android:textColor="#219BA3"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/hospitalbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/notificationbutton"
-        app:layout_constraintTop_toBottomOf="@+id/profilesearchbutton" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hospitalbutton"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/hospital"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            android:contentDescription="@string/hospital_button"
+            app:layout_constraintTop_toBottomOf="@+id/soundsbutton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/hospitalbutton"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="135dp"
-        android:background="@drawable/rounded_corner"
-        android:text="@string/hospital"
-        android:textColor="#219BA3"
-        android:textSize="20sp"
-        android:contentDescription="@string/hospital_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/resourcebutton"
-        app:layout_constraintTop_toBottomOf="@+id/settingsbutton" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/resourcebutton"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/additional_resources"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            android:contentDescription="@string/additional_resources_button"
+            app:layout_constraintTop_toBottomOf="@+id/hospitalbutton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/notificationbutton"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_corner"
-        android:text="@string/notifications"
-        android:textColor="#219BA3"
-        android:textSize="20sp"
-        android:contentDescription="@string/notifications_button"
-        app:layout_constraintBottom_toTopOf="@+id/resourcebutton"
-        app:layout_constraintEnd_toStartOf="@+id/settingsbutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolsbutton" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notificationbutton"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/notifications"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            android:contentDescription="@string/notifications_button"
+            app:layout_constraintTop_toBottomOf="@+id/resourcebutton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bodypartbutton"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_corner"
-        android:text="@string/anatomy"
-        android:textColor="#219BA3"
-        android:textSize="20sp"
-        android:contentDescription="@string/anatomy_button"
-        app:layout_constraintBottom_toTopOf="@+id/toolsbutton"
-        app:layout_constraintEnd_toStartOf="@+id/procedurebutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menudesc" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/settingsbutton"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/settings"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/notificationbutton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/logout"
-        android:layout_width="170dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="120dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Logout"
-        android:textColor="#219BA3"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hospitalbutton" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profilesearchbutton"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/profile"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            android:contentDescription="@string/profile_button"
+            app:layout_constraintTop_toBottomOf="@+id/settingsbutton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/logout"
+            android:textColor="#219BA3"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/profilesearchbutton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

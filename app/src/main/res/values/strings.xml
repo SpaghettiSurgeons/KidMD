@@ -60,7 +60,7 @@
     <string name="diathermy">Diathermy</string>
     <string name="diathermy_description">Diathermy is an electrosurgical tool, meaning it needs electricity to do its job. It can be used to cut into parts of your body that are making you sick, or to stop blood vessels from bleeding.</string>
     <string name="forceps">Forceps</string>
-    <string name="forceps_description">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they don\'t hurt you.</string>
+    <string name="forceps_description">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they do not hurt you.</string>
     <string name="retractors">Retractors</string>
     <string name="retractors_description">While forceps are used to pull back tissue, retractors are used to hold tissue in place, making it easier for surgeons to see and access the places they need to work on.</string>
     <string name="suctionTube">Suction Tube</string>
@@ -88,6 +88,8 @@
     <string name="choledochalCyst_description">Choledochal cyst is a problem that occurs in the tubes connecting from the liver to the gallbladder. This tube helps transport bile, which is a liquid that helps break down fats, from the liver to the gallbladder and to the small intestine. Sometimes this tube can get bigger than normal and cause liver problems. The cyst can mess up or block the flow of bile from the liver to the small intestine and cause inflammation and infection in the tubes. If surgery is not done to remove the cyst, the liver can get damaged and not work well.</string>
     <string name="decortication">Decortication</string>
     <string name="decortation_description">Sometimes a fibrous tissue, also known as pleura, can form on the lung, chest wall or the diaphragm which is not normal. Usually there is a small space between the lungs and the chest containing a thin layer of fluid. It is important for this area to remain moist and free so that the lung can expand and deflate normally when you breathe. If this area gets blocked with tissue, then it becomes hard for the lung to expand and deflate normally which can create breathing problems. With the help of surgery, this harmful tissue can be removed and the lungs can be saved.</string>
+
+
     <string name="standard_hospital_beds_are_very_comfortable_you_can_change_the_height_of_the_head_and_footrest_some_also_have_special_features_like_controlling_the_tv">Standard hospital beds are very comfortable. You can change the height of the head and footrest. Some also have special features like controlling the TV!</string>
     <string name="here_is_a_blood_pressure_device_and_monitor_your_doctor_may_use_it_to_take_your_blood_pressure_this_helps_to_see_how_healthy_your_heart_is">A blood pressure monitor is used to see how much pressure is in your arteries. This helps the doctor to see how healthy your heart is.</string>
     <string name="title_activity_to_defibrillators">toDefibrillators</string>
@@ -106,6 +108,9 @@
     <string name="you_may_see_a_monitor_displaying_an_electrocardiogram_electrocardiogram_s_record_the_heart_s_electrical_signals_this_allows_the_doctor_to_monitor_the_health_of_your_heart">You may see a monitor displaying an electrocardiogram. Electrocardiogram\'s record the heart\'s electrical signals. This allows the doctor to monitor the health of your heart.</string>
     <string name="single_use_devices">Single Use Devices</string>
     <string name="single_use_devices_are_medical_equipment_that_are_only_used_once_before_thrown_away_this_is_to_prevent_the_spread_of_any_germs_or_diseases_some_of_these_items_may_include_syringes_gloves_masks_and_bandages">Single Use Devices are medical equipment that are only used once before thrown away. This is to prevent the spread of any germs or diseases. Some of these items may include syringes, gloves, masks, and bandages.</string>
+    <string name="sounds">Sounds</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
 
 
 </resources>

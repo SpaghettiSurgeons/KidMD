@@ -33,7 +33,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
 
         //Change text font
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.menudesc)).setTypeface(baloo);
+        //((TextView) findViewById(R.id.menudesc)).setTypeface(baloo);
 
         //Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
 
