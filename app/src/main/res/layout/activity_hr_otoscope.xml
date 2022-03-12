@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/otoscopeTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scaleType="center"
+        android:text="@string/otoscope"
+        android:textColor="#219BA3"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/otoscopeDesc"
+        android:layout_width="180dp"
+        android:layout_height="104dp"
+        android:layout_below="@id/otoscopeTitleView"
+        android:layout_alignParentStart="true"
+        android:text="@string/an_otoscope_is_a_device_that_shines_a_light_into_you_ear_this_helps_the_doctor_see_and_check_the_condition_of_your_ear_canal"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="152dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/otoscopeTitleView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="-6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/otoscope" />
+
+    <ImageButton
+        android:id="@+id/otoscopeAudio"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@id/otoscopeTitleView"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/audiobutton__2_" />
+
+</RelativeLayout>

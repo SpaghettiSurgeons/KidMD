@@ -24,10 +24,38 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/button_signs_question_mark_help_question_faq_shapes_207620" />
+
+    <ImageButton
+        android:id="@+id/otoscopeButton"
+        android:layout_width="11dp"
+        android:layout_height="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
+        app:srcCompat="@drawable/button_signs_question_mark_help_question_faq_shapes_207620" />
+
+    <ImageButton
+        android:id="@+id/opthalmoscopeButton"
+        android:layout_width="11dp"
+        android:layout_height="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
         app:srcCompat="@drawable/button_signs_question_mark_help_question_faq_shapes_207620" />
 
     <ImageButton
