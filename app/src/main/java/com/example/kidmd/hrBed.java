@@ -18,26 +18,25 @@ import java.util.Locale;
 
 public class hrBed extends Activity {
 
+    TextView bedDesc;
+    ImageButton audio;
+    TextToSpeech textToSpeech;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        /*setTheme(android.R.style.Theme_Dialog);
-        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
-        lp.copyFrom(this.getWindow().getAttributes());
-        lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
-        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;*/
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hr_bed);
 
-        /*spleenDesc = findViewById(R.id.spleenDescView);
-        spleenAudio = findViewById(R.id.spleenAudio);
+        bedDesc = findViewById(R.id.bedDesc);
+        audio = findViewById(R.id.audio);
 
         //Set font to Baloo
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.spleenTitleView)).setTypeface(baloo);
-        (spleenDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.bedTitleView)).setTypeface(baloo);
+        (bedDesc).setTypeface(baloo);
 
         //Set up Text to Speech
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -51,11 +50,11 @@ public class hrBed extends Activity {
         });
 
         //TTS button listener
-        spleenAudio.setOnClickListener(new View.OnClickListener(){
+        audio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(spleenDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
+                textToSpeech.speak(bedDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
             }
-        });*/
+        });
     }
 }

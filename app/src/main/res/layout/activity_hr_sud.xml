@@ -8,6 +8,15 @@
     android:paddingRight="16dp"
     android:layout_gravity="center">
 
+    <ImageButton
+        android:id="@+id/sudAudio"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_alignRight="@id/sudTitleView"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/audiobutton__2_" />
+
     <TextView
         android:id="@+id/sudTitleView"
         android:layout_width="match_parent"
@@ -26,7 +35,7 @@
         android:layout_alignParentStart="true"
         android:text="@string/single_use_devices_are_medical_equipment_that_are_only_used_once_before_thrown_away_this_is_to_prevent_the_spread_of_any_germs_or_diseases_some_of_these_items_may_include_syringes_gloves_masks_and_bandages"
         android:textColor="#000000"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
 
     <ImageView
         android:id="@+id/imageView16"

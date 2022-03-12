@@ -1,13 +1,24 @@
 package com.example.kidmd;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.TextView;
+import android.widget.ImageButton;
+import android.speech.tts.TextToSpeech;
+
+import java.util.Locale;
 
 public class hrSUD extends Activity {
+
+    TextView sudDesc;
+    ImageButton sudAudio;
+    TextToSpeech textToSpeech;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,5 +26,32 @@ public class hrSUD extends Activity {
         this.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hr_sud);
+
+        sudDesc = findViewById(R.id.sudDesc);
+        sudAudio = findViewById(R.id.sudAudio);
+
+        //Set font to Baloo
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+        ((TextView) findViewById(R.id.sudTitleView)).setTypeface(baloo);
+        (sudDesc).setTypeface(baloo);
+
+        //Set up Text to Speech
+        textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if (i!= TextToSpeech.ERROR){
+                    //set language to US
+                    textToSpeech.setLanguage(Locale.ENGLISH);
+                }
+            }
+        });
+
+        //TTS button listener
+        sudAudio.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                textToSpeech.speak(sudDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, null);
+            }
+        });
     }
 }

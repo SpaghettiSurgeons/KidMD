@@ -8,6 +8,15 @@
     android:paddingRight="16dp"
     android:layout_gravity="center">
 
+    <ImageButton
+        android:id="@+id/ecgAudio"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignEnd="@id/ecgTitleView"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/audiobutton__2_" />
+
     <TextView
         android:id="@+id/ecgTitleView"
         android:layout_width="match_parent"
@@ -26,12 +35,12 @@
         android:layout_alignParentStart="true"
         android:text="@string/you_may_see_a_monitor_displaying_an_electrocardiogram_electrocardiogram_s_record_the_heart_s_electrical_signals_this_allows_the_doctor_to_monitor_the_health_of_your_heart"
         android:textColor="#000000"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="117dp"
-        android:layout_height="109dp"
+        android:layout_width="113dp"
+        android:layout_height="105dp"
         android:layout_below="@id/ecgTitleView"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"

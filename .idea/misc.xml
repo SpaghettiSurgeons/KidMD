@@ -4,8 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/dialog_bg.xml" value="0.232" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/rounded_corner.xml" value="0.3828125" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_clavicle.xml" value="0.3385416666666667" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_lungs.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_hospital_interact.xml" value="0.5" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_hospital_menu.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_hr_bed.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_hr_bpm.xml" value="0.33" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_hr_curtain.xml" value="0.33" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_hr_ecg.xml" value="0.33" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_hr_sud.xml" value="0.33" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_main.xml" value="0.28306159420289856" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_menu.xml" value="0.28306159420289856" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_profile.xml" value="0.28306159420289856" />
@@ -17,43 +27,28 @@
         <entry key="app/src/main/res/drawable/pr_background_triangle.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/activity_appendectomy.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_bodypart_list.xml" value="0.225" />
-        <entry key="app/src/main/res/layout/activity_bp_appendix.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_bp_brain.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_bp_clavicle.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_bp_distal_radius.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_bp_gallbladder.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_bp_kidney.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_bp_liver.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_bp_lungs.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_bp_spleen.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_bp_tonsils.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_brain.xml" value="0.2078125" />
-        <entry key="app/src/main/res/layout/activity_diathermy.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_forceps.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_hospital_interact.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_hospital_menu.xml" value="0.26927083333333335" />
-        <entry key="app/src/main/res/layout/activity_hr_bed.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_locate_hospital.xml" value="0.2006340579710145" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_pr_appendectomy2.xml" value="0.24180327868852458" />
         <entry key="app/src/main/res/layout/activity_pr_biliary_atresia.xml" value="0.2076923076923077" />
-        <entry key="app/src/main/res/layout/activity_pr_cholecystectomy.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_pr_cholecystectomy.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_pr_cholecystectomy2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_pr_choledochal_cyst.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_pr_decortication.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_procedures_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_pr_choledochal_cyst2.xml" value="0.392938232421875" />
+        <entry key="app/src/main/res/layout/activity_pr_decortication.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_procedures_list.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1802536231884058" />
         <entry key="app/src/main/res/layout/activity_register_user.xml" value="0.19429347826086957" />
-        <entry key="app/src/main/res/layout/activity_retractors.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.157135009765625" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.20997314453125004" />
-        <entry key="app/src/main/res/layout/activity_suction_tube.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_sutures.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_tools_list.xml" value="0.225" />
-        <entry key="app/src/main/res/layout/mainmenu_practice.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/toolbar.xml" value="0.3098958333333333" />
       </map>
     </option>
   </component>

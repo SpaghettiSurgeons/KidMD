@@ -105,12 +105,13 @@
     <string name="you_will_often_share_a_hospital_room_with_someone_else_but_separated_by_a_curtain_to_maintain_privacy_be_sure_to_be_respectful_to_your_roommates">You will often share a hospital room with someone else, but separated by a curtain to maintain privacy. Be sure to be respectful to your roommates.</string>
     <string name="curtain">Curtain</string>
     <string name="electrocardiogram">Electrocardiogram</string>
-    <string name="you_may_see_a_monitor_displaying_an_electrocardiogram_electrocardiogram_s_record_the_heart_s_electrical_signals_this_allows_the_doctor_to_monitor_the_health_of_your_heart">You may see a monitor displaying an electrocardiogram. Electrocardiogram\'s record the heart\'s electrical signals. This allows the doctor to monitor the health of your heart.</string>
+    <string name="you_may_see_a_monitor_displaying_an_electrocardiogram_electrocardiogram_s_record_the_heart_s_electrical_signals_this_allows_the_doctor_to_monitor_the_health_of_your_heart">You may see a monitor displaying an electrocardiogram. They record the heart\'s electrical signals. This allows the doctor to monitor the health of your heart.</string>
     <string name="single_use_devices">Single Use Devices</string>
     <string name="single_use_devices_are_medical_equipment_that_are_only_used_once_before_thrown_away_this_is_to_prevent_the_spread_of_any_germs_or_diseases_some_of_these_items_may_include_syringes_gloves_masks_and_bandages">Single Use Devices are medical equipment that are only used once before thrown away. This is to prevent the spread of any germs or diseases. Some of these items may include syringes, gloves, masks, and bandages.</string>
     <string name="sounds">Sounds</string>
     <string name="settings">Settings</string>
     <string name="logout">Logout</string>
+    <string name="hospital_bed">Hospital Bed</string>
 
 
 </resources>
