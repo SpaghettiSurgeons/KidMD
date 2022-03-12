@@ -37,7 +37,7 @@
         android:layout_width="307dp"
         android:layout_height="282dp"
         android:layout_marginTop="20dp"
-        android:text="Sometimes the gallbladder can form small harmful stones, known as gallstones, inside the bladder.\n\nThis is dangerous because gallstones can block digestive fluids from exiting the bladder. This can cause a lot of pain and infection if left untreated.\n\nTo cure this, a surgery is needed to remove the gallbladder."
+        android:text="@string/why_cholecystectomy"
         android:textColor="#000000"
         android:textSize="19sp"
         app:layout_constraintLeft_toLeftOf="parent"

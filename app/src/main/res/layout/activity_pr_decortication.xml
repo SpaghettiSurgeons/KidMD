@@ -37,7 +37,7 @@
         android:layout_width="348dp"
         android:layout_height="283dp"
         android:layout_marginTop="20dp"
-        android:text="@string/decortation_description"
+        android:text="@string/why_decortation"
         android:textColor="#000000"
         android:textSize="17sp"
         app:layout_constraintTop_toBottomOf="@id/prDecorTitle"

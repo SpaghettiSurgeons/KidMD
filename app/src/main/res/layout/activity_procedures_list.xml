@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:text="@string/procedures"
-        android:textColor="#FFFFFF"
+        android:textColor="#ADD8E6"
         android:textSize="25sp"
         android:textStyle="bold" />
 

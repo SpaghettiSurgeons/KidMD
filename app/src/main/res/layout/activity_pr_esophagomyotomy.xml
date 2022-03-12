@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Esophagomyotomy"
+        android:text="@string/esophagomyotomy"
         android:textColor="#219BA3"
         android:textSize="37sp"
         android:textStyle="bold"
@@ -28,11 +28,8 @@
         android:text="@string/why_needed"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/esophpic1" />
 
     <TextView
@@ -40,14 +37,11 @@
         android:layout_width="348dp"
         android:layout_height="283dp"
         android:layout_marginTop="32dp"
-        android:text="This surgical procedure is used to treat achalasia. This problem occurs when the nerves in the esophagus become damaged. This can cause the esophagus to become paralyzed or become larger if not treated by a doctor. If this happens, it will become difficult for the esophagus to squeeze down food when you eat and it will become harder for you to swallow food."
+        android:text="@string/why_esophagomyotomy"
         android:textColor="#000000"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/prEsophTitle" />
 
     <ImageView

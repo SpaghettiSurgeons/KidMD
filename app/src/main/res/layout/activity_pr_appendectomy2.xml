@@ -27,7 +27,7 @@
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="WHAT WILL HAPPEN DURING SURGERY?"
+        android:text="@string/what_happens"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,8 +41,7 @@
         android:layout_width="277dp"
         android:layout_height="218dp"
         android:layout_marginTop="24dp"
-        android:text="You will go to sleep. The doctors will make few small cuts on your stomach. They will find your appendix and slowly remove it.
-        \n\nThen they will close your stomach with a few small stitches. Once they are done, you will wake up from your sleep. "
+        android:text="@string/desc_appendectomy"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

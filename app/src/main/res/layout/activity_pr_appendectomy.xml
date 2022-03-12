@@ -38,7 +38,7 @@
         android:layout_width="295dp"
         android:layout_height="343dp"
         android:layout_marginTop="20dp"
-        android:text="The appendix is a small pouch on the bottom right side of your belly. It is attached to your large intestine.\n\nSometimes it can become blocked from mucus being trapped inside. This is bad because it can cause bacteria to grow and create infection and inflammation. If not taken out it, it can also burst and the infection can spread to the belly. \n\nTo stop this from happening, a surgery needs to be done to remove the appendix."
+        android:text="@string/why_appendectomy"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintHorizontal_bias="0.577"
