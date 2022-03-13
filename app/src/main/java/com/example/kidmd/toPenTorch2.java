@@ -12,26 +12,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class toPenTorch extends AppCompatActivity {
+public class toPenTorch2 extends AppCompatActivity {
 
-    TextView penTorchDesc;
+    TextView penTorchUse;
     ImageButton penTorchAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
-    private ImageButton secondPage;
+    private ImageButton firstPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_to_pen_torch);
+        setContentView(R.layout.activity_to_pen_torch2);
 
-        penTorchDesc = findViewById(R.id.penTorchDescView);
+        penTorchUse = findViewById(R.id.penTorchUseView);
         penTorchAudio = findViewById(R.id.penTorchAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
         ((TextView) findViewById(R.id.penTorchTitleView)).setTypeface(baloo);
-        (penTorchDesc).setTypeface(baloo);
+        (penTorchUse).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -45,24 +45,15 @@ public class toPenTorch extends AppCompatActivity {
         penTorchAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(penTorchDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(penTorchUse.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
-        secondPage = (ImageButton) findViewById(R.id.secondPage);
-        secondPage.setOnClickListener(new View.OnClickListener() {
+        firstPage = (ImageButton) findViewById(R.id.backPage);
+        firstPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(toPenTorch.this, toPenTorch2.class));
-            }
-        });
-
-        //---back arrow button---
-        backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toPenTorch.this, ToolsList.class));
+                startActivity(new Intent(toPenTorch2.this, toPenTorch.class));
             }
         });
 
@@ -71,7 +62,7 @@ public class toPenTorch extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(toPenTorch.this, MainMenu.class));
+                startActivity(new Intent(toPenTorch2.this, MainMenu.class));
             }
         });
 

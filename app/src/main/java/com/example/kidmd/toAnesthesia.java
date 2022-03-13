@@ -19,6 +19,7 @@ public class toAnesthesia extends AppCompatActivity {
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
+    private ImageButton secondPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,14 @@ public class toAnesthesia extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 textToSpeech.speak(anesthesiaDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
+        secondPage = (ImageButton) findViewById(R.id.secondPage);
+        secondPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(toAnesthesia.this, toAnesthesia2.class));
             }
         });
 

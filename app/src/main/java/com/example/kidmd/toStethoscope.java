@@ -19,6 +19,7 @@ public class toStethoscope extends AppCompatActivity {
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
+    private ImageButton secondPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,14 @@ public class toStethoscope extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 textToSpeech.speak(stethoscopeDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
+        secondPage = (ImageButton) findViewById(R.id.secondPage);
+        secondPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(toStethoscope.this, toStethoscope2.class));
             }
         });
 

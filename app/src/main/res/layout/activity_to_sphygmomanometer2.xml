@@ -5,7 +5,7 @@
     android:id="@+id/audioButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".toSphygmomanometer">
+    tools:context=".toSphygmomanometer2">
 
     <ImageView
         android:id="@+id/imageView"
@@ -17,15 +17,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.37"
-        app:srcCompat="@drawable/sphygmomanometer"
+        app:srcCompat="@drawable/sphygmomanometer2_trans"
         android:contentDescription="@string/sphygmomanometer" />
 
     <TextView
-        android:id="@+id/sphygmomanometerDescView"
+        android:id="@+id/sphygmomanometerUseView"
         android:layout_width="293dp"
         android:layout_height="171dp"
         android:gravity="center"
-        android:text="@string/sphygmomanometer_description"
+        android:text="@string/sphygmomanometer_use"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,23 +61,6 @@
         app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
 
     <ImageButton
-        android:id="@+id/backArrow"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="3dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476"
-        app:srcCompat="@drawable/black_arrow_left" />
-
-    <ImageButton
         android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
@@ -102,11 +85,11 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="156dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/sphygmomanometerDescView"
+        app:layout_constraintBottom_toTopOf="@id/sphygmomanometerUseView"
         app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/green_right_arrow" />
+        app:srcCompat="@drawable/grayed_right_arrow" />
 
     <ImageButton
         android:id="@+id/backPage"
@@ -116,10 +99,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="156dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/sphygmomanometerDescView"
+        app:layout_constraintBottom_toTopOf="@id/sphygmomanometerUseView"
         app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/grayed_left_arrow" />
+        app:srcCompat="@drawable/green_left_arrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
