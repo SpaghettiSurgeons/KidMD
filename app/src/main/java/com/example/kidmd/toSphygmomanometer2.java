@@ -12,26 +12,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class toPenTorch extends AppCompatActivity {
+public class toSphygmomanometer2 extends AppCompatActivity {
 
-    TextView penTorchDesc;
-    ImageButton penTorchAudio;
+    TextView sphygmomanometerUse;
+    ImageButton sphygmomanometerAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
-    private ImageButton secondPage;
+    private ImageButton firstPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_to_pen_torch);
+        setContentView(R.layout.activity_to_sphygmomanometer2);
 
-        penTorchDesc = findViewById(R.id.penTorchDescView);
-        penTorchAudio = findViewById(R.id.penTorchAudio);
+        sphygmomanometerUse = findViewById(R.id.sphygmomanometerUseView);
+        sphygmomanometerAudio = findViewById(R.id.sphygmomanometerAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.penTorchTitleView)).setTypeface(baloo);
-        (penTorchDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.sphygmomanometerTitleView)).setTypeface(baloo);
+        (sphygmomanometerUse).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -42,27 +42,18 @@ public class toPenTorch extends AppCompatActivity {
                 }
             }
         });
-        penTorchAudio.setOnClickListener(new View.OnClickListener(){
+        sphygmomanometerAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(penTorchDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(sphygmomanometerUse.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
-        secondPage = (ImageButton) findViewById(R.id.secondPage);
-        secondPage.setOnClickListener(new View.OnClickListener() {
+        firstPage = (ImageButton) findViewById(R.id.backPage);
+        firstPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(toPenTorch.this, toPenTorch2.class));
-            }
-        });
-
-        //---back arrow button---
-        backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toPenTorch.this, ToolsList.class));
+                startActivity(new Intent(toSphygmomanometer2.this, toSphygmomanometer.class));
             }
         });
 
@@ -71,7 +62,7 @@ public class toPenTorch extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(toPenTorch.this, MainMenu.class));
+                startActivity(new Intent(toSphygmomanometer2.this, MainMenu.class));
             }
         });
 

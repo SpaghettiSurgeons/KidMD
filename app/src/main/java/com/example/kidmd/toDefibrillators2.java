@@ -12,26 +12,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class toPenTorch extends AppCompatActivity {
+public class toDefibrillators2 extends AppCompatActivity {
 
-    TextView penTorchDesc;
-    ImageButton penTorchAudio;
+    TextView defibrillatorsUse;
+    ImageButton defibrillatorsAudio;
     TextToSpeech textToSpeech;
     private ImageButton backArrow;
     private ImageButton home;
-    private ImageButton secondPage;
+    private ImageButton firstPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_to_pen_torch);
+        setContentView(R.layout.activity_to_defibrillators2);
 
-        penTorchDesc = findViewById(R.id.penTorchDescView);
-        penTorchAudio = findViewById(R.id.penTorchAudio);
+        defibrillatorsUse = findViewById(R.id.defibrillatorsUseView);
+        defibrillatorsAudio = findViewById(R.id.defibrillatorsAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.penTorchTitleView)).setTypeface(baloo);
-        (penTorchDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.defibrillatorsTitleView)).setTypeface(baloo);
+        (defibrillatorsUse).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -42,27 +42,18 @@ public class toPenTorch extends AppCompatActivity {
                 }
             }
         });
-        penTorchAudio.setOnClickListener(new View.OnClickListener(){
+        defibrillatorsAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(penTorchDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(defibrillatorsUse.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
-        secondPage = (ImageButton) findViewById(R.id.secondPage);
-        secondPage.setOnClickListener(new View.OnClickListener() {
+        firstPage = (ImageButton) findViewById(R.id.backPage);
+        firstPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(toPenTorch.this, toPenTorch2.class));
-            }
-        });
-
-        //---back arrow button---
-        backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toPenTorch.this, ToolsList.class));
+                startActivity(new Intent(toDefibrillators2.this, toDefibrillators.class));
             }
         });
 
@@ -71,7 +62,7 @@ public class toPenTorch extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(toPenTorch.this, MainMenu.class));
+                startActivity(new Intent(toDefibrillators2.this, MainMenu.class));
             }
         });
 
