@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#ADD8E6"
     tools:context=".ProfileActivity">
+    <include layout="@layout/bottom_toolbar" />
 
     <TextView
         android:id="@+id/greeting"
