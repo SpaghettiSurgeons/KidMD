@@ -19,7 +19,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
 
     private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profileSearchButton;
     private AppCompatTextView title;
-    private AppCompatImageView profile;
+    private AppCompatImageView profile, home_button, explore_button, profile_button, notifications_button;
 
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -56,8 +56,16 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         title = (AppCompatTextView) findViewById(R.id.appTitle_toolbar);
         title.setVisibility(View.VISIBLE);
 
-        profile = (AppCompatImageView) findViewById(R.id.profile_button);
-        profile.setOnClickListener(this);
+
+        // Bottom toolbar
+        home_button = (AppCompatImageView) findViewById(R.id.home_button);
+        home_button.setOnClickListener(this);
+        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
+        explore_button.setOnClickListener(this);
+        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
+        notifications_button.setOnClickListener(this);
+        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
+        profile_button.setOnClickListener(this);
 
 
         //Only show logout button and profile if user is logged in
@@ -91,6 +99,9 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
             case R.id.profilesearchbutton:
                 startActivity(new Intent(MainMenu.this, ProfileSearch.class));
                 break;
+
+                // Bottom Toolbar
+
         }
     }
 }
