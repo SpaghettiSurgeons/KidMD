@@ -17,8 +17,6 @@ public class toSphygmomanometer2 extends AppCompatActivity {
     TextView sphygmomanometerUse;
     ImageButton sphygmomanometerAudio;
     TextToSpeech textToSpeech;
-    private ImageButton backArrow;
-    private ImageButton home;
     private ImageButton firstPage;
 
     @Override
@@ -57,14 +55,6 @@ public class toSphygmomanometer2 extends AppCompatActivity {
             }
         });
 
-        //---home button---
-        home = (ImageButton) findViewById(R.id.home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toSphygmomanometer2.this, MainMenu.class));
-            }
-        });
 
     }
 }

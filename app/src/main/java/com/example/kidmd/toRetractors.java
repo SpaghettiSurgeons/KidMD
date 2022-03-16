@@ -17,8 +17,6 @@ public class toRetractors extends AppCompatActivity {
     TextView retractorsDesc;
     ImageButton retractorsAudio;
     TextToSpeech textToSpeech;
-    private ImageButton backArrow;
-    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,23 +46,6 @@ public class toRetractors extends AppCompatActivity {
             }
         });
 
-        //---back arrow button---
-        backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toRetractors.this, ToolsList.class));
-            }
-        });
-
-        //---home button---
-        home = (ImageButton) findViewById(R.id.home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toRetractors.this, MainMenu.class));
-            }
-        });
 
     }
 }

@@ -17,8 +17,6 @@ public class toForceps extends AppCompatActivity {
     TextView forcepsDesc;
     ImageButton forcepsAudio;
     TextToSpeech textToSpeech;
-    private ImageButton backArrow;
-    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,24 +43,6 @@ public class toForceps extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 textToSpeech.speak(forcepsDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
-            }
-        });
-
-        //---back arrow button---
-        backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toForceps.this, ToolsList.class));
-            }
-        });
-
-        //---home button---
-        home = (ImageButton) findViewById(R.id.home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toForceps.this, MainMenu.class));
             }
         });
 

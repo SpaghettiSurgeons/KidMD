@@ -41,6 +41,7 @@
         <entry key="app/src/main/res/layout/activity_bp_spleen.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_bp_tonsils.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_brain.xml" value="0.2078125" />
+        <entry key="app/src/main/res/layout/activity_explore_page.xml" value="0.18840579710144928" />
         <entry key="app/src/main/res/layout/activity_friend_request.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_hospital_interact.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_hospital_menu.xml" value="0.26927083333333335" />
@@ -49,7 +50,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.17813145823483278" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.21866960676221978" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy2.xml" value="0.24180327868852458" />
         <entry key="app/src/main/res/layout/activity_pr_biliary_atresia.xml" value="0.2076923076923077" />
@@ -67,21 +68,21 @@
         <entry key="app/src/main/res/layout/activity_register_user.xml" value="0.19429347826086957" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.157135009765625" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.20997314453125004" />
-        <entry key="app/src/main/res/layout/activity_to_anesthesia.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_anesthesia2.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_defibrillators.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_defibrillators2.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_diathermy.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_forceps.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_pen_torch.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_pen_torch2.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_retractors.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_sphygmomanometer.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_sphygmomanometer2.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_stethoscope.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_stethoscope2.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_suction_tube.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_to_sutures.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_to_anesthesia.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_anesthesia2.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_defibrillators.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_defibrillators2.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_diathermy.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_forceps.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_pen_torch.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_pen_torch2.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_retractors.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_sphygmomanometer.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_sphygmomanometer2.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_stethoscope.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_stethoscope2.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_suction_tube.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_sutures.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_tools_list.xml" value="0.225" />
         <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.25825180316526963" />
         <entry key="app/src/main/res/layout/list_layout.xml" value="0.16354166666666667" />

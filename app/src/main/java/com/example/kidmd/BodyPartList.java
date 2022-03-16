@@ -22,7 +22,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class BodyPartList extends AppCompatActivity {
+public class BodyPartList extends AppCompatActivity implements View.OnClickListener {
 
     ListView bprview;
     EditText bpSearch;
@@ -31,6 +31,7 @@ public class BodyPartList extends AppCompatActivity {
 
     AppCompatTextView anatomyTitle;
     AppCompatImageView anatomyBack, anatomySearch;
+    private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -170,6 +171,34 @@ public class BodyPartList extends AppCompatActivity {
             }
         });
 
+        // Bottom toolbar
+        home_button = (AppCompatImageView) findViewById(R.id.home_button);
+        home_button.setOnClickListener(this);
+        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
+        explore_button.setOnClickListener(this);
+        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
+        notifications_button.setOnClickListener(this);
+        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
+        profile_button.setOnClickListener(this);
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            // bottom toolbar
+            case R.id.home_button:
+                startActivity(new Intent(this, MainMenu.class));
+                break;
+            case R.id.explore_button:
+                startActivity(new Intent(this, ExplorePage.class));
+                break;
+            /*case R.id.notifications_button:
+                startActivity(new Intent(ProceduresList.this, ?.class));
+                break;
+            case R.id.profile_button:
+                startActivity(new Intent(ProceduresList.this, ?.class));
+                break;*/
+        }
     }
 }

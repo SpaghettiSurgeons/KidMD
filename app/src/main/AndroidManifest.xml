@@ -33,6 +33,9 @@
             android:exported="false"
             android:theme="@style/dialog_theme" />
         <activity
+            android:name=".ExplorePage"
+            android:exported="false" />
+        <activity
             android:name=".friendRequest"
             android:exported="false" />
         <activity

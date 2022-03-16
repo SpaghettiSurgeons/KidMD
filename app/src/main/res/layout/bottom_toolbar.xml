@@ -8,8 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:minHeight="?android:attr/actionBarSize"
-        android:background="#ffffff">
+        android:background="#ffffff"
+        android:minHeight="?android:attr/actionBarSize">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/home_button"
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="33dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_baseline_home_24" />
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="65dp"
+            android:layout_marginLeft="67dp"
             android:layout_toRightOf="@id/home_button"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_baseline_explore_30" />
@@ -37,8 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:layout_marginRight="67dp"
             android:layout_toLeftOf="@+id/profile_button"
-            android:layout_marginRight="65dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_baseline_notifications_24" />
 
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="33dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_baseline_person_35" />
 

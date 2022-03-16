@@ -24,7 +24,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 
-public class ProceduresList extends AppCompatActivity {
+public class ProceduresList extends AppCompatActivity implements View.OnClickListener{
+
+    private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
     ListView proceduresListView;
     AppCompatImageView procedureBack;
@@ -90,7 +92,7 @@ public class ProceduresList extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 //toast to display what item user clicked on
-                Toast.makeText(ProceduresList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ProceduresList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
 
                 //open Appendectomy page
                 if (arrayList.get(i) == "Appendectomy") startActivity(new Intent(ProceduresList.this, prAppendectomy.class));
@@ -128,7 +130,35 @@ public class ProceduresList extends AppCompatActivity {
                 startActivity(new Intent(ProceduresList.this, MainMenu.class));
             }
         });
+
+
+        // Bottom toolbar
+        home_button = (AppCompatImageView) findViewById(R.id.home_button);
+        home_button.setOnClickListener(this);
+        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
+        explore_button.setOnClickListener(this);
+        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
+        notifications_button.setOnClickListener(this);
+        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
+        profile_button.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.home_button:
+                startActivity(new Intent(this, MainMenu.class));
+                break;
+            case R.id.explore_button:
+                startActivity(new Intent(this, ExplorePage.class));
+                break;
+            /*case R.id.notifications_button:
+                startActivity(new Intent(this, ?.class));
+                break;
+            case R.id.profile_button:
+                startActivity(new Intent(this, ?.class));
+                break;*/
+        }
+    }
 }
 

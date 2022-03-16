@@ -17,8 +17,6 @@ public class toPenTorch2 extends AppCompatActivity {
     TextView penTorchUse;
     ImageButton penTorchAudio;
     TextToSpeech textToSpeech;
-    private ImageButton backArrow;
-    private ImageButton home;
     private ImageButton firstPage;
 
     @Override
@@ -57,14 +55,6 @@ public class toPenTorch2 extends AppCompatActivity {
             }
         });
 
-        //---home button---
-        home = (ImageButton) findViewById(R.id.home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toPenTorch2.this, MainMenu.class));
-            }
-        });
 
     }
 }

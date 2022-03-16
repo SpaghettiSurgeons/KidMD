@@ -24,11 +24,11 @@
 
     <TextView
         android:id="@+id/penTorchUseView"
-        android:layout_width="293dp"
-        android:layout_height="171dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/penTorch_use"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,12 +37,12 @@
 
     <TextView
         android:id="@+id/penTorchTitleView"
-        android:layout_width="136dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:gravity="center"
         android:text="@string/penTorch"
         android:textColor="#219BA3"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,23 +61,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.56"
         app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
-
-    <ImageButton
-        android:id="@+id/home"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="3dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.479"
-        app:srcCompat="@drawable/home_transp" />
 
     <ImageButton
         android:id="@+id/secondPage"

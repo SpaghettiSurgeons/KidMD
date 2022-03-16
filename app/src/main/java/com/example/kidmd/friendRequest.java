@@ -2,7 +2,9 @@ package com.example.kidmd;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class friendRequest extends AppCompatActivity {
+public class friendRequest extends AppCompatActivity implements View.OnClickListener{
 
     private TextView fullName, email, age;
     private Button SendReq, DeclineReq;
@@ -25,6 +27,8 @@ public class friendRequest extends AppCompatActivity {
     private DatabaseReference FriendRequestRef, UsersRef;
     private FirebaseAuth mAuth;
     private String senderUserID, receiverUserID, CURRENT_STATE;
+
+    private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +86,16 @@ public class friendRequest extends AppCompatActivity {
             DeclineReq.setVisibility(View.GONE);
             SendReq.setVisibility(View.GONE);
         }
+
+        // Bottom toolbar
+        home_button = (AppCompatImageView) findViewById(R.id.home_button);
+        home_button.setOnClickListener(this);
+        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
+        explore_button.setOnClickListener(this);
+        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
+        notifications_button.setOnClickListener(this);
+        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
+        profile_button.setOnClickListener(this);
 
     }
 
@@ -141,6 +155,26 @@ public class friendRequest extends AppCompatActivity {
         DeclineReq = (Button) findViewById(R.id.declineReq);
 
         CURRENT_STATE = "not_friends";
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            // bottom toolbar
+            case R.id.home_button:
+                startActivity(new Intent(this, MainMenu.class));
+                break;
+            case R.id.explore_button:
+                startActivity(new Intent(this, ExplorePage.class));
+                break;
+            /*case R.id.notifications_button:
+                startActivity(new Intent(this, ?.class));
+                break;
+            case R.id.profile_button:
+                startActivity(new Intent(this, ?.class));
+                break;*/
+        }
     }
 
 }

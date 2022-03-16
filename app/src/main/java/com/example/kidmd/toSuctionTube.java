@@ -17,8 +17,6 @@ public class toSuctionTube extends AppCompatActivity {
     TextView suctionTubeDesc;
     ImageButton suctionTubeAudio;
     TextToSpeech textToSpeech;
-    private ImageButton backArrow;
-    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,24 +43,6 @@ public class toSuctionTube extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 textToSpeech.speak(suctionTubeDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
-            }
-        });
-
-        //---back arrow button---
-        backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toSuctionTube.this, ToolsList.class));
-            }
-        });
-
-        //---home button---
-        home = (ImageButton) findViewById(R.id.home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toSuctionTube.this, MainMenu.class));
             }
         });
 

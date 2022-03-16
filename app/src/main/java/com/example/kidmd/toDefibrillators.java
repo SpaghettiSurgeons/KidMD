@@ -17,8 +17,6 @@ public class toDefibrillators extends AppCompatActivity {
     TextView defibrillatorsDesc;
     ImageButton defibrillatorsAudio;
     TextToSpeech textToSpeech;
-    private ImageButton backArrow;
-    private ImageButton home;
     private ImageButton secondPage;
 
     @Override
@@ -54,24 +52,6 @@ public class toDefibrillators extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(toDefibrillators.this, toDefibrillators2.class));
-            }
-        });
-
-        //---back arrow button---
-        backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toDefibrillators.this, ToolsList.class));
-            }
-        });
-
-        //---home button---
-        home = (ImageButton) findViewById(R.id.home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(toDefibrillators.this, MainMenu.class));
             }
         });
 

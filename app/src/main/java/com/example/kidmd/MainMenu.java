@@ -57,6 +57,13 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         title.setVisibility(View.VISIBLE);
 
 
+
+        //Only show logout button and profile if user is logged in
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+            logoutbutton.setVisibility(View.GONE);
+            profile.setVisibility(View.VISIBLE);
+        }
+
         // Bottom toolbar
         home_button = (AppCompatImageView) findViewById(R.id.home_button);
         home_button.setOnClickListener(this);
@@ -68,13 +75,6 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         profile_button.setOnClickListener(this);
 
 
-        //Only show logout button and profile if user is logged in
-        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
-            logoutbutton.setVisibility(View.GONE);
-            profile.setVisibility(View.VISIBLE);
-        }
-
-
     }
 
     @Override
@@ -84,7 +84,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 startActivity(new Intent(MainMenu.this, ProceduresList.class));
                 break;
             case R.id.hospitalbutton:
-                startActivity(new Intent(this, HospitalMenu.class));
+                startActivity(new Intent(MainMenu.this, HospitalMenu.class));
                 break;
             case R.id.toolsbutton:
                 startActivity(new Intent(MainMenu.this, ToolsList.class));
@@ -100,7 +100,20 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 startActivity(new Intent(MainMenu.this, ProfileSearch.class));
                 break;
 
-                // Bottom Toolbar
+
+            // bottom toolbar
+            case R.id.home_button:
+                startActivity(new Intent(this, MainMenu.class));
+                break;
+            case R.id.explore_button:
+                startActivity(new Intent(this, ExplorePage.class));
+                break;
+            /*case R.id.notifications_button:
+                startActivity(new Intent(this, ?.class));
+                break;
+            case R.id.profile_button:
+                startActivity(new Intent(this, ?.class));
+                break;*/
 
         }
     }
