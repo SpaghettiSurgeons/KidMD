@@ -59,10 +59,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
 
 
         //Only show logout button and profile if user is logged in
-        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
-            logoutbutton.setVisibility(View.GONE);
-            profile.setVisibility(View.VISIBLE);
-        }
+        //if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+        //    logoutbutton.setVisibility(View.GONE);
+        //    profile.setVisibility(View.VISIBLE);
+        //}
 
         // Bottom toolbar
         home_button = (AppCompatImageView) findViewById(R.id.home_button);
