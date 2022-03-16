@@ -24,10 +24,11 @@ import java.util.ArrayList;
 
 public class BodyPartList extends AppCompatActivity implements View.OnClickListener {
 
-    ListView bprview;
-    EditText bpSearch;
+    // Search
+    ListView anatomyListView;
+    EditText anatomySearchEdit;
     String clicked;
-    Integer search_visible;
+    private Integer search_visible;
 
     AppCompatTextView anatomyTitle;
     AppCompatImageView anatomyBack, anatomySearch;
@@ -38,8 +39,9 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bodypart_list);
 
-        bprview = (ListView) findViewById(R.id.bprview);
-        bpSearch = findViewById(R.id.bpSearch);
+        // Search
+        anatomyListView = (ListView) findViewById(R.id.bprview);
+        anatomySearchEdit = findViewById(R.id.bpSearch);
 
         // Visibility for toolbar
         anatomyTitle = (AppCompatTextView) findViewById(R.id.anatomyTitle);
@@ -50,7 +52,7 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
         anatomySearch.setVisibility(View.VISIBLE);
         search_visible = 0;
 
-        //set up array for ListView
+        // Set up array for ListView
         ArrayList<String> arrayList = new ArrayList<>();
 
         arrayList.add("Appendix");
@@ -78,15 +80,14 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
                 else{
                     view.setBackgroundColor(Color.rgb(33, 155, 163));
                     view.getBackground().setAlpha(100);
-
                 }
                 return view;
             }
         };
-        bprview.setAdapter(arrayAdapter);
+        anatomyListView.setAdapter(arrayAdapter);
 
         //add listener
-        bprview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        anatomyListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //Toast.makeText(BodyPartList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
@@ -141,10 +142,10 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
                 System.out.println(search_visible);
                 switch (search_visible) {
                     case 0:
-                        bpSearch.setVisibility(View.VISIBLE);
+                        anatomySearchEdit.setVisibility(View.VISIBLE);
                         break;
                     case 1:
-                        bpSearch.setVisibility(View.GONE);
+                        anatomySearchEdit.setVisibility(View.GONE);
                         break;
                 }
                 if (search_visible == 0) {search_visible = 1;}
@@ -153,22 +154,13 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-
-        bpSearch.addTextChangedListener(new TextWatcher() {
+        anatomySearchEdit.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) { }
             @Override
-            public void onTextChanged(CharSequence s, int i, int i1, int i2) {
-                arrayAdapter.getFilter().filter(s);
-            }
-
+            public void onTextChanged(CharSequence s, int i, int i1, int i2) { arrayAdapter.getFilter().filter(s); }
             @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
+            public void afterTextChanged(Editable editable) { }
         });
 
         // Bottom toolbar
@@ -180,7 +172,6 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
         notifications_button.setOnClickListener(this);
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
-
     }
 
     @Override

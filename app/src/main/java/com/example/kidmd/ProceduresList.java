@@ -26,27 +26,34 @@ import java.util.ArrayList;
 
 public class ProceduresList extends AppCompatActivity implements View.OnClickListener{
 
-    private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
-
+    // Search
     ListView proceduresListView;
-    AppCompatImageView procedureBack;
+    EditText procedureSearchEdit;
+    private Integer search_visible;
 
-
-    EditText procedureSearch;
-    private ImageButton backButton;
+    AppCompatTextView procedureTitle;
+    AppCompatImageView procedureBack, procedureSearch;
+    private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_procedures_list);
 
+        // Search
+        proceduresListView = (ListView) findViewById(R.id.prview);
+        procedureSearchEdit = findViewById(R.id.prSearch);
+
+        // Visibility for toolbar
+        procedureTitle = (AppCompatTextView) findViewById(R.id.procedureTitle);
+        procedureTitle.setVisibility(View.VISIBLE);
         procedureBack = (AppCompatImageView) findViewById(R.id.backArrow);
         procedureBack.setVisibility(View.VISIBLE);
+        procedureSearch = (AppCompatImageView) findViewById(R.id.search_button);
+        procedureSearch.setVisibility(View.VISIBLE);
+        search_visible = 0;
 
-        proceduresListView = (ListView) findViewById(R.id.prview);
-
-        procedureSearch = findViewById(R.id.prSearch);
-
+        // Set up array for ListView
         ArrayList<String> arrayList = new ArrayList<>();
 
         arrayList.add("Appendectomy");
@@ -79,7 +86,6 @@ public class ProceduresList extends AppCompatActivity implements View.OnClickLis
                 } else {
                     view.setBackgroundColor(Color.rgb(33, 155, 163));
                     view.getBackground().setAlpha(100);
-
                 }
                 return view;
             }
@@ -104,25 +110,6 @@ public class ProceduresList extends AppCompatActivity implements View.OnClickLis
             }
         });
 
-
-        procedureSearch.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int i, int i1, int i2) {
-                arrayAdapter.getFilter().filter(s);
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
-
-
         // Back Arrow
         procedureBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,7 +117,33 @@ public class ProceduresList extends AppCompatActivity implements View.OnClickLis
                 startActivity(new Intent(ProceduresList.this, MainMenu.class));
             }
         });
+        // Search Button
+        procedureSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(search_visible);
+                switch (search_visible) {
+                    case 0:
+                        procedureSearchEdit.setVisibility(View.VISIBLE);
+                        break;
+                    case 1:
+                        procedureSearchEdit.setVisibility(View.GONE);
+                        break;
+                }
+                if (search_visible == 0) {search_visible = 1;}
+                else {search_visible = 0;}
+                System.out.println(search_visible);
+            }
+        });
 
+        procedureSearchEdit.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) { }
+            @Override
+            public void onTextChanged(CharSequence s, int i, int i1, int i2) { arrayAdapter.getFilter().filter(s); }
+            @Override
+            public void afterTextChanged(Editable editable) { }
+        });
 
         // Bottom toolbar
         home_button = (AppCompatImageView) findViewById(R.id.home_button);
