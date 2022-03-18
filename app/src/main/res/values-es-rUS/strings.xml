@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_account">Crear cuenta</string>
+    <string name="login">Inicia sesión</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="name">Nombre</string>
+    <string name="age">Años</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="guest">Continuar como visitante</string>
+
+    <string name="string_button">Back Button</string>
+    <string name="search_button">Botón de búsqueda</string>
+
+    <string name="anatomy">Anatomia</string>
+    <string name="anatomy_button">Botón de anatomia</string>
+    <string name="procedures">Procedimientos</string>
+    <string name="procedures_button">Botón de procedimientos</string>
+    <string name="tools">Herramientas</string>
+    <string name="tools_button">Botón de herramientas</string>
+    <string name="profile">Perfil</string>
+    <string name="profile_button">Botón de perfil</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="notifications_button">Botón de notificaciones</string>
+    <string name="additional_resources">Recursos adicionales</string>
+    <string name="additional_resources_button">Botón de recursos adicionales</string>
+    <string name="hospital">Hospital</string>
+    <string name="hospital_button">Botón de hospital</string>
+    <string name="sounds">Sonidos</string>
+    <string name="settings">Configuración</string>
+    <string name="logout">Salir</string>
+
+
+    <!--Body Parts-->
+    <string name="appendix">Apéndice</string>
+    <string name="appendix_description">El apéndice es un tubo delgado que se encuentra cercada del punto donde se unen el intestino delgado y el grueso. Su función aún está siendo estudiada pero no es nesesaria para la salud.</string>
+    <string name="brain">Cerebro</string>
+    <string name="brain_description">El cerebro es el centro de control del cuerpo humano. Controla las actividades y los movimientos del cuerpo. También es el centro del pensamiento, la memoria, y los sentimientos.</string>
+    <string name="clavicle">Clavícula</string>
+    <string name="clavicle_description">La clavícula es un hueso que conecta el esternón con el hombro. Es uno de los huesos más comunes de romperse.</string>
+    <string name="distalRadius">Radio Distal</string>
+    <string name="distalRadius_description">El radio distal es la parte final de los huesos del brazo que se conectan a la muñeca. Las fracturas en esta areá son muy comunes.</string>
+    <string name="gallbladder">Vesícula Biliar</string>
+    <string name="gallbladder_description">La vesícula biliar es un saco que conserva la bilis producida en el higado. El bilis se libera al intestino delgado para ayudar con la digestión.</string>
+    <string name="kidneys">Riñones</string>
+    <string name="kidneys_description">Los riñones son un par de organos que eliminan los desechos del cuerpo al filtrar la sangre. Los desechos se convierten en orina y se envían a la vejiga.</string>
+    <string name="liver">Hígado</string>
+    <string name="liver_description">El hígado es un órgano que filtra la sangre que viene del tracto digestivo. Descompone las toxinas de los productos químicos y las drogas. También produce proteinas importantes que el cuerpo nesesita..</string>
+    <string name="lungs">Pulmones</string>
+    <string name="lungs_description">Los pulmones son dos órganos en el pecho que te ayudan a respirar. Toman el oxígeno y lo esparcen por la sangre.</string>
+    <string name="spleen">Bazo</string>
+    <string name="spleen_description">El bazo es un órgano cerca del estomago. Recicla glóbulos viejos, conserva los glóbulos blancos, y filtra la sangre.</string>
+    <string name="tonsils">Anginas</string>
+    <string name="tonsils_description">Las anginas son las dos bolas de tejido en la parte posterior de la garganta. Pueden evitar que las bacterias y los virus entren al cuerpo y crean glóbulos blancos para combatirlos.</string>
+
+
+    <!--Surgical Tools-->
+    <string name="diathermy">Diatermia</string>
+    <string name="diathermy_description">La diatermia es una herramienta electroquirúrgica, lo que significa que necesita electricidad para hacer su trabajo. Se puede usar para cortar en partes del cuerpo que te están enfermando, o para detener el sangrado de los vasos sanguineos.</string>
+    <string name="forceps">Pinzas</string>
+    <string name="forceps_description">Durante la cirugía, las pinsas se usan para sujetar los tejidos del cuerpo, para que los médicos puedan alcanzar la áreas que están enfermando a uno y arreglarlas. Son diseñadas para sujetar los tejidos de una forma segura para que no le haga daño a uno.</string>
+    <string name="retractors">Retractores</string>
+    <string name="retractors_description">Los retractores se usan para mantener el tejido en su lugar, facilitando a los cirujanos ver y acceder a los lugares en los que necesitan trabajar.</string>
+    <string name="suctionTube">Tubo de Absorción</string>
+    <string name="suctionTube_description">Los cirujanos utilizan tubos de absorción para eliminar cosas dañinas del cuerpo durante la cirugía, o para retirar cosas que dificultan que los cirujanos vean y hagan su trabajo.</string>
+    <string name="sutures">Suturas</string>
+    <string name="sutures_description">Las suturas son como un hilo. De la misma manera que el hilo sostiene la ropa, las suturas mantienen unida la piel después de que los médicos hayan reparado lo que lo está enfermando. Algunas suturas hasta se disuelven solas sin tener que quitarlas.</string>
+    <!--NEW-->
+    <string name="defibrillators">Defibrillators</string>
+    <string name="defibrillators_description">Defibrillators are tools you have probably seen used on TV, and they were probably used incorrectly in those portrayals. They are electric paddles used to restore the normal rhythm of your heart, not to restart the heart after cardiac arrest, as is often shown.</string>
+    <string name="anesthesia">Anesthesia</string>
+    <string name="anesthesia_description">Anesthesia machines use a measured, steady supply of medical gases to ensure your surgery is completely painless. These advanced machines track all of your vital signs so that you get the correct amount of gas.</string>
+    <string name="stethoscope">Stethoscope</string>
+    <string name="stethoscope_description">Stethoscopes are probably the most famous medical device, seen in many cartoons and movies. These devices allow doctors to listen to your heart, lungs, and even sounds in your stomach!</string>
+    <string name="sphygmomanometer">Sphygmomanometer</string>
+    <string name="sphygmomanometer_description">If attempting to pronounce this word intimidates you, don\'t worry, you\'re not alone. This device checks your blood pressure using an inflated cuff and mercury. The result will be 2 numbers like: xx/yy. The left number describes your heart\'s contraction pressure; the right, its relaxation pressure.</string>
+    <string name="penTorch">Pen Torch</string>
+    <string name="penTorch_description">Pen Torches, as their name implies, look like pens, but are equipped with a powerful flashlight. Your doctor uses these devices to check the pupillary response from your eyes, and also to check your nose and mouth, to make sure you are healthy.</string>
+
+
+
+    <!--Surgical Procedures-->
+    <string name="why_needed">PORQUÉ LO NECESITAS?</string>
+    <string name="what_happens">WHAT WILL HAPPEN DURING SURGERY?</string>
+
+
+    <string name="appendectomy">Apendectomía</string>
+    <string name="why_appendectomy">El apéndice es una pequeña bolsa en el lado inferior derecho de su abdomen. Está unido a el intestino grueso.\n \nA veces puede ser obstruido por la mucosidad atrapada en el interior. Esto es peligroso porque puede permitir que malas bacterias crezcan y causen infección e inflamación. Si no es sacado, puede reventar y la infección puede extenderse al vientre.\n \nPara evitar esto, se debe realizar una cirugía para remover el apéndice.</string>
+    <string name="desc_appendectomy">You will go to sleep. The doctors will make few small cuts on your stomach. They will find your appendix and slowly remove it. \n\nThen they will close your stomach with a few small stitches. Once they are done, you will wake up from your sleep.</string>
+
+
+    <string name="cholecystectomy">Colecistectomía</string>
+    <string name="why_cholecystectomy">A veces, la vesícula biliar puede formar pequeñas piedras dañinas, conocidas como cálculos biliares, dentro de la vejiga. Esto es peligroso porque los cálculos biliares pueden bloquear la salida de los fluidos digestivos de la vejiga. Esto puede causar mucho dolor e infección si no es tratado. \n\nPara curar esto, se necesita una cirugía para remover la vesícula biliar.</string>
+    <string name="desc_cholecystectomy">You will go to sleep. The doctor will make some small cuts on your stomach. The doctor may put a small camera inside your belly and look for your gallbladder.\n\nUsing some special tool, the doctor will remove the gallbladder. Once the doctor is done, you will wake up from your sleep.</string>
+
+
+    <string name="choledochalCystRemoval">Extirpación de un Quiste Coledocócico</string>
+    <string name="why_choledochalCystRemoval">Choledochal cyst is a problem that occurs in the tubes connecting from the liver to the gallbladder. Sometimes this tube can get bigger than normal and cause liver problems. This is bad because it can mess up or block the flow of important fluids from the liver to the small intestine. This can cause the tube to swell and get infected.\n\nIf surgery is not done to remove the cyst, the liver can get damaged and not work well.</string>
+    <string name="desc_choledochalCystRemoval">You will go to sleep. The doctor will make small cuts near your belly button. They may put a camera inside to see your organs inside. \n\nThe doctor puts some gas in your belly so they can see your organs better. Then they will use some special tools to remove the cyst from the tube. The doctor will re-build the tube by using a small section of the intestine.\n\nNow everything will be good and the doctor will close your belly and you will wake up.</string>
+
+
+    <string name="decortication">Decorticación</string>
+    <string name="why_decortation">Sometimes a fibrous tissue, also known as pleura, can form on the lung, chest wall or the diaphragm which is not normal. Usually there is a small space between the lungs and the chest containing a thin layer of fluid. It is important for this area to remain moist and free so that the lung can expand and deflate normally when you breathe. If this area gets blocked with tissue, then it becomes hard for the lung to expand and deflate normally which can create breathing problems. With the help of surgery, this harmful tissue can be removed and the lungs can be saved.</string>
+    <string name="desc_decortication">You will go to sleep. The doctor will put a breathing tube inside your throat and connect it to a machine which will help you breathe. Then they will make a few small cuts on your chest. The doctor will look inside your chest and take the air out of your lungs. The doctor will move the lungs to the side and find the affected area. Then they will put a small camera to see the affected area better. Next the doctor will peel off the bad tissue and put air back into your lungs. The doctor will close your chest with stitches and you will wake up.</string>
+
+
+    <string name="esophagomyotomy">Esophagomyotomy</string>
+    <string name="why_esophagomyotomy">This surgical procedure is used to treat achalasia. This problem occurs when the nerves in the esophagus become damaged. This can cause the esophagus to become paralyzed or become larger if not treated by a doctor. If this happens, it will become difficult for the esophagus to squeeze down food when you eat and it will become harder for you to swallow food.</string>
+    <string name="desc_esophagomyotomy">You will go to sleep. The doctor will make some small cuts near your upper chest and put some special tools inside. The doctor will cut the LES muscle, which is a muscle at the bottom of your esophagus which connects into the stomach. This muscle gets tights and blocks food from entering your stomach. Once this is cut, the doctor will be all done. They will close your cuts with a few stitches and you will wake up.</string>
+
+
+</resources>

@@ -8,6 +8,7 @@
 
 
 
+<<<<<<< Updated upstream
     <TextView
         android:id="@+id/toolsHeading"
         android:layout_width="match_parent"
@@ -22,12 +23,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+=======
+>>>>>>> Stashed changes
     <EditText
-        android:id="@+id/toolSearch"
+        android:id="@+id/tb_toolsSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/top_toolbar"
         android:hint="Search"
-        android:layout_below="@+id/toolsHeading"
+        android:visibility="gone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,32 +40,16 @@
         android:id="@+id/toolsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolSearch"
+        android:layout_below="@+id/tb_toolsSearch"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="44dp"
         android:divider="@android:color/white"
-        android:dividerHeight="2dp"
-        android:textColor="#ffffff" />
-
-
-    <ImageButton
-        android:id="@+id/backArrow"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="3dp"
-        android:background="@android:color/transparent"
-        app:srcCompat="@drawable/white_left_arrow" />
-
-
-
+        android:dividerHeight="2dp" />
 
 </RelativeLayout>

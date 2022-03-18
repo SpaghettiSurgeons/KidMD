@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KidMD</string>
+
+    <string name="anatomy">Giải phẫu học</string>
+    <string name="anatomy_button">Nút giải phẫu</string>
+    <string name="procedures">Thủ tục</string>
+    <string name="procedures_button">Nút thủ tục</string>
+    <string name="tools">Dụng cụ</string>
+    <string name="tools_button">Nút công cụ</string>
+    <string name="profile">Hồ sơ</string>
+    <string name="profile_button">Nút hồ sơ</string>
+    <string name="notifications">Thông báo</string>
+    <string name="notifications_button">Nút thông báo</string>
+    <string name="additional_resources">Các nguồn lực bổ sung</string>
+    <string name="additional_resources_button">Nút nguồn lực bổ sung</string>
+    <string name="hospital">Bệnh viện</string>
+    <string name="hospital_button">Hospital button</string>
+
+</resources>
