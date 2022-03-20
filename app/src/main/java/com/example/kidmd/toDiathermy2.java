@@ -12,24 +12,24 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class toSutures extends AppCompatActivity {
+public class toDiathermy2 extends AppCompatActivity {
 
-    TextView suturesDesc;
-    ImageButton suturesAudio;
+    TextView diathermyUse;
+    ImageButton diathermyAudio;
     TextToSpeech textToSpeech;
-    private ImageButton secondPage;
+    private ImageButton firstPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_to_sutures);
+        setContentView(R.layout.activity_to_diathermy2);
 
-        suturesDesc = findViewById(R.id.suturesDescView);
-        suturesAudio = findViewById(R.id.suturesAudio);
+        diathermyUse = findViewById(R.id.diathermyUseView);
+        diathermyAudio = findViewById(R.id.diathermyAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.suturesTitleView)).setTypeface(baloo);
-        (suturesDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.diathermyTitleView)).setTypeface(baloo);
+        (diathermyUse).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -40,21 +40,20 @@ public class toSutures extends AppCompatActivity {
                 }
             }
         });
-        suturesAudio.setOnClickListener(new View.OnClickListener(){
+        diathermyAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(suturesDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(diathermyUse.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
-        secondPage = (ImageButton) findViewById(R.id.secondPage);
-        secondPage.setOnClickListener(new View.OnClickListener() {
+        firstPage = (ImageButton) findViewById(R.id.backPage);
+        firstPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(toSutures.this, toSutures2.class));
+                startActivity(new Intent(toDiathermy2.this, toDiathermy.class));
             }
         });
-
 
     }
 }

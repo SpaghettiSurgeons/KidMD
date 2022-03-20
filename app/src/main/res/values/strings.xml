@@ -61,15 +61,20 @@
 
     <!--Surgical Tools-->
     <string name="diathermy">Diathermy</string>
-    <string name="diathermy_description">Diathermy is an electrosurgical tool, meaning it needs electricity to do its job. It can be used to cut into parts of your body that are making you sick, or to stop blood vessels from bleeding.</string>
+    <string name="diathermy_description">Diathermy is an electrosurgical tool, meaning it needs electricity to do its job. It creates heat using electricity, and on certain settings can be used to relax muscles.</string>
+    <string name="diathermy_use">Diathermy is used in physical therapy and in surgery. It can be used to cut into parts of your body that are making you sick, or to stop blood vessels from bleeding.</string>
     <string name="forceps">Forceps</string>
-    <string name="forceps_description">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they do not hurt you.</string>
+    <string name="forceps_description">Forceps are a metallic instrument with a hinge, able to grasp and hold objects. They are more precise than fingers, and are often used when a doctor needs his or her hands free for other tasks.</string>
+    <string name="forceps_use">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they do not hurt you.</string>
     <string name="retractors">Retractors</string>
-    <string name="retractors_description">While forceps are used to pull back tissue, retractors are used to hold tissue in place, making it easier for surgeons to see and access the places they need to work on.</string>
+    <string name="retractors_description">Retractors are a metallic tool with an angled blade. Once the instrument is in place, it maintains the position desired by the surgeon. They can be handheld or perched on the end of a robotic arm.</string>
+    <string name="retractors_use">While forceps are used to pull back tissue, retractors are used to hold tissue in place, making it easier for surgeons to see and access the places they need to work on.</string>
     <string name="suctionTube">Suction Tube</string>
-    <string name="suctionTube_description">Suction tubes are used by surgeons to remove harmful stuff from your body during surgery, or to remove stuff that makes it hard for surgeons to see to do their work.</string>
+    <string name="suctionTube_description">Suction Tube devices are either mechanical hand pumps or electrical/battery-powered mechanisms connected to plastic tubing with a rigid tip, the Yankauer suction tip.</string>
+    <string name="suctionTube_use">Suction tubes are used by surgeons to remove harmful stuff from your body during surgery, or to remove stuff that makes it hard for surgeons to see to do their work.</string>
     <string name="sutures">Sutures</string>
     <string name="sutures_description">Sutures are like thread. In the same way thread holds your clothes together, sutures hold your skin together after doctors have fixed what\'s making you sick. Some even dissolve on their own, without having to be removed.</string>
+    <string name="sutures_use">Sutures are generally applied with a needle, and the choice of which sutures to use can be complex. Depending on the tissue being held together and the forces applied by the wound, surgeons must choose sutures of proper strength and elasticity.</string>
     <string name="defibrillators">Defibrillators</string>
     <string name="defibrillators_description">Defibrillators are tools you have probably seen used on TV, and they were probably used incorrectly in those portrayals. They are electric paddles used to restore the normal rhythm of your heart, not to restart the heart after cardiac arrest, as is often shown.</string>
     <string name="defibrillators_use">It is very unlikely that you will ever need to have this tool used on you, but it is important to know it is there just in case! In the image above, you can see the woman making a point of avoiding contact with the man being defibrillated. This is also why they yell \"Clear!\" on TV: so that the electrical current doesn\'t go where it\'s not supposed to.</string>

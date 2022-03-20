@@ -17,6 +17,7 @@ public class toForceps extends AppCompatActivity {
     TextView forcepsDesc;
     ImageButton forcepsAudio;
     TextToSpeech textToSpeech;
+    private ImageButton secondPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,14 @@ public class toForceps extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 textToSpeech.speak(forcepsDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
+        secondPage = (ImageButton) findViewById(R.id.secondPage);
+        secondPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(toForceps.this, toForceps2.class));
             }
         });
 

@@ -17,6 +17,7 @@ public class toSuctionTube extends AppCompatActivity {
     TextView suctionTubeDesc;
     ImageButton suctionTubeAudio;
     TextToSpeech textToSpeech;
+    private ImageButton secondPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,14 @@ public class toSuctionTube extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 textToSpeech.speak(suctionTubeDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
+        secondPage = (ImageButton) findViewById(R.id.secondPage);
+        secondPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(toSuctionTube.this, toSuctionTube2.class));
             }
         });
 
