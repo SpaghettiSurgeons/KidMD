@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".toDiathermy2"
+            android:exported="false" />
+        <activity
+            android:name=".toSuctionTube2"
+            android:exported="false" />
+        <activity
+            android:name=".toSutures2"
+            android:exported="false" />
+        <activity
+            android:name=".toRetractors2"
+            android:exported="false" />
+        <activity
+            android:name=".toForceps2"
+            android:exported="false" />
+        <activity
             android:name=".toPenTorch2"
             android:exported="false" />
         <activity

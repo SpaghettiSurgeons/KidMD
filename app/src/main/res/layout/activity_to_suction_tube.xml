@@ -61,5 +61,33 @@
         app:layout_constraintVertical_bias="0.56"
         app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
 
+    <ImageButton
+        android:id="@+id/secondPage"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="156dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/suctionTubeDescView"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/green_right_arrow" />
+
+    <ImageButton
+        android:id="@+id/backPage"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="156dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/suctionTubeDescView"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/grayed_left_arrow" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

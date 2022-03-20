@@ -12,24 +12,24 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class toSutures extends AppCompatActivity {
+public class toSutures2 extends AppCompatActivity {
 
-    TextView suturesDesc;
+    TextView suturesUse;
     ImageButton suturesAudio;
     TextToSpeech textToSpeech;
-    private ImageButton secondPage;
+    private ImageButton firstPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_to_sutures);
+        setContentView(R.layout.activity_to_sutures2);
 
-        suturesDesc = findViewById(R.id.suturesDescView);
+        suturesUse = findViewById(R.id.suturesUseView);
         suturesAudio = findViewById(R.id.suturesAudio);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
         ((TextView) findViewById(R.id.suturesTitleView)).setTypeface(baloo);
-        (suturesDesc).setTypeface(baloo);
+        (suturesUse).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -43,18 +43,17 @@ public class toSutures extends AppCompatActivity {
         suturesAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(suturesDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(suturesUse.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
-        secondPage = (ImageButton) findViewById(R.id.secondPage);
-        secondPage.setOnClickListener(new View.OnClickListener() {
+        firstPage = (ImageButton) findViewById(R.id.backPage);
+        firstPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(toSutures.this, toSutures2.class));
+                startActivity(new Intent(toSutures2.this, toSutures.class));
             }
         });
-
 
     }
 }

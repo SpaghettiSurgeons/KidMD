@@ -5,29 +5,29 @@
     android:id="@+id/audioButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".toRetractors">
+    tools:context=".toForceps2">
     <include layout="@layout/bottom_toolbar" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="219dp"
-        android:layout_height="216dp"
-        android:contentDescription="@string/retractors"
+        android:layout_width="268dp"
+        android:layout_height="232dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354"
-        app:srcCompat="@drawable/retractors" />
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/forceps2_trans"
+        android:contentDescription="@string/forceps" />
 
     <TextView
-        android:id="@+id/retractorsDescView"
+        android:id="@+id/forcepsUseView"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/retractors_description"
-        android:textSize="20sp"
+        android:text="@string/forceps_use"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,20 +35,20 @@
         app:layout_constraintVertical_bias="0.30" />
 
     <TextView
-        android:id="@+id/retractorsTitleView"
+        android:id="@+id/forcepsTitleView"
         android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:gravity="center"
-        android:text="@string/retractors"
+        android:text="@string/forceps"
         android:textColor="#219BA3"
-        android:textSize="34sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/retractorsAudio"
+        android:id="@+id/forcepsAudio"
         android:layout_width="51dp"
         android:layout_height="51dp"
         android:background="@android:color/transparent"
@@ -61,6 +61,7 @@
         app:layout_constraintVertical_bias="0.56"
         app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
 
+
     <ImageButton
         android:id="@+id/secondPage"
         android:layout_width="50dp"
@@ -69,11 +70,11 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="156dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/retractorsDescView"
+        app:layout_constraintBottom_toTopOf="@id/forcepsUseView"
         app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/green_right_arrow" />
+        app:srcCompat="@drawable/grayed_right_arrow" />
 
     <ImageButton
         android:id="@+id/backPage"
@@ -83,11 +84,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="156dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/retractorsDescView"
+        app:layout_constraintBottom_toTopOf="@id/forcepsUseView"
         app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/grayed_left_arrow" />
-
+        app:srcCompat="@drawable/green_left_arrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

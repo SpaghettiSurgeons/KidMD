@@ -17,6 +17,7 @@ public class toRetractors extends AppCompatActivity {
     TextView retractorsDesc;
     ImageButton retractorsAudio;
     TextToSpeech textToSpeech;
+    private ImageButton secondPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,14 @@ public class toRetractors extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 textToSpeech.speak(retractorsDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
+        secondPage = (ImageButton) findViewById(R.id.secondPage);
+        secondPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(toRetractors.this, toRetractors2.class));
             }
         });
 
