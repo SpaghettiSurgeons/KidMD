@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 import android.speech.tts.TextToSpeech;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import java.util.Locale;
 
 public class bpAppendeix extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class bpAppendeix extends AppCompatActivity {
     TextView appendixDesc;
     ImageButton appendixAudio;
     TextToSpeech textToSpeech;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,5 +45,7 @@ public class bpAppendeix extends AppCompatActivity {
                 textToSpeech.speak(appendixDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
+
+
     }
 }

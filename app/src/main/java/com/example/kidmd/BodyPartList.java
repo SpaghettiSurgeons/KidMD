@@ -19,6 +19,15 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -28,16 +37,43 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
     ListView anatomyListView;
     EditText anatomySearchEdit;
     String clicked;
+    String bpTrack;
+    DatabaseReference reference;
     private Integer search_visible;
 
     AppCompatTextView anatomyTitle;
     AppCompatImageView anatomyBack, anatomySearch;
     private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
+    //DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Progress");
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bodypart_list);
+
+        //retrieve progress data
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            String userID = user.getUid();
+            reference = FirebaseDatabase.getInstance().getReference("Progress").child(userID);
+            reference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.exists()) {
+                        ProgressTrack track = dataSnapshot.getValue(ProgressTrack.class);
+                        if (track != null){
+                            bpTrack = track.bp;
+                        }
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Toast.makeText(BodyPartList.this, "There was a problem!", Toast.LENGTH_LONG).show();
+                }
+            });}
 
         // Search
         anatomyListView = (ListView) findViewById(R.id.bprview);
@@ -91,8 +127,17 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //Toast.makeText(BodyPartList.this, "clicked: " + arrayList.get(i), Toast.LENGTH_SHORT).show();
+
+                //see if page has been visited before and log it if it hasn't
+                if ((FirebaseAuth.getInstance().getCurrentUser() != null)) {
+                    if (!bpTrack.contains(arrayList.get(i))) {
+                        bpTrack = bpTrack + "." + arrayList.get(i);
+                        reference.child("bp").setValue(bpTrack);
+                    }
+                }
+
                 //open body part activity
-                switch (arrayList.get(i)) {
+                switch ((String)adapterView.getItemAtPosition(i)) {
                     case "Appendix":
                         startActivity(new Intent(BodyPartList.this, bpAppendeix.class));
                         break;
