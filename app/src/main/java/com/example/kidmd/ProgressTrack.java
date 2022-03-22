@@ -50,7 +50,12 @@ public class ProgressTrack {
     }
 
 
-    public ProgressTrack() {}
+    public ProgressTrack() {
+        this.bp = "";
+        this.hr = "";
+        this.pr = "";
+        this.to = "";
+    }
 
     public ProgressTrack(String bp, String hr, String pr, String to) {
         this.bp = bp;

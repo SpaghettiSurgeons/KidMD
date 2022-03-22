@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +28,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     private TextView cancel, registerUser;
     private EditText editTextFullName, editTextAge, editTextEmail, editTextPassword;
     private ProgressBar progressBar;
+    String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,7 +112,10 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            //initialize user
                             User user = new User(fullName, age, email);
+                            //initialize progress logger
+                            ProgressTrack log = new ProgressTrack();
 
                             FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
@@ -117,6 +123,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
+                                        //create progress logger
+                                        userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                                        FirebaseDatabase.getInstance().getReference("Progress").child(userID).setValue(log);
                                         Toast.makeText(SignUp.this, "User successfully registered!", Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
                                     }
@@ -135,5 +144,4 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                     }
                 });
     }
-
 }
