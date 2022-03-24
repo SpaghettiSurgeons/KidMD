@@ -10,6 +10,8 @@ import android.speech.tts.TextToSpeech;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.Locale;
 
 public class toAnesthesia2 extends AppCompatActivity {

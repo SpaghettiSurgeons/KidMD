@@ -1,5 +1,6 @@
 package com.example.kidmd;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
@@ -18,6 +19,15 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class HospitalInteract extends AppCompatActivity {
 
@@ -25,6 +35,8 @@ public class HospitalInteract extends AppCompatActivity {
     private AlertDialog dialog;
     private TextView bedDesc;
     private Button test;
+    DatabaseReference reference;
+    String hrTrack;
     private ImageButton bedButton, bpmButton, curtainButton, sudButton, ecgButton, otoscopeButton, opthalmoscopeButton;
 
     @Override
@@ -32,6 +44,28 @@ public class HospitalInteract extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital_interact);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        //retrieve progress data
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            String userID = user.getUid();
+            reference = FirebaseDatabase.getInstance().getReference("Progress").child(userID);
+            reference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    if (dataSnapshot.exists()) {
+                        ProgressTrack track = dataSnapshot.getValue(ProgressTrack.class);
+                        if (track != null){
+                            hrTrack = track.hr;
+                        }
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Toast.makeText(HospitalInteract.this, "There was a problem!", Toast.LENGTH_LONG).show();
+                }
+            });}
 
         bedButton = (ImageButton) findViewById(R.id.bedButton);
         bedButton.setOnClickListener(this::onClick);
@@ -52,6 +86,12 @@ public class HospitalInteract extends AppCompatActivity {
 
 
     public void onClick(View v) {
+        /*if ((FirebaseAuth.getInstance().getCurrentUser() != null)) {
+            if (!hrTrack.contains(v.)) {
+                hrTrack = hrTrack + "." + v.toString();
+                reference.child("hr").setValue(hrTrack);
+            }
+        }*/
         switch (v.getId()) {
             case R.id.bedButton:
                 startActivity(new Intent(HospitalInteract.this, hrBed.class));
