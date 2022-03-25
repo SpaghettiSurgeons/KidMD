@@ -20,7 +20,6 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-<<<<<<< Updated upstream
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -31,27 +30,24 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-=======
 import android.widget.TextView;
 import android.widget.Toast;
->>>>>>> Stashed changes
+
 import java.util.ArrayList;
 
 public class ToolsList extends AppCompatActivity implements View.OnClickListener {
 
     ListView toolsListView;
-<<<<<<< Updated upstream
     EditText toolSearch;
     private ImageButton backArrow;
     DatabaseReference reference;
     String toTrack;
-=======
     EditText toolSearchEdit;
     private Integer search_visible;
 
     AppCompatTextView toolsTitle;
     AppCompatImageView toolsBack, toolsSearch;
->>>>>>> Stashed changes
+    
     private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
     @Override
