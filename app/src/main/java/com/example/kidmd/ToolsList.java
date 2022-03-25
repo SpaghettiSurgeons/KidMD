@@ -48,7 +48,8 @@ public class ToolsList extends AppCompatActivity implements View.OnClickListener
     AppCompatTextView toolsTitle;
     AppCompatImageView toolsBack, toolsSearch;
 
-    private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
+    // Bottom Toolbar
+    private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -217,7 +218,6 @@ public class ToolsList extends AppCompatActivity implements View.OnClickListener
         notifications_button.setOnClickListener(this);
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
-
     }
 
     @Override

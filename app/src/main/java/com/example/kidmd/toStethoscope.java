@@ -13,13 +13,14 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 import java.util.Locale;
 
-public class toStethoscope extends AppCompatActivity implements View.OnClickListener{
+public class toStethoscope extends AppCompatActivity implements View.OnClickListener {
 
     TextView stethoscopeDesc;
     ImageButton stethoscopeAudio;
     TextToSpeech textToSpeech;
     private ImageButton secondPage;
-    private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
+    // Bottom Toolbar
+    private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,16 @@ public class toStethoscope extends AppCompatActivity implements View.OnClickList
 
         stethoscopeDesc = findViewById(R.id.stethoscopeDescView);
         stethoscopeAudio = findViewById(R.id.stethoscopeAudio);
+
+        // Bottom toolbar
+        home_button = (AppCompatImageView) findViewById(R.id.home_button);
+        home_button.setOnClickListener(this);
+        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
+        explore_button.setOnClickListener(this);
+        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
+        notifications_button.setOnClickListener(this);
+        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
+        profile_button.setOnClickListener(this);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
         ((TextView) findViewById(R.id.stethoscopeTitleView)).setTypeface(baloo);
@@ -56,18 +67,6 @@ public class toStethoscope extends AppCompatActivity implements View.OnClickList
                 startActivity(new Intent(toStethoscope.this, toStethoscope2.class));
             }
         });
-
-
-        // Bottom toolbar
-        home_button = (AppCompatImageView) findViewById(R.id.home_button);
-        home_button.setOnClickListener(this);
-        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
-        explore_button.setOnClickListener(this);
-        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
-        notifications_button.setOnClickListener(this);
-        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
-        profile_button.setOnClickListener(this);
-
 
     }
 
