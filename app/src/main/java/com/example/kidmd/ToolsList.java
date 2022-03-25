@@ -47,7 +47,7 @@ public class ToolsList extends AppCompatActivity implements View.OnClickListener
 
     AppCompatTextView toolsTitle;
     AppCompatImageView toolsBack, toolsSearch;
-    
+
     private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
     @Override

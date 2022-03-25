@@ -19,7 +19,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
 
     private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profileSearchButton;
     private AppCompatTextView title;
-    private AppCompatImageView profile, home_button, explore_button, profile_button, notifications_button;
+    // Bottom Toolbar
+    private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
 
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -74,7 +75,6 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
 
-
     }
 
     @Override
@@ -101,7 +101,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 break;
 
 
-            // bottom toolbar
+            // Bottom Toolbar
             case R.id.home_button:
                 startActivity(new Intent(this, MainMenu.class));
                 break;

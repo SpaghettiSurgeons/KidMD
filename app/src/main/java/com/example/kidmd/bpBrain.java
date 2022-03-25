@@ -19,7 +19,7 @@ public class bpBrain extends AppCompatActivity implements View.OnClickListener{
     TextView brainDesc;
     ImageButton brainAudio;
     TextToSpeech textToSpeech;
-    private AppCompatImageView profile, home_button, explore_button, profile_button, notifications_button;
+    private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +66,7 @@ public class bpBrain extends AppCompatActivity implements View.OnClickListener{
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            // bottom toolbar
+            // Bottom Toolbar
             case R.id.home_button:
                 startActivity(new Intent(this, MainMenu.class));
                 break;
