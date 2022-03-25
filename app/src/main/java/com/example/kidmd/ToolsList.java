@@ -4,12 +4,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -17,6 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+<<<<<<< Updated upstream
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,15 +31,27 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+=======
+import android.widget.TextView;
+import android.widget.Toast;
+>>>>>>> Stashed changes
 import java.util.ArrayList;
 
 public class ToolsList extends AppCompatActivity implements View.OnClickListener {
 
     ListView toolsListView;
+<<<<<<< Updated upstream
     EditText toolSearch;
     private ImageButton backArrow;
     DatabaseReference reference;
     String toTrack;
+=======
+    EditText toolSearchEdit;
+    private Integer search_visible;
+
+    AppCompatTextView toolsTitle;
+    AppCompatImageView toolsBack, toolsSearch;
+>>>>>>> Stashed changes
     private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
     @Override
@@ -66,8 +82,18 @@ public class ToolsList extends AppCompatActivity implements View.OnClickListener
             });}
 
         toolsListView = (ListView) findViewById(R.id.toolsTextView);
-        toolSearch = findViewById(R.id.toolSearch);
+        toolSearchEdit = findViewById(R.id.toolSearch);
 
+        // Visibility for toolbar
+        toolsTitle = (AppCompatTextView) findViewById(R.id.toolsTitle);
+        toolsTitle.setVisibility(View.VISIBLE);
+        toolsBack = (AppCompatImageView) findViewById(R.id.backArrow);
+        toolsBack.setVisibility(View.VISIBLE);
+        toolsSearch = (AppCompatImageView) findViewById(R.id.search_button);
+        toolsSearch.setVisibility(View.VISIBLE);
+        search_visible = 0;
+
+        // Set up array for ListView
         ArrayList<String> arrayList = new ArrayList<>();
 
         arrayList.add("Forceps");
@@ -151,29 +177,38 @@ public class ToolsList extends AppCompatActivity implements View.OnClickListener
             }
         });
 
-        toolSearch.addTextChangedListener(new TextWatcher() {
+        toolSearchEdit.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
             @Override
-            public void onTextChanged(CharSequence s, int i, int i1, int i2) {
-                arrayAdapter.getFilter().filter(s);
-            }
-
+            public void onTextChanged(CharSequence s, int i, int i1, int i2) { arrayAdapter.getFilter().filter(s); }
             @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
+            public void afterTextChanged(Editable editable) { }
         });
 
-        //---back arrow button---
-        backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener() {
+        // Back Arrow
+        toolsBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ToolsList.this, MainMenu.class));
+            }
+        });
+        // Search Button
+        toolsSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println(search_visible);
+                switch (search_visible) {
+                    case 0:
+                        toolSearchEdit.setVisibility(View.VISIBLE);
+                        break;
+                    case 1:
+                        toolSearchEdit.setVisibility(View.GONE);
+                        break;
+                }
+                if (search_visible == 0) {search_visible = 1;}
+                else {search_visible = 0;}
+                System.out.println(search_visible);
             }
         });
 

@@ -18,15 +18,19 @@
         <entry key="..\:/Users/ryani/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_main.xml" value="0.13269927536231885" />
         <entry key="..\:/Users/ryani/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_profile.xml" value="0.3229166666666667" />
         <entry key="..\:/Users/ryani/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_register_user.xml" value="0.24547101449275363" />
+<<<<<<< Updated upstream
         <entry key="..\:/Users/ryani/OneDrive/Documents/GitHub/KidMD/app/src/main/res/layout/activity_hospital_menu.xml" value="0.35054347826086957" />
         <entry key="..\:/Users/ryani/OneDrive/Documents/GitHub/KidMD/app/src/main/res/layout/activity_menu.xml" value="0.35054347826086957" />
         <entry key="..\:/Users/ryani/OneDrive/Documents/GitHub/KidMD/app/src/main/res/layout/activity_profile.xml" value="0.5" />
         <entry key="..\:/Users/ryani/OneDrive/Documents/GitHub/KidMD/app/src/main/res/layout/activity_profile_search.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/ryani/OneDrive/Documents/GitHub/KidMD/app/src/main/res/layout/list_layout.xml" value="0.5541666666666667" />
+=======
+>>>>>>> Stashed changes
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.12083333333333333" />
         <entry key="app/src/main/res/drawable/pr_background_triangle.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/activity_appendectomy.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_bodypart_list.xml" value="0.225" />
+<<<<<<< Updated upstream
         <entry key="app/src/main/res/layout/activity_brain.xml" value="0.2078125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1390625" />
@@ -44,6 +48,23 @@
         <entry key="app/src/main/res/layout/activity_tools_list.xml" value="0.225" />
         <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.2644927536231884" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.26869806094182824" />
+=======
+        <entry key="app/src/main/res/layout/activity_bp_appendix.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_bp_clavicle.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_bp_distal_radius.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_brain.xml" value="0.2078125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1390625" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1390625" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_pr_appendectomy.xml" value="0.2012525758704226" />
+        <entry key="app/src/main/res/layout/activity_pr_biliary_atresia.xml" value="0.2076923076923077" />
+        <entry key="app/src/main/res/layout/activity_pr_cholecystectomy.xml" value="0.3007246376811594" />
+        <entry key="app/src/main/res/layout/activity_pr_choledochal_cyst.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/activity_procedures_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1802536231884058" />
+        <entry key="app/src/main/res/layout/activity_tools_list.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.1" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>
