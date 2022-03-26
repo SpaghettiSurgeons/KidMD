@@ -57,59 +57,86 @@
     <string name="tonsils_description">Las anginas son las dos bolas de tejido en la parte posterior de la garganta. Pueden evitar que las bacterias y los virus entren al cuerpo y crean glóbulos blancos para combatirlos.</string>
 
 
-    <!--Surgical Tools-->
+    <!--Surgical Tools - use lines are new-->
     <string name="diathermy">Diatermia</string>
     <string name="diathermy_description">La diatermia es una herramienta electroquirúrgica, lo que significa que necesita electricidad para hacer su trabajo. Se puede usar para cortar en partes del cuerpo que te están enfermando, o para detener el sangrado de los vasos sanguineos.</string>
+    <string name="diathermy_use">Diathermy is used in physical therapy and in surgery. It can be used to cut into parts of your body that are making you sick, or to stop blood vessels from bleeding.</string>
+
     <string name="forceps">Pinzas</string>
     <string name="forceps_description">Durante la cirugía, las pinsas se usan para sujetar los tejidos del cuerpo, para que los médicos puedan alcanzar la áreas que están enfermando a uno y arreglarlas. Son diseñadas para sujetar los tejidos de una forma segura para que no le haga daño a uno.</string>
+    <string name="forceps_use">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they do not hurt you.</string>
+
     <string name="retractors">Retractores</string>
     <string name="retractors_description">Los retractores se usan para mantener el tejido en su lugar, facilitando a los cirujanos ver y acceder a los lugares en los que necesitan trabajar.</string>
+    <string name="retractors_use">While forceps are used to pull back tissue, retractors are used to hold tissue in place, making it easier for surgeons to see and access the places they need to work on.</string>
+
     <string name="suctionTube">Tubo de Absorción</string>
     <string name="suctionTube_description">Los cirujanos utilizan tubos de absorción para eliminar cosas dañinas del cuerpo durante la cirugía, o para retirar cosas que dificultan que los cirujanos vean y hagan su trabajo.</string>
+    <string name="suctionTube_use">Suction tubes are used by surgeons to remove harmful stuff from your body during surgery, or to remove stuff that makes it hard for surgeons to see to do their work.</string>
+
+
     <string name="sutures">Suturas</string>
     <string name="sutures_description">Las suturas son como un hilo. De la misma manera que el hilo sostiene la ropa, las suturas mantienen unida la piel después de que los médicos hayan reparado lo que lo está enfermando. Algunas suturas hasta se disuelven solas sin tener que quitarlas.</string>
+    <string name="sutures_use">Sutures are generally applied with a needle, and the choice of which sutures to use can be complex. Depending on the tissue being held together and the forces applied by the wound, surgeons must choose sutures of proper strength and elasticity.</string>
+
     <!--NEW-->
-    <string name="defibrillators">Defibrillators</string>
-    <string name="defibrillators_description">Defibrillators are tools you have probably seen used on TV, and they were probably used incorrectly in those portrayals. They are electric paddles used to restore the normal rhythm of your heart, not to restart the heart after cardiac arrest, as is often shown.</string>
-    <string name="anesthesia">Anesthesia</string>
-    <string name="anesthesia_description">Anesthesia machines use a measured, steady supply of medical gases to ensure your surgery is completely painless. These advanced machines track all of your vital signs so that you get the correct amount of gas.</string>
-    <string name="stethoscope">Stethoscope</string>
-    <string name="stethoscope_description">Stethoscopes are probably the most famous medical device, seen in many cartoons and movies. These devices allow doctors to listen to your heart, lungs, and even sounds in your stomach!</string>
-    <string name="sphygmomanometer">Sphygmomanometer</string>
-    <string name="sphygmomanometer_description">If attempting to pronounce this word intimidates you, don\'t worry, you\'re not alone. This device checks your blood pressure using an inflated cuff and mercury. The result will be 2 numbers like: xx/yy. The left number describes your heart\'s contraction pressure; the right, its relaxation pressure.</string>
-    <string name="penTorch">Pen Torch</string>
-    <string name="penTorch_description">Pen Torches, as their name implies, look like pens, but are equipped with a powerful flashlight. Your doctor uses these devices to check the pupillary response from your eyes, and also to check your nose and mouth, to make sure you are healthy.</string>
+    <string name="defibrillators">Desfibriladores</string>
+    <string name="defibrillators_description">Desfibriladores son herramientas que probablemente has visto en la televisión, y probablemente se usaron incorrectamente en esas representaciones. Son paletas eléctricas que se usan para restaurar el ritmo normal del corazón, no para reiniciar el corazón después de un paro cardíaco, como se muestran muchas veces.</string>
+    <string name="anesthesia">Anestesia</string>
+    <string name="anesthesia_description">Las máquinas de anestesia usan una provisión medida y constante de gases medicinales para garantizar que su cirugía sea completamente indolora. Estas máquinas avanzadas rastrean todos sus signos vitales para darte la cantidad correcta de gas</string>
+    <string name="stethoscope">Estetoscopio</string>
+    <string name="stethoscope_description">Los estetoscopios son probablemente el dispositivo médico más famoso, visto en muchos dibujos animados y en películas. ¡Estos dispositivos les permiten a los médicos escuchar su corazón, sus pulmones e incluso los sonidos en su estómago! </string>
+    <string name="sphygmomanometer">Esfigmomanómetro</string>
+    <string name="sphygmomanometer_description">Si intentar pronunciar esta palabra te intimida, no te preocupes, no estás solo. Este dispositivo mide su presión arterial usando un manguito inflado y mercurio. El resultado será 2 números como: xx/yy. El número izquierdo describe la presión de contracción de su corazón; el derecho, su presión de relajación.</string>
+    <string name="penTorch">Linternas de Pluma</string>
+    <string name="penTorch_description">Las liternas de pluma, como su nombre lo indica, parecen bolígrafos, pero están equipadas con una linterna potente. Su médico utiliza estos dispositivos para comprobar la respuesta pupilar de sus ojos y también para revisar su nariz y boca, para asegurarse de que está sano.</string>
+
+    <!--use lines-->
+    <string name="defibrillators_use">It is very unlikely that you will ever need to have this tool used on you, but it is important to know it is there just in case! In the image above, you can see the woman making a point of avoiding contact with the man being defibrillated. This is also why they yell \"Clear!\" on TV: so that the electrical current doesn\'t go where it\'s not supposed to.</string>
+    <string name="anesthesia_use">Prior to surgery, your doctor will place a plastic mask over your nose and mouth, and then tell you to count backwards from 10. You probably won\'t get far past number 7, because your body will have absorbed the gases through your lungs, and you will be deep, deep asleep! When you wake up, the surgery will be over, and you will be better!</string>
+    <string name="stethoscope_use">Like the Sphygmomanometer (the blood pressure cuff), these devices are quite common and part of your regular check-up during your doctor visit, and will also likely be used before surgery to avoid complications. Aside from possibly cold metal against your skin, there is nothing to worry about!</string>
+    <string name="sphygmomanometer_use">This tool is so common, you will likely see it during every regular office visit. It is part of your doctor\'s basic toolkit for keeping you healthy. It is also used immediately before surgery to make sure there will be no complications. You will feel a squeeze from the cuff, a pause, then it will relax and it is done.</string>
+    <string name="penTorch_use">Along with the Stethoscope and the Sphygmomanometer (the blood pressure cuff), this device is among the most common in your doctor\'s tool belt. Expect to see it during regular office visits and check-ups, and to have your doctor ask you to follow his finger with your eyes as the light peers into your pupils, ensuring the health of your eyes.</string>
 
 
 
     <!--Surgical Procedures-->
     <string name="why_needed">PORQUÉ LO NECESITAS?</string>
     <string name="what_happens">WHAT WILL HAPPEN DURING SURGERY?</string>
-
-
     <string name="appendectomy">Apendectomía</string>
-    <string name="why_appendectomy">El apéndice es una pequeña bolsa en el lado inferior derecho de su abdomen. Está unido a el intestino grueso.\n \nA veces puede ser obstruido por la mucosidad atrapada en el interior. Esto es peligroso porque puede permitir que malas bacterias crezcan y causen infección e inflamación. Si no es sacado, puede reventar y la infección puede extenderse al vientre.\n \nPara evitar esto, se debe realizar una cirugía para remover el apéndice.</string>
-    <string name="desc_appendectomy">You will go to sleep. The doctors will make few small cuts on your stomach. They will find your appendix and slowly remove it. \n\nThen they will close your stomach with a few small stitches. Once they are done, you will wake up from your sleep.</string>
-
-
+    <string name="why_appendectomy">El apéndice es una pequeña bolsa en el lado inferior derecho de su abdomen. Está unido a el intestino grueso.\n\n A veces puede ser obstruido por la mucosidad atrapada en el interior. Esto es peligroso porque puede permitir que malas bacterias crezcan y causen infección e inflamación. Si no es sacado, puede reventar y la infección puede extenderse al vientre.\n \nPara evitar esto, se debe realizar una cirugía para remover el apéndice.</string>
+    <string name="desc_appendectomy">Te pondrán a dormir. Los médicos harán unas pequeñas incisiónes en el estómago. Encontrarán su apéndice y lo extirparán lentamente. \n\nLuego le cerrarán el estómago con unas pequeñas suturas. Una vez que hayan terminado, te despertarás de tu sueño.</string>
     <string name="cholecystectomy">Colecistectomía</string>
     <string name="why_cholecystectomy">A veces, la vesícula biliar puede formar pequeñas piedras dañinas, conocidas como cálculos biliares, dentro de la vejiga. Esto es peligroso porque los cálculos biliares pueden bloquear la salida de los fluidos digestivos de la vejiga. Esto puede causar mucho dolor e infección si no es tratado. \n\nPara curar esto, se necesita una cirugía para remover la vesícula biliar.</string>
-    <string name="desc_cholecystectomy">You will go to sleep. The doctor will make some small cuts on your stomach. The doctor may put a small camera inside your belly and look for your gallbladder.\n\nUsing some special tool, the doctor will remove the gallbladder. Once the doctor is done, you will wake up from your sleep.</string>
-
-
+    <string name="desc_cholecystectomy">Te pondrán a dormir. El doctor hará unas pequeñas incisiónes en el estómago. Es posible que el médico coloque una pequeña cámara dentro de su abdomen para buscar su vesícula biliar.\n\n Usando alguna herramienta especial, el médico extraerá la vesícula biliar. Una vez que el doctor haya terminado, te despertarás de tu sueño.</string>
     <string name="choledochalCystRemoval">Extirpación de un Quiste Coledocócico</string>
-    <string name="why_choledochalCystRemoval">Choledochal cyst is a problem that occurs in the tubes connecting from the liver to the gallbladder. Sometimes this tube can get bigger than normal and cause liver problems. This is bad because it can mess up or block the flow of important fluids from the liver to the small intestine. This can cause the tube to swell and get infected.\n\nIf surgery is not done to remove the cyst, the liver can get damaged and not work well.</string>
-    <string name="desc_choledochalCystRemoval">You will go to sleep. The doctor will make small cuts near your belly button. They may put a camera inside to see your organs inside. \n\nThe doctor puts some gas in your belly so they can see your organs better. Then they will use some special tools to remove the cyst from the tube. The doctor will re-build the tube by using a small section of the intestine.\n\nNow everything will be good and the doctor will close your belly and you will wake up.</string>
-
+    <string name="why_choledochalCystRemoval">Un quiste coledocócico es un problema que ocurre en los tubos que conectan el hígado con la vesícula biliar. A veces etse tubo puede agrandarse más de lo normal y causar problemas hepáticos. Esto es malo porque puede dañar o bloquear el flujo de líquidos importantes del hígado al intestino delgado. Esto puede hacer que el tubo se hinche y se infecte.\n\n If surgery is not done to remove the cyst, the liver can get damaged and not work well. Si no se realiza una cirugía para extraer el quiste, el hígado puede dañarse y no funcionar bien.</string>
+    <string name="desc_choledochalCystRemoval">Te pondrán a dormir. El doctor hará cortes pequeños cerca de su ombligo. Es posible que coloquen una cámara pequeña adentro para ver sus órganos. \n\n El doctor pondrá un poco de gas en tu vientre para poder ver mejor tus órganos. Luego, usarán algunas herramientas especiales para extraer el quiste del tubo. El médico reconstruirá el tubo utilizando una pequeña sección del intestino.\n\n Now everything will be good and the doctor will close your belly and you will wake up. Ahora todo estará bien y el médico te cerrará el vientre y te despertarás.</string>
 
     <string name="decortication">Decorticación</string>
     <string name="why_decortation">Sometimes a fibrous tissue, also known as pleura, can form on the lung, chest wall or the diaphragm which is not normal. Usually there is a small space between the lungs and the chest containing a thin layer of fluid. It is important for this area to remain moist and free so that the lung can expand and deflate normally when you breathe. If this area gets blocked with tissue, then it becomes hard for the lung to expand and deflate normally which can create breathing problems. With the help of surgery, this harmful tissue can be removed and the lungs can be saved.</string>
-    <string name="desc_decortication">You will go to sleep. The doctor will put a breathing tube inside your throat and connect it to a machine which will help you breathe. Then they will make a few small cuts on your chest. The doctor will look inside your chest and take the air out of your lungs. The doctor will move the lungs to the side and find the affected area. Then they will put a small camera to see the affected area better. Next the doctor will peel off the bad tissue and put air back into your lungs. The doctor will close your chest with stitches and you will wake up.</string>
-
+    <string name="desc_decortication">Te pondrán a dormir. The doctor will put a breathing tube inside your throat and connect it to a machine which will help you breathe. Then they will make a few small cuts on your chest. The doctor will look inside your chest and take the air out of your lungs. The doctor will move the lungs to the side and find the affected area. Then they will put a small camera to see the affected area better. Next the doctor will peel off the bad tissue and put air back into your lungs. The doctor will close your chest with stitches and you will wake up.</string>
 
     <string name="esophagomyotomy">Esophagomyotomy</string>
     <string name="why_esophagomyotomy">This surgical procedure is used to treat achalasia. This problem occurs when the nerves in the esophagus become damaged. This can cause the esophagus to become paralyzed or become larger if not treated by a doctor. If this happens, it will become difficult for the esophagus to squeeze down food when you eat and it will become harder for you to swallow food.</string>
-    <string name="desc_esophagomyotomy">You will go to sleep. The doctor will make some small cuts near your upper chest and put some special tools inside. The doctor will cut the LES muscle, which is a muscle at the bottom of your esophagus which connects into the stomach. This muscle gets tights and blocks food from entering your stomach. Once this is cut, the doctor will be all done. They will close your cuts with a few stitches and you will wake up.</string>
+    <string name="desc_esophagomyotomy">Te pondrán a dormir. The doctor will make some small cuts near your upper chest and put some special tools inside. The doctor will cut the LES muscle, which is a muscle at the bottom of your esophagus which connects into the stomach. This muscle gets tights and blocks food from entering your stomach. Once this is cut, the doctor will be all done. They will close your cuts with a few stitches and you will wake up.</string>
+
+
+    <!-- Hospital Room Pop-ups -->
+    <string name="curtain">Cortina</string>
+    <string name="curtain_desc">A menudo compartirá un cuarto con otra persona, pero separada por una cortina para mantener la privacidad. Asegúrate de ser respetuoso con tus compañeros de cuarto.</string>
+    <string name="electrocardiogram">Electrocardiograma</string>
+    <string name="ecg_desc">You may see a monitor displaying an electrocardiogram. Es posible que vea un monitor que muestra un electrocardiograma. Registran las señales eléctricas del corazón. Esto le permite al médico observar la salud de su corazón.</string>
+    <string name="single_use_devices">Dispositivos de un solo uso</string>
+    <string name="sud_desc">Los dispositivos de un solo uso son aparatos médicos que solo se usan una vez antes de desecharse. Esto es para prevenir la transmisión de gérmenes o enfermedades. Some of these items may include syringes, gloves, masks, and bandages. Algunos de estos artículos pueden incluir jeringas, guantes, máscaras y vendas.</string>
+    <string name="hospital_bed">Cama de hospital</string>
+    <string name="bed_desc">Las camas de hospital estándar son muy cómodas. Puedes cambiar la altura de la reposacabezas y reposapiés. ¡Algunas también tienen funciones especiales como controlar la tele!</string>
+    <string name="otoscope">Otoscopio</string>
+    <string name="otoscope_desc">Un otoscopio es un dispositivo que enciende una luz en tu oído. Esto le ayuda al médico a poder ver y verificar el estado de su canal auditivo.</string>
+    <string name="opthalmoscope">Oftalmoscopio</string>
+    <string name="opthalmoscope_desc">Un oftalmoscopio es un dispositivo para arrojar una sobre el ojo. El médico lo utilizará para verificar la estructura y la salud de su ojo.</string>
+    <string name="blood_pressure_monitor">Monitor de Presión Arterial</string>
+    <string name="bpm_desc">Un monitor de presión arterial se usa para ver cuánta presión hay en sus arterias. Esto ayuda al médico verificar qué tan saludable está su corazón.</string>
 
 
 </resources>

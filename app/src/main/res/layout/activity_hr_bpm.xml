@@ -24,7 +24,7 @@
         android:layout_height="97dp"
         android:layout_below="@id/bpmTitleView"
         android:layout_alignParentStart="true"
-        android:text="@string/here_is_a_blood_pressure_device_and_monitor_your_doctor_may_use_it_to_take_your_blood_pressure_this_helps_to_see_how_healthy_your_heart_is"
+        android:text="@string/bpm_desc"
         android:textColor="#000000"
         android:textSize="12sp" />
 
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:scaleType="center"
-        android:text="Blood Pressure Monitor"
+        android:text="@string/blood_pressure_monitor"
         android:textColor="#219BA3"
         android:textSize="20sp" />
 

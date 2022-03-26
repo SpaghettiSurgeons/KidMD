@@ -94,34 +94,23 @@
     <!--Surgical Procedures-->
     <string name="why_needed">WHY DO YOU NEED IT?</string>
     <string name="what_happens">WHAT WILL HAPPEN DURING SURGERY?</string>
-
     <string name="appendectomy">Appendectomy</string>
     <string name="why_appendectomy">The appendix is a small pouch on the bottom right side of your belly. It is attached to your large intestine.\n\nSometimes it can become blocked from mucus being trapped inside. This is bad because it can cause bacteria to grow and create infection and inflammation. If not taken out it, it can also burst and the infection can spread to the belly. \n\nTo stop this from happening, a surgery needs to be done to remove the appendix.</string>
     <string name="desc_appendectomy">You will go to sleep. The doctors will make few small cuts on your stomach. They will find your appendix and slowly remove it. \n\nThen they will close your stomach with a few small stitches. Once they are done, you will wake up from your sleep.</string>
-
-
     <string name="cholecystectomy">Cholecystectomy</string>
     <string name="why_cholecystectomy">Sometimes the gallbladder can form small harmful stones, known as gallstones, inside the bladder.\n\nThis is dangerous because gallstones can block digestive fluids from exiting the bladder. This can cause a lot of pain and infection if left untreated.\n\nTo cure this, a surgery is needed to remove the gallbladder.</string>
     <string name="desc_cholecystectomy">You will go to sleep. The doctor will make some small cuts on your stomach. The doctor may put a small camera inside your belly and look for your gallbladder.\n\nUsing some special tool, the doctor will remove the gallbladder. Once the doctor is done, you will wake up from your sleep.</string>
-
-
     <string name="choledochalCystRemoval">Choledochal Cyst Removal</string>
     <string name="why_choledochalCystRemoval">Choledochal cyst is a problem that occurs in the tubes connecting from the liver to the gallbladder. Sometimes this tube can get bigger than normal and cause liver problems. This is bad because it can mess up or block the flow of important fluids from the liver to the small intestine. This can cause the tube to swell and get infected.\n\nIf surgery is not done to remove the cyst, the liver can get damaged and not work well.</string>
     <string name="desc_choledochalCystRemoval">You will go to sleep. The doctor will make small cuts near your belly button. They may put a camera inside to see your organs inside. \n\nThe doctor puts some gas in your belly so they can see your organs better. Then they will use some special tools to remove the cyst from the tube. The doctor will re-build the tube by using a small section of the intestine.\n\nNow everything will be good and the doctor will close your belly and you will wake up.</string>
-
-
     <string name="decortication">Decortication</string>
     <string name="why_decortation">Sometimes a fibrous tissue, also known as pleura, can form on the lung, chest wall or the diaphragm which is not normal. Usually there is a small space between the lungs and the chest containing a thin layer of fluid. It is important for this area to remain moist and free so that the lung can expand and deflate normally when you breathe. If this area gets blocked with tissue, then it becomes hard for the lung to expand and deflate normally which can create breathing problems. With the help of surgery, this harmful tissue can be removed and the lungs can be saved.</string>
     <string name="desc_decortication">You will go to sleep. The doctor will put a breathing tube inside your throat and connect it to a machine which will help you breathe. Then they will make a few small cuts on your chest. The doctor will look inside your chest and take the air out of your lungs. The doctor will move the lungs to the side and find the affected area. Then they will put a small camera to see the affected area better. Next the doctor will peel off the bad tissue and put air back into your lungs. The doctor will close your chest with stitches and you will wake up.</string>
-
-
     <string name="esophagomyotomy">Esophagomyotomy</string>
     <string name="why_esophagomyotomy">This surgical procedure is used to treat achalasia. This problem occurs when the nerves in the esophagus become damaged. This can cause the esophagus to become paralyzed or become larger if not treated by a doctor. If this happens, it will become difficult for the esophagus to squeeze down food when you eat and it will become harder for you to swallow food.</string>
     <string name="desc_esophagomyotomy">You will go to sleep. The doctor will make some small cuts near your upper chest and put some special tools inside. The doctor will cut the LES muscle, which is a muscle at the bottom of your esophagus which connects into the stomach. This muscle gets tights and blocks food from entering your stomach. Once this is cut, the doctor will be all done. They will close your cuts with a few stitches and you will wake up.</string>
 
 
-    <string name="standard_hospital_beds_are_very_comfortable_you_can_change_the_height_of_the_head_and_footrest_some_also_have_special_features_like_controlling_the_tv">Standard hospital beds are very comfortable. You can change the height of the head and footrest. Some also have special features like controlling the TV!</string>
-    <string name="here_is_a_blood_pressure_device_and_monitor_your_doctor_may_use_it_to_take_your_blood_pressure_this_helps_to_see_how_healthy_your_heart_is">A blood pressure monitor is used to see how much pressure is in your arteries. This helps the doctor to see how healthy your heart is.</string>
     <string name="title_activity_to_defibrillators">toDefibrillators</string>
 
 
@@ -134,17 +123,24 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_to_pen_torch">toPenTorch</string>
-    <string name="you_will_often_share_a_hospital_room_with_someone_else_but_separated_by_a_curtain_to_maintain_privacy_be_sure_to_be_respectful_to_your_roommates">You will often share a hospital room with someone else, but separated by a curtain to maintain privacy. Be sure to be respectful to your roommates.</string>
+
+
+    <!-- Hospital Room Pop-ups -->
+    <string name="curtain_desc">You will often share a hospital room with someone else, but separated by a curtain to maintain privacy. Be sure to be respectful to your roommates.</string>
     <string name="curtain">Curtain</string>
     <string name="electrocardiogram">Electrocardiogram</string>
-    <string name="you_may_see_a_monitor_displaying_an_electrocardiogram_electrocardiogram_s_record_the_heart_s_electrical_signals_this_allows_the_doctor_to_monitor_the_health_of_your_heart">You may see a monitor displaying an electrocardiogram. They record the heart\'s electrical signals. This allows the doctor to monitor the health of your heart.</string>
+    <string name="ecg_desc">You may see a monitor displaying an electrocardiogram. They record the heart\'s electrical signals. This allows the doctor to monitor the health of your heart.</string>
     <string name="single_use_devices">Single Use Devices</string>
-    <string name="single_use_devices_are_medical_equipment_that_are_only_used_once_before_thrown_away_this_is_to_prevent_the_spread_of_any_germs_or_diseases_some_of_these_items_may_include_syringes_gloves_masks_and_bandages">Single Use Devices are medical equipment that are only used once before thrown away. This is to prevent the spread of any germs or diseases. Some of these items may include syringes, gloves, masks, and bandages.</string>
+    <string name="sud_desc">Single Use Devices are medical equipment that are only used once before thrown away. This is to prevent the spread of any germs or diseases. Some of these items may include syringes, gloves, masks, and bandages.</string>
     <string name="hospital_bed">Hospital Bed</string>
+    <string name="bed_desc">Standard hospital beds are very comfortable. You can change the height of the head and footrest. Some also have special features like controlling the TV!</string>
     <string name="otoscope">Otoscope</string>
-    <string name="an_otoscope_is_a_device_that_shines_a_light_into_you_ear_this_helps_the_doctor_see_and_check_the_condition_of_your_ear_canal">An otoscope is a device that shines a light into your ear. This helps the doctor see and check the condition of your ear canal.</string>
+    <string name="otoscope_desc">An otoscope is a device that shines a light into your ear. This helps the doctor see and check the condition of your ear canal.</string>
     <string name="opthalmoscope">Opthalmoscope</string>
-    <string name="an_opthalmoscope_is_a_device_that_shines_a_light_into_your_eye_the_doctor_will_use_it_to_check_the_structure_and_health_of_your_eye">An opthalmoscope is a device that shines a light into your eye. The doctor will use it to check the structure and health of your eye.</string>
+    <string name="opthalmoscope_desc">An opthalmoscope is a device that shines a light into your eye. The doctor will use it to check the structure and health of your eye.</string>
+    <string name="blood_pressure_monitor">Blood Pressure Monitor</string>
+    <string name="bpm_desc">A blood pressure monitor is used to see how much pressure is in your arteries. This helps the doctor to see how healthy your heart is.</string>
+
 
 
 </resources>
