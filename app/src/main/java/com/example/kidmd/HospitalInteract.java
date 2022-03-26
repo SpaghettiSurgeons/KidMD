@@ -86,12 +86,14 @@ public class HospitalInteract extends AppCompatActivity {
 
 
     public void onClick(View v) {
-        /*if ((FirebaseAuth.getInstance().getCurrentUser() != null)) {
-            if (!hrTrack.contains(v.)) {
-                hrTrack = hrTrack + "." + v.toString();
+        if ((FirebaseAuth.getInstance().getCurrentUser() != null)) {
+            String fullName = getResources().getResourceName(v.getId());
+            String name = fullName.substring(fullName.lastIndexOf("/") + 1);
+            if (!hrTrack.contains(name)) {
+                hrTrack = hrTrack + "." + name;
                 reference.child("hr").setValue(hrTrack);
             }
-        }*/
+        }
         switch (v.getId()) {
             case R.id.bedButton:
                 startActivity(new Intent(HospitalInteract.this, hrBed.class));
