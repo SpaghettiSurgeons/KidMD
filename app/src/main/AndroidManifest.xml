@@ -13,6 +13,12 @@
             android:name=".ProgressPage"
             android:exported="false" />
         <activity
+            android:name=".prHerniorraphy2"
+            android:exported="false" />
+        <activity
+            android:name=".prHerniorraphy"
+            android:exported="false" />
+        <activity
             android:name=".toDiathermy2"
             android:exported="false" />
         <activity

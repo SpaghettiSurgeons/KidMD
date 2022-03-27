@@ -140,7 +140,7 @@
     <string name="opthalmoscope_desc">An opthalmoscope is a device that shines a light into your eye. The doctor will use it to check the structure and health of your eye.</string>
     <string name="blood_pressure_monitor">Blood Pressure Monitor</string>
     <string name="bpm_desc">A blood pressure monitor is used to see how much pressure is in your arteries. This helps the doctor to see how healthy your heart is.</string>
-
+    <string name="herniorraphy">Herniorraphy</string>
 
 
 </resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pr_background"
+    tools:context=".prHerniorraphy2">
+    <include layout="@layout/bottom_toolbar" />
+
+    <TextView
+        android:id="@+id/Herniorraphy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/esophagomyotomy"
+        android:textColor="#219BA3"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prHernTitle"
+        android:layout_width="302dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/what_happens"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hernpic2" />
+
+    <TextView
+        android:id="@+id/prHernDesc"
+        android:layout_width="336dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="20dp"
+        android:text="You will go to sleep. The doctor will put a cut over the hernia. You will be sleeping peacefully and won’t feel a single thing! The doctor will look inside the cut. Then, they will but the organ backed to its original place. This will remove the lump from you belly. That’s all! Now the doctor will close the cut with some stitches and clean the area. When they are done, you will wake up."
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prHernTitle" />
+
+    <ImageView
+        android:id="@+id/hernpic2"
+        android:layout_width="317dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Herniorraphy"
+        app:srcCompat="@drawable/hernpic2" />
+
+    <ImageButton
+        android:id="@+id/hernPage2Next"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prHernDesc"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/grayed_right_arrow" />
+
+    <ImageButton
+        android:id="@+id/hernPage2Back"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prHernDesc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/green_left_arrow" />
+
+    <ImageButton
+        android:id="@+id/hernPage2X"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="64dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/hernpic2"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/x_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

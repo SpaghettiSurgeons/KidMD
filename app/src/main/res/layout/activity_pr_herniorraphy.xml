@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pr_background"
+    tools:context=".prEsophagomyotomy">
+    <include layout="@layout/bottom_toolbar" />
+
+    <TextView
+        android:id="@+id/Herniorraphy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/herniorraphy"
+        android:textColor="#219BA3"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prHernTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/why_needed"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hernpic1" />
+
+    <TextView
+        android:id="@+id/prHernDesc"
+        android:layout_width="286dp"
+        android:layout_height="274dp"
+        android:layout_marginTop="32dp"
+        android:text="Sometimes an organ or a fatty tissue in your body can push through a weak spot in the belly. This can create a small lump under the skin. When this happens, the doctor needs to put the lump back in to its position. If not treated, it can get bigger and cause more problems."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prHernTitle" />
+
+    <ImageView
+        android:id="@+id/hernpic1"
+        android:layout_width="293dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Herniorraphy"
+        app:srcCompat="@drawable/hernpic1" />
+
+    <ImageButton
+        android:id="@+id/hernPage1Next"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/prHernDesc"
+        app:srcCompat="@drawable/green_right_arrow"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageButton
+        android:id="@+id/hernPage1Back"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/prHernDesc"
+        app:srcCompat="@drawable/grayed_left_arrow"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageButton
+        android:id="@+id/hernPage1X"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/hernpic1"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/x_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
