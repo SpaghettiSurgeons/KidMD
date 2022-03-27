@@ -4,6 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pr_background"
     tools:context=".prProctocolectomy2">
+    <include layout="@layout/bottom_toolbar" />
+
+    <TextView
+        android:id="@+id/Proctocolectomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Proctocolectomy"
+        android:textColor="#219BA3"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prProtoTitle"
+        android:layout_width="290dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/what_happens"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/protopic2" />
+
+    <TextView
+        android:id="@+id/prProtoDesc"
+        android:layout_width="348dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/desc_decortication"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prProtoTitle" />
+
+    <ImageView
+        android:id="@+id/protopic2"
+        android:layout_width="265dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Proctocolectomy"
+        app:srcCompat="@drawable/protopic2" />
+
+    <ImageButton
+        android:id="@+id/protoPage2Next"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prProtoDesc"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/grayed_right_arrow" />
+
+    <ImageButton
+        android:id="@+id/protoPage2Back"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/prProtoDesc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/green_left_arrow" />
+
+    <ImageButton
+        android:id="@+id/protoPage2X"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="64dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/protopic2"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/x_button" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

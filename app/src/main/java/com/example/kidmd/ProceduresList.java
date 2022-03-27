@@ -96,14 +96,8 @@ public class ProceduresList extends AppCompatActivity implements View.OnClickLis
         arrayList.add("Gastroschisis");
         arrayList.add("Herniorraphy");
         arrayList.add("Hyperinsulinism");
-        arrayList.add("Proctolectomy");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
-        arrayList.add("TBD");
+        arrayList.add("Proctocolectomy");
+
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList) {
             @NonNull
@@ -145,6 +139,8 @@ public class ProceduresList extends AppCompatActivity implements View.OnClickLis
                 if (arrayList.get(i) == "Esophagomyotomy") startActivity(new Intent(ProceduresList.this, prEsophagomyotomy.class));
                 if (arrayList.get(i) == "Herniorraphy") startActivity(new Intent(ProceduresList.this, prHerniorraphy.class));
                 if (arrayList.get(i) == "Hyperinsulinism") startActivity(new Intent(ProceduresList.this, prHyperinsulinism.class));
+                if (arrayList.get(i) == "Proctocolectomy") startActivity(new Intent(ProceduresList.this, prProctocolectomy.class));
+
 
 
             }

@@ -4,6 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pr_background"
     tools:context=".prProctocolectomy">
+    <include layout="@layout/bottom_toolbar" />
+
+    <TextView
+        android:id="@+id/Proctocolectomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Proctocolectomy"
+        android:textColor="#219BA3"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prProtoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/why_needed"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/protopic1" />
+
+    <TextView
+        android:id="@+id/prProtoDesc"
+        android:layout_width="322dp"
+        android:layout_height="266dp"
+        android:layout_marginTop="32dp"
+        android:text="When the large intestine catches a disease called the ulcerative colitis, sometimes a surgery may be needed if medications don’t help. This disease can happen when the immune system does not act normal and causes the lining of your large intestine to swell or get sore."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prProtoTitle" />
+
+    <ImageView
+        android:id="@+id/protopic1"
+        android:layout_width="293dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Proctocolectomy"
+        app:srcCompat="@drawable/protopic1" />
+
+    <ImageButton
+        android:id="@+id/protoPage1Next"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/prProtoDesc"
+        app:srcCompat="@drawable/green_right_arrow"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageButton
+        android:id="@+id/protoPage1Back"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/prProtoDesc"
+        app:srcCompat="@drawable/grayed_left_arrow"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageButton
+        android:id="@+id/protoPage1X"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/protopic1"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/x_button" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

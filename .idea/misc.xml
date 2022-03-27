@@ -65,6 +65,9 @@
         <entry key="app/src/main/res/layout/activity_pr_herniorraphy2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_pr_hyperinsulinism.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_pr_hyperinsulinism2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pr_proctocolectomy.xml" value="0.14266304347826086" />
+        <entry key="app/src/main/res/layout/activity_pr_proctocolectomy2.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_pr_proctolectomy.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_procedures_list.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1802536231884058" />
         <entry key="app/src/main/res/layout/activity_register_user.xml" value="0.19429347826086957" />

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".prProctocolectomy2"
+            android:exported="false" />
+        <activity
+            android:name=".prProctocolectomy"
+            android:exported="false" />
+        <activity
             android:name=".prHyperinsulinism2"
             android:exported="false" />
         <activity
