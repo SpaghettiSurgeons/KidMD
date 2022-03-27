@@ -110,10 +110,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 break;
             /*case R.id.notifications_button:
                 startActivity(new Intent(this, ?.class));
-                break;
-            case R.id.profile_button:
-                startActivity(new Intent(this, ?.class));
                 break;*/
+            case R.id.profile_button:
+                startActivity(new Intent(this, ProfileActivity.class));
+                break;
 
         }
     }

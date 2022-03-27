@@ -33,7 +33,7 @@ import java.util.Locale;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private Button friendSearch;
+    private Button friendSearch, progress;
 
     private FirebaseUser user;
     private DatabaseReference reference;
@@ -55,6 +55,8 @@ public class ProfileActivity extends AppCompatActivity {
         final TextView ageTextView = (TextView) findViewById(R.id.age);
 
         friendSearch = (Button) findViewById(R.id.friendSearch);
+        progress = (Button) findViewById(R.id.progress);
+        //progress.setOnClickListener((View.OnClickListener) this);
 
         reference = FirebaseDatabase.getInstance().getReference("Users");
 
@@ -65,6 +67,12 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, ProfileSearch.class));
+            }
+        });
+        progress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, ProgressPage.class));
             }
         });
 
