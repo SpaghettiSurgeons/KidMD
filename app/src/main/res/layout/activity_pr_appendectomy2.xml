@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pr_background"
-    tools:context=".prAppendectomy">
+    tools:context=".prAppendectomy2">
     <include layout="@layout/bottom_toolbar" />
 
     <TextView
@@ -36,8 +36,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appendixImage2" />
 
+
+    <ImageButton
+        android:id="@+id/appendixAudio2"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/prAppendixTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Appendectomy"
+        app:layout_constraintVertical_bias="0.721"
+        app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
+
     <TextView
-        android:id="@+id/prAppendixDesc"
+        android:id="@+id/prAppendixDesc2"
         android:layout_width="277dp"
         android:layout_height="218dp"
         android:layout_marginTop="24dp"

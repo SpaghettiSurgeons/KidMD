@@ -42,6 +42,7 @@
         <entry key="app/src/main/res/drawable/pr_background_triangle.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/activity_appendectomy.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_bodypart_list.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/activity_bp_appendix.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_bp_spleen.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_brain.xml" value="0.2078125" />
         <entry key="app/src/main/res/layout/activity_hospital_menu.xml" value="0.26927083333333335" />
@@ -50,7 +51,7 @@
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_pr_appendectomy.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_pr_appendectomy.xml" value="0.36283185840707965" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy2.xml" value="0.24180327868852458" />
         <entry key="app/src/main/res/layout/activity_pr_biliary_atresia.xml" value="0.2076923076923077" />
         <entry key="app/src/main/res/layout/activity_pr_cholecystectomy.xml" value="0.25" />
@@ -73,6 +74,7 @@
         <entry key="app/src/main/res/layout/activity_register_user.xml" value="0.19429347826086957" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.157135009765625" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.20997314453125004" />
+        <entry key="app/src/main/res/layout/activity_to_anesthesia.xml" value="0.11018237082066869" />
         <entry key="app/src/main/res/layout/activity_tools_list.xml" value="0.225" />
       </map>
     </option>

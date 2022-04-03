@@ -6,7 +6,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/pr_background"
     tools:context=".prAppendectomy">
-    <include layout="@layout/bottom_toolbar" />
+
+    <include
+        layout="@layout/bottom_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
 
     <TextView
         android:id="@+id/Appendectomy"
@@ -25,25 +30,41 @@
         android:id="@+id/prAppendixTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="24dp"
         android:text="@string/why_needed"
         android:textColor="#000000"
         android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/appendixImage1"/>
+        app:layout_constraintTop_toBottomOf="@id/appendixImage1" />
+
+    <ImageButton
+        android:id="@+id/appendixAudio"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/prAppendixTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Appendectomy"
+        app:layout_constraintVertical_bias="0.762"
+        app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
 
     <TextView
         android:id="@+id/prAppendixDesc"
-        android:layout_width="295dp"
-        android:layout_height="343dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="345dp"
+        android:layout_height="312dp"
+        android:layout_marginTop="28dp"
         android:text="@string/why_appendectomy"
-        android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/prAppendixTitle" />
 
     <ImageView
