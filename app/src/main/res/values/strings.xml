@@ -141,6 +141,7 @@
     <string name="blood_pressure_monitor">Blood Pressure Monitor</string>
     <string name="bpm_desc">A blood pressure monitor is used to see how much pressure is in your arteries. This helps the doctor to see how healthy your heart is.</string>
     <string name="herniorraphy">Herniorraphy</string>
-
+    <string name="hospital_room">Hospital Room</string>
+    <string name="explore">Explore</string>
 
 </resources>

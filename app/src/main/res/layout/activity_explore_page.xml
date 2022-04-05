@@ -1,54 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_editor_absoluteX="1dp"
-    tools:layout_editor_absoluteY="1dp"
     android:background="#efefef"
-    android:fillViewport="true"
     tools:context=".ExplorePage">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="10dp">
-        <include layout="@layout/toolbar"/>
-        <include layout="@layout/bottom_toolbar"/>
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:background="#efefef">
 
-        <!-- android:background="@drawable/rounded_banner" -->
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/h_view1"
-            android:layout_width="770dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="120dp"
-            android:background="@drawable/rounded_banner"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toRightOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="65dp">
+            <include layout="@layout/toolbar"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/h_view2"
-            android:layout_width="770dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/rounded_banner"
-            app:layout_constraintTop_toBottomOf="@id/h_view1"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toRightOf="parent"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/banner"
+                android:layout_width="340dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/rounded_banner"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/h_view3"
-            android:layout_width="770dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="35dp"
-            android:background="@drawable/rounded_banner"
-            app:layout_constraintTop_toBottomOf="@id/h_view2"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toRightOf="parent"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- Popular Tools -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/populartools"
+                android:layout_width="360dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_banner"
+                app:layout_constraintTop_toBottomOf="@+id/banner"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
 
-</ScrollView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Popular Tools"
+                    android:textAlignment="viewStart"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/populartool1"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintHorizontal_bias="0.10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/populartool2"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintLeft_toLeftOf="@id/populartool1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/populartool3"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintHorizontal_bias="0.10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/populartool1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/populartool4"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintLeft_toLeftOf="@id/populartool3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/populartool2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!-- Popular Anatomy -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popularanatomy"
+                android:layout_width="360dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_banner"
+                app:layout_constraintTop_toBottomOf="@+id/populartools"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Popular Anatomy"
+                    android:textAlignment="viewStart"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/popularanatomy1"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintHorizontal_bias="0.10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/popularanatomy2"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintLeft_toLeftOf="@id/popularanatomy1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/popularanatomy3"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintHorizontal_bias="0.10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/popularanatomy1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/popularanatomy4"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintLeft_toLeftOf="@id/popularanatomy3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/popularanatomy2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!-- Popular Procedures -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/popularprocedures"
+                android:layout_width="360dp"
+                android:layout_height="480dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_banner"
+                app:layout_constraintTop_toBottomOf="@+id/popularanatomy"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Popular Procedures"
+                    android:textAlignment="viewStart"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/popularprocedure1"
+                    android:layout_width="300dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/popularprocedure2"
+                    android:layout_width="300dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintTop_toBottomOf="@id/popularprocedure1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/popularprocedure3"
+                    android:layout_width="300dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintTop_toBottomOf="@id/popularprocedure2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/popularprocedure4"
+                    android:layout_width="300dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_banner"
+                    android:backgroundTint="#efefef"
+                    app:layout_constraintTop_toBottomOf="@id/popularprocedure3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <include layout="@layout/bottom_toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

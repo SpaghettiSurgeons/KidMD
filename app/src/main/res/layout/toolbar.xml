@@ -87,6 +87,28 @@
             android:src="@drawable/ic_baseline_search_24_blue"
             android:visibility="gone" />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/hospitalRoomTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/hospital_room"
+            android:textColor="#66C9EB"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/explorePageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/explore"
+            android:textColor="#66C9EB"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
     </RelativeLayout>
 
 

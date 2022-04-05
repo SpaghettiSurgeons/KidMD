@@ -57,46 +57,41 @@
     <string name="tonsils_description">Las anginas son las dos bolas de tejido en la parte posterior de la garganta. Pueden evitar que las bacterias y los virus entren al cuerpo y crean glóbulos blancos para combatirlos.</string>
 
 
-    <!--Surgical Tools - use lines are new-->
+
+
+
+    <!--Surgical Tools-->
     <string name="diathermy">Diatermia</string>
-    <string name="diathermy_description">La diatermia es una herramienta electroquirúrgica, lo que significa que necesita electricidad para hacer su trabajo. Se puede usar para cortar en partes del cuerpo que te están enfermando, o para detener el sangrado de los vasos sanguineos.</string>
-    <string name="diathermy_use">Diathermy is used in physical therapy and in surgery. It can be used to cut into parts of your body that are making you sick, or to stop blood vessels from bleeding.</string>
-
+    <string name="diathermy_description">La diatermia es una herramienta electroquirúrgica, lo que significa que necesita electricidad para hacer su trabajo. Usando electricidad produce calor y, en ciertas configuraciones, se puede usar para relajar los músculos.</string>
+    <string name="diathermy_use">La diatermia se utiliza en la terapia física y en la cirugía. También puede ser usada para cortar partes de su cuerpo que lo están enfermando o para detener el sangrado de los vasos sanguíneos.</string>
     <string name="forceps">Pinzas</string>
-    <string name="forceps_description">Durante la cirugía, las pinsas se usan para sujetar los tejidos del cuerpo, para que los médicos puedan alcanzar la áreas que están enfermando a uno y arreglarlas. Son diseñadas para sujetar los tejidos de una forma segura para que no le haga daño a uno.</string>
-    <string name="forceps_use">During surgery, forceps are used to grasp tissue in your body so that doctors can get to the areas that are making you sick and fix them. They are designed to securely hold tissue so that they do not hurt you.</string>
-
+    <string name="forceps_description"></string>Las pinzas son un instrumento metálico con una bisagra, capaz de agarrar y sostener objetos. Son más precisas que los dedos y, a menudo, se usan cuando un médico necesita tener las manos libres para otras funciónes.
+    <string name="forceps_use">Durante la cirugía, las pinsas se usan para sujetar los tejidos del cuerpo, para que los médicos puedan alcanzar la áreas que están enfermando a uno y arreglarlas. Son diseñadas para sujetar los tejidos de una forma segura para que no le haga daño a uno.</string>
     <string name="retractors">Retractores</string>
-    <string name="retractors_description">Los retractores se usan para mantener el tejido en su lugar, facilitando a los cirujanos ver y acceder a los lugares en los que necesitan trabajar.</string>
-    <string name="retractors_use">While forceps are used to pull back tissue, retractors are used to hold tissue in place, making it easier for surgeons to see and access the places they need to work on.</string>
-
+    <string name="retractors_description">Los retractores son una herramienta metálica con una hoja en ángulo. Una vez que el instrumento es colocado en el lugar deseado por el cirujano, mantendrá su posición. Pueden ser retractores de mano o posados en el extremo de un brazo robotizado.</string>
+    <string name="retractors_use">Los retractores se usan para mantener el tejido en su lugar, facilitando a los cirujanos ver y acceder a los lugares en los que necesitan trabajar.</string>
     <string name="suctionTube">Tubo de Absorción</string>
-    <string name="suctionTube_description">Los cirujanos utilizan tubos de absorción para eliminar cosas dañinas del cuerpo durante la cirugía, o para retirar cosas que dificultan que los cirujanos vean y hagan su trabajo.</string>
-    <string name="suctionTube_use">Suction tubes are used by surgeons to remove harmful stuff from your body during surgery, or to remove stuff that makes it hard for surgeons to see to do their work.</string>
-
-
+    <string name="suctionTube_description">Tubos de absorción son bombas manuales mecánicas o mecanismos eléctricos/alimentados por batería que son conectados a un tubo de plástico con una punta rígida, la punta de succión Yankauer.</string>
+    <string name="suctionTube_use">Los cirujanos utilizan tubos de absorción para eliminar cosas dañinas del cuerpo durante la cirugía, o para retirar cosas que dificultan que los cirujanos vean y hagan su trabajo.</string>
     <string name="sutures">Suturas</string>
-    <string name="sutures_description">Las suturas son como un hilo. De la misma manera que el hilo sostiene la ropa, las suturas mantienen unida la piel después de que los médicos hayan reparado lo que lo está enfermando. Algunas suturas hasta se disuelven solas sin tener que quitarlas.</string>
-    <string name="sutures_use">Sutures are generally applied with a needle, and the choice of which sutures to use can be complex. Depending on the tissue being held together and the forces applied by the wound, surgeons must choose sutures of proper strength and elasticity.</string>
+    <string name="sutures_description">Las suturas son como un hilo. De la misma manera que el hilo sostiene la ropa, las suturas mantienen unida la piel después de que los médicos hayan reparado lo que lo está enfermando a uno. Algunas suturas hasta se disuelven solas sin tener que removerlas.</string>
+    <string name="sutures_use">Las suturas generalmente se aplican con una aguja, y la elección de qué suturas usar puede ser compleja. Según el tejido que se está manteniendo unido y las fuerzas aplicadas por la herida, los cirujanos deben elegir suturas de resistencia y elasticidad adecuadas.</string>
 
-    <!--NEW-->
     <string name="defibrillators">Desfibriladores</string>
-    <string name="defibrillators_description">Desfibriladores son herramientas que probablemente has visto en la televisión, y probablemente se usaron incorrectamente en esas representaciones. Son paletas eléctricas que se usan para restaurar el ritmo normal del corazón, no para reiniciar el corazón después de un paro cardíaco, como se muestran muchas veces.</string>
+    <string name="defibrillators_description">Desfibriladores son herramientas que probablemente has visto en la televisión, y probablemente fueron usadas incorrectamente en esas representaciones. Son paletas eléctricas que se usan para restaurar el ritmo normal del corazón, no para reiniciar el corazón después de un paro cardíaco, como se muestran usadas muchas veces.</string>
+    <string name="defibrillators_use">Es muy improbable que se necesite utilizar esta herramienta en usted, ¡pero es importante saber que está ahí por si acaso! En la ilustración, puede ver a la mujer tratando de evitar el contacto con el hombre que está siendo desfibrilado. Por eso también gritan \"¡Despejen!\" en la tele: para que la corriente eléctrica no vaya a donde no debe ir.</string>
     <string name="anesthesia">Anestesia</string>
     <string name="anesthesia_description">Las máquinas de anestesia usan una provisión medida y constante de gases medicinales para garantizar que su cirugía sea completamente indolora. Estas máquinas avanzadas rastrean todos sus signos vitales para darte la cantidad correcta de gas</string>
+    <string name="anesthesia_use">Antes de la cirugía, el médico le colocará una máscara de plástico sobre la nariz y la boca, y luego te pedirá que cuentes hacia atrás desde 10. Probablemente no pasarás del número 7, porque tu cuerpo habrá absorbido los gases a través de tus pulmones, ¡y estarás profundamente, profundamente dormido! ¡Cuando despiertes, la cirugía habrá terminado y estarás mejor!</string>
     <string name="stethoscope">Estetoscopio</string>
     <string name="stethoscope_description">Los estetoscopios son probablemente el dispositivo médico más famoso, visto en muchos dibujos animados y en películas. ¡Estos dispositivos les permiten a los médicos escuchar su corazón, sus pulmones e incluso los sonidos en su estómago! </string>
+    <string name="stethoscope_use">Al igual que el esfigmomanómetro (el manguito de presión arterial), estos dispositivos son muy comunes y forman parte de su chequeo regular durante sus visitas al médico, y probablemente también se usarán antes de la cirugía para evitar complicaciones. Aparte del metal frío contra tu piel, ¡no hay nada de qué preocuparse!</string>
     <string name="sphygmomanometer">Esfigmomanómetro</string>
     <string name="sphygmomanometer_description">Si intentar pronunciar esta palabra te intimida, no te preocupes, no estás solo. Este dispositivo mide su presión arterial usando un manguito inflado y mercurio. El resultado será 2 números como: xx/yy. El número izquierdo describe la presión de contracción de su corazón; el derecho, su presión de relajación.</string>
+    <string name="sphygmomanometer_use">Este dispositivo es muy común, es probable que lo vea durante cada visita regular al consultorio. Es parte del conjunto de herramientas básico de su médico para mantenerlo saludable. También se usa justo antes de la cirugía para asegurarse de que no habrá complicaciones. Sentirá un apretón en el manguito, una pausa, luego se relajará y listo.</string>
     <string name="penTorch">Linternas de Pluma</string>
     <string name="penTorch_description">Las liternas de pluma, como su nombre lo indica, parecen bolígrafos, pero están equipadas con una linterna potente. Su médico utiliza estos dispositivos para comprobar la respuesta pupilar de sus ojos y también para revisar su nariz y boca, para asegurarse de que está sano.</string>
-
-    <!--use lines-->
-    <string name="defibrillators_use">It is very unlikely that you will ever need to have this tool used on you, but it is important to know it is there just in case! In the image above, you can see the woman making a point of avoiding contact with the man being defibrillated. This is also why they yell \"Clear!\" on TV: so that the electrical current doesn\'t go where it\'s not supposed to.</string>
-    <string name="anesthesia_use">Prior to surgery, your doctor will place a plastic mask over your nose and mouth, and then tell you to count backwards from 10. You probably won\'t get far past number 7, because your body will have absorbed the gases through your lungs, and you will be deep, deep asleep! When you wake up, the surgery will be over, and you will be better!</string>
-    <string name="stethoscope_use">Like the Sphygmomanometer (the blood pressure cuff), these devices are quite common and part of your regular check-up during your doctor visit, and will also likely be used before surgery to avoid complications. Aside from possibly cold metal against your skin, there is nothing to worry about!</string>
-    <string name="sphygmomanometer_use">This tool is so common, you will likely see it during every regular office visit. It is part of your doctor\'s basic toolkit for keeping you healthy. It is also used immediately before surgery to make sure there will be no complications. You will feel a squeeze from the cuff, a pause, then it will relax and it is done.</string>
-    <string name="penTorch_use">Along with the Stethoscope and the Sphygmomanometer (the blood pressure cuff), this device is among the most common in your doctor\'s tool belt. Expect to see it during regular office visits and check-ups, and to have your doctor ask you to follow his finger with your eyes as the light peers into your pupils, ensuring the health of your eyes.</string>
+    <string name="penTorch_use">Junto con el Estetoscopio y el Esfigmomanómetro (el manguito de presión arterial), este dispositivo es uno de los más comunes en el conjunto de herramientas básicas de su médico. Espere verlo durante las visitas regulares al consultorio y los chequeos, y que su médico le pida que siga su dedo con los ojos mientras la luz se asoma a sus pupilas, asegurando la salud de tus ojos.</string>
 
 
 

@@ -4,15 +4,21 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 public class HospitalMenu extends AppCompatActivity implements View.OnClickListener {
 
     private AppCompatButton photoButton, interactButton;
     private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
+
+    AppCompatTextView hospitalRoomTitle;
+    AppCompatImageView hospitalRoomBack;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,22 @@ public class HospitalMenu extends AppCompatActivity implements View.OnClickListe
         notifications_button.setOnClickListener(this);
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
+
+        // Visibility for top toolbar
+        hospitalRoomTitle = (AppCompatTextView) findViewById(R.id.hospitalRoomTitle);
+        hospitalRoomTitle.setVisibility(View.VISIBLE);
+        hospitalRoomBack = (AppCompatImageView) findViewById(R.id.backArrow);
+        hospitalRoomBack.setVisibility(View.VISIBLE);
+
+
+        // Back Arrow
+        hospitalRoomBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HospitalMenu.this, MainMenu.class));
+            }
+        });
+
     }
 
     @Override

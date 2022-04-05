@@ -9,43 +9,28 @@
     <include layout="@layout/toolbar"/>
     <include layout="@layout/bottom_toolbar"/>
 
-    <TextView
-        android:id="@+id/hospitalMenuTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:gravity="center"
-        android:text="Hospital Room"
-        android:textColor="#219BA3"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/roomPhotos"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="#ffffff"
-        android:background="@drawable/rounded_corner"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/photos"
         android:text="Photos"
-        android:textColor="#219BA3"
+        android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/hospitalMenuTitle"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/interactButton"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="#ffffff"
-        android:background="@drawable/rounded_corner"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/interact"
         android:text="Interact"
-        android:textColor="#219BA3"
+        android:textColor="#ffffff"
         android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@+id/roomPhotos"
         app:layout_constraintRight_toRightOf="parent"
