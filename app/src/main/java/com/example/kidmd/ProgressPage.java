@@ -9,6 +9,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -20,6 +21,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -38,6 +40,8 @@ public class ProgressPage extends AppCompatActivity {
     ProgressBar to;
     ProgressBar hr;
     ProgressBar overall;
+    TextView bpHeader, prHeader, toHeader, hrHeader, overallHeader;
+    public int bpMax, prMax, toMax, hrMax, overallMax;
     public String bpTrack,prTrack, hrTrack, toTrack;
     public int bpNum, prNum, hrNum, toNum, all;
     DatabaseReference reference;
@@ -47,6 +51,17 @@ public class ProgressPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_page);
 
+        bpMax = 10;
+        prMax = 5;
+        toMax = 10;
+        hrMax = 7;
+        overallMax = bpMax + prMax + toMax + hrMax;
+
+        bpHeader = findViewById(R.id.bpHeader);
+        prHeader = findViewById(R.id.prHeader);
+        toHeader = findViewById(R.id.toHeader);
+        hrHeader = findViewById(R.id.hrHeader);
+        overallHeader = findViewById(R.id.overallHeader);
 
         bp = findViewById(R.id.anatomyBar);
         pr = findViewById(R.id.procedureBar);
@@ -54,12 +69,14 @@ public class ProgressPage extends AppCompatActivity {
         hr = findViewById(R.id.hospitalBar);
         overall = findViewById(R.id.overallBar);
 
-        bp.setMax(10);
-        pr.setMax(5);
-        to.setMax(10);
-        hr.setMax(7);
-        overall.setMax(32);
+        //Set amount of activities per section
+        bp.setMax(bpMax);
+        pr.setMax(prMax);
+        to.setMax(toMax);
+        hr.setMax(hrMax);
+        overall.setMax(overallMax);
 
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
 
         //retrieve progress data
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
@@ -76,16 +93,28 @@ public class ProgressPage extends AppCompatActivity {
                             prTrack = track.pr;
                             toTrack = track.to;
                             hrTrack = track.hr;
+
+                            //count up how many unique pages were viewed
                             bpNum = bpTrack.length() - bpTrack.replaceAll("\\.","").length();
                             prNum = prTrack.length() - prTrack.replaceAll("\\.","").length();
                             toNum = toTrack.length() - toTrack.replaceAll("\\.","").length();
                             hrNum = hrTrack.length() - hrTrack.replaceAll("\\.","").length();
+
+                            //get total for overall progress
                             all = bpNum + prNum + toNum + hrNum;
+                            //set progress to progress bars
                             bp.setProgress(bpNum);
                             pr.setProgress(prNum);
                             to.setProgress(toNum);
                             hr.setProgress(hrNum);
                             overall.setProgress(all);
+
+                            //change text percentages in header
+                            bpHeader.setText("Anatomy Progress: " + String.format("%.0f", (Double.valueOf(bpNum)/Double.valueOf(bpMax))*100) + "%");
+                            prHeader.setText("Procedures Progress: " + String.format("%.0f", (Double.valueOf(prNum)/Double.valueOf(prMax))*100) + "%");
+                            toHeader.setText("Tools Progress: " + String.format("%.0f", (Double.valueOf(toNum)/Double.valueOf(toMax))*100) + "%");
+                            hrHeader.setText("Hospital Room Progress: " + String.format("%.0f", (Double.valueOf(hrNum)/Double.valueOf(hrMax))*100) + "%");
+                            overallHeader.setText("Overall Progress: " + String.format("%.0f", (Double.valueOf(all)/Double.valueOf(overallMax))*100) + "%");
                             //Toast.makeText(ProgressPage.this, hrTrack, Toast.LENGTH_LONG).show();
                         }
                         //else Toast.makeText(ProgressPage.this, "track is null", Toast.LENGTH_LONG).show();
