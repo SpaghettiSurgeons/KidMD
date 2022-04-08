@@ -4,9 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/bpbar.xml" value="0.334" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/dialog_bg.xml" value="0.232" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/hrbar.xml" value="0.334" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/overallbar.xml" value="0.334" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/prbar.xml" value="0.334" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/rounded_corner.xml" value="0.3828125" />
+        <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/tobar.xml" value="0.334" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_brain.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_clavicle.xml" value="0.3385416666666667" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/layout/activity_bp_lungs.xml" value="0.22552083333333334" />

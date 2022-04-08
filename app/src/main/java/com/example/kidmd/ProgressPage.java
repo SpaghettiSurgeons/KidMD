@@ -33,7 +33,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import java.util.Locale;
 
-public class ProgressPage extends AppCompatActivity {
+public class ProgressPage extends AppCompatActivity  implements View.OnClickListener{
 
     ProgressBar bp;
     ProgressBar pr;
@@ -45,6 +45,7 @@ public class ProgressPage extends AppCompatActivity {
     public String bpTrack,prTrack, hrTrack, toTrack;
     public int bpNum, prNum, hrNum, toNum, all;
     DatabaseReference reference;
+    private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +53,7 @@ public class ProgressPage extends AppCompatActivity {
         setContentView(R.layout.activity_progress_page);
 
         bpMax = 10;
-        prMax = 5;
+        prMax = 9;
         toMax = 10;
         hrMax = 7;
         overallMax = bpMax + prMax + toMax + hrMax;
@@ -132,5 +133,33 @@ public class ProgressPage extends AppCompatActivity {
         (hrHeader).setTypeface(baloo);
         (overallHeader).setTypeface(baloo);
 
+        // Bottom toolbar
+        home_button = (AppCompatImageView) findViewById(R.id.home_button);
+        home_button.setOnClickListener(this);
+        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
+        explore_button.setOnClickListener(this);
+        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
+        notifications_button.setOnClickListener(this);
+        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
+        profile_button.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.home_button:
+                startActivity(new Intent(this, MainMenu.class));
+                break;
+            case R.id.explore_button:
+                startActivity(new Intent(this, ExplorePage.class));
+                break;
+            /*case R.id.notifications_button:
+                startActivity(new Intent(this, ?.class));
+                break;*/
+            case R.id.profile_button:
+                startActivity(new Intent(this, ProfileActivity.class));
+                break;
+        }
     }
 }
