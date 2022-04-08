@@ -6,109 +6,119 @@
     android:layout_height="match_parent"
     tools:context=".ProgressPage">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <ProgressBar
-                android:id="@+id/anatomyBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="308dp"
-                android:layout_height="133dp"
-                android:scaleY="5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bpHeader" />
+    <include
+        android:id="@+id/include2"
+        layout="@layout/bottom_toolbar"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="340dp" />
 
-            <ProgressBar
-                android:id="@+id/hospitalBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="308dp"
-                android:layout_height="163dp"
-                android:scaleY="5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/hrHeader" />
+    <ProgressBar
+        android:id="@+id/anatomyBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="308dp"
+        android:layout_height="100dp"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <ProgressBar
-                android:id="@+id/toolsBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="308dp"
-                android:layout_height="163dp"
-                android:scaleY="5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toHeader" />
+    <ProgressBar
+        android:id="@+id/hospitalBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="308dp"
+        android:layout_height="100dp"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toHeader" />
 
-            <ProgressBar
-                android:id="@+id/procedureBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="308dp"
-                android:layout_height="163dp"
-                android:scaleY="5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/prHeader" />
+    <ProgressBar
+        android:id="@+id/toolsBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="308dp"
+        android:layout_height="100dp"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prHeader" />
 
-            <ProgressBar
-                android:id="@+id/overallBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="308dp"
-                android:layout_height="163dp"
-                android:scaleY="5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/overallHeader" />
+    <ProgressBar
+        android:id="@+id/procedureBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="308dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bpHeader" />
 
-            <TextView
-                android:id="@+id/bpHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Anatomy"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar
+        android:id="@+id/overallBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="308dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hrHeader" />
 
-            <TextView
-                android:id="@+id/prHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Procedures:"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/anatomyBar" />
+    <TextView
+        android:id="@+id/bpHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anatomy"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anatomyBar" />
 
-            <TextView
-                android:id="@+id/toHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tools:"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/procedureBar" />
+    <TextView
+        android:id="@+id/prHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Procedures:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/procedureBar" />
 
-            <TextView
-                android:id="@+id/hrHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hospital Room:"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolsBar" />
+    <TextView
+        android:id="@+id/toHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tools:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolsBar" />
 
-            <TextView
-                android:id="@+id/overallHeader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Overall Progress:"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/hospitalBar" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    <TextView
+        android:id="@+id/hrHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital Room:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hospitalBar" />
+
+    <TextView
+        android:id="@+id/overallHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overall Progress:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overallBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

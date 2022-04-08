@@ -110,10 +110,10 @@ public class ProgressPage extends AppCompatActivity {
                             overall.setProgress(all);
 
                             //change text percentages in header
-                            bpHeader.setText("Anatomy Progress: " + String.format("%.0f", (Double.valueOf(bpNum)/Double.valueOf(bpMax))*100) + "%");
-                            prHeader.setText("Procedures Progress: " + String.format("%.0f", (Double.valueOf(prNum)/Double.valueOf(prMax))*100) + "%");
-                            toHeader.setText("Tools Progress: " + String.format("%.0f", (Double.valueOf(toNum)/Double.valueOf(toMax))*100) + "%");
-                            hrHeader.setText("Hospital Room Progress: " + String.format("%.0f", (Double.valueOf(hrNum)/Double.valueOf(hrMax))*100) + "%");
+                            bpHeader.setText("Anatomy: " + String.format("%.0f", (Double.valueOf(bpNum)/Double.valueOf(bpMax))*100) + "%");
+                            prHeader.setText("Procedures: " + String.format("%.0f", (Double.valueOf(prNum)/Double.valueOf(prMax))*100) + "%");
+                            toHeader.setText("Tools: " + String.format("%.0f", (Double.valueOf(toNum)/Double.valueOf(toMax))*100) + "%");
+                            hrHeader.setText("Hospital: " + String.format("%.0f", (Double.valueOf(hrNum)/Double.valueOf(hrMax))*100) + "%");
                             overallHeader.setText("Overall Progress: " + String.format("%.0f", (Double.valueOf(all)/Double.valueOf(overallMax))*100) + "%");
                             //Toast.makeText(ProgressPage.this, hrTrack, Toast.LENGTH_LONG).show();
                         }
@@ -126,6 +126,11 @@ public class ProgressPage extends AppCompatActivity {
                     Toast.makeText(ProgressPage.this, "There was a problem!", Toast.LENGTH_LONG).show();
                 }
             });}
+        (bpHeader).setTypeface(baloo);
+        (prHeader).setTypeface(baloo);
+        (toHeader).setTypeface(baloo);
+        (hrHeader).setTypeface(baloo);
+        (overallHeader).setTypeface(baloo);
 
     }
 }
