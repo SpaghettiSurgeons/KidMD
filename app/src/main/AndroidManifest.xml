@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".userMessaging"
+            android:exported="false" />
+        <activity
             android:name=".prProctocolectomy2"
             android:exported="false" />
         <activity

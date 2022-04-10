@@ -22,7 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 public class friendRequest extends AppCompatActivity implements View.OnClickListener{
 
     private TextView fullName, email, age;
-    private Button SendReq, DeclineReq;
+    private Button SendReq, DeclineReq, Message;
 
     private DatabaseReference FriendRequestRef, UsersRef;
     private FirebaseAuth mAuth;
@@ -86,6 +86,16 @@ public class friendRequest extends AppCompatActivity implements View.OnClickList
             DeclineReq.setVisibility(View.GONE);
             SendReq.setVisibility(View.GONE);
         }
+
+        Message.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent friendIntent = new Intent(friendRequest.this, userMessaging.class);
+                friendIntent.putExtra("chatWith", receiverUserID);
+                startActivity(friendIntent);
+                //startActivity(new Intent(friendRequest.this, UserMessaging.class));
+            }
+        });
 
         // Bottom toolbar
         home_button = (AppCompatImageView) findViewById(R.id.home_button);
@@ -153,6 +163,7 @@ public class friendRequest extends AppCompatActivity implements View.OnClickList
 
         SendReq = (Button) findViewById(R.id.sendReq);
         DeclineReq = (Button) findViewById(R.id.declineReq);
+        Message = (Button) findViewById(R.id.message);
 
         CURRENT_STATE = "not_friends";
     }
