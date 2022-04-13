@@ -96,9 +96,12 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
         arrayList.add("Clavicle");
         arrayList.add("Distal Radius");
         arrayList.add("Gallbladder");
+        arrayList.add("Heart");
         arrayList.add("Kidney");
+        arrayList.add("Large Intestine");
         arrayList.add("Liver");
         arrayList.add("Lungs");
+        arrayList.add("Small Intestine");
         arrayList.add("Spleen");
         arrayList.add("Tonsils");
 
@@ -150,8 +153,14 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
                     case "Gallbladder":
                         startActivity(new Intent(BodyPartList.this, bpGallbladder.class));
                         break;
+                    case "Heart":
+                        startActivity(new Intent(BodyPartList.this, bpHeart.class));
+                        break;
                     case "Kidney":
                         startActivity(new Intent(BodyPartList.this, bpKidney.class));
+                        break;
+                    case "Large Intestine":
+                        startActivity(new Intent(BodyPartList.this, bpLargeIntestine.class));
                         break;
                     case "Liver":
                         startActivity(new Intent(BodyPartList.this, bpLiver.class));
@@ -161,6 +170,9 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
                         break;
                     case "Lungs":
                         startActivity(new Intent(BodyPartList.this, bpLungs.class));
+                        break;
+                    case "Small Intestine":
+                        startActivity(new Intent(BodyPartList.this, bpSmallIntestine.class));
                         break;
                     case "Spleen":
                         startActivity(new Intent(BodyPartList.this, bpSpleen.class));

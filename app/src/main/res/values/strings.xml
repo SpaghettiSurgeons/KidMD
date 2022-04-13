@@ -143,5 +143,11 @@
     <string name="herniorraphy">Herniorraphy</string>
     <string name="hospital_room">Hospital Room</string>
     <string name="explore">Explore</string>
+    <string name="the_heart_pumps_blood_that_travels_all_over_the_body_this_helps_the_body_get_the_oxygen_and_nutrients_it_needs">The heart pumps blood that travels all over the body. This helps the body get the oxygen and nutrients it needs.</string>
+    <string name="heart">Heart</string>
+    <string name="small_intestine">Small Intestine</string>
+    <string name="the_small_intestine_is_a_long_coiled_tube_in_your_digestive_system_it_absorbs_the_nutrients_from_the_food_that_passes_through">The small intestine is a long coiled tube in your digestive system. It absorbs the nutrients from the food that passes through.</string>
+    <string name="the_large_intestine_gets_waste_from_the_small_intestine_it_absorbs_the_water_from_the_waste_this_creates_stool_which_is_the_waste_ready_to_exit_your_body">The large intestine gets waste from the small intestine. It absorbs the water from the waste. This creates stool, which is the waste ready to exit your body.</string>
+    <string name="large_intestine">Large Intestine</string>
 
 </resources>

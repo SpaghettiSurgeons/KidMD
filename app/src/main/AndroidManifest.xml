@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".bpLargeIntestine"
+            android:exported="false" />
+        <activity
+            android:name=".bpSmallIntestine"
+            android:exported="false" />
+        <activity
+            android:name=".bpHeart"
+            android:exported="false" />
+        <activity
             android:name=".userMessaging"
             android:exported="false" />
         <activity
