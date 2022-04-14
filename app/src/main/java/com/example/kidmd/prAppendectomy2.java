@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -21,7 +22,7 @@ public class prAppendectomy2 extends AppCompatActivity implements View.OnClickLi
     private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
     //for audio
     ImageButton appendixAudio;
-    TextView appendixDesc;
+    TextView appendixDesc2;
     TextToSpeech textToSpeech;
 
     @Override
@@ -60,7 +61,7 @@ public class prAppendectomy2 extends AppCompatActivity implements View.OnClickLi
 
         //audio
         appendixAudio = findViewById(R.id.appendixAudio2);
-        appendixDesc = findViewById(R.id.prAppendixDesc2);
+        appendixDesc2 = findViewById(R.id.prAppendixDesc2);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -73,9 +74,15 @@ public class prAppendectomy2 extends AppCompatActivity implements View.OnClickLi
         appendixAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(appendixDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(appendixDesc2.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
+
+        //change font
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+        ((TextView) findViewById(R.id.Appendectomy2)).setTypeface(baloo);
+        ((TextView) findViewById(R.id.prAppendixTitle2)).setTypeface(baloo);
+        (appendixDesc2).setTypeface(baloo);
 
     }
     public void onClick(View view) {
