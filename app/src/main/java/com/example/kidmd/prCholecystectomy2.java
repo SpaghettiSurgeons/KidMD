@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+import java.util.Locale;
 
 public class prCholecystectomy2 extends AppCompatActivity implements View.OnClickListener {
 
@@ -14,6 +19,11 @@ public class prCholecystectomy2 extends AppCompatActivity implements View.OnClic
     private ImageButton xBack;
     // Bottom Toolbar
     private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
+
+    //for audio
+    ImageButton cholAudio2;
+    TextView cholDesc2;
+    TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +57,33 @@ public class prCholecystectomy2 extends AppCompatActivity implements View.OnClic
                 startActivity(new Intent(prCholecystectomy2.this, ProceduresList.class));
             }
         });
+
+        //audio
+        cholAudio2 = findViewById(R.id.cholAudio2);
+        cholDesc2 = findViewById(R.id.prCholDesc2);
+
+        textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if (i!= TextToSpeech.ERROR){
+                    //set language to US
+                    textToSpeech.setLanguage(Locale.US); }
+            }
+        });
+        cholAudio2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                textToSpeech.speak(cholDesc2.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
+        //change font
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+        ((TextView) findViewById(R.id.Cholecystectomy2)).setTypeface(baloo);
+        ((TextView) findViewById(R.id.prCholTitle2)).setTypeface(baloo);
+        (cholDesc2).setTypeface(baloo);
     }
+
     public void onClick(View view) {
         switch (view.getId()) {
             // Bottom Toolbar

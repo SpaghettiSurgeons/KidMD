@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pr_background"
-    tools:context=".prAppendectomy">
+    tools:context=".prCholedochalCyst">
     <include layout="@layout/bottom_toolbar" />
 
     <TextView
@@ -26,7 +26,7 @@
         android:id="@+id/prCholCystTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="1dp"
         android:text="@string/why_needed"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -36,12 +36,13 @@
 
     <TextView
         android:id="@+id/prCholCystDesc"
-        android:layout_width="317dp"
-        android:layout_height="277dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="308dp"
+        android:layout_height="331dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
         android:text="@string/why_choledochalCystRemoval"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="17sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/prCholCystTitle" />
@@ -50,7 +51,7 @@
         android:id="@+id/cholCystPic1"
         android:layout_width="303dp"
         android:layout_height="219dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -58,6 +59,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/choledochalCyst"
         app:srcCompat="@drawable/cholcystpic1" />
+
+
+    <ImageButton
+        android:id="@+id/cholCystAudio"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/prCholCystTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choledochalCyst"
+        app:layout_constraintVertical_bias="0.838"
+        app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
 
     <ImageButton
         android:id="@+id/cholCystPage1Next"
