@@ -149,5 +149,21 @@
     <string name="the_small_intestine_is_a_long_coiled_tube_in_your_digestive_system_it_absorbs_the_nutrients_from_the_food_that_passes_through">The small intestine is a long coiled tube in your digestive system. It absorbs the nutrients from the food that passes through.</string>
     <string name="the_large_intestine_gets_waste_from_the_small_intestine_it_absorbs_the_water_from_the_waste_this_creates_stool_which_is_the_waste_ready_to_exit_your_body">The large intestine gets waste from the small intestine. It absorbs the water from the waste. This creates stool, which is the waste ready to exit your body.</string>
     <string name="large_intestine">Large Intestine</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 </resources>

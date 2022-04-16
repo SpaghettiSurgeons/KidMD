@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
@@ -17,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profileSearchButton;
+    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profileSearchButton, settingsButton;
     private AppCompatTextView title;
     // Bottom Toolbar
     private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
@@ -52,6 +53,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         logoutbutton.setOnClickListener(this);
         profileSearchButton = (AppCompatButton) findViewById(R.id.profilesearchbutton);
         profileSearchButton.setOnClickListener(this);
+        settingsButton = (AppCompatButton) findViewById(R.id.settingsbutton);
+        settingsButton.setOnClickListener(this);
 
         // Visibility for toolbar
         title = (AppCompatTextView) findViewById(R.id.appTitle_toolbar);
@@ -99,6 +102,9 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
             case R.id.profilesearchbutton:
                 startActivity(new Intent(MainMenu.this, ProfileSearch.class));
                 break;
+            case R.id.settingsbutton:
+                startActivity(new Intent(MainMenu.this, Settings.class));
+                break;
 
 
             // Bottom Toolbar
@@ -108,9 +114,9 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
             case R.id.explore_button:
                 startActivity(new Intent(this, ExplorePage.class));
                 break;
-            /*case R.id.notifications_button:
-                startActivity(new Intent(this, ?.class));
-                break;*/
+            case R.id.notifications_button:
+                //startActivity(new Intent(this, ?.class));
+                break;
             case R.id.profile_button:
                 startActivity(new Intent(this, ProfileActivity.class));
                 break;
