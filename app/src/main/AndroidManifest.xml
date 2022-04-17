@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".toSpirometer"
+            android:exported="false" />
+        <activity
+            android:name=".toIv"
+            android:exported="false" />
+        <activity
+            android:name=".toMri"
+            android:exported="false" />
+        <activity
+            android:name=".toCtscan"
+            android:exported="false" />
+        <activity
+            android:name=".toXray"
+            android:exported="false" />
+        <activity
             android:name=".Settings"
             android:exported="false" />
         <activity

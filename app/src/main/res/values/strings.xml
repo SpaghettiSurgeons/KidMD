@@ -90,6 +90,16 @@
     <string name="penTorch">Pen Torch</string>
     <string name="penTorch_description">Pen Torches, as their name implies, look like pens, but are equipped with a powerful flashlight. Your doctor uses these devices to check the pupillary response from your eyes, and also to check your nose and mouth, to make sure you are healthy.</string>
     <string name="penTorch_use">Along with the Stethoscope and the Sphygmomanometer (the blood pressure cuff), this device is among the most common in your doctor\'s tool belt. Expect to see it during regular office visits and check-ups, and to have your doctor ask you to follow his finger with your eyes as the light peers into your pupils, ensuring the health of your eyes.</string>
+    <string name="xray">X-ray Machine</string>
+    <string name="xray_description">X-ray Machines are devices with a generator which holds a vacuum tube, directing a stream of electrons which are collected by another device to form images of your internal body. 99% of the energy used is released as heat, and only 1% goes towards the X-rays!</string>
+    <string name="Ctscan">CT Scan Machine</string>
+    <string name="Ctscan_description">CT stands for Computed Tomography. They are often pronounced as \"cat\" scans. These devices make use of a rotating X-ray tube and a series of detectors. Like regular X-rays, they show doctors the inside of your body.</string>
+    <string name="Mri">MRI Machine</string>
+    <string name="Mri_description">MRI stands for Magnetic Resonance Imaging. It looks very similar to a CT Scan Machine, but the way it works is different. MRI Machines use magnetic fields instead of the X-rays used in CT Scans. Like X-rays and CT Scans, MRIs produce images of your internal body.</string>
+    <string name="Iv">IV</string>
+    <string name="Iv_description">IV stands for Intravenous Therapy. Consisting of a needle, plastic tubing, and a bag of fluids, it gives you necessary medication and nutrients directly into your veins to keep your body healthy when you can\'t take them by mouth, such as during surgery.</string>
+    <string name="spirometer">Spirometer</string>
+    <string name="spirometer_description">A spirometer is a relatively small, plastic device with either a floating ball or a piston encased inside and a flexible, plastic tube for you to breathe into. It measures your lung function.</string>
 
     <!--Surgical Procedures-->
     <string name="why_needed">WHY DO YOU NEED IT?</string>
