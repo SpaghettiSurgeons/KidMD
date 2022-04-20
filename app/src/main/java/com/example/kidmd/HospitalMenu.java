@@ -1,6 +1,8 @@
 package com.example.kidmd;
 
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
@@ -28,6 +30,10 @@ public class HospitalMenu extends AppCompatActivity implements View.OnClickListe
         //lock orientation to portrait
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        if (SpRetrieve("nightMode")){
+            View menuview = findViewById(R.id.hospitalBackground);
+            menuview.setBackgroundColor(Color.parseColor("#121212"));;
+        }
         photoButton = (AppCompatButton) findViewById(R.id.roomPhotos);
         photoButton.setOnClickListener(this);
         interactButton = (AppCompatButton) findViewById(R.id.interactButton);
@@ -81,5 +87,9 @@ public class HospitalMenu extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, ?.class));
                 break;*/
         }
+    }
+    private boolean SpRetrieve(String key){
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("Settings", android.content.Context.MODE_PRIVATE);
+        return preferences.getBoolean(key, false);
     }
 }

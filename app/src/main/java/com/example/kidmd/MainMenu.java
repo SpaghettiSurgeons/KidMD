@@ -2,6 +2,7 @@ package com.example.kidmd;
 
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -39,7 +40,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         //((TextView) findViewById(R.id.menudesc)).setTypeface(baloo);
 
         //Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-
+        if (SpRetrieve("nightMode")){
+            View menuview = findViewById(R.id.menuBackground);
+            menuview.setBackgroundColor(Color.parseColor("#121212"));;
+        }
 
         //initialize procedures button
         procedurebutton = (AppCompatButton) findViewById(R.id.procedurebutton);
@@ -123,6 +127,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 break;
 
         }
+    }
+    private boolean SpRetrieve(String key){
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("Settings", android.content.Context.MODE_PRIVATE);
+        return preferences.getBoolean(key, false);
     }
 
 }

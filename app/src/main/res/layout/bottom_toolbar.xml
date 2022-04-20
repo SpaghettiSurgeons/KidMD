@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#ffffff"
+        android:background="?android:attr/windowBackground"
         android:minHeight="?android:attr/actionBarSize">
 
         <androidx.appcompat.widget.AppCompatImageView
