@@ -97,6 +97,7 @@
         <entry key="app/src/main/res/drawable/pr_background_triangle.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/activity_appendectomy.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_bodypart_list.xml" value="0.225" />
+        <entry key="app/src/main/res/layout/activity_bottom_toolbar.xml" value="0.13697916666666668" />
         <entry key="app/src/main/res/layout/activity_bp_appendix.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_bp_brain.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/activity_bp_clavicle.xml" value="0.28229166666666666" />
@@ -156,8 +157,10 @@
         <entry key="app/src/main/res/layout/activity_to_stethoscope2.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_to_suction_tube.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_to_sutures.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_to_xray.xml" value="0.13697916666666668" />
         <entry key="app/src/main/res/layout/activity_tools_list.xml" value="0.225" />
         <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.25825180316526963" />
+        <entry key="app/src/main/res/layout/bottom_toolbar2.xml" value="0.13697916666666668" />
         <entry key="app/src/main/res/layout/list_layout.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.13728470111448834" />
       </map>

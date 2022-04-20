@@ -3,6 +3,7 @@ package com.example.kidmd;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,7 +32,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.List;
 import java.util.Locale;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button friendSearch, progress;
 
@@ -44,10 +45,23 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView emailAddressTitle;
     private List<User> users;
 
+    // Bottom Toolbar
+    private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        // Bottom toolbar
+        home_button = (AppCompatImageView) findViewById(R.id.home_button);
+        home_button.setOnClickListener(this);
+        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
+        explore_button.setOnClickListener(this);
+        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
+        notifications_button.setOnClickListener(this);
+        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
+        profile_button.setOnClickListener(this);
 
         final TextView greetingTextView = (TextView) findViewById(R.id.greeting);
         final TextView fullNameTextView = (TextView) findViewById(R.id.fullName);
@@ -106,4 +120,22 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            // Bottom Toolbar
+            case R.id.home_button:
+                startActivity(new Intent(this, MainMenu.class));
+                break;
+            case R.id.explore_button:
+                startActivity(new Intent(this, ExplorePage.class));
+                break;
+            case R.id.notifications_button:
+                //startActivity(new Intent(this, ?.class));
+                break;
+            case R.id.profile_button:
+                startActivity(new Intent(this, ProfileActivity.class));
+                break;
+        }
+    }
 }
