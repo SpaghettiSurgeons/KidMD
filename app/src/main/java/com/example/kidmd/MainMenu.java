@@ -1,5 +1,6 @@
 package com.example.kidmd;
 
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -123,4 +124,5 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
 
         }
     }
+
 }

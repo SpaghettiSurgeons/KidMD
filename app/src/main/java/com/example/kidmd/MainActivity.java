@@ -2,9 +2,11 @@ package com.example.kidmd;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
@@ -55,6 +57,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //myRef.setValue("Your name here"); // Adds a value
         //myRef.removeValue(); // Removes a value
 
+        if (SpRetrieve("nightMode")){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        }
+
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -94,6 +100,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, SignIn.class));
                 break;
         }
+    }
+    private boolean SpRetrieve(String key){
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("Settings", android.content.Context.MODE_PRIVATE);
+        return preferences.getBoolean(key, false);
     }
 }
 
