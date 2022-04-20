@@ -45,7 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.64"
-        app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
+        app:srcCompat="@drawable/audiobutton__2_" />
 
     <ImageView
         android:id="@+id/imageView7"
