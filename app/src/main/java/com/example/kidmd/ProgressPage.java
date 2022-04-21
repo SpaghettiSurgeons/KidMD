@@ -52,9 +52,9 @@ public class ProgressPage extends AppCompatActivity  implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_page);
 
-        bpMax = 10;
+        bpMax = 13;
         prMax = 9;
-        toMax = 10;
+        toMax = 15;
         hrMax = 7;
         overallMax = bpMax + prMax + toMax + hrMax;
 
