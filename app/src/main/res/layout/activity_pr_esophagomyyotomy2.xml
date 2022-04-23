@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pr_background"
-    tools:context=".prEsophagomyotomy">
+    tools:context=".prEsophagomyyotomy2">
     <include layout="@layout/bottom_toolbar" />
 
     <TextView
-        android:id="@+id/Esophagomyotomy"
+        android:id="@+id/Esophagomyotomy2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -22,14 +22,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/prEsophTitle"
-        android:layout_width="302dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/prEsophTitle2"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/what_happens"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -38,26 +38,41 @@
         app:layout_constraintTop_toBottomOf="@id/esophpic2" />
 
     <TextView
-        android:id="@+id/prEsophDesc"
-        android:layout_width="348dp"
-        android:layout_height="283dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/prEsophDesc2"
+        android:layout_width="337dp"
+        android:layout_height="357dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="14dp"
         android:text="@string/desc_esophagomyotomy"
-        android:textColor="#000000"
-        android:textSize="19sp"
+        android:textSize="17sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/prEsophTitle" />
+        app:layout_constraintTop_toBottomOf="@id/prEsophTitle2" />
 
     <ImageView
         android:id="@+id/esophpic2"
-        android:layout_width="317dp"
-        android:layout_height="218dp"
+        android:layout_width="305dp"
+        android:layout_height="207dp"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Esophagomyotomy"
+        app:layout_constraintTop_toBottomOf="@id/Esophagomyotomy2"
         app:srcCompat="@drawable/esophpic2" />
+
+    <ImageButton
+        android:id="@+id/esophAudio2"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/prEsophTitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Esophagomyotomy2"
+        app:layout_constraintVertical_bias="0.703"
+        app:srcCompat="@drawable/audiobutton__2_" />
 
     <ImageButton
         android:id="@+id/esophPage2Next"
@@ -67,7 +82,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/prEsophDesc"
+        app:layout_constraintBottom_toTopOf="@id/prEsophDesc2"
         app:layout_constraintHorizontal_bias="0.994"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -81,7 +96,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/prEsophDesc"
+        app:layout_constraintBottom_toTopOf="@id/prEsophDesc2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

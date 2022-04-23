@@ -25,7 +25,7 @@
         android:id="@+id/prEsophTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         android:text="@string/why_needed"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -35,14 +35,17 @@
 
     <TextView
         android:id="@+id/prEsophDesc"
-        android:layout_width="348dp"
-        android:layout_height="283dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="337dp"
+        android:layout_height="357dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="14dp"
         android:text="@string/why_esophagomyotomy"
-        android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="17sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/prEsophTitle" />
 
     <ImageView
@@ -54,6 +57,20 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Esophagomyotomy"
         app:srcCompat="@drawable/esophpic1" />
+
+    <ImageButton
+        android:id="@+id/esophAudio"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/prEsophTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Esophagomyotomy"
+        app:layout_constraintVertical_bias="0.786"
+        app:srcCompat="@drawable/audiobutton__2_" />
 
     <ImageButton
         android:id="@+id/esophPage1Next"
