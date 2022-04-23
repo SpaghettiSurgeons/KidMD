@@ -9,7 +9,7 @@
     <include layout="@layout/bottom_toolbar" />
 
     <TextView
-        android:id="@+id/Hyperinsulinism"
+        android:id="@+id/Hyperinsulinism_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
@@ -20,11 +20,11 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/Hyperinsulinism2"
+        app:layout_constraintBottom_toTopOf="@id/Hyperinsulinism2_2"
         />
 
     <TextView
-        android:id="@+id/Hyperinsulinism2"
+        android:id="@+id/Hyperinsulinism2_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -34,17 +34,32 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/Hyperinsulinism" />
+        app:layout_constraintTop_toTopOf="@id/Hyperinsulinism_2" />
+
+
+    <ImageButton
+        android:id="@+id/hyperAudio2"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/prHyperTitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Hyperinsulinism_2"
+        app:layout_constraintVertical_bias="0.671"
+        app:srcCompat="@drawable/audiobutton__2_" />
 
     <TextView
-        android:id="@+id/prHyperTitle"
-        android:layout_width="302dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/prHyperTitle2"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/what_happens"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -53,33 +68,34 @@
         app:layout_constraintTop_toBottomOf="@id/hyperpic2" />
 
     <TextView
-        android:id="@+id/prHyperDesc"
-        android:layout_width="367dp"
-        android:layout_height="296dp"
-        android:layout_marginTop="8dp"
-        android:text="You will go to sleep. The doctor will put a cut in you belly.They will take a small sample tissue from your pancreas to test if the problem is only in one area or all over.
+        android:id="@+id/prHyperDesc2"
+        android:layout_width="337dp"
+        android:layout_height="357dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="14dp"
+        android:text="You will go to sleep. The doctor will put a cut in your belly.They will take a small sample tissue from your pancreas to test if the problem is in one area or all over.
 If the problem is all over, the doctor will take most of the pancreas out that is affected.
-If the problem is only in one area, the doctor will use special tools to carefully remove the area that is affected. The doctor will take samples of tissue to find all the spots which are affected.
+If the problem is in just some areas, the doctor will use special tools to remove all the areas that'\re affected.
 Once they are done, the doctor will close the cuts with some stitches and you will wake up."
-        android:textColor="#000000"
-        android:textSize="19sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/prHyperTitle" />
+        app:layout_constraintTop_toBottomOf="@id/prHyperTitle2" />
 
     <ImageView
         android:id="@+id/hyperpic2"
-        android:layout_width="223dp"
-        android:layout_height="166dp"
+        android:layout_width="198dp"
+        android:layout_height="144dp"
         android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Hyperinsulinism"
+        app:layout_constraintTop_toBottomOf="@id/Hyperinsulinism_2"
         app:srcCompat="@drawable/hyperpic2" />
 
     <ImageButton
@@ -90,7 +106,7 @@ Once they are done, the doctor will close the cuts with some stitches and you wi
         android:layout_alignParentTop="true"
         android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/prHyperDesc"
+        app:layout_constraintBottom_toTopOf="@id/prHyperDesc2"
         app:layout_constraintHorizontal_bias="0.994"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -104,7 +120,7 @@ Once they are done, the doctor will close the cuts with some stitches and you wi
         android:layout_alignParentTop="true"
         android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/prHyperDesc"
+        app:layout_constraintBottom_toTopOf="@id/prHyperDesc2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+import java.util.Locale;
 
 public class prHyperinsulinism extends AppCompatActivity implements View.OnClickListener {
 
@@ -14,6 +19,11 @@ public class prHyperinsulinism extends AppCompatActivity implements View.OnClick
     private ImageButton xBack;
     // Bottom Toolbar
     private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
+
+    //for audio
+    ImageButton hyperAudio;
+    TextView hyperDesc;
+    TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +57,32 @@ public class prHyperinsulinism extends AppCompatActivity implements View.OnClick
                 startActivity(new Intent(prHyperinsulinism.this, ProceduresList.class));
             }
         });
+
+        //audio
+        hyperAudio = findViewById(R.id.hyperAudio);
+        hyperDesc = findViewById(R.id.prHyperDesc);
+
+        textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if (i!= TextToSpeech.ERROR){
+                    //set language to US
+                    textToSpeech.setLanguage(Locale.US); }
+            }
+        });
+        hyperAudio.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                textToSpeech.speak(hyperDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
+        //change font
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+        ((TextView) findViewById(R.id.Hyperinsulinism)).setTypeface(baloo);
+        ((TextView) findViewById(R.id.Hyperinsulinism2)).setTypeface(baloo);
+        ((TextView) findViewById(R.id.prHyperTitle)).setTypeface(baloo);
+        (hyperDesc).setTypeface(baloo);
     }
 
     public void onClick(View view) {
