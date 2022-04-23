@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+import java.util.Locale;
 
 public class prDecortication extends AppCompatActivity implements View.OnClickListener {
 
@@ -14,6 +19,11 @@ public class prDecortication extends AppCompatActivity implements View.OnClickLi
     private ImageButton xBack;
     // Bottom Toolbar
     private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
+
+    //for audio
+    ImageButton decorAudio;
+    TextView decorDesc;
+    TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +57,31 @@ public class prDecortication extends AppCompatActivity implements View.OnClickLi
                 startActivity(new Intent(prDecortication.this, ProceduresList.class));
             }
         });
+
+        //audio
+        decorAudio = findViewById(R.id.decorAudio);
+        decorDesc = findViewById(R.id.prDecorDesc);
+
+        textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if (i!= TextToSpeech.ERROR){
+                    //set language to US
+                    textToSpeech.setLanguage(Locale.US); }
+            }
+        });
+        decorAudio.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                textToSpeech.speak(decorDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
+        //change font
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+        ((TextView) findViewById(R.id.Decortication)).setTypeface(baloo);
+        ((TextView) findViewById(R.id.prDecorTitle)).setTypeface(baloo);
+        (decorDesc).setTypeface(baloo);
     }
 
     public void onClick(View view) {
