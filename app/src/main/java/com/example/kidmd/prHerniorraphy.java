@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+import java.util.Locale;
 
 public class prHerniorraphy extends AppCompatActivity implements View.OnClickListener {
 
@@ -14,6 +19,11 @@ public class prHerniorraphy extends AppCompatActivity implements View.OnClickLis
     private ImageButton xBack;
     // Bottom Toolbar
     private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
+
+    //for audio
+    ImageButton hernAudio;
+    TextView hernDesc;
+    TextToSpeech textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +57,31 @@ public class prHerniorraphy extends AppCompatActivity implements View.OnClickLis
                 startActivity(new Intent(prHerniorraphy.this, ProceduresList.class));
             }
         });
+
+        //audio
+        hernAudio = findViewById(R.id.hernAudio);
+        hernDesc = findViewById(R.id.prHernDesc);
+
+        textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int i) {
+                if (i!= TextToSpeech.ERROR){
+                    //set language to US
+                    textToSpeech.setLanguage(Locale.US); }
+            }
+        });
+        hernAudio.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                textToSpeech.speak(hernDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+            }
+        });
+
+        //change font
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+        ((TextView) findViewById(R.id.Herniorraphy)).setTypeface(baloo);
+        ((TextView) findViewById(R.id.prHernTitle)).setTypeface(baloo);
+        (hernDesc).setTypeface(baloo);
     }
 
     public void onClick(View view) {

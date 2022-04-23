@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pr_background"
-    tools:context=".prEsophagomyotomy">
+    tools:context=".prHerniorraphy">
     <include layout="@layout/bottom_toolbar" />
 
     <TextView
@@ -25,7 +25,7 @@
         android:id="@+id/prHernTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         android:text="@string/why_needed"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -35,20 +35,23 @@
 
     <TextView
         android:id="@+id/prHernDesc"
-        android:layout_width="286dp"
-        android:layout_height="274dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="337dp"
+        android:layout_height="357dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="14dp"
         android:text="Sometimes an organ or a fatty tissue in your body can push through a weak spot in the belly. This can create a small lump under the skin. When this happens, the doctor needs to put the lump back in to its position. If not treated, it can get bigger and cause more problems."
-        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/prHernTitle" />
 
     <ImageView
         android:id="@+id/hernpic1"
-        android:layout_width="293dp"
-        android:layout_height="202dp"
+        android:layout_width="248dp"
+        android:layout_height="181dp"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -82,6 +85,21 @@
         app:layout_constraintBottom_toTopOf="@id/prHernDesc"
         app:srcCompat="@drawable/grayed_left_arrow"
         tools:layout_editor_absoluteY="289dp" />
+
+    <ImageButton
+        android:id="@+id/hernAudio"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/prHernTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Herniorraphy"
+        app:layout_constraintVertical_bias="0.786"
+        app:srcCompat="@drawable/audiobutton__2_" />
+
 
     <ImageButton
         android:id="@+id/hernPage1X"
