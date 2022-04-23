@@ -9,7 +9,7 @@
     <include layout="@layout/bottom_toolbar" />
 
     <TextView
-        android:id="@+id/Proctocolectomy"
+        android:id="@+id/Proctocolectomy2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -22,14 +22,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/prProtoTitle"
-        android:layout_width="290dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="8dp"
+        android:id="@+id/prProtoTitle2"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="1dp"
         android:gravity="center"
         android:text="@string/what_happens"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -38,31 +38,47 @@
         app:layout_constraintTop_toBottomOf="@id/protopic2" />
 
     <TextView
-        android:id="@+id/prProtoDesc"
-        android:layout_width="348dp"
-        android:layout_height="283dp"
-        android:layout_marginTop="4dp"
+        android:id="@+id/prProtoDesc2"
+        android:layout_width="337dp"
+        android:layout_height="357dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="14dp"
         android:text="@string/desc_decortication"
-        android:textColor="#000000"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/prProtoTitle" />
+        app:layout_constraintTop_toBottomOf="@id/prProtoTitle2" />
 
     <ImageView
         android:id="@+id/protopic2"
-        android:layout_width="265dp"
-        android:layout_height="202dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="240dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Proctocolectomy"
+        app:layout_constraintTop_toBottomOf="@id/Proctocolectomy2"
         app:srcCompat="@drawable/protopic2" />
+
+
+    <ImageButton
+        android:id="@+id/protoAudio2"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/prProtoTitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Proctocolectomy2"
+        app:layout_constraintVertical_bias="0.65"
+        app:srcCompat="@drawable/audiobutton__2_" />
 
     <ImageButton
         android:id="@+id/protoPage2Next"
@@ -72,7 +88,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/prProtoDesc"
+        app:layout_constraintBottom_toTopOf="@id/prProtoDesc2"
         app:layout_constraintHorizontal_bias="0.994"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -86,7 +102,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/prProtoDesc"
+        app:layout_constraintBottom_toTopOf="@id/prProtoDesc2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -96,10 +112,10 @@
         android:id="@+id/protoPage2X"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@id/protopic2"
-        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintHorizontal_bias="0.994"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/x_button" />
