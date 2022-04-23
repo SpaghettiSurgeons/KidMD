@@ -5,121 +5,108 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pr_background"
-    tools:context=".prSpinal2">
+    tools:context=".prNissen2">
     <include layout="@layout/bottom_toolbar" />
 
-
     <TextView
-        android:id="@+id/spinalFusion2"
+        android:id="@+id/NissenFundoplication2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Spinal Fusion"
+        android:text="Nissen Fundoplication"
         android:textColor="#219BA3"
-        android:textSize="37sp"
+        android:textSize="35.5sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/prSpinalTitle2"
+        android:id="@+id/prNissTitle2"
         android:layout_width="338dp"
         android:layout_height="54dp"
         android:layout_marginTop="24dp"
-        android:gravity="center"
         android:text="@string/what_happens"
+        android:gravity="center"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spinalpic2" />
+        app:layout_constraintTop_toBottomOf="@id/nisspic2" />
 
     <TextView
-        android:id="@+id/prSpinalDesc2"
+        android:id="@+id/prNissDesc2"
         android:layout_width="308dp"
         android:layout_height="331dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginRight="14dp"
-        android:text="You will go to sleep. The doctors will look inside your body using an x-ray.\nThey will make a few small cuts on your back. Then they will straighten your spine using some special tools."
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/prSpinalTitle2" />
-
-    <ImageView
-        android:id="@+id/spinalpic2"
-        android:layout_width="218dp"
-        android:layout_height="188dp"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="You will go to sleep. The doctor will make small cuts in your belly, don’t worry you won’t feel anything! They may put a small camera inside to see better. Then, they will wrap the upper part of your stomach around the lower part of your esophagus. This will stop acid in your stomach from reaching your esophagus. All done! Now the doctor will close your belly cuts and you will wake up."
+        android:textSize="17sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spinalFusion2"
-        app:srcCompat="@drawable/spinalpic3" />
+        app:layout_constraintTop_toBottomOf="@id/prNissTitle2" />
 
 
     <ImageButton
-        android:id="@+id/spinalAudio2"
+        android:id="@+id/nissAudio2"
         android:layout_width="37dp"
         android:layout_height="35dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@id/prSpinalTitle2"
+        app:layout_constraintBottom_toBottomOf="@id/prNissTitle2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spinalFusion2"
-        app:layout_constraintVertical_bias="0.683"
+        app:layout_constraintTop_toBottomOf="@id/NissenFundoplication2"
+        app:layout_constraintVertical_bias="0.705"
         app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
 
+    <ImageView
+        android:id="@+id/nisspic2"
+        android:layout_width="174dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NissenFundoplication2"
+        app:srcCompat="@drawable/nissenpic2" />
+
     <ImageButton
-        android:id="@+id/spinalPage2Next"
+        android:id="@+id/nissPage2Next"
         android:layout_width="50dp"
         android:layout_height="59dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/prSpinalDesc2"
+        app:layout_constraintBottom_toTopOf="@id/prNissDesc2"
         app:layout_constraintHorizontal_bias="0.994"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/grayed_right_arrow" />
 
     <ImageButton
-        android:id="@+id/spinalPage2Back"
+        android:id="@+id/nissPage2Back"
         android:layout_width="50dp"
         android:layout_height="59dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginBottom="40dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/prSpinalDesc2"
+        app:layout_constraintBottom_toTopOf="@id/prNissDesc2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/green_left_arrow" />
 
+
     <ImageButton
-        android:id="@+id/spinalPage2X"
+        android:id="@+id/nissPage2X"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginBottom="60dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@id/spinalpic2"
-        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintBottom_toTopOf="@id/nisspic2"
+        app:layout_constraintHorizontal_bias="0.991"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:srcCompat="@drawable/x_button" />

@@ -96,6 +96,7 @@ public class ProceduresList extends AppCompatActivity implements View.OnClickLis
         arrayList.add("Gastroschisis");
         arrayList.add("Herniorraphy");
         arrayList.add("Hyperinsulinism");
+        arrayList.add("Nissen Fundoplication");
         arrayList.add("Proctocolectomy");
         arrayList.add("Spinal Fusion");
 
@@ -141,6 +142,7 @@ public class ProceduresList extends AppCompatActivity implements View.OnClickLis
                 if (arrayList.get(i) == "Esophagomyotomy") startActivity(new Intent(ProceduresList.this, prEsophagomyotomy.class));
                 if (arrayList.get(i) == "Herniorraphy") startActivity(new Intent(ProceduresList.this, prHerniorraphy.class));
                 if (arrayList.get(i) == "Hyperinsulinism") startActivity(new Intent(ProceduresList.this, prHyperinsulinism.class));
+                if (arrayList.get(i) == "Nissen Fundoplication") startActivity(new Intent(ProceduresList.this, prNissen.class));
                 if (arrayList.get(i) == "Proctocolectomy") startActivity(new Intent(ProceduresList.this, prProctocolectomy.class));
                 if (arrayList.get(i) == "Spinal Fusion") startActivity(new Intent(ProceduresList.this, prSpinal.class));
 
