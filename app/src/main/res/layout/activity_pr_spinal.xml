@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pr_background"
+    tools:context=".prSpinal">
+    <include layout="@layout/bottom_toolbar" />
+
+    <TextView
+        android:id="@+id/spinalFusion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Spinal Fusion"
+        android:textColor="#219BA3"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prSpinalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/why_needed"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinalpic1" />
+
+    <TextView
+        android:id="@+id/prSpinalDesc"
+        android:layout_width="308dp"
+        android:layout_height="331dp"
+        android:layout_marginTop="28dp"
+        android:text="You spine may be severely curved. If left untreated, your condition may get worse.\nA curved spine can cause a lot of pain. Surgery is the only treatment to straighten the spine."
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prSpinalTitle" />
+
+    <ImageButton
+        android:id="@+id/spinalAudio"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/prSpinalTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinalFusion"
+        app:layout_constraintVertical_bias="0.739"
+        app:srcCompat="@drawable/efc8f6e329d9f096edd1aa41461bd0cc" />
+
+
+
+
+    <ImageView
+        android:id="@+id/spinalpic1"
+        android:layout_width="293dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinalFusion"
+        app:srcCompat="@drawable/spinalpic2" />
+
+    <ImageButton
+        android:id="@+id/spinalPage1Next"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/prSpinalDesc"
+        app:srcCompat="@drawable/green_right_arrow"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageButton
+        android:id="@+id/spinalPage1Back"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/prSpinalDesc"
+        app:srcCompat="@drawable/grayed_left_arrow"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageButton
+        android:id="@+id/spinalPage1X"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@id/spinalpic1"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/x_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

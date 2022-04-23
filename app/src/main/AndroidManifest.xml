@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".prSpinal2"
+            android:exported="false" />
+        <activity
+            android:name=".prSpinal"
+            android:exported="false" />
+        <activity
             android:name=".Bottom_toolbar"
             android:exported="false" />
         <activity
