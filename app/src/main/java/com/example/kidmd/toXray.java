@@ -64,7 +64,7 @@ public class toXray extends AppCompatActivity implements View.OnClickListener {
         secondPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(toXray.this, toXray2.class));
+                startActivity(new Intent(toXray.this, toXray2.class));
             }
         });
     }

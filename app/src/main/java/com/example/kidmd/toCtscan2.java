@@ -11,24 +11,26 @@ import android.speech.tts.TextToSpeech;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.Locale;
 
-public class toMri extends AppCompatActivity implements View.OnClickListener {
+public class toCtscan2 extends AppCompatActivity implements View.OnClickListener {
 
-    TextView MriDesc;
-    ImageButton MriAudio;
+    TextView ctscanUse;
+    ImageButton ctscanAudio;
     TextToSpeech textToSpeech;
-    private ImageButton secondPage;
+    private ImageButton firstPage;
     // Bottom Toolbar
     private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_to_mri);
+        setContentView(R.layout.activity_to_ctscan2);
 
-        MriDesc = findViewById(R.id.MriDescView);
-        MriAudio = findViewById(R.id.MriAudio);
+        ctscanUse = findViewById(R.id.ctscanUseView);
+        ctscanAudio = findViewById(R.id.ctscanAudio);
 
         // Bottom toolbar
         home_button = (AppCompatImageView) findViewById(R.id.home_button);
@@ -41,8 +43,8 @@ public class toMri extends AppCompatActivity implements View.OnClickListener {
         profile_button.setOnClickListener(this);
 
         Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-        ((TextView) findViewById(R.id.MriTitleView)).setTypeface(baloo);
-        (MriDesc).setTypeface(baloo);
+        ((TextView) findViewById(R.id.ctscanTitleView)).setTypeface(baloo);
+        (ctscanUse).setTypeface(baloo);
 
         textToSpeech = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -53,21 +55,22 @@ public class toMri extends AppCompatActivity implements View.OnClickListener {
                 }
             }
         });
-        MriAudio.setOnClickListener(new View.OnClickListener(){
+        ctscanAudio.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                textToSpeech.speak(MriDesc.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+                textToSpeech.speak(ctscanUse.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
-        secondPage = (ImageButton) findViewById(R.id.secondPage);
-        secondPage.setOnClickListener(new View.OnClickListener() {
+        firstPage = (ImageButton) findViewById(R.id.backPage);
+        firstPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(toMri.this, toMri2.class));
+                startActivity(new Intent(toCtscan2.this, toCtscan.class));
             }
         });
     }
+
     public void onClick(View view) {
         switch (view.getId()) {
             // Bottom Toolbar
