@@ -64,7 +64,7 @@ public class toSpirometer extends AppCompatActivity implements View.OnClickListe
         secondPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(toSpirometer.this, toSpirometer2.class));
+                startActivity(new Intent(toSpirometer.this, toSpirometer2.class));
             }
         });
     }

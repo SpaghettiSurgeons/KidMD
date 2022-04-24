@@ -64,7 +64,7 @@ public class toCtscan extends AppCompatActivity implements View.OnClickListener 
         secondPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(toCtscan.this, toCtscan2.class));
+                startActivity(new Intent(toCtscan.this, toCtscan2.class));
             }
         });
     }

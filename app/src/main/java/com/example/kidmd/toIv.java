@@ -64,7 +64,7 @@ public class toIv extends AppCompatActivity implements View.OnClickListener {
         secondPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(toIv.this, toIv2.class));
+                startActivity(new Intent(toIv.this, toIv2.class));
             }
         });
     }
