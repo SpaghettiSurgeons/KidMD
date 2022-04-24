@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profileSearchButton, settingsButton;
+    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profileSearchButton, settingsButton, resourceButton;
     private AppCompatTextView title;
     // Bottom Toolbar
     private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
@@ -60,6 +60,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         profileSearchButton.setOnClickListener(this);
         settingsButton = (AppCompatButton) findViewById(R.id.settingsbutton);
         settingsButton.setOnClickListener(this);
+        resourceButton = (AppCompatButton) findViewById(R.id.resourcebutton);
+        resourceButton.setOnClickListener(this);
 
         // Visibility for toolbar
         title = (AppCompatTextView) findViewById(R.id.appTitle_toolbar);
@@ -110,6 +112,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
             case R.id.settingsbutton:
                 startActivity(new Intent(MainMenu.this, Settings.class));
                 break;
+            case R.id.resourcebutton:
+                startActivity(new Intent(MainMenu.this, resourcesPage.class));
+                break;
+
 
 
             // Bottom Toolbar
