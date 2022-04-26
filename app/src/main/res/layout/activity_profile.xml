@@ -26,7 +26,7 @@
                 android:layout_width="360dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="80dp"
-                android:background="@drawable/rounded_banner"
+                android:background="#ffffff"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"/>
@@ -36,7 +36,7 @@
                 android:layout_width="360dp"
                 android:layout_height="90dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_banner"
+                android:background="#ffffff"
                 app:layout_constraintTop_toBottomOf="@id/profile_top"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"/>
@@ -46,7 +46,7 @@
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/rounded_banner"
+                android:background="#e4f3f7"
                 app:layout_constraintTop_toBottomOf="@id/profile_middle"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent">
@@ -57,7 +57,7 @@
                     android:layout_height="70dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/rounded_banner"
+                    android:background="#aed8e6"
                     app:layout_constraintTop_toTopOf="@id/profile_bottom"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"/>
