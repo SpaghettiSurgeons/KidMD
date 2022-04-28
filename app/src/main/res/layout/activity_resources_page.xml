@@ -10,28 +10,46 @@
 
 
 
-    <androidx.appcompat.widget.AppCompatButton
+
+    <TextView
         android:id="@+id/resButton1"
         android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="112dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="90dp"
         android:background="#ADD8E6"
-        android:text="Resource 1"
+        android:text=" Preparing for your child’s surgery"
         android:textColor="#ffffff"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <TextView
+        android:id="@+id/resButton1.1"
+        android:layout_width="342dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="130dp"
+        android:text="How to comfort your child before their surgery and ease any fears"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
         android:id="@+id/resButton2"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginTop="28dp"
         android:background="#ADD8E6"
-        android:text="Resource 2"
+        android:text=" The Day of You Child's Surgery"
+        android:textStyle="bold"
         android:textColor="#ffffff"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,30 +58,77 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resButton1" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <TextView
+        android:id="@+id/resButton2.2"
+        android:layout_width="338dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="62dp"
+        android:text="Knowing what to expect on the day of your child’s surgery can help ease anxiety"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resButton1" />
+
+
+    <TextView
         android:id="@+id/resButton3"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginTop="28dp"
         android:background="#ADD8E6"
-        android:text="Resource 3"
+        android:text=" Recovery After Surgery"
         android:textColor="#ffffff"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resButton2" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <TextView
+        android:id="@+id/resButton3.2"
+        android:layout_width="338dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="59dp"
+        android:text="Recovery after surgery can be challenging, knowing what to expect can help you help your child cope "
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resButton2" />
+
+
+
+    <TextView
         android:id="@+id/resButton4"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginTop="28dp"
         android:background="#ADD8E6"
-        android:text="Resource 4"
+        android:text=" Coping With Post-Surgery Pain"
         android:textColor="#ffffff"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resButton3" />
+
+    <TextView
+        android:id="@+id/resButton4.2"
+        android:layout_width="338dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="64dp"
+        android:text="Learn how to comfort and care for you child regarding any pain after surgery "
+        android:textColor="#ffffff"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

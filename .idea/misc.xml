@@ -95,6 +95,7 @@
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1802536231884058" />
         <entry key="app/src/main/res/layout/activity_profile_search.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/activity_register_user.xml" value="0.19429347826086957" />
+        <entry key="app/src/main/res/layout/activity_resources_page.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.157135009765625" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.20997314453125004" />
         <entry key="app/src/main/res/layout/activity_to_anesthesia.xml" value="0.335" />
@@ -113,9 +114,9 @@
         <entry key="app/src/main/res/layout/activity_to_suction_tube.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_to_sutures.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_tools_list.xml" value="0.225" />
-        <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.25825180316526963" />
+        <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/list_layout.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/toolbar.xml" value="0.13728470111448834" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.1" />
       </map>
     </option>
   </component>

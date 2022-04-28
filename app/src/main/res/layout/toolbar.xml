@@ -67,6 +67,17 @@
             android:visibility="gone" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/resourcesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/parent_resources"
+            android:textColor="#66C9EB"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/toolsTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
