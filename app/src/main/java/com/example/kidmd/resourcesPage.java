@@ -5,8 +5,10 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class resourcesPage extends AppCompatActivity implements View.OnClickListener{
 
@@ -17,7 +19,7 @@ public class resourcesPage extends AppCompatActivity implements View.OnClickList
     // for bottom toolbar
     private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
 
-
+    TextView res1, res2, res3, res4;
 
 
     @Override
@@ -39,7 +41,6 @@ public class resourcesPage extends AppCompatActivity implements View.OnClickList
             }
         });
 
-
         // Bottom toolbar
         home_button = (AppCompatImageView) findViewById(R.id.home_button);
         home_button.setOnClickListener(this);
@@ -49,6 +50,43 @@ public class resourcesPage extends AppCompatActivity implements View.OnClickList
         notifications_button.setOnClickListener(this);
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
+
+        // Learn More
+        res1 = findViewById(R.id.learnMore1);
+        res2 = findViewById(R.id.learnMore2);
+        res3 = findViewById(R.id.learnMore3);
+        res4 = findViewById(R.id.learnMore4);
+
+        res1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.chop.edu/patients-and-visitors/guide-your-childs-surgery/preparing-your-child-surgery");
+            }
+        });
+        res2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.aboutkidshealth.ca/Article?contentid=1166&language=English");
+            }
+        });
+        res3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.chop.edu/patients-and-visitors/guide-your-childs-surgery/your-childs-recovery-after-surgery");
+            }
+        });
+        res4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://www.chop.edu/patients-and-visitors/guide-your-childs-surgery/coping-with-pain");
+            }
+        });
+    }
+
+    // method to go to URL
+    private void gotoUrl(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW, uri));
     }
 
     @Override
