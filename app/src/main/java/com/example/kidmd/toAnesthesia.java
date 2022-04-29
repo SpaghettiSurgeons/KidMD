@@ -77,12 +77,12 @@ public class toAnesthesia extends AppCompatActivity implements View.OnClickListe
             case R.id.explore_button:
                 startActivity(new Intent(this, ExplorePage.class));
                 break;
-            /*case R.id.notifications_button:
-                startActivity(new Intent(ProceduresList.this, ?.class));
+            case R.id.notifications_button:
+                startActivity(new Intent(this, Notifications.class));
                 break;
             case R.id.profile_button:
-                startActivity(new Intent(ProceduresList.this, ?.class));
-                break;*/
+                startActivity(new Intent(this, ProfileActivity.class));
+                break;
         }
     }
 }

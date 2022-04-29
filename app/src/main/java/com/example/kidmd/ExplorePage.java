@@ -1,6 +1,7 @@
 package com.example.kidmd;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 
@@ -17,12 +18,46 @@ public class ExplorePage extends AppCompatActivity implements View.OnClickListen
     AppCompatImageView exploreBack, exploreSearch;
     private Integer search_visible;
     EditText exploreSearchEdit;
+    AppCompatButton populartool1, populartool2, populartool3, populartool4;
+    AppCompatButton popularanatomy1, popularanatomy2, popularanatomy3, popularanatomy4;
+    AppCompatButton popularprocedure1, popularprocedure2, popularprocedure3, popularprocedure4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore_page);
+
+        // popular tools buttons
+        populartool1 = findViewById(R.id.populartool1);
+        populartool1.setOnClickListener(this);
+        populartool2 = findViewById(R.id.populartool2);
+        populartool2.setOnClickListener(this);
+        populartool3 = findViewById(R.id.populartool3);
+        populartool3.setOnClickListener(this);
+        populartool4 = findViewById(R.id.populartool4);
+        populartool4.setOnClickListener(this);
+
+        // popular anatomy buttons
+        popularanatomy1 = findViewById(R.id.popularanatomy1);
+        popularanatomy1.setOnClickListener(this);
+        popularanatomy2 = findViewById(R.id.popularanatomy2);
+        popularanatomy2.setOnClickListener(this);
+        popularanatomy3 = findViewById(R.id.popularanatomy3);
+        popularanatomy3.setOnClickListener(this);
+        popularanatomy4 = findViewById(R.id.popularanatomy4);
+        popularanatomy4.setOnClickListener(this);
+
+        // popular procedures buttons
+        popularprocedure1 = findViewById(R.id.popularprocedure1);
+        popularprocedure1.setOnClickListener(this);
+        popularprocedure2 = findViewById(R.id.popularprocedure2);
+        popularprocedure2.setOnClickListener(this);
+        popularprocedure3 = findViewById(R.id.popularprocedure3);
+        popularprocedure3.setOnClickListener(this);
+        popularprocedure4 = findViewById(R.id.popularprocedure4);
+        popularprocedure4.setOnClickListener(this);
+
 
         // Bottom toolbar
         home_button = (AppCompatImageView) findViewById(R.id.home_button);
@@ -73,6 +108,47 @@ public class ExplorePage extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            // popular tools buttons
+            case R.id.populartool1:
+                startActivity(new Intent(this, toAnesthesia.class));
+                break;
+            case R.id.populartool2:
+                startActivity(new Intent(this, toForceps.class));
+                break;
+            case R.id.populartool3:
+                startActivity(new Intent(this, toMri.class));
+                break;
+            case R.id.populartool4:
+                startActivity(new Intent(this, toIv.class));
+                break;
+
+            // popular anatomy buttons
+            case R.id.popularanatomy1:
+                startActivity(new Intent(this, bpBrain.class));
+                break;
+            case R.id.popularanatomy2:
+                startActivity(new Intent(this, bpHeart.class));
+                break;
+            case R.id.popularanatomy3:
+                startActivity(new Intent(this, bpKidney.class));
+                break;
+            case R.id.popularanatomy4:
+                startActivity(new Intent(this, bpLiver.class));
+                break;
+
+            // popular procedures buttons
+            case R.id.popularprocedure1:
+                startActivity(new Intent(this, prAppendectomy.class));
+                break;
+            case R.id.popularprocedure2:
+                startActivity(new Intent(this, prCholecystectomy.class));
+                break;
+            case R.id.popularprocedure3:
+                startActivity(new Intent(this, prNissen.class));
+                break;
+            case R.id.popularprocedure4:
+                startActivity(new Intent(this, prDecortication.class));
+                break;
 
             // bottom toolbar
             case R.id.home_button:

@@ -45,7 +45,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
             menuview.setBackgroundColor(Color.parseColor("#121212"));;
         }
 
-        //initialize procedures button
+        //initialize buttons
         procedurebutton = (AppCompatButton) findViewById(R.id.procedurebutton);
         procedurebutton.setOnClickListener(this);
         hospitalbutton = (AppCompatButton) findViewById(R.id.hospitalbutton);
