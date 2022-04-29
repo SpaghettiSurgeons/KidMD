@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profileSearchButton, settingsButton, resourceButton;
+    private AppCompatButton procedurebutton, hospitalbutton, toolsbutton, bodypartbutton, logoutbutton, profileSearchButton, settingsButton, resourceButton, notificationbutton, soundsbutton;
     private AppCompatTextView title;
     // Bottom Toolbar
     private AppCompatImageView home_button, explore_button, notifications_button, profile_button;
@@ -62,6 +62,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         settingsButton.setOnClickListener(this);
         resourceButton = (AppCompatButton) findViewById(R.id.resourcebutton);
         resourceButton.setOnClickListener(this);
+        notificationbutton = (AppCompatButton) findViewById(R.id.notificationbutton);
+        notificationbutton.setOnClickListener(this);
+        soundsbutton = (AppCompatButton) findViewById(R.id.soundsbutton);
+        soundsbutton.setOnClickListener(this);
 
         // Visibility for toolbar
         title = (AppCompatTextView) findViewById(R.id.appTitle_toolbar);
@@ -115,6 +119,12 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
             case R.id.resourcebutton:
                 startActivity(new Intent(MainMenu.this, resourcesPage.class));
                 break;
+            case R.id.notificationbutton:
+                startActivity(new Intent(MainMenu.this, Notifications.class));
+                break;
+            case R.id.soundsbutton:
+                startActivity(new Intent(MainMenu.this, Sounds.class));
+                break;
 
 
 
@@ -126,7 +136,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 startActivity(new Intent(this, ExplorePage.class));
                 break;
             case R.id.notifications_button:
-                //startActivity(new Intent(this, ?.class));
+                startActivity(new Intent(this, Notifications.class));
                 break;
             case R.id.profile_button:
                 startActivity(new Intent(this, ProfileActivity.class));

@@ -68,7 +68,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/NissenFundoplication2"
-        app:srcCompat="@drawable/nissenpic2" />
+        />
+        <!--app:srcCompat="@drawable/nissenpic2"-->
 
     <ImageButton
         android:id="@+id/nissPage2Next"
