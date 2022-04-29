@@ -10,9 +10,10 @@
         android:id="@+id/soundsBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#efefef"
+        android:background="#7e939e"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
+        <!--android:background="#efefef"-->
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,41 +22,90 @@
 
             <include layout="@layout/toolbar" />
 
-            <TextView
-                android:id="@+id/Sounds"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:text="Calming Sounds"
-                android:textColor="#219BA3"
-                android:textSize="34sp"
-                android:textStyle="bold"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentTop="true"/>
+
+            <ImageButton
+                android:id="@+id/naturesounds"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/nature" />
 
             <TextView
-                android:id="@+id/naturesound"
+                android:id="@+id/naturetitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
+                android:layout_below="@+id/naturesounds"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="5dp"
                 android:text="Nature"
-                android:textColor="#219BA3"
-                android:textSize="25sp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
-                android:layout_alignTop="@+id/Sounds" />
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/playnaturesound"
+            <ImageButton
+                android:id="@+id/wavesounds"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignBottom="@+id/naturesounds"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/wave" />
+
+            <TextView
+                android:id="@+id/wavestitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Play"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="40dp"
-                android:layout_below="@+id/naturesound"
-                />
+                android:layout_alignBottom="@+id/naturetitle"
+                android:layout_centerInParent="true"
+                android:text="Waves"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/rainsounds"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignBottom="@+id/wavesounds"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/rain" />
+
+            <TextView
+                android:id="@+id/raintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rainsounds"
+                android:layout_alignRight="@id/rainsounds"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="26dp"
+                android:text="Rain"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/stormsounds"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/naturetitle"
+                android:layout_alignLeft="@id/naturesounds"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/storm" />
+
+            <TextView
+                android:id="@+id/stormtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stormsounds"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Thunderstorm"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
 
 
         </RelativeLayout>

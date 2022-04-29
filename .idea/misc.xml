@@ -53,6 +53,9 @@
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1315" />
         <entry key="app/src/main/res/drawable/interact_rounded.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/pr_background_triangle.xml" value="0.2833333333333333" />
+        <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.233" />
+        <entry key="app/src/main/res/drawable/rounded_corner_square.xml" value="0.233" />
+        <entry key="app/src/main/res/drawable/testround.xml" value="0.2205" />
         <entry key="app/src/main/res/layout/activity_appendectomy.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_bodypart_list.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_bp_appendix.xml" value="0.28229166666666666" />
