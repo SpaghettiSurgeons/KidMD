@@ -36,6 +36,7 @@
         <entry key="..\:/Users/ryani/OneDrive/Documents/GitHub/KidMD/app/src/main/res/layout/activity_user_messaging.xml" value="0.1936725096194955" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.12083333333333333" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1315" />
+        <entry key="app/src/main/res/drawable/interact_rounded.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/pr_background_triangle.xml" value="0.2833333333333333" />
         <entry key="app/src/main/res/layout/activity_appendectomy.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_bodypart_list.xml" value="0.225" />
@@ -65,7 +66,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_notifications.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy2.xml" value="0.24180327868852458" />
@@ -85,7 +86,6 @@
         <entry key="app/src/main/res/layout/activity_profile_search.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/activity_progress_page.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_register_user.xml" value="0.19429347826086957" />
-        <entry key="app/src/main/res/layout/activity_resources_page.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.157135009765625" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.20997314453125004" />
         <entry key="app/src/main/res/layout/activity_sounds.xml" value="0.24085693359375004" />
@@ -105,9 +105,9 @@
         <entry key="app/src/main/res/layout/activity_to_suction_tube.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_to_sutures.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_tools_list.xml" value="0.225" />
-        <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.25825180316526963" />
         <entry key="app/src/main/res/layout/list_layout.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/toolbar.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.13728470111448834" />
       </map>
     </option>
   </component>
