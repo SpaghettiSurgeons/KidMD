@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
@@ -27,121 +28,40 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-
 public class Notifications extends AppCompatActivity implements View.OnClickListener{
 
-    private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
+    Button anatomy50, anatomy100, procedures50, procedures100, tools50, tools100, signInNotif;
+    // Bottom Toolbar
+    AppCompatImageView home_button, explore_button, profile_button, notifications_button;
+    // Top Toolbar
+    AppCompatTextView notificationsTitle;
+    AppCompatImageView backButton;
+    // User progress related
+    ProgressBar bp;
+    ProgressBar pr;
+    ProgressBar to;
+    ProgressBar hr;
+    ProgressBar overall;
+    public int bpMax, prMax, toMax, hrMax, overallMax;
+    public String bpTrack,prTrack, hrTrack, toTrack;
+    public int bpNum, prNum, hrNum, toNum, all;
+    DatabaseReference reference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications);
 
-        createNotificationChannel();
 
-        Button buttonShowNotification = findViewById(R.id.testNotification1);
+        // maximum number of pages for each
+        bpMax = 13;
+        prMax = 9;
+        toMax = 15;
+        hrMax = 7;
+        overallMax = bpMax + prMax + toMax + hrMax;
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(Notifications.this, "My Notification");
-        builder.setContentTitle("KidMD: You're halfway there!");
-        builder.setContentText("You've learned about over half of the human body, log in now to learn more");
-        builder.setSmallIcon(R.drawable.logo);
-        builder.setAutoCancel(true);
-
-        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(Notifications.this);
-
-        buttonShowNotification.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                managerCompat.notify(100, builder.build());
-
-            }
-
-        });
-
-
-
-        // Bottom toolbar
-        home_button = (AppCompatImageView) findViewById(R.id.home_button);
-        home_button.setOnClickListener(this);
-        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
-        explore_button.setOnClickListener(this);
-        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
-        notifications_button.setOnClickListener(this);
-        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
-        profile_button.setOnClickListener(this);
-
-    }
-
-
-    private void createNotificationChannel(){
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            CharSequence name = "notifchannel";
-            String description = "Channel for notifications";
-            int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel("My Notification", name, importance);
-            channel.setDescription(description);
-
-            NotificationManager notificationManager = getSystemService(NotificationManager.class);
-            notificationManager.createNotificationChannel(channel);
-
-        }
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.home_button:
-                startActivity(new Intent(this, MainMenu.class));
-                break;
-            case R.id.explore_button:
-                startActivity(new Intent(this, ExplorePage.class));
-                break;
-            case R.id.notifications_button:
-                startActivity(new Intent(this, Notifications.class));
-                break;
-            case R.id.profile_button:
-                startActivity(new Intent(this, ProfileActivity.class));
-                break;
-        }
-    }
-}
-
-
-
-
-
-/****
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notifications);
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel("My notification", "My Notification", NotificationManager.IMPORTANCE_DEFAULT);
-            NotificationManager manager = getSystemService(NotificationManager.class);
-            manager.createNotificationChannel(channel);
-        }
-
-
-
-
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(Notifications.this, "My Notification");
-        builder.setContentTitle("KidMD: Halfway there!");
-        builder.setContentText("Anatomy list Progress: ");
-        builder.setSmallIcon(R.drawable.ic_launcher_background);
-        builder.setAutoCancel(true);
-
-        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(Notifications.this);
-        managerCompat.notify(1, builder.build());
-
-
-
-
-
-        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
-
-        //retrieve progress data
+        //retrieve progress data for notifications
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
             String userID = user.getUid();
@@ -165,9 +85,85 @@ public class Notifications extends AppCompatActivity implements View.OnClickList
 
                             //get total for overall progress
                             all = bpNum + prNum + toNum + hrNum;
-                            //Toast.makeText(ProgressPage.this, hrTrack, Toast.LENGTH_LONG).show();
+
+                            /** Anatomy list notifs**/
+                            // display notification if 100% or over 50% of anatomy list viewed
+                            if (bpNum > bpMax/2){
+                                // check if list is 100% finished
+                                if(bpNum == bpMax){
+                                    // Visibility for 100% notification
+                                    anatomy100 = findViewById(R.id.anatomy100);
+                                    anatomy100.setVisibility(View.VISIBLE);
+                                    anatomy100.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+                                            startActivity(new Intent(Notifications.this, ProgressPage.class));
+                                        }
+                                    });
+                                }
+                                else {
+                                    // Visibility for 50% notification
+                                    anatomy50 = findViewById(R.id.anatomy50);
+                                    anatomy50.setVisibility(View.VISIBLE);
+                                    anatomy50.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+                                            startActivity(new Intent(Notifications.this, BodyPartList.class));
+                                        }
+                                    });
+                                }
+                            }
+                            /** Procedures list notifs**/
+                            // display notification if 100% or over 50% of tools list viewed
+                            if (prNum > prMax/2){
+                                // check if list is 100% finished
+                                if(prNum == prMax){
+                                    // Visibility for 100% notification
+                                    procedures100 = findViewById(R.id.procedures100);
+                                    procedures100.setVisibility(View.VISIBLE);
+                                    procedures100.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+                                            startActivity(new Intent(Notifications.this, ProgressPage.class));
+                                        }
+                                    });
+                                }
+                                // Visibility for 50% notification
+                                procedures50 = findViewById(R.id.procedures50);
+                                procedures50.setVisibility(View.VISIBLE);
+                                procedures50.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        startActivity(new Intent(Notifications.this, ProceduresList.class));
+                                    }
+                                });
+                            }
+                            /** Tools list notifs**/
+                            // display notification if 100% or over 50% of tools list viewed
+                            if (toNum > toMax/2){
+                                // check if list is 100% finished
+                                if(toNum == toMax){
+                                    // Visibility for 100% notification
+                                    tools100 = findViewById(R.id.tools100);
+                                    tools100.setVisibility(View.VISIBLE);
+                                    tools100.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+                                            startActivity(new Intent(Notifications.this, ProgressPage.class));
+                                        }
+                                    });
+                                }
+                                // Visibility for 50% notification
+                                tools50 = findViewById(R.id.tools50);
+                                tools50.setVisibility(View.VISIBLE);
+                                tools50.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        startActivity(new Intent(Notifications.this, ToolsList.class));
+                                    }
+                                });
+                            }
                         }
-                        //else Toast.makeText(ProgressPage.this, "track is null", Toast.LENGTH_LONG).show();
                     }
                 }
 
@@ -177,7 +173,63 @@ public class Notifications extends AppCompatActivity implements View.OnClickList
                 }
             });}
 
+        // if user is not found, prompt them to sign in or create an account
+        else {
+            // Visibility for notification
+            signInNotif = findViewById(R.id.signInNotif);
+            signInNotif.setVisibility(View.VISIBLE);
+            signInNotif.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(Notifications.this, MainActivity.class));
+                }
+            });
 
+
+
+        }
+
+
+        // Visibility for toolbar
+        notificationsTitle = (AppCompatTextView) findViewById(R.id.notificationsTitle);
+        notificationsTitle.setVisibility(View.VISIBLE);
+        backButton = (AppCompatImageView) findViewById(R.id.backArrow);
+        backButton.setVisibility(View.VISIBLE);
+        backButton.setOnClickListener(this);
+
+        // Bottom toolbar
+        home_button = (AppCompatImageView) findViewById(R.id.home_button);
+        home_button.setOnClickListener(this);
+        explore_button = (AppCompatImageView) findViewById(R.id.explore_button);
+        explore_button.setOnClickListener(this);
+        notifications_button = (AppCompatImageView) findViewById(R.id.notifications_button);
+        notifications_button.setOnClickListener(this);
+        profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
+        profile_button.setOnClickListener(this);
+
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            // Toolbar
+            case R.id.backArrow:
+                startActivity(new Intent(this, MainMenu.class));
+
+            // Bottom Toolbar
+            case R.id.home_button:
+                startActivity(new Intent(this, MainMenu.class));
+                break;
+            case R.id.explore_button:
+                startActivity(new Intent(this, ExplorePage.class));
+                break;
+            case R.id.notifications_button:
+                startActivity(new Intent(this, Notifications.class));
+                break;
+            case R.id.profile_button:
+                startActivity(new Intent(this, ProfileActivity.class));
+                break;
+        }
+    }
 }
-
-****/

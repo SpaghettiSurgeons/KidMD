@@ -17,6 +17,7 @@ public class Sounds extends AppCompatActivity implements View.OnClickListener {
     MediaPlayer mediaPlayer;
     // Bottom Toolbar
     AppCompatImageView home_button, explore_button, notifications_button, profile_button;
+    // Top Toolbar
     AppCompatTextView soundsPageTitle;
     AppCompatImageView backButton;
 

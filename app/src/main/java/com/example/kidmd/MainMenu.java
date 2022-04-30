@@ -1,22 +1,34 @@
 package com.example.kidmd;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainMenu extends AppCompatActivity implements View.OnClickListener {
 
@@ -67,6 +79,8 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         soundsbutton = (AppCompatButton) findViewById(R.id.soundsbutton);
         soundsbutton.setOnClickListener(this);
 
+
+
         // Visibility for toolbar
         title = (AppCompatTextView) findViewById(R.id.appTitle_toolbar);
         title.setVisibility(View.VISIBLE);
@@ -89,6 +103,19 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
 
+    }
+
+    private void createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "notifchannel";
+            String description = "Channel for notifications";
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel("My Notifications", name, importance);
+            channel.setDescription(description);
+
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
     }
 
     @Override
