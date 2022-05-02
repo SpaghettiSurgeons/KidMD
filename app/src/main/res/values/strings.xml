@@ -27,7 +27,7 @@
     <string name="profile_button">Profile button</string>
     <string name="notifications">Notifications</string>
     <string name="notifications_button">Notifications button</string>
-    <string name="additional_resources">Additional Resources</string>
+    <string name="additional_resources">Resources</string>
     <string name="additional_resources_button">Additional Resources button</string>
     <string name="hospital">Hospital</string>
     <string name="hospital_button">Hospital button</string>
@@ -187,5 +187,6 @@
     <string name="pancreas">Pancreas</string>
     <string name="the_spine_is_made_of_many_bones_called_the_vertebrae_they_protect_the_spinal_cord_and_provide_structural_support_for_the_body">The spine is made of many bones called the vertebrae. They protect the spinal cord and provide structural support for the body.</string>
     <string name="spine">Spine</string>
+    <string name="sounds_button">sounds_button</string>
 
 </resources>

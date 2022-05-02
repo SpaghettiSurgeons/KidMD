@@ -35,126 +35,171 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bodypartbutton"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/main_anatomy_r"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/anatomy"
                 android:contentDescription="@string/anatomy_button"
-                android:text="@string/anatomy"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintHorizontal_bias="0.10"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/banner"
                 android:hardwareAccelerated="false"
                 android:largeHeap="true"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/procedurebutton"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/main_procedures_r"
-                android:contentDescription="@string/procedures_button"
-                android:text="@string/procedures"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintLeft_toRightOf="@id/bodypartbutton"
+            <TextView
+                android:id="@+id/bptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anatomy"
+                android:textColor="#219BA3"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:translationZ="90dp"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/banner"
-                android:hardwareAccelerated="false"
-                android:largeHeap="true"/>
+                app:layout_constraintBaseline_toBaselineOf="@+id/bodypartbutton"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/toolsbutton"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
+                android:id="@+id/procedurebutton"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/main_tools_r"
-                android:contentDescription="@string/tools_button"
-                android:text="@string/Tools"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintHorizontal_bias="0.10"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/procedures"
+                android:contentDescription="@string/procedures_button"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bodypartbutton"
                 android:hardwareAccelerated="false"
                 android:largeHeap="true"/>
 
+            <TextView
+                android:id="@+id/prtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/procedures"
+                android:textColor="#219BA3"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:translationZ="90dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/procedurebutton" />
+
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/soundsbutton"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
+                android:id="@+id/toolsbutton"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/main_sounds_r"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/tools"
                 android:contentDescription="@string/tools_button"
-                android:text="@string/sounds"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintLeft_toRightOf="@id/toolsbutton"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/procedurebutton"
                 android:hardwareAccelerated="false"
                 android:largeHeap="true"/>
 
+            <TextView
+                android:id="@+id/totext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/Tools"
+                android:textColor="#219BA3"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:translationZ="90dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/toolsbutton" />
+
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/hospitalbutton"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
+                android:id="@+id/soundsbutton"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/main_hospital_r"
-                android:contentDescription="@string/hospital_button"
-                android:text="@string/hospital"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintHorizontal_bias="0.10"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/sounds"
+                android:contentDescription="@string/sounds_button"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolsbutton"
                 android:hardwareAccelerated="false"
                 android:largeHeap="true"/>
 
-            <!--android:background="@drawable/rounded_corner"-->
+            <TextView
+                android:id="@+id/soutext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/sounds"
+                android:textColor="#219BA3"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:translationZ="90dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/soundsbutton" />
+
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/resourcebutton"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
+                android:id="@+id/hospitalbutton"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/main_resources_r"
-                android:contentDescription="@string/additional_resources_button"
-                android:text="@string/additional_resources"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintLeft_toRightOf="@id/hospitalbutton"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/hospital"
+                android:contentDescription="@string/hospital_button"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/soundsbutton"
                 android:hardwareAccelerated="false"
                 android:largeHeap="true"/>
 
-            <!--android:background="@drawable/rounded_corner"-->
+            <TextView
+                android:id="@+id/hostext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/hospital"
+                android:textColor="#219BA3"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:translationZ="90dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/hospitalbutton" />
+
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/notificationbutton"
+                android:id="@+id/resourcebutton"
                 android:layout_width="350dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="15dp"
-                android:background="@color/white"
-                android:contentDescription="@string/notifications_button"
-                android:text="@string/notifications"
-                android:textColor="#219BA3"
-                android:textSize="20sp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/resources"
+                android:contentDescription="@string/additional_resources_button"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/resourcebutton"
+                app:layout_constraintTop_toBottomOf="@+id/hospitalbutton"
                 android:hardwareAccelerated="false"
                 android:largeHeap="true"/>
+
+            <TextView
+                android:id="@+id/restext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/additional_resources"
+                android:textColor="#219BA3"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:translationZ="90dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/resourcebutton" />
+
 
             <!--android:background="@drawable/rounded_corner"-->
             <androidx.appcompat.widget.AppCompatButton
@@ -162,15 +207,27 @@
                 android:layout_width="350dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="15dp"
-                android:background="@color/white"
-                android:text="@string/settings"
-                android:textColor="#219BA3"
-                android:textSize="20sp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/settings"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/notificationbutton"
+                app:layout_constraintTop_toBottomOf="@+id/resourcebutton"
                 android:hardwareAccelerated="false"
                 android:largeHeap="true"/>
+
+            <TextView
+                android:id="@+id/settingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/settings"
+                android:textColor="#219BA3"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:translationZ="90dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/settingsbutton" />
 
             <!--android:background="@drawable/rounded_corner"-->
             <androidx.appcompat.widget.AppCompatButton
@@ -178,16 +235,28 @@
                 android:layout_width="350dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/profilesearch"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/profilesearch"
                 android:contentDescription="@string/profile_button"
-                android:text="@string/profile"
-                android:textColor="#ffffff"
-                android:textSize="20sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/settingsbutton"
                 android:hardwareAccelerated="false"
                 android:largeHeap="true"/>
+
+            <TextView
+                android:id="@+id/profsearchtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/profile"
+                android:textColor="#219BA3"
+                android:textSize="25sp"
+                android:textAllCaps="true"
+                android:translationZ="90dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/profilesearchbutton" />
 
             <!--android:background="@drawable/rounded_corner"-->
             <androidx.appcompat.widget.AppCompatButton
@@ -195,16 +264,17 @@
                 android:layout_width="350dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="15dp"
-                android:background="@color/white"
+                android:background="@drawable/rounded_corner_square"
                 android:text="@string/logout"
                 android:textColor="#219BA3"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/profilesearchbutton"
                 android:hardwareAccelerated="false"
                 android:largeHeap="true"/>
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
