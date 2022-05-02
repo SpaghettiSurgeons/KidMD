@@ -6,9 +6,12 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class ExplorePage extends AppCompatActivity implements View.OnClickListener {
 
@@ -77,6 +80,18 @@ public class ExplorePage extends AppCompatActivity implements View.OnClickListen
         exploreSearch = (AppCompatImageView) findViewById(R.id.search_button);
         exploreSearch.setVisibility(View.VISIBLE);
         search_visible = 0;
+
+        //Changes for dark mode
+        if (SpRetrieve("nightMode")){
+            View menuview = findViewById(R.id.exploreBackground);
+            TextView anatomy = findViewById(R.id.popAnatomy);
+            TextView tools = findViewById(R.id.popTools);
+            TextView procedures = findViewById(R.id.popProcedures);
+            menuview.setBackgroundColor(Color.parseColor("#121212"));
+            anatomy.setTextColor(Color.parseColor("#121212"));
+            tools.setTextColor(Color.parseColor("#121212"));
+            procedures.setTextColor(Color.parseColor("#121212"));
+        }
 
         // Back Arrow
         exploreBack.setOnClickListener(new View.OnClickListener() {
@@ -165,5 +180,9 @@ public class ExplorePage extends AppCompatActivity implements View.OnClickListen
                 break;
 
         }
+    }
+    private boolean SpRetrieve(String key){
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("Settings", android.content.Context.MODE_PRIVATE);
+        return preferences.getBoolean(key, false);
     }
 }

@@ -6,18 +6,21 @@
     android:layout_height="match_parent"
     android:background="#efefef"
     tools:context=".ExplorePage">
+
     <ScrollView
+        android:id="@+id/exploreBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#efefef"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        android:background="#efefef">
+        tools:layout_editor_absoluteY="1dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="65dp">
-            <include layout="@layout/toolbar"/>
+
+            <include layout="@layout/toolbar" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/banner"
@@ -25,9 +28,9 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="80dp"
                 android:background="@drawable/rounded_banner"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <!-- Popular Tools -->
@@ -37,27 +40,27 @@
                 android:layout_height="320dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rounded_banner"
-                app:layout_constraintTop_toBottomOf="@+id/banner"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/banner">
 
                 <TextView
+                    android:id="@+id/popTools"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="  Popular Tools"
                     android:textAlignment="viewStart"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintTop_toTopOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/populartool1"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="60dp"
-                    android:textAlignment="gravity"
                     android:background="@drawable/explore_tools1_r"
+                    android:textAlignment="gravity"
                     app:layout_constraintHorizontal_bias="0.10"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
@@ -106,19 +109,19 @@
                 android:layout_height="320dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rounded_banner"
-                app:layout_constraintTop_toBottomOf="@+id/populartools"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/populartools">
 
                 <TextView
+                    android:id="@+id/popAnatomy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="  Popular Anatomy"
                     android:textAlignment="viewStart"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintTop_toTopOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/popularanatomy1"
@@ -174,19 +177,19 @@
                 android:layout_height="480dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rounded_banner"
-                app:layout_constraintTop_toBottomOf="@+id/popularanatomy"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/popularanatomy">
 
                 <TextView
+                    android:id="@+id/popProcedures"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="  Popular Procedures"
                     android:textAlignment="viewStart"
                     android:textSize="30sp"
                     android:textStyle="bold"
-                    app:layout_constraintTop_toTopOf="parent"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <!--android:textAppearance="@style/Widget.Design.TextInputLayout-->
                 <androidx.appcompat.widget.AppCompatButton
@@ -194,11 +197,11 @@
                     android:layout_width="300dp"
                     android:layout_height="80dp"
                     android:layout_marginTop="60dp"
+                    android:background="@drawable/explore_procedure1_r"
                     android:text="@string/appendectomy"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
                     android:textColor="@color/white"
                     android:textSize="20sp"
-                    android:textAppearance="@style/Widget.Design.TextInputLayout"
-                    android:background="@drawable/explore_procedure1_r"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -208,45 +211,44 @@
                     android:layout_width="300dp"
                     android:layout_height="80dp"
                     android:layout_marginTop="20dp"
-                    android:text="@string/cholecystectomy"
-                    android:textColor="@color/white"
-                    android:textAppearance="@style/Widget.Design.TextInputLayout"
-                    android:textSize="20sp"
                     android:background="@drawable/explore_procedure2_r"
-                    app:layout_constraintTop_toBottomOf="@id/popularprocedure1"
+                    android:text="@string/cholecystectomy"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/popularprocedure1" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/popularprocedure3"
                     android:layout_width="300dp"
                     android:layout_height="80dp"
                     android:layout_marginTop="20dp"
-                    android:text="Nissen\nFundoplication"
-                    android:textColor="@color/white"
-                    android:textAppearance="@style/Widget.Design.TextInputLayout"
-                    android:textSize="20sp"
                     android:background="@drawable/explore_procedure3_r"
-                    app:layout_constraintTop_toBottomOf="@id/popularprocedure2"
+                    android:text="Nissen\nFundoplication"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent" />
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/popularprocedure2" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/popularprocedure4"
                     android:layout_width="300dp"
                     android:layout_height="80dp"
                     android:layout_marginTop="20dp"
-                    android:text="@string/decortication"
-                    android:textColor="@color/white"
-                    android:textAppearance="@style/Widget.Design.TextInputLayout"
-                    android:textSize="20sp"
                     android:background="@drawable/explore_procedure4_r"
-                    app:layout_constraintTop_toBottomOf="@id/popularprocedure3"
+                    android:text="@string/decortication"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"/>
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/popularprocedure3" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
