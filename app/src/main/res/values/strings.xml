@@ -181,5 +181,11 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="parent_resources">Parent Resources</string>
+    <string name="food_enters_the_stomach_to_be_digested_the_food_breaks_down_physically_when_the_stomach_squeezes_the_food_it_also_breaks_down_chemically_by_acids_and_enzymes">Food enters the stomach to be digested. The food breaks down physically when the stomach squeezes the food. It also breaks down chemically by acids and enzymes.</string>
+    <string name="stomach">Stomach</string>
+    <string name="the_pancreas_makes_enzymes_that_are_used_in_breaking_down_foods_it_also_makes_important_hormones_like_insulin_and_glucagon">The pancreas makes enzymes that are used in breaking down foods. It also makes important hormones like insulin and glucagon.</string>
+    <string name="pancreas">Pancreas</string>
+    <string name="the_spine_is_made_of_many_bones_called_the_vertebrae_they_protect_the_spinal_cord_and_provide_structural_support_for_the_body">The spine is made of many bones called the vertebrae. They protect the spinal cord and provide structural support for the body.</string>
+    <string name="spine">Spine</string>
 
 </resources>

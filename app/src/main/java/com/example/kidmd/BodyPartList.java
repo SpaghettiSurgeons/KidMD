@@ -101,8 +101,11 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
         arrayList.add("Large Intestine");
         arrayList.add("Liver");
         arrayList.add("Lungs");
+        arrayList.add("Pancreas");
         arrayList.add("Small Intestine");
+        arrayList.add("Spine");
         arrayList.add("Spleen");
+        arrayList.add("Stomach");
         arrayList.add("Tonsils");
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayList){
@@ -165,17 +168,26 @@ public class BodyPartList extends AppCompatActivity implements View.OnClickListe
                     case "Liver":
                         startActivity(new Intent(BodyPartList.this, bpLiver.class));
                         break;
+                    case "Pancreas":
+                        startActivity(new Intent(BodyPartList.this, bpPancreas.class));
+                        break;
                     case "Tonsils":
                         startActivity(new Intent(BodyPartList.this, bpTonsils.class));
                         break;
                     case "Lungs":
                         startActivity(new Intent(BodyPartList.this, bpLungs.class));
                         break;
+                    case "Spine":
+                        startActivity(new Intent(BodyPartList.this, bpSpine.class));
+                        break;
                     case "Small Intestine":
                         startActivity(new Intent(BodyPartList.this, bpSmallIntestine.class));
                         break;
                     case "Spleen":
                         startActivity(new Intent(BodyPartList.this, bpSpleen.class));
+                        break;
+                    case "Stomach":
+                        startActivity(new Intent(BodyPartList.this, bpStomach.class));
                         break;
                     case "Distal Radius":
                         startActivity(new Intent(BodyPartList.this, bpDistalRadius.class));
