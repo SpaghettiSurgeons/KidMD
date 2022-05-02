@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../../layout/custom_preview.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/bpbar.xml" value="0.334" />
         <entry key="..\:/Users/Zaid/AndroidStudioProjects/KidMD/app/src/main/res/drawable/dialog_bg.xml" value="0.232" />
@@ -51,11 +50,7 @@
         <entry key="..\:/Users/ryani/OneDrive/Documents/GitHub/KidMD/app/src/main/res/layout/activity_to_xray2.xml" value="0.28003420265070544" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.12083333333333333" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1315" />
-        <entry key="app/src/main/res/drawable/interact_rounded.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/pr_background_triangle.xml" value="0.2833333333333333" />
-        <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.233" />
-        <entry key="app/src/main/res/drawable/rounded_corner_square.xml" value="0.233" />
-        <entry key="app/src/main/res/drawable/testround.xml" value="0.2205" />
         <entry key="app/src/main/res/layout/activity_appendectomy.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_bodypart_list.xml" value="0.225" />
         <entry key="app/src/main/res/layout/activity_bp_appendix.xml" value="0.28229166666666666" />
@@ -84,12 +79,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.3098958333333333" />
-<<<<<<< Updated upstream
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/activity_notifications.xml" value="0.3098958333333333" />
-=======
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.1695464362850972" />
->>>>>>> Stashed changes
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.21866960676221978" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy2.xml" value="0.24180327868852458" />
         <entry key="app/src/main/res/layout/activity_pr_biliary_atresia.xml" value="0.2076923076923077" />
@@ -105,6 +95,7 @@
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1802536231884058" />
         <entry key="app/src/main/res/layout/activity_profile_search.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/activity_register_user.xml" value="0.19429347826086957" />
+        <entry key="app/src/main/res/layout/activity_resources_page.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.157135009765625" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.20997314453125004" />
         <entry key="app/src/main/res/layout/activity_to_anesthesia.xml" value="0.335" />
@@ -123,9 +114,9 @@
         <entry key="app/src/main/res/layout/activity_to_suction_tube.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_to_sutures.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_tools_list.xml" value="0.225" />
-        <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.25825180316526963" />
+        <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/list_layout.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/toolbar.xml" value="0.13728470111448834" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.1" />
       </map>
     </option>
   </component>
