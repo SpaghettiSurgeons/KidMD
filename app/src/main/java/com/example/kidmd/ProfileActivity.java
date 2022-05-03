@@ -42,7 +42,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
     private EditText searchField;
 
-    private TextView emailAddressTitle;
     private List<User> users;
 
     // Bottom Toolbar
@@ -63,9 +62,9 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
 
-        final TextView fullNameTextView = (TextView) findViewById(R.id.fullName);
-        final TextView emailTextView = (TextView) findViewById(R.id.emailAddress);
-        final TextView ageTextView = (TextView) findViewById(R.id.age);
+//        final TextView fullNameTextView = (TextView) findViewById(R.id.fullName);
+//        final TextView emailTextView = (TextView) findViewById(R.id.emailAddress);
+//        final TextView ageTextView = (TextView) findViewById(R.id.age);
 
         friendSearch = (Button) findViewById(R.id.friendSearch);
         progress = (Button) findViewById(R.id.progress);
@@ -104,9 +103,9 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                         String age = userProfile.age;
 
 //                        greetingTextView.setText("Hi, " + firstName[0] + "!");
-                        fullNameTextView.setText(userProfile.fullName);
-                        emailTextView.setText(email);
-                        ageTextView.setText(age);
+//                        fullNameTextView.setText(userProfile.fullName);
+//                        emailTextView.setText(email);
+//                        ageTextView.setText(age);
                     }
                 }
 
