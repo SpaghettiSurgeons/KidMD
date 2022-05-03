@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ADD8E6"
+    tools:context=".ProfileSearch">
+    <include layout="@layout/bottom_toolbar" />
+
+    <EditText
+        android:id="@+id/search_field2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/search_layout"
+        android:ems="10"
+        android:hint="Search here"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/emailAddressTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="564dp"
+        android:text="Email Address:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="564dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/fullNameTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="600dp"
+        android:text="Full Name:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fullName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="600dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ageTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="635dp"
+        android:text="Age:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/age2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="635dp"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/addFriend2"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#0ED6B9"
+        android:text="Add Friend"
+        android:textColor="#ffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profileSearch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Profile Search:"
+        android:textSize="20sp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/search_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_field2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="0dp"
+        android:background="#ADD8E6"
+        app:srcCompat="@mipmap/search_button" />
+
+    <ListView
+        android:id="@+id/profilesTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_below="@+id/search_field2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="354dp"
+        android:divider="@android:color/white"
+        android:dividerHeight="2dp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

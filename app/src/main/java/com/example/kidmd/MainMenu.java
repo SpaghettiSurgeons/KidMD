@@ -22,6 +22,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
+import com.example.kidmd.databinding.ActivityProfileSearch2Binding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -136,7 +137,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener 
                 startActivity(new Intent(MainMenu.this, MainActivity.class));
                 break;
             case R.id.profilesearchbutton:
-                startActivity(new Intent(MainMenu.this, ProfileSearch.class));
+                startActivity(new Intent(MainMenu.this, ProfileSearch2.class));
                 break;
             case R.id.settingsbutton:
                 startActivity(new Intent(MainMenu.this, Settings.class));
