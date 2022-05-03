@@ -179,12 +179,12 @@ public class friendRequest extends AppCompatActivity implements View.OnClickList
             case R.id.explore_button:
                 startActivity(new Intent(this, ExplorePage.class));
                 break;
-            /*case R.id.notifications_button:
-                startActivity(new Intent(this, ?.class));
+            case R.id.notifications_button:
+                startActivity(new Intent(this, Notifications.class));
                 break;
             case R.id.profile_button:
-                startActivity(new Intent(this, ?.class));
-                break;*/
+                startActivity(new Intent(this, ProfileActivity.class));
+                break;
         }
     }
 

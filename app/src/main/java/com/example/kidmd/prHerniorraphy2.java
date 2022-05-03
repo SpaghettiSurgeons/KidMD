@@ -83,22 +83,22 @@ public class prHerniorraphy2 extends AppCompatActivity implements View.OnClickLi
         ((TextView) findViewById(R.id.prHernTitle2)).setTypeface(baloo);
         (hernDesc2).setTypeface(baloo);
     }
-
+    @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            // Bottom Toolbar
+            // bottom toolbar
             case R.id.home_button:
                 startActivity(new Intent(this, MainMenu.class));
                 break;
             case R.id.explore_button:
                 startActivity(new Intent(this, ExplorePage.class));
                 break;
-            /*case R.id.notifications_button:
-                startActivity(new Intent(ProceduresList.this, ?.class));
+            case R.id.notifications_button:
+                startActivity(new Intent(this, Notifications.class));
                 break;
             case R.id.profile_button:
-                startActivity(new Intent(ProceduresList.this, ?.class));
-                break;*/
+                startActivity(new Intent(this, ProfileActivity.class));
+                break;
         }
     }
 }
