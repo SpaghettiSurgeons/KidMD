@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".profile_custom"
+            android:exported="false" />
+        <activity
+            android:name=".profile_friends"
+            android:exported="false" />
+        <activity
+            android:name=".profile_achievements"
+            android:exported="false" />
+        <activity
             android:name=".bpSpine"
             android:exported="false" />
         <activity

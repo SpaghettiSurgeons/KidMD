@@ -63,7 +63,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
 
-        final TextView greetingTextView = (TextView) findViewById(R.id.greeting);
         final TextView fullNameTextView = (TextView) findViewById(R.id.fullName);
         final TextView emailTextView = (TextView) findViewById(R.id.emailAddress);
         final TextView ageTextView = (TextView) findViewById(R.id.age);
@@ -104,7 +103,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                         String email = userProfile.email;
                         String age = userProfile.age;
 
-                        greetingTextView.setText("Hi, " + firstName[0] + "!");
+//                        greetingTextView.setText("Hi, " + firstName[0] + "!");
                         fullNameTextView.setText(userProfile.fullName);
                         emailTextView.setText(email);
                         ageTextView.setText(age);

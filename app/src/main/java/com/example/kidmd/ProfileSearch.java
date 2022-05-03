@@ -3,6 +3,8 @@ package com.example.kidmd;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatImageView;
 
 import android.content.Context;
@@ -47,15 +49,15 @@ public class ProfileSearch extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    private Button addFriend;
+    private AppCompatImageButton addFriend;
 
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userID;
     private String visit_user_id;
 
-    private EditText searchField;
-    private ImageButton searchBtn;
+    private AppCompatEditText searchField;
+    private AppCompatImageButton searchBtn;
 
     private String currentUserEmail;
     ListView profilesListView;
@@ -75,19 +77,19 @@ public class ProfileSearch extends AppCompatActivity implements View.OnClickList
         final TextView emailTextView = (TextView) findViewById(R.id.emailAddress);
         final TextView ageTextView = (TextView) findViewById(R.id.age);
 
-        final TextView fullNameTitleTextView = (TextView) findViewById(R.id.fullNameTitle);
-        final TextView emailTitleTextView = (TextView) findViewById(R.id.emailAddressTitle);
-        final TextView ageTitleTextView = (TextView) findViewById(R.id.ageTitle);
+//        final TextView fullNameTitleTextView = (TextView) findViewById(R.id.fullNameTitle);
+//        final TextView emailTitleTextView = (TextView) findViewById(R.id.emailAddressTitle);
+//        final TextView ageTitleTextView = (TextView) findViewById(R.id.ageTitle);
+//
+//        //Set title fields invisible until profile is found
+//        fullNameTitleTextView.setVisibility(View.GONE);
+//        emailTitleTextView.setVisibility(View.GONE);
+//        ageTitleTextView.setVisibility(View.GONE);
 
-        //Set title fields invisible until profile is found
-        fullNameTitleTextView.setVisibility(View.GONE);
-        emailTitleTextView.setVisibility(View.GONE);
-        ageTitleTextView.setVisibility(View.GONE);
-
-        addFriend = (Button) findViewById(R.id.addFriend);
+        addFriend = (AppCompatImageButton) findViewById(R.id.addFriend);
         searchField = findViewById(R.id.search_field);
         reference = FirebaseDatabase.getInstance().getReference("Users");
-        searchBtn = (ImageButton) findViewById(R.id.search_btn);
+        searchBtn = (AppCompatImageButton) findViewById(R.id.search_btn);
 
         profilesListView = (ListView) findViewById(R.id.profilesTextView);
 
@@ -162,9 +164,9 @@ public class ProfileSearch extends AppCompatActivity implements View.OnClickList
                 //Populate fields with found data
                 for (User u: userArrayList) {
                     if (u.fullName.toLowerCase().equals(((String)adapterView.getItemAtPosition(i)).toLowerCase())) {
-                        fullNameTitleTextView.setVisibility(View.VISIBLE);
-                        emailTitleTextView.setVisibility(View.VISIBLE);
-                        ageTitleTextView.setVisibility(View.VISIBLE);
+//                        fullNameTitleTextView.setVisibility(View.VISIBLE);
+//                        emailTitleTextView.setVisibility(View.VISIBLE);
+//                        ageTitleTextView.setVisibility(View.VISIBLE);
                         selectedUser = u;
                         fullNameTextView.setText((String)adapterView.getItemAtPosition(i));
                         emailTextView.setText(selectedUser.getEmail());
@@ -212,9 +214,9 @@ public class ProfileSearch extends AppCompatActivity implements View.OnClickList
                             //Make sure the name matches and the match is not the same as the current user
                             if (ds.child("fullName").getValue().toString().toLowerCase().contains(searchText) && !currentUserEmail.equals(ds.child("email").getValue()) && !searchText.equals("")) {
                                 //Make titles visible now that a profile has been found
-                                fullNameTitleTextView.setVisibility(View.VISIBLE);
-                                emailTitleTextView.setVisibility(View.VISIBLE);
-                                ageTitleTextView.setVisibility(View.VISIBLE);
+//                                fullNameTitleTextView.setVisibility(View.VISIBLE);
+//                                emailTitleTextView.setVisibility(View.VISIBLE);
+//                                ageTitleTextView.setVisibility(View.VISIBLE);
                                 //Populate fields with found data
                                 //visit_user_id = ds.child("uid").getValue(String.class);
                                 visit_user_id = ds.getRef().getKey();
@@ -224,9 +226,9 @@ public class ProfileSearch extends AppCompatActivity implements View.OnClickList
                                 break;
                             }
                             else {
-                                fullNameTitleTextView.setVisibility(View.GONE);
-                                emailTitleTextView.setVisibility(View.GONE);
-                                ageTitleTextView.setVisibility(View.GONE);
+//                                fullNameTitleTextView.setVisibility(View.GONE);
+//                                emailTitleTextView.setVisibility(View.GONE);
+//                                ageTitleTextView.setVisibility(View.GONE);
                                 fullNameTextView.setText("");
                                 emailTextView.setText("");
                                 ageTextView.setText("");
@@ -262,9 +264,9 @@ public class ProfileSearch extends AppCompatActivity implements View.OnClickList
         searchField.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fullNameTitleTextView.setVisibility(View.GONE);
-                emailTitleTextView.setVisibility(View.GONE);
-                ageTitleTextView.setVisibility(View.GONE);
+//                fullNameTitleTextView.setVisibility(View.GONE);
+//                emailTitleTextView.setVisibility(View.GONE);
+//                ageTitleTextView.setVisibility(View.GONE);
                 fullNameTextView.setText("");
                 emailTextView.setText("");
                 ageTextView.setText("");
