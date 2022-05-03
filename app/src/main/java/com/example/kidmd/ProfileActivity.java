@@ -3,6 +3,7 @@ package com.example.kidmd;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -41,6 +42,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     private String userID;
 
     private EditText searchField;
+    private AppCompatImageButton achievements;
 
     private List<User> users;
 
@@ -61,6 +63,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         notifications_button.setOnClickListener(this);
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
+        achievements = (AppCompatImageButton) findViewById(R.id.profile_achievements);
+        achievements.setOnClickListener(this);
 
         final TextView fullNameTextView = (TextView) findViewById(R.id.fullName);
 //        final TextView emailTextView = (TextView) findViewById(R.id.emailAddress);
@@ -122,6 +126,9 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             // Bottom Toolbar
+            case R.id.profile_achievements:
+                startActivity(new Intent(this, ProgressPage.class));
+                break;
             case R.id.home_button:
                 startActivity(new Intent(this, MainMenu.class));
                 break;
