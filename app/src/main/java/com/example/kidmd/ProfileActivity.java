@@ -62,12 +62,12 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         profile_button = (AppCompatImageView) findViewById(R.id.profile_button);
         profile_button.setOnClickListener(this);
 
-//        final TextView fullNameTextView = (TextView) findViewById(R.id.fullName);
+        final TextView fullNameTextView = (TextView) findViewById(R.id.fullName);
 //        final TextView emailTextView = (TextView) findViewById(R.id.emailAddress);
 //        final TextView ageTextView = (TextView) findViewById(R.id.age);
 
-        friendSearch = (Button) findViewById(R.id.friendSearch);
-        progress = (Button) findViewById(R.id.progress);
+        //friendSearch = (Button) findViewById(R.id.friendSearch);
+        //progress = (Button) findViewById(R.id.progress);
         //progress.setOnClickListener((View.OnClickListener) this);
 
         reference = FirebaseDatabase.getInstance().getReference("Users");
@@ -75,7 +75,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         Intent intent = getIntent();
         String email = intent.getStringExtra("email");
 
-        friendSearch.setOnClickListener(new View.OnClickListener() {
+        /*friendSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, ProfileSearch.class));
@@ -86,7 +86,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, ProgressPage.class));
             }
-        });
+        });*/
 
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             user = FirebaseAuth.getInstance().getCurrentUser();
@@ -103,7 +103,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                         String age = userProfile.age;
 
 //                        greetingTextView.setText("Hi, " + firstName[0] + "!");
-//                        fullNameTextView.setText(userProfile.fullName);
+                        fullNameTextView.setText(userProfile.fullName);
 //                        emailTextView.setText(email);
 //                        ageTextView.setText(age);
                     }
