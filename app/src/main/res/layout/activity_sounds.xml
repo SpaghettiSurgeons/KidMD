@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Sounds">
 
+    <!--android:background="#7e939e"
+        b6c2c8
+        -->
     <ScrollView
         android:id="@+id/soundsBackground"
         android:layout_width="match_parent"
@@ -101,11 +104,139 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/stormsounds"
-                android:layout_marginStart="20dp"
+                android:layout_alignLeft="@id/naturetitle"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
-                android:text="Thunderstorm"
+                android:text="Storm"
                 android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/whalesounds"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/wavestitle"
+                android:layout_alignLeft="@id/wavesounds"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/whale" />
+
+            <TextView
+                android:id="@+id/whaletitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/stormtitle"
+                android:layout_centerInParent="true"
+                android:text="Whales"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/whitenoise"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignBottom="@+id/whalesounds"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/rounded_corner_square"/>
+
+            <TextView
+                android:id="@+id/whitenoisetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/whaletitle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="26dp"
+                android:text="White Noise"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/brooksounds"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/stormtitle"
+                android:layout_alignLeft="@id/naturesounds"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/brook" />
+
+            <TextView
+                android:id="@+id/brooktitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brooksounds"
+                android:layout_alignLeft="@id/naturetitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Brook"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/chimessounds"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/whaletitle"
+                android:layout_alignLeft="@id/wavesounds"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/wind_chimes" />
+
+            <TextView
+                android:id="@+id/chimestitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/brooktitle"
+                android:layout_centerInParent="true"
+                android:text="Wind Chimes"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+            <ImageButton
+                android:id="@+id/fireplacesounds"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignBottom="@+id/chimessounds"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/fireplace" />
+
+            <TextView
+                android:id="@+id/fireplacetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/whitenoise"
+                android:layout_alignBottom="@+id/chimestitle"
+                android:layout_marginEnd="4dp"
+                android:text="Fireplace"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/windsounds"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/brooktitle"
+                android:layout_alignLeft="@id/naturesounds"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corner_square"
+                android:foreground="@drawable/wind" />
+
+            <TextView
+                android:id="@+id/windtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/windsounds"
+                android:layout_alignLeft="@id/naturetitle"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:text="Wind"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
 
 
         </RelativeLayout>

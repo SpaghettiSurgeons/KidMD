@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 
 public class Sounds extends AppCompatActivity implements View.OnClickListener {
 
-    ImageButton naturesounds, wavesounds, rainsounds, stormsounds;
+    ImageButton naturesounds, wavesounds, rainsounds, stormsounds, whalesounds, whitenoise, brooksounds, chimessounds, fireplacesounds, windsounds;
     MediaPlayer mediaPlayer;
     // Bottom Toolbar
     AppCompatImageView home_button, explore_button, notifications_button, profile_button;
@@ -34,8 +34,23 @@ public class Sounds extends AppCompatActivity implements View.OnClickListener {
         wavesounds.setOnClickListener(this);
         rainsounds = findViewById(R.id.rainsounds);
         rainsounds.setOnClickListener(this);
+
         stormsounds = findViewById(R.id.stormsounds);
         stormsounds.setOnClickListener(this);
+        whalesounds = findViewById(R.id.whalesounds);
+        whalesounds.setOnClickListener(this);
+        whitenoise = findViewById(R.id.whitenoise);
+        whitenoise.setOnClickListener(this);
+
+        brooksounds = findViewById(R.id.brooksounds);
+        brooksounds.setOnClickListener(this);
+        chimessounds = findViewById(R.id.chimessounds);
+        chimessounds.setOnClickListener(this);
+        fireplacesounds = findViewById(R.id.fireplacesounds);
+        fireplacesounds.setOnClickListener(this);
+
+        windsounds = findViewById(R.id.windsounds);
+        windsounds.setOnClickListener(this);
 
 
         // Visibility for toolbar
@@ -86,6 +101,36 @@ public class Sounds extends AppCompatActivity implements View.OnClickListener {
             case R.id.stormsounds:
                 mediaPlayer.release();
                 mediaPlayer = mediaPlayer.create(getApplicationContext(), R.raw.storm);
+                mediaPlayer.start();
+                break;
+            case R.id.whalesounds:
+                mediaPlayer.release();
+                mediaPlayer = mediaPlayer.create(getApplicationContext(), R.raw.whale_sounds);
+                mediaPlayer.start();
+                break;
+            case R.id.whitenoise:
+                mediaPlayer.release();
+                mediaPlayer = mediaPlayer.create(getApplicationContext(), R.raw.white_noise);
+                mediaPlayer.start();
+                break;
+            case R.id.brooksounds:
+                mediaPlayer.release();
+                mediaPlayer = mediaPlayer.create(getApplicationContext(), R.raw.babbling_brook);
+                mediaPlayer.start();
+                break;
+            case R.id.chimessounds:
+                mediaPlayer.release();
+                mediaPlayer = mediaPlayer.create(getApplicationContext(), R.raw.wind_chimes);
+                mediaPlayer.start();
+                break;
+            case R.id.fireplacesounds:
+                mediaPlayer.release();
+                mediaPlayer = mediaPlayer.create(getApplicationContext(), R.raw.fireplace);
+                mediaPlayer.start();
+                break;
+            case R.id.windsounds:
+                mediaPlayer.release();
+                mediaPlayer = mediaPlayer.create(getApplicationContext(), R.raw.wind);
                 mediaPlayer.start();
                 break;
 

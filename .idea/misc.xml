@@ -87,7 +87,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1390625" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.21866960676221978" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_pr_appendectomy2.xml" value="0.24180327868852458" />
         <entry key="app/src/main/res/layout/activity_pr_biliary_atresia.xml" value="0.2076923076923077" />
@@ -100,15 +100,13 @@
         <entry key="app/src/main/res/layout/activity_pr_esophagomyotomy.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/activity_pr_esophagomyyotomy2.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/activity_procedures_list.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.19735719984856204" />
-        <entry key="app/src/main/res/layout/activity_profile_achievements.xml" value="0.17703653971354166" />
-        <entry key="app/src/main/res/layout/activity_profile_custom.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_profile_friends.xml" value="0.16354166666666667" />
-        <entry key="app/src/main/res/layout/activity_profile_search.xml" value="0.23363444010416667" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1802536231884058" />
+        <entry key="app/src/main/res/layout/activity_profile_search.xml" value="0.16354166666666667" />
         <entry key="app/src/main/res/layout/activity_register_user.xml" value="0.19429347826086957" />
         <entry key="app/src/main/res/layout/activity_resources_page.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.157135009765625" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.20997314453125004" />
+        <entry key="app/src/main/res/layout/activity_sounds.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_to_anesthesia.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_to_anesthesia2.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_to_defibrillators.xml" value="0.335" />
