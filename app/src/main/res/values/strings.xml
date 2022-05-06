@@ -105,6 +105,24 @@
     <string name="spirometer">Spirometer</string>
     <string name="spirometer_description">A spirometer is a relatively small, plastic device with either a floating ball or a piston encased inside and a flexible, plastic tube for you to breathe into. It measures your lung function.</string>
     <string name="spirometer_use">Spirometers are used to help keep your lungs healthy. You simply sit up, hold the device, place the mouthpiece in your mouth, and then exhale normally and inhale slowly. Taking these repeated, measured breaths strengthens your lungs over time.</string>
+    <string name="laparoscope">Laparoscope</string>
+    <string name="laparoscope_description">The phrase \"Laparoscopic Surgery\" takes its name from this device. It is a long, narrow, fiberoptic tool that resembles a tube with a very small camera on the end.</string>
+    <string name="laparoscope_use">During surgery, this medical device is used to make the procedure as minimally invasive as possible. Surgeons don\'t have to made such a wide opening to see what they are doing since the camera sees for them. This also reduces scarring.</string>
+    <string name="patientMonitor">Patient Monitor</string>
+    <string name="patientMonitor_description">A Patient Monitor is an electronic medical device. It measures your vital signs (such as heart rate, oxygen level, blood pressure, etc.) and displays the data on its screen so doctors can make sure you\'re doing ok.</string>
+    <string name="patientMonitor_use">You may encounter a smaller, simpler monitor in your doctor\s office, but the ones present in hospital rooms and surgical theaters are much more advanced. They are using during surgery and, afterwards, during recovery, enabling doctors to keep you healthy and safe.</string>
+    <string name="carm">C-Arm Machine</string>
+    <string name="carm_description">A C-Arm Machine is a mobile medical imaging device commonly used in operating rooms and based on X-ray technology. The name is derived from its shape, which resembles a C, with the X-ray source at one tip and the X-ray detector at the other tip.</string>
+    <string name="carm_use">During use, you will lie on a table while the mobile device is placed over and under you, so that you are in the center of the C. As with other X-ray techniques, you will need to remain still for an accurate image to be taken.</string>
+    <string name="nebulizer">Nebulizer</string>
+    <string name="nebulizer_description">A Nebulizer is a small machine that converts liquid medicine to mist, so that it is easier for you to absorb using your lungs. They have an air compressor, a container for medicine, and a connecting tube.</string>
+    <string name="nebulizer_use">If you have asthma, bronchiectasis, or other lung problems, Nebulizers help relieve your symptoms. You simply use a mask or mouthpiece to inhale the mist, taking slow, deep breaths, for about 10 to 15 minutes.</string>
+    <string name="ventilator">Ventilator</string>
+    <string name="ventilator_description">A Ventilator is a medical device that moves air in and out of your lungs using mechanical ventilation. They are generally controlled by a computer, although there are simpler ones in use. An air/oxygen mixture is compressed, pushing it into your lungs until pressure is reduced and your lungs passively exhale.</string>
+    <string name="ventilator_use">Ventilators are used to provide support to your breathing during surgery, after receiving general anesthesia (when doctors put you to sleep until the surgery is over). A breathing tube is inserted through your mouth and into your airway, then the Ventilator provides oxygenated air.</string>
+    <string name="pulseOximeter">Pulse Oximeter</string>
+    <string name="pulseOximeter_description">A Pulse Oximeter is a block-shaped electronic device, rounded on one end, that covers your finger. It measures both your heart rate and the oxygen saturation in your blood.</string>
+    <string name="pulseOximeter_use">It is likely that you have encountered this device before. It is used not only in hospitals but in doctors\' offices, as well. A nurse or technician will simply place it over your fingertip, giving near-instant readings, which they will then record to keep tabs on your heart and lung function.</string>
 
     <!--Surgical Procedures-->
     <string name="why_needed">WHY DO YOU NEED IT?</string>

@@ -108,6 +108,12 @@ public class ToolsList extends AppCompatActivity implements View.OnClickListener
         arrayList.add("MRI");
         arrayList.add("IV");
         arrayList.add("Spirometer");
+        arrayList.add("Laparoscope");
+        arrayList.add("Patient Monitor");
+        arrayList.add("C-Arm");
+        arrayList.add("Nebulizer");
+        arrayList.add("Ventilator");
+        arrayList.add("Pulse Oximeter");
 
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayList){
@@ -189,6 +195,24 @@ public class ToolsList extends AppCompatActivity implements View.OnClickListener
                         break;
                     case "Spirometer":
                         startActivity(new Intent(ToolsList.this, toSpirometer.class));
+                        break;
+                    case "Laparoscope":
+                        startActivity(new Intent(ToolsList.this, toLaparoscope.class));
+                        break;
+                    case "Patient Monitor":
+                        startActivity(new Intent(ToolsList.this, toPatientMonitor.class));
+                        break;
+                    case "C-Arm":
+                        startActivity(new Intent(ToolsList.this, toCarm.class));
+                        break;
+                    case "Nebulizer":
+                        startActivity(new Intent(ToolsList.this, toNebulizer.class));
+                        break;
+                    case "Ventilator":
+                        startActivity(new Intent(ToolsList.this, toVentilator.class));
+                        break;
+                    case "Pulse Oximeter":
+                        startActivity(new Intent(ToolsList.this, toPulseOximeter.class));
                         break;
                 }
             }

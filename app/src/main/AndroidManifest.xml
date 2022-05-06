@@ -12,6 +12,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".toPulseOximeter2"
+            android:exported="false" />
+        <activity
+            android:name=".toPulseOximeter"
+            android:exported="false" />
+        <activity
+            android:name=".toVentilator2"
+            android:exported="false" />
+        <activity
+            android:name=".toVentilator"
+            android:exported="false" />
+        <activity
+            android:name=".toNebulizer2"
+            android:exported="false" />
+        <activity
+            android:name=".toNebulizer"
+            android:exported="false" />
+        <activity
+            android:name=".toCarm2"
+            android:exported="false" />
+        <activity
+            android:name=".toCarm"
+            android:exported="false" />
+        <activity
+            android:name=".toPatientMonitor2"
+            android:exported="false" />
+        <activity
+            android:name=".toPatientMonitor"
+            android:exported="false" />
+        <activity
+            android:name=".toLaparoscope2"
+            android:exported="false" />
+        <activity
+            android:name=".toLaparoscope"
+            android:exported="false" />
+        <activity
             android:name=".ProfileSearch2"
             android:exported="false" />
         <activity
