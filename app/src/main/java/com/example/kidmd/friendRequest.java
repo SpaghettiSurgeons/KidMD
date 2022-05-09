@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+//Lets the User press a button and send a friend request to the database
 public class friendRequest extends AppCompatActivity implements View.OnClickListener{
 
     private TextView fullName, email, age;
@@ -46,7 +47,7 @@ public class friendRequest extends AppCompatActivity implements View.OnClickList
 
         InitializeFields();
 
-
+        //Shows the user their own information
         UsersRef.child(receiverUserID).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -72,6 +73,7 @@ public class friendRequest extends AppCompatActivity implements View.OnClickList
         DeclineReq.setVisibility(View.GONE);
         DeclineReq.setEnabled(false);
 
+        //Make sure the user isn't trying to friend themselves, and that a previous, unopened request hasn't been sent
         if (!senderUserID.equals(receiverUserID)) {
             SendReq.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -87,6 +89,7 @@ public class friendRequest extends AppCompatActivity implements View.OnClickList
             SendReq.setVisibility(View.GONE);
         }
 
+        //Allow the user to chat with a friend by sending the selecting profile ID to the userMessaging page
         Message.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -109,6 +112,7 @@ public class friendRequest extends AppCompatActivity implements View.OnClickList
 
     }
 
+    //If friend request has been sent, change button to "Cancel Friend Request"; else show "Add Friend" button
     private void MaintenanceofButtons() {
         FriendRequestRef.child(senderUserID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -133,6 +137,7 @@ public class friendRequest extends AppCompatActivity implements View.OnClickList
         });
     }
 
+    //Sends a nested friend request to the database. The request will have a Firebase-generated ID, then the sender's user ID, the receiver's user ID, sent/received state
     private void SendFriendRequest() {
         FriendRequestRef.child(senderUserID).child(receiverUserID).child("request_type").setValue("sent").addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
@@ -169,6 +174,7 @@ public class friendRequest extends AppCompatActivity implements View.OnClickList
     }
 
 
+    //Navigation
     @Override
     public void onClick(View view) {
         switch (view.getId()) {

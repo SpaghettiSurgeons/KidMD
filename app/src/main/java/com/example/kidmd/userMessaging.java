@@ -24,6 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+//Allows the User to send a text message to a friend (or potential friend)
 public class userMessaging extends AppCompatActivity {
     private DatabaseReference myDatabase;
     private DatabaseReference myDatabase2;
@@ -50,6 +51,7 @@ public class userMessaging extends AppCompatActivity {
 
         final TextView myText = findViewById(R.id.textbox);
 
+        //Gets the message sender's data
         myDatabase2.child(senderUserID).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -62,6 +64,7 @@ public class userMessaging extends AppCompatActivity {
             }
         });
 
+        //Gets the message receiver's data
         myDatabase2.child(chatWith).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -76,6 +79,7 @@ public class userMessaging extends AppCompatActivity {
 
         myDatabase.child(senderUserID).child(chatWith).addValueEventListener(new ValueEventListener() {
 
+            //Allows a new message (one sent in real-time) to be appended to the message chain
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -97,6 +101,8 @@ public class userMessaging extends AppCompatActivity {
 
     }
 
+    //Sends message content to the database. The message will have a Firebase-generated message ID, then the sender's user ID, the receiver's user ID, and message content
+    //This data is added to the database twice, once for each user, with the sender and receiver IDs being swapped in each respective case.
     public void sendMessage(View view){
 
         EditText myEditText = findViewById(R.id.editText);

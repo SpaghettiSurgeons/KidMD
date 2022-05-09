@@ -35,6 +35,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+//Tools List contains all the medical devices for kids to learn about. There is a list and a search field.
 public class ToolsList extends AppCompatActivity implements View.OnClickListener {
 
     ListView toolsListView;

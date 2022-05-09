@@ -35,6 +35,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+//This file and its XML counterpart is an attempt at changing some aspects of the Profile Search
+// functionality, which we were ultimately unable to finish in time, and so went with the original,
+// which we renamed Profile Search 2.
 public class ProfileSearch extends AppCompatActivity implements View.OnClickListener {
 
     private AppCompatImageView home_button, explore_button, profile_button, notifications_button;

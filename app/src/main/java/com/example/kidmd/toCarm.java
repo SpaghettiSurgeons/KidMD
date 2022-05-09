@@ -13,6 +13,8 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 import java.util.Locale;
 
+//Displays a description page in the Tools List: image, physical description of the tool and its purpose,
+// text-to-audio functionality, forward button for more info
 public class toCarm extends AppCompatActivity implements View.OnClickListener {
 
     TextView carmDesc;
