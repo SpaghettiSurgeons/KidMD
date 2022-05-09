@@ -43,7 +43,7 @@
                 android:layout_below="@+id/naturesounds"
                 android:layout_marginStart="48dp"
                 android:layout_marginTop="5dp"
-                android:text="Nature"
+                android:text="@string/nature"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/naturetitle"
                 android:layout_centerInParent="true"
-                android:text="Waves"
+                android:text="@string/waves"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 
@@ -85,7 +85,7 @@
                 android:layout_alignRight="@id/rainsounds"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="26dp"
-                android:text="Rain"
+                android:text="@string/rain"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 
@@ -107,7 +107,7 @@
                 android:layout_alignLeft="@id/naturetitle"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
-                android:text="Storm"
+                android:text="@string/storm"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 
@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/stormtitle"
                 android:layout_centerInParent="true"
-                android:text="Whales"
+                android:text="@string/whales"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 
@@ -148,7 +148,7 @@
                 android:layout_alignBottom="@+id/whaletitle"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="26dp"
-                android:text="White Noise"
+                android:text="@string/white_noise"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 
@@ -170,7 +170,7 @@
                 android:layout_alignLeft="@id/naturetitle"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
-                android:text="Brook"
+                android:text="@string/brook"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 
@@ -190,7 +190,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/brooktitle"
                 android:layout_centerInParent="true"
-                android:text="Wind Chimes"
+                android:text="@string/wind_chimes"
                 android:textColor="#ffffff"
                 android:textSize="19sp" />
 
@@ -212,7 +212,7 @@
                 android:layout_alignRight="@id/whitenoise"
                 android:layout_alignBottom="@+id/chimestitle"
                 android:layout_marginEnd="4dp"
-                android:text="Fireplace"
+                android:text="@string/fireplace"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 
@@ -234,7 +234,7 @@
                 android:layout_alignLeft="@id/naturetitle"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
-                android:text="Wind"
+                android:text="@string/wind"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 

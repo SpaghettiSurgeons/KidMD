@@ -205,6 +205,32 @@
     <string name="pancreas">Pancreas</string>
     <string name="the_spine_is_made_of_many_bones_called_the_vertebrae_they_protect_the_spinal_cord_and_provide_structural_support_for_the_body">The spine is made of many bones called the vertebrae. They protect the spinal cord and provide structural support for the body.</string>
     <string name="spine">Spine</string>
+
+
+
+    <!-- Sounds Page -->
     <string name="sounds_button">sounds_button</string>
+    <string name="nature">Nature</string>
+    <string name="waves">Waves</string>
+    <string name="rain">Rain</string>
+    <string name="storm">Storm</string>
+    <string name="whales">Whales</string>
+    <string name="white_noise">White Noise</string>
+    <string name="brook">Brook</string>
+    <string name="wind_chimes">Wind Chimes</string>
+    <string name="fireplace">Fireplace</string>
+    <string name="wind">Wind</string>
+
+    <!-- Resources Page -->
+    <string name="resource1title">Preparing for your child’s surgery</string>
+    <string name="resource1desc">How to comfort your child before their surgery and ease any fears</string>
+    <string name="learn_more">Learn More</string>
+    <string name="resource2title">The Day of Your Child\'s Surgery</string>
+    <string name="resource2desc">Knowing what to expect on the day of your child’s surgery can help ease anxiety</string>
+    <string name="resource3title">Recovery After Surgery</string>
+    <string name="resource3desc">Recovery after surgery can be challenging, knowing what to expect can help you help your child cope</string>
+    <string name="resource4title">Coping With Post-Surgery Pain</string>
+    <string name="resource4desc">Learn how to comfort and care for you child regarding any pain after surgery</string>
+
 
 </resources>

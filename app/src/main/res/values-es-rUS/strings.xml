@@ -76,7 +76,6 @@
     <string name="sutures">Suturas</string>
     <string name="sutures_description">Las suturas son como un hilo. De la misma manera que el hilo sostiene la ropa, las suturas mantienen unida la piel después de que los médicos hayan reparado lo que lo está enfermando a uno. Algunas suturas hasta se disuelven solas sin tener que removerlas.</string>
     <string name="sutures_use">Las suturas generalmente se aplican con una aguja, y la elección de qué suturas usar puede ser compleja. Según el tejido que se está manteniendo unido y las fuerzas aplicadas por la herida, los cirujanos deben elegir suturas de resistencia y elasticidad adecuadas.</string>
-
     <string name="defibrillators">Desfibriladores</string>
     <string name="defibrillators_description">Desfibriladores son herramientas que probablemente has visto en la televisión, y probablemente fueron usadas incorrectamente en esas representaciones. Son paletas eléctricas que se usan para restaurar el ritmo normal del corazón, no para reiniciar el corazón después de un paro cardíaco, como se muestran usadas muchas veces.</string>
     <string name="defibrillators_use">Es muy improbable que se necesite utilizar esta herramienta en usted, ¡pero es importante saber que está ahí por si acaso! En la ilustración, puede ver a la mujer tratando de evitar el contacto con el hombre que está siendo desfibrilado. Por eso también gritan \"¡Despejen!\" en la tele: para que la corriente eléctrica no vaya a donde no debe ir.</string>
@@ -92,8 +91,40 @@
     <string name="penTorch">Linternas de Pluma</string>
     <string name="penTorch_description">Las liternas de pluma, como su nombre lo indica, parecen bolígrafos, pero están equipadas con una linterna potente. Su médico utiliza estos dispositivos para comprobar la respuesta pupilar de sus ojos y también para revisar su nariz y boca, para asegurarse de que está sano.</string>
     <string name="penTorch_use">Junto con el Estetoscopio y el Esfigmomanómetro (el manguito de presión arterial), este dispositivo es uno de los más comunes en el conjunto de herramientas básicas de su médico. Espere verlo durante las visitas regulares al consultorio y los chequeos, y que su médico le pida que siga su dedo con los ojos mientras la luz se asoma a sus pupilas, asegurando la salud de tus ojos.</string>
+    <string name="xray">Máquina de rayos X</string>
+    <string name="xray_description">Las máquinas de rayos X son dispositivos con un generador que sostiene un tubo de vacío, dirigiendo una corriente de electrones que son recolectados por otro dispositivo para formar imágenes de su cuerpo interno. ¡El 99 % de la energía utilizada se libera en forma de calor, y solo el 1 % se destina a los rayos X!</string>
+    <string name="xray_use">Probablemente te hayas encontrado con máquinas de rayos X antes, en el dentista. Se parará o se acostará sobre una mesa y se le colocará una cubierta para evitar el exceso de radiación (¡pequeñas cantidades no duelen!). Luego, el técnico se moverá hacia atrás para estar fuera del alcance y luego se tomará la imagen interna. No es tan diferente de que te tomen una foto.</string>
+    <string name="Ctscan">Máquina de TC</string>
+    <string name="Ctscan_description">TC significa tomografía computarizada. A menudo se pronuncian como escaneos \"cat\". Estos dispositivos utilizan un tubo de rayos X giratorio y una serie de detectores. Al igual que las radiografías normales, muestran a los médicos el interior de su cuerpo.</string>
+    <string name="Ctscan_use">Las tomografías computarizadas pueden parecer intimidantes, pero son rápidas y fáciles. Te acuestas en una mesa que te mueve parcialmente dentro de la máquina circular para que pueda tomar imágenes internas. Debe permanecer quieto para que el escaneo se realice correctamente, y el técnico se asegurará de que no tenga metal sobre usted que pueda interferir con los resultados.</string>
+    <string name="Mri">Máquina de RMN</string>
+    <string name="Mri_description">RMN significa Imagen por Resonancia Magnética. Se ve muy similar a una máquina de tomografía computarizada, pero la forma en que funciona es diferente. Las máquinas de resonancia magnética utilizan campos magnéticos en lugar de los rayos X utilizados en las tomografías computarizadas. Al igual que los rayos X y las tomografías computarizadas, las resonancias magnéticas producen imágenes de su cuerpo interno.</string>
+    <string name="Mri_use">Las resonancias magnéticas funcionan de manera muy similar a las tomografías computarizadas. Usted se acuesta en una mesa y lo mueven parcialmente dentro de la máquina de resonancia magnética para que se puedan tomar imágenes internas de su cuerpo. Para que el escaneo tome las imágenes correctas, debe permanecer quieto y el técnico se asegurará de que no tenga objetos metálicos que puedan interferir con los resultados.</string>
+    <string name="Iv">IV</string>
+    <string name="Iv_description">IV significa Terapia Intravenosa. Compuesto por una aguja, un tubo de plástico y una bolsa de líquidos, le administra los medicamentos y los nutrientes necesarios directamente en sus venas para mantener su cuerpo saludable cuando no puede tomarlos por vía oral, como durante una cirugía.</string>
+    <string name="Iv_use">A nadie le gustan las agujas, pero las que se usan en las vías intravenosas son muy pequeñas. Una enfermera frotará su brazo con alcohol para matar las bacterias y luego insertará la aguja con el tubo de plástico adjunto. Solo sentirá un pequeño pinchazo ya que las enfermeras tienen experiencia en encontrar una vena e insertarla rápidamente. Luego se pegará con cinta adhesiva para mantenerlo en su lugar.</string>
+    <string name="spirometer">Espirómetro</string>
+    <string name="spirometer_description">Un espirómetro es un dispositivo de plástico relativamente pequeño con una bola flotante o un pistón encerrado en su interior y un tubo de plástico flexible para que usted respire. Mide tu función pulmonar.</string>
+    <string name="spirometer_use">Los espirómetros se utilizan para ayudar a mantener los pulmones sanos. Simplemente siéntese, sostenga el dispositivo, coloque la boquilla en su boca y luego exhale normalmente e inhale lentamente. Tomar estas respiraciones medidas y repetidas fortalece tus pulmones con el tiempo.</string>
 
-
+    <string name="laparoscope">Laparoscopio</string>
+    <string name="laparoscope_description">La frase \"Cirugía Laparoscópica\" toma su nombre de este dispositivo. Es una herramienta de fibra óptica larga y estrecha que se asemeja a un tubo con una cámara muy pequeña en el extremo.</string>
+    <string name="laparoscope_use">Durante la cirugía, este dispositivo médico se utiliza para que el procedimiento sea lo menos invasivo posible. Los cirujanos no tienen que hacer una apertura tan amplia para ver lo que están haciendo, ya que la cámara ve por ellos. Esto también reduce las cicatrices.</string>
+    <string name="patientMonitor">Monitor de paciente</string>
+    <string name="patientMonitor_description">Un monitor de paciente es un dispositivo médico electrónico. Mide tus signos vitales (como frecuencia cardíaca, nivel de oxígeno, presión arterial, etc.) y muestra los datos en su pantalla para que los médicos puedan asegurarse de que estás bien.</string>
+    <string name="patientMonitor_use">Es posible que encuentre un monitor más pequeño y simple en el consultorio de su médico, pero los que se encuentran en las habitaciones de los hospitales y en los quirófanos son mucho más avanzados. Se utilizan durante la cirugía y, posteriormente, durante la recuperación, lo que permite a los médicos mantenerlo sano y seguro.</string>
+    <string name="carm">Máquina C-Arm</string>
+    <string name="carm_description">Una máquina C-Arm es un dispositivo móvil de imágenes médicas comúnmente utilizado en quirófanos y basado en tecnología de rayos X. El nombre se deriva de su forma, que se asemeja a una C, con la fuente de rayos X en una punta y el detector de rayos X en la otra punta.</string>
+    <string name="carm_use">Durante el uso, se acostará en una mesa mientras el dispositivo móvil se coloca encima y debajo de usted, de modo que esté en el centro de la C. Al igual que con otras técnicas de rayos X, deberá permanecer quieto para obtener una imagen precisa. ser tomado.</string>
+    <string name="nebulizer">Nebulizador</string>
+    <string name="nebulizer_description">Un nebulizador es una pequeña máquina que convierte el medicamento líquido en rocío, para que sea más fácil de absorber usando los pulmones. Tienen un compresor de aire, un recipiente para medicamentos y un tubo de conexión.</string>
+    <string name="nebulizer_use">Si tiene asma, bronquiectasias, o otros problemas pulmonares, los nebulizadores ayudan a aliviar sus síntomas. Simplemente use una máscara o boquilla para inhalar la niebla, respirando lenta y profundamente, durante unos 10 a 15 minutos.</string>
+    <string name="ventilator">Ventilador</string>
+    <string name="ventilator_description">Un ventilador es un dispositivo médico que mueve el aire dentro y fuera de los pulmones mediante ventilación mecánica. Generalmente están controlados por una computadora, aunque hay otros más simples en uso. Se comprime una mezcla de aire y oxígeno, empujándola hacia los pulmones hasta que se reduce la presión y los pulmones exhalan pasivamente.</string>
+    <string name="ventilator_use">Los ventiladores se utilizan para brindar apoyo a su respiración durante la cirugía, después de recibir anestesia general (cuando los médicos lo ponen a dormir hasta que finaliza la cirugía). Se inserta un tubo de respiración a través de la boca y en las vías respiratorias, luego el ventilador proporciona aire oxigenado.</string>
+    <string name="pulseOximeter">Oxímetro de pulso</string>
+    <string name="pulseOximeter_description">Un oxímetro de pulso es un dispositivo electrónico en forma de bloque, redondeado en un extremo, que cubre su dedo. Mide tanto tu frecuencia cardíaca como la saturación de oxígeno en tu sangre.</string>
+    <string name="pulseOximeter_use">Es probable que te hayas encontrado con este dispositivo antes. Se utiliza no solo en hospitales sino también en consultorios médicos. Una enfermera o un técnico simplemente lo colocará sobre la punta de su dedo, dando lecturas casi instantáneas, que luego registrarán para controlar su función cardíaca y pulmonar.</string>
 
     <!--Surgical Procedures-->
     <string name="why_needed">PORQUÉ LO NECESITAS?</string>
@@ -107,13 +138,11 @@
     <string name="choledochalCystRemoval">Extirpación de un Quiste Coledocócico</string>
     <string name="why_choledochalCystRemoval">Un quiste coledocócico es un problema que ocurre en los tubos que conectan el hígado con la vesícula biliar. A veces etse tubo puede agrandarse más de lo normal y causar problemas hepáticos. Esto es malo porque puede dañar o bloquear el flujo de líquidos importantes del hígado al intestino delgado. Esto puede hacer que el tubo se hinche y se infecte.\n\n If surgery is not done to remove the cyst, the liver can get damaged and not work well. Si no se realiza una cirugía para extraer el quiste, el hígado puede dañarse y no funcionar bien.</string>
     <string name="desc_choledochalCystRemoval">Te pondrán a dormir. El doctor hará cortes pequeños cerca de su ombligo. Es posible que coloquen una cámara pequeña adentro para ver sus órganos. \n\n El doctor pondrá un poco de gas en tu vientre para poder ver mejor tus órganos. Luego, usarán algunas herramientas especiales para extraer el quiste del tubo. El médico reconstruirá el tubo utilizando una pequeña sección del intestino.\n\n Now everything will be good and the doctor will close your belly and you will wake up. Ahora todo estará bien y el médico te cerrará el vientre y te despertarás.</string>
-
     <string name="decortication">Decorticación</string>
-    <string name="why_decortation">Sometimes a fibrous tissue, also known as pleura, can form on the lung, chest wall or the diaphragm which is not normal. Usually there is a small space between the lungs and the chest containing a thin layer of fluid. It is important for this area to remain moist and free so that the lung can expand and deflate normally when you breathe. If this area gets blocked with tissue, then it becomes hard for the lung to expand and deflate normally which can create breathing problems. With the help of surgery, this harmful tissue can be removed and the lungs can be saved.</string>
+    <string name="why_decortation">A veces se puede formar un tejido fibroso, también conocido como pleura, en el pulmón, la pared torácica o el diafragma que no es normal. Por lo general, hay un pequeño espacio entre los pulmones y el tórax que contiene una capa delgada de líquido. Es importante que esta área permanezca húmeda y libre para que el pulmón pueda expandirse y desinflarse normalmente cuando respira. Si esta área se bloquea con tejido, se vuelve difícil para el pulmón expandirse y desinflarse normalmente, lo que puede crear problemas respiratorios. Con la ayuda de la cirugía, se puede extirpar este tejido dañino y se pueden salvar los pulmones.</string>
     <string name="desc_decortication">Te pondrán a dormir. The doctor will put a breathing tube inside your throat and connect it to a machine which will help you breathe. Then they will make a few small cuts on your chest. The doctor will look inside your chest and take the air out of your lungs. The doctor will move the lungs to the side and find the affected area. Then they will put a small camera to see the affected area better. Next the doctor will peel off the bad tissue and put air back into your lungs. The doctor will close your chest with stitches and you will wake up.</string>
-
-    <string name="esophagomyotomy">Esophagomyotomy</string>
-    <string name="why_esophagomyotomy">This surgical procedure is used to treat achalasia. This problem occurs when the nerves in the esophagus become damaged. This can cause the esophagus to become paralyzed or become larger if not treated by a doctor. If this happens, it will become difficult for the esophagus to squeeze down food when you eat and it will become harder for you to swallow food.</string>
+    <string name="esophagomyotomy">Esofagomiotomía</string>
+    <string name="why_esophagomyotomy">Este procedimiento quirúrgico se utiliza para tratar la acalasia. Este problema ocurre cuando los nervios del esófago se dañan. Esto puede hacer que el esófago se paralice o se agrande si no lo trata un médico. Si esto sucede, al esófago le resultará difícil tragar los alimentos cuando come y le resultará más difícil tragar los alimentos.</string>
     <string name="desc_esophagomyotomy">Te pondrán a dormir. The doctor will make some small cuts near your upper chest and put some special tools inside. The doctor will cut the LES muscle, which is a muscle at the bottom of your esophagus which connects into the stomach. This muscle gets tights and blocks food from entering your stomach. Once this is cut, the doctor will be all done. They will close your cuts with a few stitches and you will wake up.</string>
 
 
@@ -132,6 +161,64 @@
     <string name="opthalmoscope_desc">Un oftalmoscopio es un dispositivo para arrojar una sobre el ojo. El médico lo utilizará para verificar la estructura y la salud de su ojo.</string>
     <string name="blood_pressure_monitor">Monitor de Presión Arterial</string>
     <string name="bpm_desc">Un monitor de presión arterial se usa para ver cuánta presión hay en sus arterias. Esto ayuda al médico verificar qué tan saludable está su corazón.</string>
+
+
+    <string name="herniorraphy">Herniorrafia</string>
+    <string name="hospital_room">Cuarto de hospital</string>
+    <string name="explore">Explora</string>
+    <string name="the_heart_pumps_blood_that_travels_all_over_the_body_this_helps_the_body_get_the_oxygen_and_nutrients_it_needs">El corazón bombea sangre que viaja por todo el cuerpo. Esto ayuda al cuerpo a obtener el oxígeno y los nutrientes que necesita.</string>
+    <string name="heart">Corazón</string>
+    <string name="small_intestine">Intestino Delgado</string>
+    <string name="the_small_intestine_is_a_long_coiled_tube_in_your_digestive_system_it_absorbs_the_nutrients_from_the_food_that_passes_through">El intestino delgado es un tubo largo en espiral en su sistema digestivo. Absorbe los nutrientes de los alimentos que pasan.</string>
+    <string name="the_large_intestine_gets_waste_from_the_small_intestine_it_absorbs_the_water_from_the_waste_this_creates_stool_which_is_the_waste_ready_to_exit_your_body">El intestino grueso recibe desechos del intestino delgado. Absorbe el agua de los residuos. Esto crea heces, que son los desechos listos para salir de su cuerpo.</string>
+    <string name="large_intestine">Intestino Grueso</string>
+    <string name="title_activity_settings">Configuraciones</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Mensajes</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Su firma</string>
+    <string name="reply_title">Acción de respuesta predeterminada</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sincroniza el correo electrónico periódicamente</string>
+    <string name="attachment_title">Descargar archivos adjuntos entrantes</string>
+    <string name="attachment_summary_on">Descargar automáticamente archivos adjuntos para correos electrónicos entrantes
+    </string>
+    <string name="attachment_summary_off">Solo descargue archivos adjuntos cuando se solicite manualmente</string>
+    <string name="parent_resources">Recursos para padres</string>
+    <string name="food_enters_the_stomach_to_be_digested_the_food_breaks_down_physically_when_the_stomach_squeezes_the_food_it_also_breaks_down_chemically_by_acids_and_enzymes">La comida entra al estómago para ser digerida. La comida se descompone físicamente cuando el estómago aprieta la comida. También se descompone químicamente por ácidos y enzimas.</string>
+    <string name="stomach">Estómago</string>
+    <string name="the_pancreas_makes_enzymes_that_are_used_in_breaking_down_foods_it_also_makes_important_hormones_like_insulin_and_glucagon">El páncreas produce enzimas que se utilizan para descomponer los alimentos. También produce hormonas importantes como la insulina y el glucagón.</string>
+    <string name="pancreas">Páncreas</string>
+    <string name="the_spine_is_made_of_many_bones_called_the_vertebrae_they_protect_the_spinal_cord_and_provide_structural_support_for_the_body">La columna vertebral está formada por muchos huesos llamados vértebras. Protegen la médula espinal y brindan soporte estructural al cuerpo.</string>
+    <string name="spine">Columna Vertebral</string>
+
+    <!-- Sounds Page -->
+    <string name="sounds_button">sounds_button</string>
+    <string name="nature">Naturaleza</string>
+    <string name="waves">Olas</string>
+    <string name="rain">Lluvia</string>
+    <string name="storm">Tormenta</string>
+    <string name="whales">Ballenas</string>
+    <string name="white_noise">Ruido Blanco</string>
+    <string name="brook">Arroyo</string>
+    <string name="wind_chimes">Campanillas</string>
+    <string name="fireplace">Chimenea</string>
+    <string name="wind">Viento</string>
+
+    <!-- Resources Page -->
+    <string name="resource1title">Preparación para la cirugía de su hijo</string>
+    <string name="resource1desc">Cómo consolar a su hijo antes de la cirugía y aliviar cualquier temor</string>
+    <string name="learn_more">Aprende más</string>
+    <string name="resource2title">El día de la cirugía de su hijo</string>
+    <string name="resource2desc">Saber qué esperar el día de la cirugía de su hijo puede ayudar a aliviar la ansiedad</string>
+    <string name="resource3title">Recuperación después de la cirugía</string>
+    <string name="resource3desc">Recuperación después de cirugía puede ser un desafío, saber qué esperar puede ayudar a su hijo a sobrellevar la situación</string>
+    <string name="resource4title">Lidiando con el dolor posquirúrgico</string>
+    <string name="resource4desc">Aprenda a consolar y cuidar a su hijo con cualquier dolor después de la cirugía</string>
 
 
 </resources>
