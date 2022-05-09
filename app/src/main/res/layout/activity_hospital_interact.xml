@@ -112,4 +112,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/button_signs_question_mark_help_question_faq_shapes_207620" />
 
+    <ImageButton
+        android:id="@+id/hospitalBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/green_left_arrow" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -55,7 +55,7 @@ public class ProgressPage extends AppCompatActivity  implements View.OnClickList
         bpMax = 16;
         prMax = 10;
         toMax = 15;
-        hrMax = 7;
+        hrMax = 8;
         overallMax = bpMax + prMax + toMax + hrMax;
 
         bpHeader = findViewById(R.id.bpHeader);

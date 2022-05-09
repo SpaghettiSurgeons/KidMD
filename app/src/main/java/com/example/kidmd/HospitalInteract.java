@@ -37,7 +37,7 @@ public class HospitalInteract extends AppCompatActivity {
     private Button test;
     DatabaseReference reference;
     String hrTrack;
-    private ImageButton bedButton, bpmButton, curtainButton, sudButton, ecgButton, otoscopeButton, opthalmoscopeButton;
+    private ImageButton bedButton, bpmButton, curtainButton, sudButton, ecgButton, otoscopeButton, opthalmoscopeButton, backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,11 +81,15 @@ public class HospitalInteract extends AppCompatActivity {
         otoscopeButton.setOnClickListener(this::onClick);
         opthalmoscopeButton = (ImageButton) findViewById(R.id.opthalmoscopeButton);
         opthalmoscopeButton.setOnClickListener(this::onClick);
+        backButton = (ImageButton) findViewById(R.id.hospitalBack);
+        backButton.setOnClickListener(this::onClick);
 
     }
 
 
     public void onClick(View v) {
+
+        //log newly visited entries to database
         if ((FirebaseAuth.getInstance().getCurrentUser() != null)) {
             String fullName = getResources().getResourceName(v.getId());
             String name = fullName.substring(fullName.lastIndexOf("/") + 1);
@@ -118,6 +122,9 @@ public class HospitalInteract extends AppCompatActivity {
             case R.id.opthalmoscopeButton:
                 //seeBPM();
                 startActivity(new Intent(HospitalInteract.this, hrOpthalmoscope.class));
+            case R.id.hospitalBack:
+                //seeBPM();
+                startActivity(new Intent(HospitalInteract.this, HospitalMenu.class));
                 break;
         }
     }
