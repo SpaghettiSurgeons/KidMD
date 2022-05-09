@@ -33,10 +33,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+//Allow User to search for friends' profiles by iterating through the database
 public class ProfileSearch2 extends AppCompatActivity implements View.OnClickListener {
 
     private AppCompatImageView home_button, explore_button, profile_button, notifications_button;
-
 
     public void checkKeyboard() {
         // Check if no view has focus:
@@ -91,6 +91,7 @@ public class ProfileSearch2 extends AppCompatActivity implements View.OnClickLis
 
         profilesListView = (ListView) findViewById(R.id.profilesTextView2);
 
+        //Make sure the user is signed in before allowing search function
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             user = FirebaseAuth.getInstance().getCurrentUser();
             userID = user.getUid();
@@ -118,7 +119,7 @@ public class ProfileSearch2 extends AppCompatActivity implements View.OnClickLis
 
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                //Iterate through user profiles in realtime database
+                //Iterate through User profiles in realtime database
                 for (DataSnapshot ds : snapshot.getChildren()) {
                     arrayList.add(ds.child("fullName").getValue().toString());
                     User newUser = new User(ds.child("fullName").getValue().toString(), ds.child("age").getValue().toString(), ds.child("email").getValue().toString());
@@ -182,6 +183,7 @@ public class ProfileSearch2 extends AppCompatActivity implements View.OnClickLis
                 profilesListView.setVisibility(View.GONE);
             }
 
+            //Search button only functions if text is present in the field
             @Override
             public void onTextChanged(CharSequence s, int i, int i1, int i2) {
                 if (!searchBtn.isEnabled()) {
@@ -245,6 +247,7 @@ public class ProfileSearch2 extends AppCompatActivity implements View.OnClickLis
         addFriend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Pass selected profile to next activity so friend can be added
                 if (FirebaseAuth.getInstance().getCurrentUser() != null && visit_user_id != null) {
                     Intent friendIntent = new Intent(ProfileSearch2.this, friendRequest.class);
                     friendIntent.putExtra("visit_user_id", visit_user_id);
@@ -259,6 +262,7 @@ public class ProfileSearch2 extends AppCompatActivity implements View.OnClickLis
             }
         });
 
+        //When search field is clicked, make previously viewed profile disappear
         searchField.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -285,6 +289,7 @@ public class ProfileSearch2 extends AppCompatActivity implements View.OnClickLis
 
     }
 
+    //Navigation
     @Override
     public void onClick(View view) {
         switch (view.getId()) {

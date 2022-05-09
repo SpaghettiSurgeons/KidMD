@@ -19,11 +19,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
-    private FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;;
 
     private TextView cancel, registerUser;
     private EditText editTextFullName, editTextAge, editTextEmail, editTextPassword;
@@ -128,6 +129,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                                         FirebaseDatabase.getInstance().getReference("Progress").child(userID).setValue(log);
                                         Toast.makeText(SignUp.this, "User successfully registered!", Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
+                                        sendVerificationEmail();
                                     }
                                     //Redirect to Login Layout
                                     else {
@@ -140,6 +142,33 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                         else {
                             Toast.makeText(SignUp.this, "Failed to register!", Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.GONE);
+                        }
+                    }
+                });
+    }
+    //Verify User's email
+    private void sendVerificationEmail() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        user.sendEmailVerification()
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            // email sent
+                            FirebaseAuth.getInstance().signOut();
+                            startActivity(new Intent(SignUp.this, SignIn.class));
+                            finish();
+                        }
+                        else
+                        {
+                            // email not sent
+                            //restart activity
+                            overridePendingTransition(0, 0);
+                            finish();
+                            overridePendingTransition(0, 0);
+                            startActivity(getIntent());
+
                         }
                     }
                 });

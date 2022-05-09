@@ -13,6 +13,8 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 import java.util.Locale;
 
+//Displays a usage page in the Tools List: image, explanation of its use in surgery,
+// text-to-audio functionality, and backward button to go to the tool's physical description
 public class toLaparoscope2 extends AppCompatActivity implements View.OnClickListener {
 
     TextView laparoscopeUse;

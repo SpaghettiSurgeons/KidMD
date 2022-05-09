@@ -1,5 +1,6 @@
 package com.example.kidmd;
 
+//User class with name, age, and email variables and getters; and a getter for Firebase-generated User ID
 public class User {
 
     public String fullName, age, email;
