@@ -145,6 +145,8 @@ public class ProceduresList extends AppCompatActivity implements View.OnClickLis
                 if (arrayList.get(i) == "Nissen Fundoplication") startActivity(new Intent(ProceduresList.this, prNissen.class));
                 if (arrayList.get(i) == "Proctocolectomy") startActivity(new Intent(ProceduresList.this, prProctocolectomy.class));
                 if (arrayList.get(i) == "Spinal Fusion") startActivity(new Intent(ProceduresList.this, prSpinal.class));
+                if (arrayList.get(i) == "Gastroschisis") startActivity(new Intent(ProceduresList.this, prGastrochisis.class));
+
 
 
 

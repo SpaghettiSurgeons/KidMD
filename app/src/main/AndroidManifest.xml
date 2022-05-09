@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidMD">
         <activity
+            android:name=".prGastrochisis2"
+            android:exported="false" />
+        <activity
+            android:name=".prGastrochisis"
+            android:exported="false" />
+        <activity
             android:name=".toPulseOximeter2"
             android:exported="false" />
         <activity
