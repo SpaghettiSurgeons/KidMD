@@ -5,6 +5,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -81,6 +82,15 @@ public class resourcesPage extends AppCompatActivity implements View.OnClickList
                 gotoUrl("https://www.chop.edu/patients-and-visitors/guide-your-childs-surgery/coping-with-pain");
             }
         });
+
+        //change font
+        Typeface baloo = Typeface.createFromAsset(getAssets(), "fonts/Baloo-Regular.ttf");
+        ((TextView) findViewById(R.id.resButton1)).setTypeface(baloo);
+        ((TextView) findViewById(R.id.resButton2)).setTypeface(baloo);
+        ((TextView) findViewById(R.id.resButton3)).setTypeface(baloo);
+        ((TextView) findViewById(R.id.resButton4)).setTypeface(baloo);
+
+
     }
 
     // method to go to URL
